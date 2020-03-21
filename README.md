@@ -1,3 +1,3 @@
 # Cheatsheets
 
-A collection of cheatsheets.
+Collection of cheatsheets.
