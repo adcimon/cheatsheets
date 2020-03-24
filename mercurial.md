@@ -52,6 +52,11 @@ Commit the specified files in version history.
 hg commit -m "Message"
 ```
 
+Commit the deleted files in version history.
+```
+hg commit --addremove -m "Message"
+```
+
 ## Synchronize changes
 
 Upload all local branch commits.
