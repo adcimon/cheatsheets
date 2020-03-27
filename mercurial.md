@@ -64,6 +64,12 @@ Upload all local branch commits.
 hg push
 ```
 
+Push a new branch.
+```
+hg push --new-branch
+```
+
+
 Update your current local working branch with all new commits from the corresponding remote branch.
 ```
 hg pull
@@ -84,4 +90,26 @@ hg log
 Show revision history of a file.
 ```
 hg log --follow file
+```
+
+Show current commit.
+```
+hg id -i
+```
+
+## Tags
+
+Create a tag.
+```
+hg tag [--local] name
+```
+
+Remove a tag.
+```
+hg tag --remove name
+```
+
+Shows the tags.
+```
+hg tags
 ```
