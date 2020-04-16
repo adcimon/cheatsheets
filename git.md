@@ -20,6 +20,7 @@ git init
 Download a repository that already exists.
 ```
 git clone url
+git clone --recursive url
 ```
 
 ## Branches
