@@ -23,6 +23,11 @@ hg clone repository
 
 ## Branches
 
+List all branches.
+```
+hg branches
+```
+
 Create a new branch.
 ```
 hg branch name
