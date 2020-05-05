@@ -41,3 +41,9 @@ Remove a container.
 ```
 docker rm name
 ```
+
+Fetch the logs of a container.
+```
+docker logs name
+docker logs -f name
+```
