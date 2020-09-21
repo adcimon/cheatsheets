@@ -9,16 +9,16 @@ python -m pip install --upgrade pip
 
 Install packages.
 ```
-pip install package
-pip install -r requirements.txt
+pip install <package>
+pip install -r <requirements.txt>
 ```
 
 Export packages and versions.
 ```
-pip freeze > requirements.txt
+pip freeze > <requirements.txt>
 ```
 
 Uninstall package.
 ```
-pip uninstall package
+pip uninstall <package>
 ```
