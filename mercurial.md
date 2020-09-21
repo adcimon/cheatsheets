@@ -74,9 +74,14 @@ Push a new branch.
 hg push --new-branch
 ```
 
-Update your current local working branch with all new commits from the corresponding remote branch.
+Update the working directory with all new commits from the corresponding remote branch.
 ```
 hg pull
+```
+
+Update the working directory at the changeset point.
+```
+hg update -C <changeset>
 ```
 
 ## Show changes
