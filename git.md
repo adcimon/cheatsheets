@@ -6,8 +6,8 @@
 
 Configure user information.
 ```
-git config --global user.name name
-git config --global user.email email
+git config --global user.name <name>
+git config --global user.email <email>
 ```
 
 ## Create repositories
@@ -19,37 +19,37 @@ git init
 
 Download a repository that already exists.
 ```
-git clone url
-git clone --recursive url
+git clone <url>
+git clone --recursive <url>
 ```
 
 ## Branches
 
 Create a new branch.
 ```
-git branch name
+git branch <name>
 ```
 
 Delete a branch.
 ```
-git branch -d name
+git branch -d <name>
 ```
 
 Switch to the specified branch.
 ```
-git checkout branch
+git checkout <branch>
 ```
 
 Combine the specified branch's history into the current branch.
 ```
-git merge branch
+git merge <branch>
 ```
 
 ## Make changes
 
 Snapshot the file(s) in preparation for versioning.
 ```
-git add file
+git add <file>
 git add .
 ```
 
@@ -62,12 +62,12 @@ git commit -m "Message"
 
 Revert all commits after commit, preserving changes locally.
 ```
-git reset commit
+git reset <commit>
 ```
 
 Discard all history and changes back to the specified commit.
 ```
-git reset --hard commit
+git reset --hard <commit>
 ```
 
 ## Synchronize changes
@@ -98,7 +98,7 @@ git stash push -m "Message"
 Apply a stash.
 ```
 git stash apply
-git stash apply stash@{index}
+git stash apply stash@{<index>}
 ```
 
 Remove the stash from the top of the stack.
@@ -135,15 +135,31 @@ git log
 
 List version history for a file, including renames.
 ```
-git log --follow file
+git log --follow <file>
 ```
 
 Show content differences between two branches.
 ```
-git diff branch1...branch2
+git diff <branch1>...<branch2>
 ```
 
 Show metadata and content changes of the specified commit.
 ```
-git show commit
+git show <commit>
+```
+
+## More
+
+Clear history.
+```
+rm -rf .git
+
+git init
+git add .
+git commit -m "Initial commit"
+
+git remote add origin git@github.com:<username>/<repository>.git
+git remote add origin https://github.com/<username>/<repository>.git
+
+git push -u --force origin master
 ```
