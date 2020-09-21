@@ -9,13 +9,13 @@ pip install virtualenv
 
 Create a virtual environment.
 ```
-python -m venv env
+python -m venv <env>
 ```
 
 Activate a virtual environment.
 ```
-source env/bin/activate
-env\Scripts\activate.bat
+source <env>/bin/activate
+<env>\Scripts\activate.bat
 ```
 
 Check Python location.
