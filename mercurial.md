@@ -18,7 +18,7 @@ hg init
 
 Download a repository.
 ```
-hg clone repository
+hg clone <repository>
 ```
 
 ## Branches
@@ -30,25 +30,25 @@ hg branches
 
 Create a new branch.
 ```
-hg branch name
+hg branch <name>
 ```
 
 Switch to the specified branch.
 ```
-hg update branch
-hg checkout branch
+hg update <branch>
+hg checkout <branch>
 ```
 
 Combine the specified branch's history into the current branch.
 ```
-hg merge branch
+hg merge <branch>
 ```
 
 ## Make changes
 
 Add the specified files on the next commit.
 ```
-hg add file
+hg add <file>
 hg add
 ```
 
@@ -74,7 +74,6 @@ Push a new branch.
 hg push --new-branch
 ```
 
-
 Update your current local working branch with all new commits from the corresponding remote branch.
 ```
 hg pull
@@ -94,7 +93,7 @@ hg log
 
 Show revision history of a file.
 ```
-hg log --follow file
+hg log --follow <file>
 ```
 
 Show current commit.
@@ -106,12 +105,12 @@ hg id -i
 
 Create a tag.
 ```
-hg tag [--local] name
+hg tag [--local] <name>
 ```
 
 Remove a tag.
 ```
-hg tag --remove name
+hg tag --remove <name>
 ```
 
 Shows the tags.
