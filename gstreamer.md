@@ -12,18 +12,18 @@ Print info about a plugin or element.
 ```
 gst-inspect
 gst-inspect -a
-gst-inspect plugin
-gst-inspect element
+gst-inspect <plugin>
+gst-inspect <element>
 ```
 
 Detect the media format of a file.
 ```
-gst-typefind file
+gst-typefind <file>
 ```
 
 Play audio or video.
 ```
-gst-launch playbin uri=file://path/to/file
+gst-launch playbin uri=<file://path/to/file>
 ```
 
 Use element properties.
