@@ -4,7 +4,7 @@
 
 Convert audio and video.
 ```
-ffmpeg -i input.mp4 output.avi
+ffmpeg -i <input.mp4> <output.avi>
 ```
 
 ## Audio
