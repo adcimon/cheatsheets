@@ -158,8 +158,8 @@ git init
 git add .
 git commit -m "Initial commit"
 
-git remote add origin git@github.com:<username>/<repository>.git
-git remote add origin https://github.com/<username>/<repository>.git
+git remote add origin git@<url>:<username>/<repository>.git
+git remote add origin https://<url>/<username>/<repository>.git
 
 git push -u --force origin master
 ```
