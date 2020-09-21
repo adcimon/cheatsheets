@@ -11,7 +11,7 @@ docker image ls
 
 Remove an image.
 ```
-docker image rm name
+docker image rm <name>
 ```
 
 ## Containers
@@ -24,26 +24,26 @@ docker ps -a
 
 Inspect a container.
 ```
-docker inspect name
+docker inspect <name>
 ```
 
 Stop a container.
 ```
-docker stop name
+docker stop <name>
 ```
 
 Kill a container.
 ```
-docker kill name
+docker kill <name>
 ```
 
 Remove a container.
 ```
-docker rm name
+docker rm <name>
 ```
 
 Fetch the logs of a container.
 ```
-docker logs name
-docker logs -f name
+docker logs <name>
+docker logs -f <name>
 ```
