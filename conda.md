@@ -23,28 +23,28 @@ conda info --envs
 
 Create a new environment.
 ```
-conda create --name env python=version
+conda create --name <env> python=<version>
 ```
 
 Create an environment from a yml file.
 ```
-conda env create --file environment.yml
+conda env create --file <environment.yml>
 ```
 
 Export an environment to a yml file.
 ```
-conda env export > environment.yml
+conda env export > <environment.yml>
 ```
 
 Clone an environment.
 ```
-conda create --name new --clone old
+conda create --name <new> --clone <old>
 ```
 
 Activate an environment.
 ```
-source activate env
-conda activate env
+source activate <env>
+conda activate <env>
 ```
 
 Deactivate an environment.
@@ -55,7 +55,7 @@ conda deactivate
 
 Remove an environment.
 ```
-conda remove --name env --all
+conda remove --name <env> --all
 ```
 
 ## Packages
@@ -67,22 +67,22 @@ conda list
 
 Check if a package is installed in an environment.
 ```
-conda list --name env package
+conda list --name <env> <package>
 ```
 
 Install a new package.
 ```
-conda install package
+conda install <package>
 ```
 
 Update a package.
 ```
-conda update package
+conda update <package>
 ```
 
 Remove a package.
 ```
-conda remove package
+conda remove <package>
 ```
 
 ## Environment variables
@@ -94,10 +94,10 @@ conda env config vars list
 
 Set an environment variable.
 ```
-conda env config vars set variable=value
+conda env config vars set <variable>=<value>
 ```
 
 Unset an environment variable.
 ```
-conda env config vars unset variable --name env
+conda env config vars unset <variable> --name <env>
 ```
