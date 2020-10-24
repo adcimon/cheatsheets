@@ -1,5 +1,7 @@
 # Mercurial
 
+<p align="center"><img align="center" src="mercurial.png"></p>
+
 [Mercurial](https://www.mercurial-scm.org/) is a free, distributed source control management tool.
 
 ## Configuration
