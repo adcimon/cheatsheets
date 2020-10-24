@@ -1,5 +1,7 @@
 # Git
 
+<p align="center"><img align="center" src="git.png"></p>
+
 [Git](https://git-scm.com/) is a free and open source distributed version control system.
 
 ## Configuration
