@@ -1,5 +1,7 @@
 # Pip
 
+<p align="center"><img align="center" src="pip.png"></p>
+
 [Pip](https://pip.pypa.io/en/latest/) is the package installer for Python.
 
 Update.
