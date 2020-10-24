@@ -1,5 +1,7 @@
 # Conda
 
+<p align="center"><img align="center" src="conda.png"></p>
+
 [Conda](https://conda.io/) is an open source package management system and environment management system.
 
 ## Basics
