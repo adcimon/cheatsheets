@@ -16,6 +16,16 @@ Remux a mkv into mp4.
 ffmpeg -i <input.mkv> -c:v copy -c:a copy <output.mp4>
 ```
 
+## Trimming
+
+```
+ffmpeg -ss <start> -i <input.mp4> -t <duration> -c copy <output.mp4>
+```
+- [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the start time, e.g. `00:01:23.000` or `83` (in seconds).
+- [`-t`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the duration of the clip (same format).
+- [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
+- [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
+
 ## Rotate
 
 Rotate 90 degrees clockwise.
