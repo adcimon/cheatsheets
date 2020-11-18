@@ -28,7 +28,7 @@ ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
 
 ## Encoding
 
-Encoding H264 [:link:](https://trac.ffmpeg.org/wiki/Encode/H.264)
+### Encoding H264 [:link:](https://trac.ffmpeg.org/wiki/Encode/H.264)
 ```
 ffmpeg -i input.mp4 -preset <preset> -crf <crf> output.mp4
 ```
