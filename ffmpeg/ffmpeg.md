@@ -52,10 +52,11 @@ You can see a list of current presets with `-preset help`. If you have the x264 
 
 ### NVENC/NVDEC [:link:](https://developer.nvidia.com/blog/nvidia-ffmpeg-transcoding-guide/)
 ```
-ffmpeg -vsync 0 -hwaccel cuvid -c:v h264_cuvid -i input.mp4 -c:a copy -c:v h264_nvenc -b:v 5M output.mp4
+ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i input.mp4 -c:a copy -c:v h264_nvenc -b:v 5M output.mp4
 ```
 * `-vsync 0` prevents duplication or dropping of frames.
 * `-hwaccel cuvid` keeps the decoded frames in GPU memory.
+* `-hwaccel_device 0` sets the active GPU for decoding and encoding, the work will be executed on the gpu with index 0.
 * `-c:v h264_cuvid` selects the NVIDIA hardware accelerated H264 decoder.
 * `-c:v h264_nvenc` selects the NVIDIA hardware accelerated H264 encoder.
 * `-b:v 5M` sets the output bitrate to 5Mb/s.
