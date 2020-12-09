@@ -165,7 +165,7 @@ ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy
 -bsf:a aac_adtstoasc <output>
 ```
 
-## Minimize latency
+## Latency
 
 Minimize live stream latency.
 ```
