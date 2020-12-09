@@ -120,7 +120,7 @@ Extract all the input frames.
 ffmpeg -i <input> out%d.png
 ```
 
-Extract frames per second.
+Extract a specified number of frames per second.
 ```
 ffmpeg -i <input> -r <fps> out%d.png
 ```
@@ -138,8 +138,7 @@ the number of frames.
 
 Create a video slideshow from images.
 ```
-ffmpeg -r <ips> -i img%03d.png -c:v libx264 -vframes <fps> -pix_fmt
-<format> <output>
+ffmpeg -r <ips> -i img%03d.png -c:v libx264 -vframes <fps> -pix_fmt <format> <output>
 ```
 * [`-r`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the
 image frame rate.
