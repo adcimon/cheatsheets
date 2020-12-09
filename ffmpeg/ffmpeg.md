@@ -145,28 +145,29 @@ Extract a specified number of frames per second.
 ```
 ffmpeg -i <input> -r <fps> out%d.png
 ```
-* [`-r`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the
-number of frames per second.
+* [`-r`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the number of frames per second.
 
 Extract frames at a specific time.
 ```
 ffmpeg -i <input> -ss <time> -vframes <frames> thumb.png
 ```
-* [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the
-time, e.g. `00:00:10.000` or `10` (in seconds).
-* [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies
-the number of frames.
+* [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the time, e.g. `00:00:10.000` or `10` (in seconds).
+* [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the number of frames.
 
 Create a video slideshow from images.
 ```
 ffmpeg -r <ips> -i img%03d.png -c:v libx264 -vframes <fps> -pix_fmt <format> <output>
 ```
-* [`-r`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the
-image frame rate.
-* [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies
-the frame rate of the output.
-* [`-pix_fmt`](https://ffmpeg.org/ffmpeg.html#Advanced-Video-options)
-specifies the pixel format, e.g. `yuv420p`.
+* [`-r`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the image frame rate.
+* [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the frame rate of the output.
+* [`-pix_fmt`](https://ffmpeg.org/ffmpeg.html#Advanced-Video-options) specifies the pixel format, e.g. `yuv420p`.
+
+### GIF [:link:](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html)
+
+Create a high quality GIF.
+```
+ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" out.gif
+```
 
 ## RTP
 
