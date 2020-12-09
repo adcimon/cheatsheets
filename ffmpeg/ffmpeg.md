@@ -115,24 +115,10 @@ Transpose.
 
 | Option | Description |
 | - | - |
-| [-an](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Blocks all audio
-streams from being filtered or being automatically selected or mapped
-for any output. |
-| [-vn](https://ffmpeg.org/ffmpeg.html#Video-Options) | Blocks all video
-streams from being filtered or being automatically selected or mapped
-for any output. |
-| [-sn](https://ffmpeg.org/ffmpeg.html#Subtitle-options) | Blocks all
-subtitle streams from being filtered or being automatically selected or
-mapped for any output. |
-| [-r](https://ffmpeg.org/ffmpeg.html#Video-Options) | Sets the frame
-rate. |
-| [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input
-at native frame rate. By default ffmpeg attempts to read the input as
-fast as possible. |
-| [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or
-output file format. The format is normally auto detected for input files
-and guessed from the file extension for output files, so this option is
-not needed in most cases. |
-| [-stream_loop -1](http://ffmpeg.org/ffmpeg-all.html#Main-options) |
-Sets the number of times input stream shall be looped. Loop 0 means no
-loop, loop -1 means infinite loop. |
+| [-an](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Blocks all audio streams from being filtered or being automatically selected or mapped for any output. |
+| [-vn](https://ffmpeg.org/ffmpeg.html#Video-Options) | Blocks all video streams from being filtered or being automatically selected or mapped for any output. |
+| [-sn](https://ffmpeg.org/ffmpeg.html#Subtitle-options) | Blocks all subtitle streams from being filtered or being automatically selected or mapped for any output. |
+| [-r](https://ffmpeg.org/ffmpeg.html#Video-Options) | Sets the frame rate. |
+| [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input at native frame rate. By default ffmpeg attempts to read the input as fast as possible. |
+| [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
+| [-stream_loop -1](http://ffmpeg.org/ffmpeg-all.html#Main-options) | Sets the number of times input stream shall be looped. Loop 0 means no loop, loop -1 means infinite loop. |
