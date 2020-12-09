@@ -113,6 +113,7 @@ Mute audio in an interval.
 ```
 ffmpeg -i <input> -af "volume=enable='between(t,5,10)':volume=0" -c:v copy <output>
 ```
+* [`-af`](https://ffmpeg.org/ffmpeg.html#Audio-Options) creates a filtergraph and use it to filter the stream.
 
 ### Rotate
 
