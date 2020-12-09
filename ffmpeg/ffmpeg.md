@@ -10,14 +10,14 @@ ffmpeg -version
 
 ## Convert audio and video
 ```
-ffmpeg -i input.mp4 output.avi
+ffmpeg -i <input> <output>
 ```
 
 ## Mux
 
-Copy the video from `input0.mp4` and audio from `input1.mp4`.
+Copy the video from `input0` and audio from `input1`.
 ```
-ffmpeg -i input0.mp4 -i input1.mp4 -c copy -map 0:0 -map 1:1 -shortest output.mp4
+ffmpeg -i <input0> -i <input1> -c copy -map 0:0 -map 1:1 -shortest <output>
 ```
 * [`-c copy`](http://ffmpeg.org/ffmpeg.html#Stream-copy) copy the streams, not re-encoded, so there will be no quality loss.
 * [`-shortest`](http://ffmpeg.org/ffmpeg-all.html#Main-options) will cause the output duration to match the duration of the shortest input stream.
@@ -27,7 +27,7 @@ ffmpeg -i input0.mp4 -i input1.mp4 -c copy -map 0:0 -map 1:1 -shortest output.mp
 
 Remux a mkv into mp4.
 ```
-ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
+ffmpeg -i <input> -c:v copy -c:a copy <output>
 ```
 
 ## Transcoding
@@ -50,7 +50,7 @@ ffmpeg -i <input> -c:a <codec> -c:v <codec> <output>
 
 ### Encoding H264 [:link:](https://trac.ffmpeg.org/wiki/Encode/H.264)
 ```
-ffmpeg -i input.mp4 -preset <preset> -crf <crf> output.mp4
+ffmpeg -i <input> -preset <preset> -crf <crf> <output>
 ```
 * [`-preset`](https://trac.ffmpeg.org/wiki/Encode/H.264) controls the speed of the compression process.
 * [`-crf`](https://trac.ffmpeg.org/wiki/Encode/H.264#crf) or Constant Rate Factor controls the output quality. The lower crf, the higher the quality (range 0-51). The default value is 23, and visually lossless compression corresponds to 18.
@@ -72,7 +72,7 @@ You can see a list of current presets with `-preset help`. If you have the x264 
 
 ### NVENC/NVDEC [:link:](https://developer.nvidia.com/blog/nvidia-ffmpeg-transcoding-guide/)
 ```
-ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i input.mp4 -c:a copy -c:v h264_nvenc -b:v 5M output.mp4
+ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i <input> -c:a copy -c:v h264_nvenc -b:v 5M <output>
 ```
 * `-vsync 0` prevents duplication or dropping of frames.
 * `-hwaccel cuvid` keeps the decoded frames in GPU memory.
@@ -86,7 +86,7 @@ ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i input.mp4 -c
 ### Trimming
 
 ```
-ffmpeg -ss <start> -i input.mp4 -t <duration> -c copy output.mp4
+ffmpeg -ss <start> -i <input> -t <duration> -c copy <output>
 ```
 * [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the start time, e.g. `00:01:23.000` or `83` (in seconds).
 * [`-t`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the duration of the clip (same format).
@@ -161,8 +161,7 @@ ffplay -i <sdp> -protocol_whitelist file,udp,rtp
 
 Download and concatenate the video fragments.
 ```
-ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy
--bsf:a aac_adtstoasc <output>
+ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy -bsf:a aac_adtstoasc <output>
 ```
 
 ## Latency
