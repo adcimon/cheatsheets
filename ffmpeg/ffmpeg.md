@@ -93,7 +93,7 @@ ffmpeg -ss <start> -i <input> -t <duration> -c copy <output>
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
 
-### Delaying
+### Delay
 
 Delay audio.
 ```
@@ -107,7 +107,14 @@ ffmpeg -i <input> -itsoffset <time> -i <input> -map 1:v -map 0:a -c:v copy -c:a 
 ```
 * [`-itsoffset`](https://ffmpeg.org/ffmpeg.html#Main-options) specifies the time to delay, e.g. `3.00` seconds.
 
-### Rotating
+### Mute
+
+Mute audio in an interval.
+```
+ffmpeg -i <input> -af "volume=enable='between(t,5,10)':volume=0" -c:v copy <output>
+```
+
+### Rotate
 
 Rotate 90 degrees clockwise.
 ```
