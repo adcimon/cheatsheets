@@ -13,7 +13,7 @@ ffmpeg -version
 ffmpeg -i <input> <output>
 ```
 
-## Mux
+## Muxing
 
 Copy the video from `input0` and audio from `input1`.
 ```
@@ -23,7 +23,7 @@ ffmpeg -i <input0> -i <input1> -c copy -map 0:0 -map 1:1 -shortest <output>
 * [`-shortest`](http://ffmpeg.org/ffmpeg-all.html#Main-options) will cause the output duration to match the duration of the shortest input stream.
 * [`-map`](http://ffmpeg.org/ffmpeg.html#Advanced-options) designates one or more input streams as a source for the output file. Each input stream is identified by the input file index.
 
-## Remux
+## Remuxing
 
 Remux a mkv into mp4.
 ```
