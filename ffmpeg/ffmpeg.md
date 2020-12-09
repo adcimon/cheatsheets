@@ -4,6 +4,10 @@
 
 [FFmpeg](https://www.ffmpeg.org/) is a complete, cross-platform solution to record, convert and stream audio and video.
 
+```
+ffmpeg -version
+```
+
 ## Convert audio and video
 ```
 ffmpeg -i input.mp4 output.avi
@@ -27,6 +31,22 @@ ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
 ```
 
 ## Encoding
+
+List available encoders and decoders.
+```
+ffmpeg -encoders
+ffmpeg -decoders
+```
+
+Decode input.
+```
+ffmpeg -c:a <codec> -c:v <codec> -i <input> <output>
+```
+
+Encode output.
+```
+ffmpeg -i <input> -c:a <codec> -c:v <codec> <output>
+```
 
 ### Encoding H264 [:link:](https://trac.ffmpeg.org/wiki/Encode/H.264)
 ```
@@ -91,14 +111,28 @@ Transpose.
 3 = 90 Clockwise and Vertical Flip
 ```
 
-## Audio
+## Options
 
-| Audio options | |
+| Option | Description |
 | - | - |
-| -an | Disable audio. |
-
-## Video
-
-| Video options | |
-| - | - |
-| -r | Frame rate. |
+| [-an](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Blocks all audio
+streams from being filtered or being automatically selected or mapped
+for any output. |
+| [-vn](https://ffmpeg.org/ffmpeg.html#Video-Options) | Blocks all video
+streams from being filtered or being automatically selected or mapped
+for any output. |
+| [-sn](https://ffmpeg.org/ffmpeg.html#Subtitle-options) | Blocks all
+subtitle streams from being filtered or being automatically selected or
+mapped for any output. |
+| [-r](https://ffmpeg.org/ffmpeg.html#Video-Options) | Sets the frame
+rate. |
+| [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input
+at native frame rate. By default ffmpeg attempts to read the input as
+fast as possible. |
+| [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or
+output file format. The format is normally auto detected for input files
+and guessed from the file extension for output files, so this option is
+not needed in most cases. |
+| [-stream_loop -1](http://ffmpeg.org/ffmpeg-all.html#Main-options) |
+Sets the number of times input stream shall be looped. Loop 0 means no
+loop, loop -1 means infinite loop. |
