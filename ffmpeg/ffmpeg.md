@@ -8,7 +8,7 @@
 ffmpeg -version
 ```
 
-## Convert audio and video
+## Convert
 ```
 ffmpeg -i <input> <output>
 ```
