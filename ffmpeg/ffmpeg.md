@@ -165,6 +165,17 @@ ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy
 -bsf:a aac_adtstoasc <output>
 ```
 
+## Minimize latency
+
+Minimize live stream latency.
+```
+ffplay -i <input> -fflags nobuffer -flags low_delay -reorder_queue_size 0
+```
+* `-fflags nobuffer` reduces the latency introduced by optional buffering.
+* `-flags low_delay` forces low delay.
+* `-reorder_queue_size` sets the number of packets to buffer for handling of reordered packets to 0.
+* `-framedrop` drops video frames if video is out of sync. Enabled by default if the master clock is not set to video. Use this option to enable frame dropping for all master clock sources.
+
 ## Options
 
 | Option | Description |
