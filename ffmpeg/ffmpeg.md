@@ -111,6 +111,24 @@ Transpose.
 3 = 90 Clockwise and Vertical Flip
 ```
 
+## RTP
+
+[Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) is a network protocol used in communication and entertainment systems that involve streaming media.
+```
+ffmpeg -protocol_whitelist file,udp,rtp -i <sdp> <output>
+ffplay -i <sdp> -protocol_whitelist file,udp,rtp
+```
+
+## HLS
+
+[HTTP Live Streaming(HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol.
+
+Download and concatenate the video fragments.
+```
+ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy
+-bsf:a aac_adtstoasc <output>
+```
+
 ## Options
 
 | Option | Description |
