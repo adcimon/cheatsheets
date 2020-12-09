@@ -97,12 +97,12 @@ ffmpeg -ss <start> -i input.mp4 -t <duration> -c copy output.mp4
 
 Rotate 90 degrees clockwise.
 ```
-ffmpeg -i input.mov -vf "transpose=1" output.mov
+ffmpeg -i <input> -vf "transpose=1" <output>
 ```
 
 Rotate 180 degrees clockwise.
 ```
-ffmpeg -i input.mov -vf "transpose=2,transpose=2" output.mov
+ffmpeg -i <input> -vf "transpose=2,transpose=2" <output>
 ```
 
 Transpose.
