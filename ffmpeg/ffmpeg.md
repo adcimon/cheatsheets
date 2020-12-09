@@ -30,7 +30,7 @@ Remux a mkv into mp4.
 ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
 ```
 
-## Encoding
+## Transcoding
 
 List available encoders and decoders.
 ```
