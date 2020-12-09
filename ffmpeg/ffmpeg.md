@@ -81,7 +81,9 @@ ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i input.mp4 -c
 * `-c:v h264_nvenc` selects the NVIDIA hardware accelerated H264 encoder.
 * `-b:v 5M` sets the output bitrate to 5Mb/s.
 
-## Trimming
+## Editing
+
+### Trimming
 
 ```
 ffmpeg -ss <start> -i input.mp4 -t <duration> -c copy output.mp4
@@ -91,7 +93,7 @@ ffmpeg -ss <start> -i input.mp4 -t <duration> -c copy output.mp4
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
 
-## Rotate
+### Rotating
 
 Rotate 90 degrees clockwise.
 ```
@@ -110,6 +112,41 @@ Transpose.
 2 = 90 CounterClockwise
 3 = 90 Clockwise and Vertical Flip
 ```
+
+### Slicing
+
+Extract all the input frames.
+```
+ffmpeg -i <input> out%d.png
+```
+
+Extract frames per second.
+```
+ffmpeg -i <input> -r <fps> out%d.png
+```
+* [`-r`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the
+number of frames per second.
+
+Extract frames at a specific time.
+```
+ffmpeg -i <input> -ss <time> -vframes <frames> thumb.png
+```
+* [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the
+time, e.g. `00:00:10.000` or `10` (in seconds).
+* [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies
+the number of frames.
+
+Create a video slideshow from images.
+```
+ffmpeg -r <ips> -i img%03d.png -c:v libx264 -vframes <fps> -pix_fmt
+<format> <output>
+```
+* [`-r`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the
+image frame rate.
+* [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies
+the frame rate of the output.
+* [`-pix_fmt`](https://ffmpeg.org/ffmpeg.html#Advanced-Video-options)
+specifies the pixel format, e.g. `yuv420p`.
 
 ## RTP
 
