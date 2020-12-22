@@ -152,6 +152,13 @@ git show <commit>
 
 ## More
 
+Large file storage.
+```
+git lfs install
+git lfs track "*.<extension>"
+git add .gitattributes
+```
+
 Clear history.
 ```
 rm -rf .git
