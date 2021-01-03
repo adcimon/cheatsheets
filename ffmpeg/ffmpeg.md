@@ -182,7 +182,7 @@ ffplay -i <sdp> -protocol_whitelist file,udp,rtp
 
 ## HLS
 
-[HTTP Live Streaming(HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol.
+[HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol.
 
 Download and concatenate the video fragments.
 ```
