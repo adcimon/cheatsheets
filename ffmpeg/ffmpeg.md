@@ -93,6 +93,24 @@ ffmpeg -ss <start> -i <input> -t <duration> -c copy <output>
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
 
+### Speed up / Slow down
+
+Change the speed of a video stream using the [setpts](http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts) video filter.
+```
+ffmpeg -i <input> -filter:v "setpts=1.0*PTS" <output>
+```
+The filter works by changing the presentation timestamp (PTS) of each video frame.
+* To speed up use a multiplier lower than 1.
+* To slow down use a multiplier higher than 1.
+
+Change the speed of an audio stream using the [atempo](http://ffmpeg.org/ffmpeg-all.html#atempo) audio filter.
+```
+ffmpeg -i <input> -filter:a "atempo=1.0" <output>
+```
+The atempo filter is limited to using values between 0.5 and 2.0.
+* To speed up use a multiplier lower than 1.
+* To slow down use a multiplier higher than 1.
+
 ### Delay
 
 Delay audio.
