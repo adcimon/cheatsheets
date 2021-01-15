@@ -61,7 +61,7 @@ Commit the specified files in version history.
 hg commit -m "Message"
 ```
 
-Commit the deleted files in version history.
+Commit the added or deleted files in version history.
 ```
 hg commit --addremove -m "Message"
 ```
