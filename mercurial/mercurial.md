@@ -115,11 +115,13 @@ hg id -i
 Create a tag.
 ```
 hg tag [--local] <name>
+hg push
 ```
 
 Remove a tag.
 ```
 hg tag --remove <name>
+hg push
 ```
 
 Shows the tags.
