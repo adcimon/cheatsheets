@@ -33,6 +33,8 @@ hg branches
 Create a new branch.
 ```
 hg branch <name>
+hg commit -m "New branch"
+hg push --new-branch
 ```
 
 Switch to the specified branch.
