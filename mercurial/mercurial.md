@@ -11,7 +11,7 @@ Configure mercurial.
 hg config --edit
 ```
 
-## Create repositories
+## Repositories
 
 Create a new repository.
 ```
