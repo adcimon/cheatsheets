@@ -12,14 +12,14 @@ git config --global user.name <name>
 git config --global user.email <email>
 ```
 
-## Create repositories
+## Repositories
 
-Turn an existing directory into a git repository.
+Initialize a repository
 ```
 git init
 ```
 
-Download a repository that already exists.
+Download a repository.
 ```
 git clone <url>
 git clone --recursive <url>
