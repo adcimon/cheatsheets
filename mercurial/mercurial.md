@@ -81,6 +81,7 @@ hg push --new-branch
 Update the working directory with all new commits from the corresponding remote branch.
 ```
 hg pull
+hg update
 ```
 
 Update the working directory at the changeset point.
