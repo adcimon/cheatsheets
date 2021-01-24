@@ -2,7 +2,7 @@
 
 <p align="center"><img align="center" src="go.png"></p>
 
-[Go](https://golang.org/) Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+[Go](https://golang.org/) is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 ```
 go version
 ```
