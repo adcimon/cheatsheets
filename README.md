@@ -6,6 +6,7 @@ Collection of cheatsheets.
 * [Docker](https://adcimon.github.io/cheatsheets/docker/docker)
 * [FFmpeg](https://adcimon.github.io/cheatsheets/ffmpeg/ffmpeg)
 * [Git](https://adcimon.github.io/cheatsheets/git/git)
+* [Go](https://adcimon.github.io/cheatsheets/go/go)
 * [GStreamer](https://adcimon.github.io/cheatsheets/gstreamer/gstreamer)
 * [Mercurial](https://adcimon.github.io/cheatsheets/mercurial/mercurial)
 * [Pip](https://adcimon.github.io/cheatsheets/pip/pip)
