@@ -3,11 +3,13 @@
 <p align="center"><img align="center" src="go.png"></p>
 
 [Go](https://golang.org/) is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+
+## General
+
+Print the version.
 ```
 go version
 ```
-
-## General
 
 Compile and run a program.
 ```
