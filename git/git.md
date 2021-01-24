@@ -49,15 +49,21 @@ git merge <branch>
 
 ## Make changes
 
-Snapshot the file(s) in preparation for versioning.
+Add file contents.
 ```
 git add <file>
 git add .
 ```
 
-Record file snapshots permanently in version history.
+Record changes to the repository.
 ```
 git commit -m "Message"
+```
+
+Modify the last commit.
+```
+git commit --amend
+git commit --amend -m "Updated message"
 ```
 
 ## Revert changes
