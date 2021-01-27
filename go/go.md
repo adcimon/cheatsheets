@@ -31,6 +31,11 @@ Print environment information.
 go env
 ```
 
+Activate modules.
+```
+go env -w GO111MODULE=on
+```
+
 ## Modules
 
 Create a new module, initializing the `go.mod` file.
