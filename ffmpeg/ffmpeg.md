@@ -93,7 +93,7 @@ ffmpeg -ss <start> -i <input> -t <duration> -c copy <output>
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
 
-### Speed up / Slow down [:link:](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video)
+### Speed up/Slow down [:link:](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video)
 
 Change the speed of a video stream using the [setpts](http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts) video filter.
 ```
@@ -152,6 +152,20 @@ Transpose.
 2 = 90 CounterClockwise
 3 = 90 Clockwise and Vertical Flip
 ```
+
+### Scale
+
+Resize the video.
+```
+ffmpeg -i <input> -s <resoluton> -c:a copy <output>
+```
+* [`-s`](https://ffmpeg.org/ffmpeg.html#Video-Options) sets the frame size.
+
+Scale the video.
+```
+ffmpeg -i <input> -vf scale=720:-1 -c:a copy <output>
+```
+* [`scale`](https://ffmpeg.org/ffmpeg.html#Video-Options) filter scales the video to the specified resolution.
 
 ### Slicing
 
@@ -239,3 +253,5 @@ ffplay -i <input> -fflags nobuffer -flags low_delay -reorder_queue_size 0
 | [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input at native frame rate. By default ffmpeg attempts to read the input as fast as possible. |
 | [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
 | [-stream_loop](http://ffmpeg.org/ffmpeg-all.html#Main-options) | Sets the number of times input stream shall be looped. Loop 0 means no loop, loop -1 means infinite loop. |
+| [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options) [-va](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
+| [-filter:v](https://ffmpeg.org/ffmpeg.html#Main-options) [-vf](https://ffmpeg.org/ffmpeg.html#Video-Options) | Create a video filtergraph. |
