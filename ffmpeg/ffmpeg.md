@@ -10,22 +10,22 @@ ffmpeg -version
 
 ## Table of Contents
 <!--ts-->
-1. Convert
-2. Muxing
-3. Remuxing
-4. Transcoding
-5. Editing
-    5.1 Trimming
-    5.2 Speed up/Slow down
-    5.3 Delay
-    5.4 Mute
-    5.5 Rotate
-    5.6 Scale
-6. Protocols
-    6.1 RTP
-    6.2 HLS
-7. Latency
-8. Options
+* Convert
+* Muxing
+* Remuxing
+* Transcoding
+* Editing
+    * Trimming
+    * Speed up/Slow down
+    * Delay
+    * Mute
+    * Rotate
+    * Scale
+* Protocols
+    * RTP
+    * HLS
+* Latency
+* Options
 <!--te-->
 <!--ts-->
 1. [gh-md-toc](#gh-md-toc)
