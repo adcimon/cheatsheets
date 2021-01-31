@@ -97,7 +97,7 @@ ffmpeg -ss <start> -i <input> -t <duration> -c copy <output>
 
 Change the speed of a video stream using the [setpts](http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts) video filter.
 ```
-ffmpeg -i <input> -filter:v "setpts=1.0*PTS" <output>
+ffmpeg -i <input> -vf "setpts=1.0*PTS" <output>
 ```
 * The filter works by changing the presentation timestamp (PTS) of each video frame.
 * To speed up use a multiplier lower than 1.
@@ -107,7 +107,7 @@ Change the speed of an audio stream using the [atempo](http://ffmpeg.org/ffmpeg-
 ```
 ffmpeg -i <input> -filter:a "atempo=1.0" <output>
 ```
-* The atempo filter is limited to using values between 0.5 and 2.0.
+* The `atempo` filter is limited to using values between 0.5 and 2.0.
 * To speed up use a multiplier lower than 1.
 * To slow down use a multiplier higher than 1.
 
