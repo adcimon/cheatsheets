@@ -21,6 +21,8 @@ ffmpeg -version
    * Mute
    * Rotate
    * Scale
+   * Slicing
+   * GIF
 * Streaming
    * RTP
    * HLS
