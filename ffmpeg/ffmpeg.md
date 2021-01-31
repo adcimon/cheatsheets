@@ -165,7 +165,7 @@ Scale the video.
 ```
 ffmpeg -i <input> -vf scale=720:-1 -c:a copy <output>
 ```
-* [`scale`](https://ffmpeg.org/ffmpeg.html#Video-Options) filter scales the video to the specified resolution.
+* [`scale`](https://ffmpeg.org/ffmpeg.html#Video-Options) filter scales the video to the specified resolution, `-1` sets the correct width or height to keep the aspect ratio.
 
 ### Slicing
 
