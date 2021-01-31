@@ -190,6 +190,16 @@ ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" out.gi
 * [`-vf`](https://ffmpeg.org/ffmpeg.html#Video-Options) creates a filtergraph and use it to filter the stream.
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom palette generated from your input.
 
+Create a GIF from 1 palette.
+```
+ffmpeg -ss <start> -t <duration> -i <input> -filter_complex "[0:v] palettegen" palette.png
+ffmpeg -ss <start> -t <duration> -i <input> -i palette.png -filter_complex "[0:v][1:v] paletteuse" out.gif
+```
+* [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the start time, e.g. `00:00:10.000` or `10` (in seconds).
+* [`-t`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the duration of the gif (same format).
+* [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
+* [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom palette generated from your input.
+
 ## RTP
 
 [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) is a network protocol used in communication and entertainment systems that involve streaming media.
