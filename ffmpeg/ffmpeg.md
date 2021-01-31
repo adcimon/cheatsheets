@@ -21,7 +21,7 @@ ffmpeg -version
    * Mute
    * Rotate
    * Scale
-* Streamming
+* Streaming
    * RTP
    * HLS
    * Latency
@@ -233,7 +233,7 @@ ffmpeg -ss <start> -t <duration> -i <input> -i palette.png -filter_complex "[0:v
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom color palette generated from your input.
 
-## Streamming
+## Streaming
 
 ### RTP
 
