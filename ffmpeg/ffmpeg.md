@@ -28,10 +28,10 @@ ffmpeg -version
 8. Options
 <!--te-->
 <!--ts-->
-* [gh-md-toc](#gh-md-toc)
-* [Table of contents](#table-of-contents)
-* [Installation](#installation)
-* [Usage](#usage)
+1. [gh-md-toc](#gh-md-toc)
+2. [Table of contents](#table-of-contents)
+3. [Installation](#installation)
+4. [Usage](#usage)
   * [STDIN](#stdin)
   * [Local files](#local-files)
   * [Remote files](#remote-files)
@@ -40,9 +40,9 @@ ffmpeg -version
   * [Auto insert and update TOC](#auto-insert-and-update-toc)
   * [GitHub token](#github-token)
   * [TOC generation with Github Actions](#toc-generation-with-github-actions)
-* [Tests](#tests)
-* [Dependency](#dependency)
-* [Docker](#docker)
+5. [Tests](#tests)
+6. [Dependency](#dependency)
+7. [Docker](#docker)
  * [Local](#local)
  * [Public](#public)
 <!--te-->
