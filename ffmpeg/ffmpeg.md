@@ -8,6 +8,16 @@
 ffmpeg -version
 ```
 
+1. Convert
+2. Muxing
+3. Remuxing
+4. Transcoding
+5. Editing
+6. RTP
+7. HLS
+8. Latency
+9. Options
+
 ## Convert
 ```
 ffmpeg -i <input> <output>
