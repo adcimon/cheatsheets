@@ -105,7 +105,7 @@ ffmpeg -i <input> -vf "setpts=1.0*PTS" <output>
 
 Change the speed of an audio stream using the [atempo](http://ffmpeg.org/ffmpeg-all.html#atempo) audio filter.
 ```
-ffmpeg -i <input> -filter:a "atempo=1.0" <output>
+ffmpeg -i <input> -af "atempo=1.0" <output>
 ```
 * The `atempo` filter is limited to using values between 0.5 and 2.0.
 * To speed up use a multiplier lower than 1.
