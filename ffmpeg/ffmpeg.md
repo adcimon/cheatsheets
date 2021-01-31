@@ -9,7 +9,7 @@ ffmpeg -version
 ```
 
 ## Table of Contents
-<!--ts-->
+
 * Convert
 * Muxing
 * Remuxing
@@ -26,18 +26,6 @@ ffmpeg -version
     * HLS
 * Latency
 * Options
-<!--te-->
-<!--ts-->
-1. [gh-md-toc](#gh-md-toc)
-2. [Table of contents](#table-of-contents)
-3. [Installation](#installation)
-4. [Usage](#usage)
-  1. [STDIN](#stdin)
-  2. [Local files](#local-files)
-5. [Tests](#tests)
-6. [Dependency](#dependency)
-7. [Docker](#docker)
-<!--te-->
 
 ## Convert
 ```
