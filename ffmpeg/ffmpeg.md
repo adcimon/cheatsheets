@@ -14,15 +14,15 @@ ffmpeg -version
 3. Remuxing
 4. Transcoding
 5. Editing
-  5.1 Trimming
-  5.2 Speed up/Slow down
-  5.3 Delay
-  5.4 Mute
-  5.5 Rotate
-  5.6 Scale
+    5.1 Trimming
+    5.2 Speed up/Slow down
+    5.3 Delay
+    5.4 Mute
+    5.5 Rotate
+    5.6 Scale
 6. Protocols
-  6.1 RTP
-  6.2 HLS
+    6.1 RTP
+    6.2 HLS
 7. Latency
 8. Options
 
