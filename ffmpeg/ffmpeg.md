@@ -253,5 +253,5 @@ ffplay -i <input> -fflags nobuffer -flags low_delay -reorder_queue_size 0
 | [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input at native frame rate. By default ffmpeg attempts to read the input as fast as possible. |
 | [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
 | [-stream_loop](http://ffmpeg.org/ffmpeg-all.html#Main-options) | Sets the number of times input stream shall be looped. Loop 0 means no loop, loop -1 means infinite loop. |
-| [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options) [-va](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
-| [-filter:v](https://ffmpeg.org/ffmpeg.html#Main-options) [-vf](https://ffmpeg.org/ffmpeg.html#Video-Options) | Create a video filtergraph. |
+| [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options) / [-va](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
+| [-filter:v](https://ffmpeg.org/ffmpeg.html#Main-options) / [-vf](https://ffmpeg.org/ffmpeg.html#Video-Options) | Create a video filtergraph. |
