@@ -15,16 +15,16 @@ ffmpeg -version
 * Remuxing
 * Transcoding
 * Editing
-    * Trimming
-    * Speed up/Slow down
-    * Delay
-    * Mute
-    * Rotate
-    * Scale
-* Protocols
-    * RTP
-    * HLS
-* Latency
+   * Trimming
+   * Speed up/Slow down
+   * Delay
+   * Mute
+   * Rotate
+   * Scale
+* Streamming
+   * RTP
+   * HLS
+   * Latency
 * Options
 
 ## Convert
@@ -233,7 +233,7 @@ ffmpeg -ss <start> -t <duration> -i <input> -i palette.png -filter_complex "[0:v
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom color palette generated from your input.
 
-## Protocols
+## Streamming
 
 ### RTP
 
@@ -252,7 +252,7 @@ Download and concatenate the video fragments.
 ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy -bsf:a aac_adtstoasc <output>
 ```
 
-## Latency
+### Latency
 
 Minimize live stream latency.
 ```
