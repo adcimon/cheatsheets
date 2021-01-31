@@ -14,10 +14,17 @@ ffmpeg -version
 3. Remuxing
 4. Transcoding
 5. Editing
-6. RTP
-7. HLS
-8. Latency
-9. Options
+  5.1 Trimming
+  5.2 Speed up/Slow down
+  5.3 Delay
+  5.4 Mute
+  5.5 Rotate
+  5.6 Scale
+6. Protocols
+  6.1 RTP
+  6.2 HLS
+7. Latency
+8. Options
 
 ## Convert
 ```
@@ -225,7 +232,9 @@ ffmpeg -ss <start> -t <duration> -i <input> -i palette.png -filter_complex "[0:v
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom color palette generated from your input.
 
-## RTP
+## Protocols
+
+### RTP
 
 [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) is a network protocol used in communication and entertainment systems that involve streaming media.
 ```
@@ -233,7 +242,7 @@ ffmpeg -protocol_whitelist file,udp,rtp -i <sdp> <output>
 ffplay -i <sdp> -protocol_whitelist file,udp,rtp
 ```
 
-## HLS
+### HLS
 
 [HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol.
 
