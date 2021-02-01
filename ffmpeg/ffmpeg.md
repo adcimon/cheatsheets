@@ -109,10 +109,10 @@ ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i <input> -c:a
 ### Trimming
 
 ```
-ffmpeg -ss <start> -i <input> -t <duration> -c copy <output>
+ffmpeg -ss <start> -t <duration> -i <input> -c copy <output>
 ```
 * [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the start time, e.g. `00:01:23.000` or `83` (in seconds).
-* [`-t`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the duration of the clip (same format).
+* [`-t`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the duration of the clip.
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
 
@@ -235,9 +235,6 @@ Create a GIF from 1 palette.
 ffmpeg -ss <start> -t <duration> -i <input> -filter_complex "[0:v] palettegen" palette.png
 ffmpeg -ss <start> -t <duration> -i <input> -i palette.png -filter_complex "[0:v][1:v] paletteuse" out.gif
 ```
-* [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the start time, e.g. `00:00:10.000` or `10` (in seconds).
-* [`-t`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the duration of the gif (same format).
-* [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom color palette generated from your input.
 
 ## Streaming
