@@ -188,7 +188,11 @@ Scale the video.
 ```
 ffmpeg -i <input> -vf scale=720:-1 -c:a copy <output>
 ```
-* [`scale`](https://ffmpeg.org/ffmpeg.html#Video-Options) filter scales the video to the specified resolution, `-1` sets the correct width or height to keep the aspect ratio, `libx264` requires even values, odd values result in the error `width or height not divisible by 2`. To scale with a given width or height value use `scale="1280:trunc(ow/a/2)*2"` or `scale="trunc(oh*a/2)*2:720"`.
+* [`scale`](https://ffmpeg.org/ffmpeg.html#Video-Options) filter scales the video to the specified resolution.
+ * `-1` sets the correct width or height to keep the aspect ratio.
+ * `-2` scales as close to the aspect ratio but rounds to an even number.
+
+Some codecs, like `libx264` requires even values, odd values result in the error `width or height not divisible by 2`. To scale with a given width or height value use `scale="1280:trunc(ow/a/2)*2"` or `scale="trunc(oh*a/2)*2:720"`.
 
 ### Slicing
 
