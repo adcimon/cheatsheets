@@ -50,7 +50,7 @@ ffmpeg -i <input0> -i <input1> -c copy -map 0:0 -map 1:1 -shortest <output>
 
 Remux a mkv into mp4.
 ```
-ffmpeg -i <input> -c:v copy -c:a copy <output>
+ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
 ```
 
 ## Transcoding
