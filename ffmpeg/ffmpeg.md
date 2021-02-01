@@ -10,9 +10,8 @@ ffmpeg -version
 
 ## Table of Contents
 
-* Convert
+* Basics
 * Muxing
-* Remuxing
 * Transcoding
 * Editing
    * Trimming
@@ -29,22 +28,23 @@ ffmpeg -version
    * Latency
 * Options
 
-## Convert
+## Basics
+
+Convert audio and video.
 ```
 ffmpeg -i <input> <output>
 ```
+* [`-i`](https://ffmpeg.org/ffmpeg.html#Description) specifies the input files to read.
 
 ## Muxing
 
-Copy the video from `input0` and audio from `input1`.
+Mux the video from `input0` and audio from `input1` to `output`.
 ```
 ffmpeg -i <input0> -i <input1> -c copy -map 0:0 -map 1:1 -shortest <output>
 ```
 * [`-c copy`](http://ffmpeg.org/ffmpeg.html#Stream-copy) copy the streams, not re-encoded, so there will be no quality loss.
 * [`-shortest`](http://ffmpeg.org/ffmpeg-all.html#Main-options) will cause the output duration to match the duration of the shortest input stream.
 * [`-map`](http://ffmpeg.org/ffmpeg.html#Advanced-options) designates one or more input streams as a source for the output file. Each input stream is identified by the input file index.
-
-## Remuxing
 
 Remux a mkv into mp4.
 ```
