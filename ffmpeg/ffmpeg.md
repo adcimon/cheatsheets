@@ -13,7 +13,7 @@ ffmpeg -version
 * Basics
 * Muxing
 * Transcoding
-  * Encoding H264
+  * Encoding H.264
   * NVENC/NVDEC
 * Editing
   * Trimming
@@ -71,7 +71,7 @@ Encode output.
 ffmpeg -i <input> -c:a <codec> -c:v <codec> <output>
 ```
 
-### Encoding H264 [:link:](https://trac.ffmpeg.org/wiki/Encode/H.264)
+### Encoding H.264 [:link:](https://trac.ffmpeg.org/wiki/Encode/H.264)
 ```
 ffmpeg -i <input> -preset <preset> -crf <crf> <output>
 ```
