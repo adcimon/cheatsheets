@@ -228,7 +228,6 @@ Create a high quality GIF.
 ```
 ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" out.gif
 ```
-* [`-vf`](https://ffmpeg.org/ffmpeg.html#Video-Options) creates a filtergraph and use it to filter the stream.
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom color palette generated from your input.
 
 Create a GIF from 1 palette.
