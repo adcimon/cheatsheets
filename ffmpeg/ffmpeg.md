@@ -13,19 +13,21 @@ ffmpeg -version
 * Basics
 * Muxing
 * Transcoding
+  * Encoding H264
+  * NVENC/NVDEC
 * Editing
-   * Trimming
-   * Speed up/Slow down
-   * Delay
-   * Mute
-   * Rotate
-   * Scale
-   * Slicing
-   * GIF
+  * Trimming
+  * Speed up/Slow down
+  * Delay
+  * Mute
+  * Rotate
+  * Scale
+  * Slicing
+  * GIF
 * Streaming
-   * RTP
-   * HLS
-   * Latency
+  * RTP
+  * HLS
+  * Latency
 * Options
 
 ## Basics
