@@ -178,13 +178,13 @@ Transpose.
 
 ### Scale
 
-Resize the video.
+Resize a video.
 ```
 ffmpeg -i <input> -s <resoluton> -c:a copy <output>
 ```
 * [`-s`](https://ffmpeg.org/ffmpeg.html#Video-Options) sets the frame size.
 
-Scale the video.
+Scale a video.
 ```
 ffmpeg -i <input> -vf scale=720:-1 -c:a copy <output>
 ```
