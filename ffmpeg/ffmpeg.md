@@ -50,7 +50,7 @@ ffmpeg -i <input0> -i <input1> -c copy -map 0:0 -map 1:1 -shortest <output>
 
 Remux a mkv into mp4.
 ```
-ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
+ffmpeg -i input.mkv -c:a copy -c:v copy output.mp4
 ```
 
 ## Transcoding
@@ -186,7 +186,7 @@ ffmpeg -i <input> -s <resoluton> -c:a copy <output>
 
 Scale a video.
 ```
-ffmpeg -i <input> -vf scale=720:-1 -c:a copy <output>
+ffmpeg -i <input> -c:a copy -vf scale=720:-1 <output>
 ```
 * [`scale`](https://ffmpeg.org/ffmpeg.html#Video-Options) filter scales the video to the specified resolution.
  * `-1` sets the correct width or height to keep the aspect ratio.
@@ -232,8 +232,8 @@ ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" out.gi
 
 Create a GIF from 1 palette.
 ```
-ffmpeg -ss <start> -t <duration> -i <input> -filter_complex "[0:v] palettegen" palette.png
-ffmpeg -ss <start> -t <duration> -i <input> -i palette.png -filter_complex "[0:v][1:v] paletteuse" out.gif
+ffmpeg -i <input> -filter_complex "[0:v] palettegen" palette.png
+ffmpeg -i <input> -i palette.png -filter_complex "[0:v][1:v] paletteuse" out.gif
 ```
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters will generate and use a custom color palette generated from your input.
 
