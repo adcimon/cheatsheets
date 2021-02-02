@@ -59,6 +59,7 @@ List available encoders and decoders.
 ```
 ffmpeg -encoders
 ffmpeg -decoders
+ffmpeg -formats
 ```
 
 Decode input.
