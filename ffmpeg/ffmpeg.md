@@ -4,10 +4,6 @@
 
 [FFmpeg](https://www.ffmpeg.org/) is a complete, cross-platform solution to record, convert and stream audio and video.
 
-```
-ffmpeg -version
-```
-
 ## Table of Contents
 
 * Basics
@@ -31,6 +27,11 @@ ffmpeg -version
 * Options
 
 ## Basics
+
+Print version.
+```
+ffmpeg -version
+```
 
 Convert audio and video.
 ```
