@@ -225,14 +225,17 @@ ffmpeg -r <ips> -i img%03d.png -c:v libx264 -vframes <fps> -pix_fmt <format> <ou
 
 ### GIF [:link:](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html)
 
-Create high quality GIF.
+Create a GIF.
 ```
 ffmpeg -i <input> -filter_complex "[0:v] palettegen" palette.png
 ffmpeg -i <input> -i palette.png -filter_complex "[0:v][1:v] paletteuse" out.gif
 
 ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" out.gif
+
+ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]paletteuse=new=1" out.gif
 ```
-* [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) and [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) filters generate and use a custom color palette from the input.
+* [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) generates a color palette, `palettegen=stats_mode=single` generates a new palette for every input frame.
+* [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) uses a color palette, `paletteuse=new=1` uses a new palette for each frame.
 
 ## Streaming
 
