@@ -41,6 +41,7 @@ go env -w GO111MODULE=on
 Create a new module, initializing the `go.mod` file.
 ```
 go mod init
+go mod init <name>
 ```
 
 Add dependencies to the module and install them.
