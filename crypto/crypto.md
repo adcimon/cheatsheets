@@ -10,6 +10,11 @@
 
 [OpenSSL](https://www.openssl.org/) is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
 
+Create a Certificate Signing Request (CSR).
+```
+openssl req -new -nodes -newkey rsa:2048 -keyout private.key -out request.csr
+```
+
 Create a self-signed certificate.
 ```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate.crt
