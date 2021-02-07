@@ -1,5 +1,7 @@
 # Unity
 
+<p align="center"><img align="center" src="unity.png"></p>
+
 [Unity](https://unity.com/) is a cross-platform game engine.
 
 ## Packages
