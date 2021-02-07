@@ -27,6 +27,7 @@ Package manifests, `package.json` files, determine which version of the package 
 * `name` is the officially registered package name, following the naming convention `com.[org].[name]`.
 * `displayName` is the package name as it appears in the Package Manager.
 * `version` is the package version following the [Semantic Versioning](https://semver.org/) system `MAJOR.MINOR.PATCH`.
+* `type` specifies the type of the package, `tests`, `sample`, `template`, `module`, `library` or `tool`.
 * `unity` is the Unity version that supports the package.
 * `description` is a brief description of the package.
 * `keywords` are used for searching in the Package Manager, specified as a JSON array of strings.
