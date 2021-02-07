@@ -26,7 +26,7 @@ Package manifests, `package.json` files, determine which version of the package 
     }
 }
 ```
-* `name` is the officially registered package name, following the naming convention `com.[org].[name]`.
+* `name` is the officially registered package name, following the naming convention `com.org.name`.
 * `displayName` is the package name as it appears in the Package Manager.
 * `version` is the package version following the [Semantic Versioning](https://semver.org/) system `MAJOR.MINOR.PATCH`.
 * `type` specifies the type of the package, `tests`, `sample`, `template`, `module`, `library` or `tool`.
