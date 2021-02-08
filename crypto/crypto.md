@@ -32,3 +32,5 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out cer
 * `-newkey rsa:2048` generates a new certificate and a new key at the same time (required to sign the certificate), `rsa:2048` makes an RSA key that is 2048 bits long.
 * `-keyout` specifies the name of the generated private key file.
 * `-out` specifies the name of the generated certificate file.
+
+<p align="center"><img align="center" src="certificate_diagram.png"></p>
