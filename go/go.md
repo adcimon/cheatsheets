@@ -58,3 +58,8 @@ Print the module dependencies.
 ```
 go list -m all
 ```
+
+Import local module (modify the `go.mod` file to find the module in the local file system).
+```
+replace github.com/adcimon/mymodule => ../mymodule
+```
