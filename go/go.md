@@ -11,6 +11,11 @@ Print the version.
 go version
 ```
 
+Print environment information.
+```
+go env
+```
+
 Compile and run a program.
 ```
 go run <name>
@@ -26,9 +31,9 @@ Compile and install packages and dependencies.
 go install <name>
 ```
 
-Print environment information.
+List available platforms.
 ```
-go env
+go tool dist list
 ```
 
 ## Modules
