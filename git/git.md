@@ -25,6 +25,11 @@ git clone <url>
 git clone --recursive <url>
 ```
 
+Download a repository at a specific tag.
+```
+git clone --branch <tag> <url>
+```
+
 ## Branches
 
 Create a new branch.
