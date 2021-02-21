@@ -22,9 +22,31 @@ Modify the character money.
 .modify money 10000000000
 ```
 
+### Teleportation
+
+Print your current coordinates.
+```
+.gps
+```
+
+Find the ID of the zone with the provided name.
+```
+.lookup tele <name>
+```
+
+Teleport to the specified location.
+```
+.tele Stormwind
+```
+
+Access all taxi nodes until logout.
+```
+.cheat taxi on
+```
+
 ### Reputations
 
-Find the ID of the faction with the provided name
+Find the ID of the faction with the provided name.
 ```
 .lookup faction <name>
 ```
