@@ -65,3 +65,20 @@ Modify the character reputation.
 | Exodar | 930 |
 | Gilneas | 1134 |
 | Tushui Pandaren | 1353 |
+
+
+### Items
+
+White Lion
+```
+.additem 166967
+.additem 166965
+.additem 163416
+.additem 166962
+.additem 161629
+.additem 166964
+.additem 166968
+.additem 166966
+.additem 161605
+.additem 184296
+```
