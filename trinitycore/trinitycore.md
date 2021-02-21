@@ -33,3 +33,13 @@ Modify the character reputation.
 ```
 .modify rep <id> exalted
 ```
+
+| Name | ID |
+| - | - |
+| Stormwind | 72 |
+| Ironforge | 47 |
+| Gnomeregan | 54 |
+| Darnassus | 69 |
+| Exodar | 930 |
+| Gilneas | 1134 |
+| Tushui Pandaren | 1353 |
