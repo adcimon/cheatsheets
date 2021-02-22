@@ -65,7 +65,7 @@ Modify the character reputation.
 | Exodar | 930 |
 | Gilneas | 1134 |
 | Tushui Pandaren | 1353 |
-| - | - |
+| | |
 | Orgrimmar | 76 |
 | Thunder Bluff | 81 |
 | Darkspear Trolls | 530 |
