@@ -18,17 +18,18 @@ go env
 
 Compile and run a program.
 ```
-go run <name>
+go run main.go
 ```
 
 Compile packages and dependencies.
 ```
-go build <name>
+go build
+go build -o <name>
 ```
 
 Compile and install packages and dependencies.
 ```
-go install <name>
+go install
 ```
 
 List available platforms.
