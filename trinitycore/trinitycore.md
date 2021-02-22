@@ -74,7 +74,7 @@ Modify the character reputation.
 | Steamwheedle Cartel | 169 |
 | Huojin Pandaren | 1352 |
 | | |
-| Silverwing | Sentinels 890 |
+| Silverwing Sentinels | 890 |
 | The League of Arathor | 509 |
 | Stormpike Guard | 730 |
 | | |
