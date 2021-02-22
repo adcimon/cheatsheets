@@ -73,20 +73,20 @@ Modify the character reputation.
 | Silvermoon City | 911 |
 | Steamwheedle Cartel | 169 |
 | Huojin Pandaren | 1352 |
-| - | - |
+| | |
 | Silverwing | Sentinels 890 |
 | The League of Arathor | 509 |
 | Stormpike Guard | 730 |
-| - | - |
+| | |
 | Warsong Outriders | 889 |
 | The Defilers | 510 |
 | Frostwolf Clan | 729 |
-| - | - |
+| | |
 | Booty Bay | 21 |
 | Ratchet | 470 |
 | Gadgetzan | 369 |
 | Everlook | 577 |
-| - | - |
+| | |
 | Ravenhold | 349 |
 | Syndicate | 70 |
 | Magram Clan Centaur | 93 |
@@ -100,7 +100,7 @@ Modify the character reputation.
 | Cenarion Circle | 609 |
 | Argent Dawn | 529 |
 | Darkmoon Faire | 909 |
-| - | - |
+| | |
 | Tranquillien | 922 |
 | Honor Hold | 946 |
 | Thrallmar | 947 |
