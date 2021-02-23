@@ -66,6 +66,13 @@ Commit the added or deleted files in version history.
 hg commit --addremove -m "Message"
 ```
 
+## Revert changes
+
+Discard local changes of a file.
+```
+hg revert -C <file>
+```
+
 ## Synchronize changes
 
 Upload all local branch commits.
