@@ -130,7 +130,7 @@ ffmpeg -ss <start> -t <duration> -i <input> -c copy <output>
 
 ### Speed up/Slow down
 
-This section describes [how to change the speed of a video](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video).
+This section describes [how to change the speed of a stream](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video).
 
 Change the speed of a video stream using the [setpts](http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts) video filter (requires re-encoding).
 ```
