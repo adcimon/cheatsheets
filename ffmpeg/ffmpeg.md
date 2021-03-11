@@ -75,7 +75,10 @@ Encode output.
 ffmpeg -i <input> -c:a <codec> -c:v <codec> <output>
 ```
 
-### Encoding H.264 [:link:](https://trac.ffmpeg.org/wiki/Encode/H.264)
+### Encoding H.264
+
+This section focuses on the encoder [x264](https://trac.ffmpeg.org/wiki/Encode/H.264).
+
 ```
 ffmpeg -i <input> -preset <preset> -crf <crf> <output>
 ```
@@ -263,7 +266,7 @@ Play camera.
 ffplay -f dshow -i audio="Microphone":video="Camera"
 ```
 
-Record camera to file.
+Record to file.
 ```
 ffmpeg -f dshow -i audio="Microphone":video="Camera" <output>
 ffmpeg -f dshow -video_size 1280x720 -framerate 7.5 -pixel_format yuyv422 -i video="Camera" <output>
