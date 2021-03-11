@@ -7,26 +7,26 @@
 ## Table of Contents
 
 * [Basics](#basics)
-* Muxing
-* Transcoding
-  * x264
-  * NVENC/NVDEC
-* Editing
-  * Trimming
-  * Speed up/Slow down
-  * Delay
-  * Mute
-  * Rotate
-  * Scale
-  * Slicing
-  * GIF
-* Devices
-  * DirectShow
-* Streaming
-  * RTP
-  * HLS
-  * Synchronization
-* Options
+* [Muxing](#muxing)
+* [Transcoding](#transcoding)
+  * [x264](#x264)
+  * [NVENC/NVDEC](#nvencnvdec)
+* [Editing](#editing)
+  * [Trimming](#trimming)
+  * [Speed up/Slow down](#speed-upslow-down)
+  * [Delay](#delay)
+  * [Mute](#mute)
+  * [Rotate](#rotate)
+  * [Scale](#scale)
+  * [Slicing](#slicing)
+  * [GIF](#gif)
+* [Devices](#devices)
+  * [DirectShow](#directshow)
+* [Streaming](#streaming)
+  * [RTP](#rtp)
+  * [HLS](#hls)
+  * [Synchronization](#synchronization)
+* [Options](#options)
 
 ## Basics
 
