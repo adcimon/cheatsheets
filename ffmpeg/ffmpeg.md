@@ -128,9 +128,11 @@ ffmpeg -ss <start> -t <duration> -i <input> -c copy <output>
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
 
-### Speed up/Slow down [:link:](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video)
+### Speed up/Slow down
 
-Change the speed of a video stream using the [setpts](http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts) video filter.
+This section focuses on [how to change the speed of a video](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video).
+
+Change the speed of a video stream using the [setpts](http://ffmpeg.org/ffmpeg-all.html#setpts_002c-asetpts) video filter (requires re-encoding).
 ```
 ffmpeg -i <input> -vf "setpts=1.0*PTS" <output>
 ```
@@ -233,9 +235,11 @@ ffmpeg -r <ips> -i img%03d.png -c:v libx264 -vframes <fps> -pix_fmt <format> <ou
 * [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the frame rate of the output.
 * [`-pix_fmt`](https://ffmpeg.org/ffmpeg.html#Advanced-Video-options) specifies the pixel format, e.g. `yuv420p`.
 
-### GIF [:link:](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html)
+### GIF
 
-Create a GIF.
+This section describes [how to create a high quality GIF](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html).
+
+Create a GIF using color palettes.
 ```
 ffmpeg -i <input> -filter_complex "[0:v] palettegen" palette.png
 ffmpeg -i <input> -i palette.png -filter_complex "[0:v][1:v] paletteuse" out.gif
