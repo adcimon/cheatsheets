@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-* Basics
+* [Basics](#basics)
 * Muxing
 * Transcoding
   * x264
