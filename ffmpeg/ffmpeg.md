@@ -239,17 +239,22 @@ ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) generates a color palette, `palettegen=stats_mode=single` generates a new palette for every input frame.
 * [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) uses a color palette, `paletteuse=new=1` uses a new palette for each frame.
 
-## Devices [:link:](https://ffmpeg.org/ffmpeg-devices.html)
+## Devices
 
-### DirectShow [:link:](https://trac.ffmpeg.org/wiki/DirectShow)
+This section describes the input and output devices provided by the [libavdevice](https://ffmpeg.org/ffmpeg-devices.html) library.
+
+### DirectShow
+
+Windows [DirectShow](https://trac.ffmpeg.org/wiki/DirectShow) input devices.
 
 List devices.
 ```
 ffmpeg -list_devices true -f dshow -i dummy
 ```
 
-List supported options.
+List options.
 ```
+ffmpeg -list_options true -f dshow -i audio="Microphone"
 ffmpeg -list_options true -f dshow -i video="Camera"
 ```
 
