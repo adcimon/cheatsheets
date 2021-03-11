@@ -77,7 +77,7 @@ ffmpeg -i <input> -c:a <codec> -c:v <codec> <output>
 
 ### x264
 
-This section focuses on the encoder [x264](https://trac.ffmpeg.org/wiki/Encode/H.264).
+This section focuses on the transcoder [x264](https://trac.ffmpeg.org/wiki/Encode/H.264).
 
 Encode a video.
 ```
@@ -101,7 +101,11 @@ placebo – ignore this as it is not useful
 ```
 You can see a list of current presets with `-preset help`. If you have the x264 binary installed, you can also see the exact settings these presets apply by running `x264 --fullhelp`.
 
-### NVENC/NVDEC [:link:](https://developer.nvidia.com/blog/nvidia-ffmpeg-transcoding-guide/)
+### NVENC/NVDEC
+
+This section focuses on the [NVIDIA transcoding](https://developer.nvidia.com/blog/nvidia-ffmpeg-transcoding-guide/).
+
+Encode a video.
 ```
 ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i <input> -c:a copy -c:v h264_nvenc -b:v 5M <output>
 ```
