@@ -73,6 +73,11 @@ Discard local changes of a file.
 hg revert -C <file>
 ```
 
+Discard all local changes.
+```
+hg revert --all
+```
+
 ## Synchronize changes
 
 Upload all local branch commits.
