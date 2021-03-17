@@ -56,12 +56,17 @@ hg add <file>
 hg add
 ```
 
-Commit the specified files in version history.
+Commit the specified file or directory in version history.
+```
+hg commit <file|directory> -m "Message"
+```
+
+Commit all the files and directories in version history.
 ```
 hg commit -m "Message"
 ```
 
-Commit the added or deleted files in version history.
+Commit also the added or deleted files in version history.
 ```
 hg commit --addremove -m "Message"
 ```
