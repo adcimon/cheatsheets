@@ -83,6 +83,15 @@ Discard all local changes.
 hg revert --all
 ```
 
+Revert changes between 2 commits.
+```
+hg diff -r <from_changeset> -r <to_changeset>
+hg diff -r <to_changeset> -r <from_changeset> > revert.patch
+hg import revert.patch
+hg out
+hg push
+```
+
 ## Synchronize changes
 
 Upload all local branch commits.
