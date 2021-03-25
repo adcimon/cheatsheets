@@ -155,6 +155,7 @@ hg status
 Show revision history of the repository.
 ```
 hg log
+hg log -l <n>
 ```
 
 Show revision history of a file.
@@ -162,7 +163,7 @@ Show revision history of a file.
 hg log --follow <file>
 ```
 
-Show current commit.
+Show current commit changeset.
 ```
 hg id -i
 ```
