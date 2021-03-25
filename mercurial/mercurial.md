@@ -9,11 +9,11 @@
 * [Configuration](#configuration)
 * [Repositories](#repositories)
 * [Branches](#branches)
+* [Tags](#tags)
 * [Make changes](#make-changes)
 * [Revert changes](#revert-changes)
 * [Synchronize changes](#synchronize-changes)
 * [Show changes](#show-changes)
-* [Tags](#tags)
 
 ## Configuration
 
@@ -57,6 +57,25 @@ hg checkout <branch>
 Combine the specified branch's history into the current branch.
 ```
 hg merge <branch>
+```
+
+## Tags
+
+Create a tag.
+```
+hg tag [--local] <name>
+hg push
+```
+
+Remove a tag.
+```
+hg tag --remove <name>
+hg push
+```
+
+Shows the tags.
+```
+hg tags
 ```
 
 ## Make changes
@@ -146,23 +165,4 @@ hg log --follow <file>
 Show current commit.
 ```
 hg id -i
-```
-
-## Tags
-
-Create a tag.
-```
-hg tag [--local] <name>
-hg push
-```
-
-Remove a tag.
-```
-hg tag --remove <name>
-hg push
-```
-
-Shows the tags.
-```
-hg tags
 ```
