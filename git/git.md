@@ -4,6 +4,18 @@
 
 [Git](https://git-scm.com/) is a free and open source distributed version control system.
 
+## Table of Contents
+
+* [Configuration](#configuration)
+* [Repositories](#repositories)
+* [Branches](#branches)
+* [Make changes](#make-changes)
+* [Revert changes](#revert-changes)
+* [Stash changes](#stash-changes)
+* [Synchronize changes](#synchronize-changes)
+* [Show changes](#show-changes)
+* [More](#more)
+
 ## Configuration
 
 Configure user information.
