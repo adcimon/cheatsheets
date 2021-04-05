@@ -6,6 +6,26 @@
 
 ## Directory Structure
 
+Prototype.
+```
+Assets
+├── Animations
+├── Audio
+│   ├── Music
+│   └── Sound
+├── Fonts
+├── Materials
+├── Models
+├── Prefabs
+├── Scenes
+├── Scripts
+├── Shaders
+├── Sprites
+├── Textures
+├── VFX
+└── Video
+```
+
 ## Asset Naming
 
 ## Code Style
