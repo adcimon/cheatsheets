@@ -67,4 +67,43 @@ Models
 
 ## Asset Naming
 
+| Asset Type | Asset Name |
+| - | - |
+| Atlas | <Name>.atlas |
+| Animation | [<ModelName>@]<Name>.anim |
+| Animator Controller | <Name> |
+| Avatar Mask | <Name> |
+| Material | <Name> |
+| Mesh | <Name> |
+| Model | <Name> |
+| Music | <Name>.music |
+| Prefab | <Name> |
+| Sound Effect | <Name>.sfx |
+| Sprite | <Name>.sprite |
+| Texture | <Name>.<TextureType> |
+| Visual Effect | <Name>.vfx |
+| Video | <Name> |
+
+| Texture Type | Code |
+| - | - |
+| Albedo | albedo |
+| Ambient Occlusion | occlusion |
+| Anisotropic Filter | aniso |
+| Diffuse | diffuse |
+| Displacement | displacement |
+| Distance Field | distancefield |
+| Emissive | emissive |
+| Flow | flow |
+| Height | height |
+| Icon | icon |
+| Light | light |
+| Mask | mask |
+| Metallic | metallic |
+| Normal | normal |
+| Roughness | roughness |
+| Screen Space Scattering | sss |
+| Specular | specular |
+| Tile | tile |
+| Vector Field | vectorfield |
+
 ## Code Style
