@@ -107,3 +107,18 @@ Models
 | Vector Field | vectorfield |
 
 ## Code Style
+
+| Language Concept | Convention |
+| - | - |
+| Namespace | PascalCasing |
+| Generic Type | T |
+| Struct | PascalCasing |
+| Class | PascalCasing |
+| Interface | IPascalCasing |
+| Enum | PascalCasing |
+| Method | PascalCasing |
+| Attribute | camelCasing |
+| Property | camelCasing |
+| Parameter | camelCasing |
+| Unary operator overload parameter | value |
+| Binary operator overload parameter | left, right |
