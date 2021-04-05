@@ -26,6 +26,23 @@ Assets
 └── Video
 ```
 
+Despite the separation of the assets by type, if an asset is compossed of multiple subassets, these should be included in the corresponding subfolder.
+```
+Models
+├── ...
+├── Orc
+│   ├── Orc.fbx
+│   ├── Animations
+│   │   ├── Orc@Attack.fbx
+│   │   ├── Orc@Attack.anim
+│   │   └── Orc.controller
+│   ├── Materials
+│   │   └── Orc.mat
+│   └── Textures
+│       └── Orc.diffuse.png
+└── ...
+```
+
 ## Asset Naming
 
 ## Code Style
