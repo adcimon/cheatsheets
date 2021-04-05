@@ -26,6 +26,28 @@ Assets
 └── Video
 ```
 
+Project.
+```
+Assets
+├── Animations
+├── Audio
+├── Code
+│   ├── Core
+│   ├── Editor
+│   ├── Game
+│   ├── Shader
+│   └── Test
+├── Fonts
+├── Materials
+├── Models
+├── Prefabs
+├── Scenes
+├── Sprites
+├── Textures
+├── VFX
+└── Video
+```
+
 Despite the separation of the assets by type, if an asset is compossed of multiple subassets, these should be included in the corresponding subfolder.
 ```
 Models
