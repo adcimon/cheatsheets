@@ -25,6 +25,7 @@ Compile packages and dependencies.
 ```
 go build
 go build -o <name>
+env GOOS=<operating_system> GOARCH=<architecture> go build
 ```
 
 Compile and install packages and dependencies.
