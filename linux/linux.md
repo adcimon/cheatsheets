@@ -4,6 +4,17 @@
 
 [Linux](https://www.linux.org/) is a family of open-source Unix-like operating systems based on the Linux kernel.
 
-## Basics
+List files and directories.
+```
+ls
+```
 
-## Ubuntu
+Change directory.
+```
+cd
+```
+
+Show Ubuntu version.
+```
+lsb_release -d
+```
