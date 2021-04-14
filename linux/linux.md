@@ -1,0 +1,9 @@
+# Linux
+
+<p align="center"><img align="center" src="linux.png"></p>
+
+[Linux](https://www.linux.org/) is a family of open-source Unix-like operating systems based on the Linux kernel.
+
+## Basics
+
+## Ubuntu
