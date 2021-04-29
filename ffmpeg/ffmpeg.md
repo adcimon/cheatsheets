@@ -25,6 +25,7 @@
 * [Streaming](#streaming)
   * [RTP](#rtp)
   * [HLS](#hls)
+  * [NDI](#ndi)
   * [Synchronization](#synchronization)
 * [Options](#options)
 
@@ -298,6 +299,15 @@ ffplay -i <sdp> -protocol_whitelist file,udp,rtp
 Download and concatenate the video fragments.
 ```
 ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy -bsf:a aac_adtstoasc <output>
+```
+
+### NDI
+
+[Network Device Interface (NDI)](https://www.ndi.tv/) is a royalty-free software standard developed by NewTek to enable video-compatible products to communicate, deliver, and receive high-definition video over a computer network in a high-quality, low-latency manner that is frame accurate and suitable for switching in a live production environment.
+
+Play a stream.
+```
+ffplay -f libndi_newtek -i "NDI Stream"
 ```
 
 ### Synchronization
