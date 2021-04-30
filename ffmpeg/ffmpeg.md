@@ -287,6 +287,8 @@ ffmpeg -f dshow -video_size 1280x720 -framerate 7.5 -pixel_format yuyv422 -i vid
 ### RTP
 
 [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) is a network protocol used in communication and entertainment systems that involve streaming media.
+
+Play a stream.
 ```
 ffmpeg -protocol_whitelist file,udp,rtp -i <sdp> <output>
 ffplay -i <sdp> -protocol_whitelist file,udp,rtp
@@ -312,7 +314,12 @@ ffmpeg -f libndi_newtek -find_sources 1 -i dummy
 
 Play a stream.
 ```
-ffplay -f libndi_newtek -i "NDI Stream"
+ffplay -f libndi_newtek -i "NDI Input Stream"
+```
+
+Stream an input source.
+```
+ffmpeg -re -i <input> -f libndi_newtek -pix_fmt uyvy422 "NDI Output Stream"
 ```
 
 ### Synchronization
