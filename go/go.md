@@ -70,3 +70,46 @@ Import local module (modify the `go.mod` file to find the module in the local fi
 ```
 replace github.com/adcimon/mymodule => ../mymodule
 ```
+
+## CGO
+
+[CGO](https://golang.org/pkg/cmd/cgo/) enables the creation of Go packages that call C code.
+
+### Windows
+
+In order to use CGO on Windows a gcc compiler is needed.
+1. Download a MinGW-W64 installer from [MinGW-W64-builds](http://mingw-w64.org/doku.php/download/mingw-builds).
+2. Install MinGW-W64 with `Architecture` to `x86_64` and `Threads` to `win32`.
+3. Add `mingw64/bin` to the PATH environment variable.
+
+### Create a DLL
+
+Code.
+```
+package main
+
+import "C"
+
+import "fmt"
+
+//export hello
+func hello() {
+  fmt.Printf("Hello World!")
+}
+
+// The main function is needed to make CGO compile the package as a C shared library.
+func main() {
+}
+```
+
+Build the library.
+```
+go build -buildmode=c-shared -o hello.dll
+```
+
+Export the header file.
+```
+go tool cgo main.go
+```
+
+It generates C header and source files into the `_obj` directory.
