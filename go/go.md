@@ -82,6 +82,23 @@ In order to use CGO on Windows a gcc compiler is needed.
 2. Install MinGW-W64 with `Architecture` to `x86_64` and `Threads` to `win32`.
 3. Add `mingw64/bin` to the PATH environment variable.
 
+### Use a DLL
+
+Link the library.
+```
+/*
+#cgo CFLAGS: -I${SRCDIR}/include
+#cgo LDFLAGS: -L${SRCDIR}/lib -lmylib
+#include "MyLib.h"
+*/
+import "C"
+```
+Any occurrence of the string `${SRCDIR}` will be replaced by the absolute path to the directory containing the source file.
+
+Add the library.
+```
+```
+
 ### Create a DLL
 
 Code.
