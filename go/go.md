@@ -82,6 +82,33 @@ In order to use CGO on Windows a gcc compiler is needed.
 2. Install MinGW-W64 with `Architecture` to `x86_64` and `Threads` to `win32`.
 3. Add `mingw64/bin` to the PATH environment variable.
 
+### Call C code
+
+The Go function `Print` calls the C function `fputs` (from the `stdio` library).
+```
+package main
+
+/*
+#include <stdio.h>
+#include <stdlib.h>
+*/
+import "C"
+
+import (
+  "unsafe"
+)
+
+func Print (str string) () {
+  cstr := C.CString(str)
+  C.fputs(cstr, (*C.FILE)(C.stdout))
+  C.free(unsafe.Pointer(cstr))
+}
+
+func main () {
+  Print("Hello World!")
+}
+```
+
 ### Use a DLL
 
 Include the header (.h) and link the import library (.lib).
@@ -113,12 +140,12 @@ import "C"
 import "fmt"
 
 //export hello
-func hello() {
+func hello () () {
   fmt.Printf("Hello World!")
 }
 
 // The main function is needed to make CGO compile the package as a C shared library.
-func main() {
+func main () () {
 }
 ```
 
