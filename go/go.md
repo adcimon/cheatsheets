@@ -104,7 +104,7 @@ MyProgram
 
 ### Create a DLL
 
-Code.
+Use `//export` directives to make Go functions accessible to C code.
 ```
 package main
 
