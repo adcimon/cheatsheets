@@ -137,7 +137,9 @@ package main
 
 import "C"
 
-import "fmt"
+import (
+  "fmt"
+)
 
 //export hello
 func hello () () {
