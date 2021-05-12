@@ -132,6 +132,7 @@ MyProgram
 ### Create a DLL
 
 Use `//export` directives to make Go functions accessible to C code.
+The `main` function is needed to make CGO compile the package as a C shared library.
 ```
 package main
 
@@ -146,7 +147,6 @@ func hello () () {
   fmt.Printf("Hello World!")
 }
 
-// The main function is needed to make CGO compile the package as a C shared library.
 func main () () {
 }
 ```
