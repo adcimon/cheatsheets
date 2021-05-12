@@ -104,7 +104,7 @@ func Print (str string) () {
   C.free(unsafe.Pointer(cstr))
 }
 
-func main () {
+func main () () {
   Print("Hello World!")
 }
 ```
