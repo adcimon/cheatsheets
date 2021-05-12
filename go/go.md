@@ -95,6 +95,12 @@ import "C"
 ```
 Any occurrence of the string `${SRCDIR}` will be replaced by the absolute path to the directory containing the source file.
 
+Copy the dynamic library (.dll) to the executable folder.
+```
+main.exe
+mylib.dll
+```
+
 ### Create a DLL
 
 Code.
