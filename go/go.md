@@ -97,8 +97,9 @@ Any occurrence of the string `${SRCDIR}` will be replaced by the absolute path t
 
 Copy the dynamic library (.dll) to the executable (.exe) directory.
 ```
-main.exe
-mylib.dll
+MyProgram
+├── main.exe
+└── mylib.dll
 ```
 
 ### Create a DLL
