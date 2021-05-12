@@ -84,7 +84,7 @@ In order to use CGO on Windows a gcc compiler is needed.
 
 ### Use a DLL
 
-Link the library.
+Include the headers (.h) and link the import library (.lib).
 ```
 /*
 #cgo CFLAGS: -I${SRCDIR}/include
@@ -94,10 +94,6 @@ Link the library.
 import "C"
 ```
 Any occurrence of the string `${SRCDIR}` will be replaced by the absolute path to the directory containing the source file.
-
-Add the library.
-```
-```
 
 ### Create a DLL
 
