@@ -28,7 +28,7 @@ npm uninstall <package>
 
 [Nest.js](https://nestjs.com/) is a framework for building efficient, scalable Node.js web applications.
 
-Install CLI
+Install CLI.
 ```
 npm install -g @nestjs/cli
 ```
