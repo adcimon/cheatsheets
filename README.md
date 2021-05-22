@@ -12,6 +12,7 @@ Collection of cheatsheets.
 * [Linux](https://adcimon.github.io/cheatsheets/linux/linux)
 * [Mercurial](https://adcimon.github.io/cheatsheets/mercurial/mercurial)
 * [Node.js](https://adcimon.github.io/cheatsheets/nodejs/nodejs)
+* [Python](https://adcimon.github.io/cheatsheets/python/python)
 * [Pip](https://adcimon.github.io/cheatsheets/pip/pip)
 * [Regular Expressions](https://adcimon.github.io/cheatsheets/regex/regex)
 * [TCPDUMP](https://adcimon.github.io/cheatsheets/tcpdump/tcpdump)
