@@ -2,7 +2,6 @@
 
 Collection of cheatsheets.
 
-* [Conda](https://adcimon.github.io/cheatsheets/conda/conda)
 * [Cryptography](https://adcimon.github.io/cheatsheets/crypto/crypto)
 * [Docker](https://adcimon.github.io/cheatsheets/docker/docker)
 * [FFmpeg](https://adcimon.github.io/cheatsheets/ffmpeg/ffmpeg)
