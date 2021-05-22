@@ -7,7 +7,7 @@
 ## Table of Contents
 
 * [NPM](#npm)
-* [Nest.js](#nest.js)
+* [Nest.js](#nestjs)
 
 ## NPM
 
