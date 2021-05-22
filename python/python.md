@@ -2,6 +2,8 @@
 
 <p align="center"><img align="center" src="python.png"></p>
 
+[Python](https://www.python.org/) is an interpreted high-level general-purpose programming language.
+
 ## Pip
 
 [Pip](https://pip.pypa.io/en/latest/) is the package installer for Python.
