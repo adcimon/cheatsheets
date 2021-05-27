@@ -67,19 +67,6 @@ Serve static
 npm install @nestjs/serve-static
 ```
 
-Passport
-```
-npm install passport
-npm install passport-local
-npm install @nestjs/passport
-```
-
-TypeORM
-```
-npm install typeorm
-npm install @nestjs/typeorm
-```
-
 WebSockets
 ```
 npm install @nestjs/websockets
@@ -91,6 +78,19 @@ socket.io
 npm install socket.io
 npm install @nestjs/websockets
 npm install @nestjs/platform-socket.io
+```
+
+TypeORM
+```
+npm install typeorm
+npm install @nestjs/typeorm
+```
+
+Passport
+```
+npm install passport
+npm install passport-local
+npm install @nestjs/passport
 ```
 
 JWT
