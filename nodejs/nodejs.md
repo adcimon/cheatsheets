@@ -56,32 +56,45 @@ npm run build
 Run the application.
 ```
 npm run start:dev
+npm run start:debug
+npm run start:prod
 ```
 
 ### Packages
 
-Install passport.
+Serve static
+```
+npm install @nestjs/serve-static
+```
+
+Passport
 ```
 npm install passport
 npm install passport-local
 npm install @nestjs/passport
 ```
 
-Install typeorm.
+TypeORM
 ```
 npm install typeorm
 npm install @nestjs/typeorm
 ```
 
-Install WebSockets.
+WebSockets
 ```
 npm install @nestjs/websockets
 npm install @nestjs/platform-ws
 ```
 
-Install socket.io.
+socket.io
 ```
 npm install socket.io
 npm install @nestjs/websockets
 npm install @nestjs/platform-socket.io
+```
+
+JWT
+```
+npm install passport-jwt
+npm install @nestjs/jwt
 ```
