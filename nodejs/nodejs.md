@@ -8,6 +8,7 @@
 
 * [NPM](#npm)
 * [Nest.js](#nestjs)
+* [Packages](#packages)
 
 ## NPM
 
@@ -60,7 +61,7 @@ npm run start:debug
 npm run start:prod
 ```
 
-### Packages
+## Packages
 
 Serve static
 ```
