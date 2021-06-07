@@ -98,3 +98,9 @@ JWT
 npm install passport-jwt
 npm install @nestjs/jwt
 ```
+
+Nodemailer
+```
+npm install nodemailer
+npm install @types/nodemailer
+```
