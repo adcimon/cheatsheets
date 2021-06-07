@@ -6,13 +6,13 @@
 
 ## Table of Contents
 
-* [NPM](#npm)
+* [npm](#npm)
 * [Nest.js](#nestjs)
 * [Packages](#packages)
 
-## NPM
+## npm
 
-[Node Package Manager (NPM)](https://www.npmjs.com/) is a package manager for the JavaScript programming language.
+[Node Package Manager (npm)](https://www.npmjs.com/) is a package manager for the JavaScript programming language.
 
 Initialize a module directory, creating a `package.json` file.
 ```
