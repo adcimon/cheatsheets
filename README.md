@@ -11,7 +11,7 @@ Collection of cheatsheets.
 * [GStreamer](https://adcimon.github.io/cheatsheets/gstreamer/gstreamer)
 * [Linux](https://adcimon.github.io/cheatsheets/linux/linux)
 * [Mercurial](https://adcimon.github.io/cheatsheets/mercurial/mercurial)
-* [Node.js](https://adcimon.github.io/cheatsheets/nodejs/nodejs)
+* [Node](https://adcimon.github.io/cheatsheets/node/node)
 * [Python](https://adcimon.github.io/cheatsheets/python/python)
 * [Regular Expressions](https://adcimon.github.io/cheatsheets/regex/regex)
 * [TCPDUMP](https://adcimon.github.io/cheatsheets/tcpdump/tcpdump)
