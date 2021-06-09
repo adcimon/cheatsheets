@@ -1,13 +1,13 @@
-# Node.js
+# Node
 
-<p align="center"><img align="center" src="nodejs.png"></p>
+<p align="center"><img align="center" src="node.png"></p>
 
-[Node.js](https://nodejs.org/) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
+[Node](https://nodejs.org/) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
 
 ## Table of Contents
 
 * [npm](#npm)
-* [Nest.js](#nestjs)
+* [Nest](#nestjs)
 * [Packages](#packages)
 
 ## npm
@@ -30,9 +30,9 @@ Uninstall a package.
 npm uninstall <package>
 ```
 
-## Nest.js
+## Nest
 
-[Nest.js](https://nestjs.com/) is a framework for building efficient, scalable Node.js web applications.
+[Nest](https://nestjs.com/) is a framework for building efficient, scalable Node.js web applications.
 
 Install CLI.
 ```
