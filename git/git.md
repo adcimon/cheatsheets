@@ -72,6 +72,13 @@ git add <file>
 git add .
 ```
 
+Remove file contents.
+```
+git rm <file>
+git rm --cached <file>
+git rm -f <file>
+```
+
 Record changes to the repository.
 ```
 git commit -m "Message"
