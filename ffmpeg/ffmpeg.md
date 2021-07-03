@@ -31,7 +31,7 @@
 
 ## Basic
 
-Print version.
+Check version.
 ```
 ffmpeg -version
 ```
