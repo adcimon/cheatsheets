@@ -11,6 +11,11 @@
 
 ## Basic
 
+Check version.
+```
+curl --version
+```
+
 Save the result to a file.
 ```
 curl <url> -o <file>
