@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-* [Basics](#basics)
+* [Basic](#basic)
 * [Muxing](#muxing)
 * [Transcoding](#transcoding)
   * [x264](#x264)
@@ -29,7 +29,7 @@
   * [Synchronization](#synchronization)
 * [Options](#options)
 
-## Basics
+## Basic
 
 Print version.
 ```
