@@ -37,6 +37,7 @@ curl --request GET --head <url>
 Post.
 ```
 curl --request POST <url>
+curl --request POST --header "Content-Type: application/json" --data <json> <url>
 ```
 
 Put.
