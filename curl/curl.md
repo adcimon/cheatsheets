@@ -38,6 +38,8 @@ Post.
 ```
 curl --request POST <url>
 curl --request POST --header "Content-Type: application/json" --data <json> <url>
+curl --request POST --header "Content-Type: application/json" --data '{"key": "value"}' <url>
+curl --request POST --header "Content-Type: application/json" --data "{\"key\": \"value\"}" <url>
 ```
 
 Put.
