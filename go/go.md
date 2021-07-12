@@ -38,6 +38,13 @@ List available platforms.
 go tool dist list
 ```
 
+Use the built-in [data race detector](https://golang.org/doc/articles/race_detector).
+```
+go run -race main.go
+go build -race
+go build -race -o <name>
+```
+
 ## Modules
 
 Activate modules.
