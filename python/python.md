@@ -6,9 +6,22 @@
 
 ## Table of Contents
 
+* [General](#general)
 * [Pip](#pip)
 * [Virtualenv](#virtualenv)
 * [Conda](#conda)
+
+## General
+
+Print the version.
+```
+python --version
+```
+
+Run an HTTP server.
+```
+python -m http.server 8080
+```
 
 ## Pip
 
