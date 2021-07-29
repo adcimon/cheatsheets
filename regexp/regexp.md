@@ -7,6 +7,13 @@
 | `^` | Start of the string. |
 | `$` | End of the string. |
 
+| Characters | |
+| - | - |
+| `\\d` | Digit. |
+| `\\w` | Word. |
+| `\\s` | Whitespace, tab and line break characters. |
+| `.` | Any character. |
+
 | Composites | |
 | - | - |
 | `xy` | `x` followed by `y`. |
