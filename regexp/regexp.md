@@ -10,7 +10,7 @@
 | Composites | |
 | - | - |
 | `xy` | `x` followed by `y`. |
-| `x|y` | `x` or `y` (prefer `x`). |
+| `x\|y` | `x` or `y` (prefer `x`). |
 
 | Repetitions | |
 | - | - |
