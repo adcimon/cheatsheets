@@ -37,6 +37,8 @@
 | `x{n,m}?` | `n` to `m` (prefer fewer). |
 | `x{n,}?` | `n` or more (prefer fewer). |
 
+Characters `^.[$()|*+?` can be used with a backslash `\`.
+
 ## Examples
 
 Begins with "The".
