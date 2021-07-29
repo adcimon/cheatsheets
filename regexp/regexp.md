@@ -14,9 +14,12 @@
 
 | Repetitions | |
 | - | - |
-| `?` | 0 or 1 occurrences. |
-| `+` | At least 1 occurrence. |
-| `*` | Any number of occurrences. |
+| `x?` | 0 or 1 occurrences. |
+| `x+` | At least 1 occurrence. |
+| `x*` | Any number of occurrences. |
+| `x{n}` | `n` occurrences. |
+| `x{n,m}` | `n` to `m` occurrences (prefer more). |
+| `x{n,}` | `n` or more occurrences (prefer more). |
 
 ## Examples
 
