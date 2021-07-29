@@ -11,7 +11,10 @@
 | - | - |
 | `\d` | Digit. |
 | `\w` | Word. |
-| `\s` | Whitespace, tab and line break characters. |
+| `\s` | Whitespace, tab or line break characters. |
+| `\D` | Non digit. |
+| `\W` | Non word. |
+| `\S` | Non Whitespace, tab or line break characters. |
 | `.` | Any character. |
 
 | Composites | |
