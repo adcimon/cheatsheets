@@ -13,7 +13,7 @@ Collection of cheatsheets.
 * [Mercurial](https://adcimon.github.io/cheatsheets/mercurial/mercurial)
 * [Node](https://adcimon.github.io/cheatsheets/node/node)
 * [Python](https://adcimon.github.io/cheatsheets/python/python)
-* [Regular Expressions](https://adcimon.github.io/cheatsheets/regex/regex)
+* [Regular Expressions](https://adcimon.github.io/cheatsheets/regexp/regexp)
 * [TCPDUMP](https://adcimon.github.io/cheatsheets/tcpdump/tcpdump)
 * [TrinityCore](https://adcimon.github.io/cheatsheets/trinitycore/trinitycore)
 * [Unity](https://adcimon.github.io/cheatsheets/unity/unity)
