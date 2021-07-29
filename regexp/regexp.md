@@ -12,3 +12,15 @@
 | `?` | 0 or 1 occurrences. |
 | `+` | At least 1 occurrence. |
 | `*` | Any number of occurrences. |
+
+## Examples
+
+Begins with "The".
+```
+^The
+```
+
+Ends with "end".
+```
+end$
+```
