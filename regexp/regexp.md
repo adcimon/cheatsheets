@@ -6,6 +6,9 @@
 | - | - |
 | `^` | Start of the string. |
 | `$` | End of the string. |
+
+| Symbol | Repetitions |
+| - | - |
 | `?` | 0 or 1 occurrences. |
 | `+` | At least 1 occurrence. |
 | `*` | Any number of occurrences. |
