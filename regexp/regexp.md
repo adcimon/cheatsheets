@@ -9,9 +9,9 @@
 
 | Characters | |
 | - | - |
-| `\\d` | Digit. |
-| `\\w` | Word. |
-| `\\s` | Whitespace, tab and line break characters. |
+| `\d` | Digit. |
+| `\w` | Word. |
+| `\s` | Whitespace, tab and line break characters. |
 | `.` | Any character. |
 
 | Composites | |
