@@ -43,6 +43,12 @@
 | `x{n,m}?` | `n` to `m` (prefer fewer). |
 | `x{n,}?` | `n` or more (prefer fewer). |
 
+| Ranges | |
+| - | - |
+| `a-z` | A character in the range `a-z` |
+| `A-Z` | A character in the range `A-Z` |
+| `0-9` | A character in the range `0-9` |
+
 Characters `^.[$()|*+?` can be used with a backslash `\`.
 
 ## Examples
