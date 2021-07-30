@@ -86,3 +86,18 @@ abc{2,5}
 ```
 abc{2,}
 ```
+
+`a` followed by `b` or `c`.
+```
+a(b|c)
+```
+
+`a` followed by zero or more `bc`.
+```
+a(bc)*
+```
+
+`a` followed by two up to five `bc`.
+```
+a(bc){2,5}
+```
