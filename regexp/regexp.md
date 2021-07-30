@@ -56,3 +56,33 @@ Ends with "end".
 ```
 end$
 ```
+
+`ab` followed by zero or one `c`.
+```
+abc?
+```
+
+`ab` followed by one or more `c`.
+```
+abc+
+```
+
+`ab` followed by zero or more `c`.
+```
+abc*
+```
+
+`ab` followed by two `c`.
+```
+abc{2}
+```
+
+`ab` followed by two up to five `c`.
+```
+abc{2,5}
+```
+
+`ab` followed by two or more `c`.
+```
+abc{2,}
+```
