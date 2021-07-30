@@ -107,3 +107,8 @@ a(bc)*
 ```
 a(bc){2,5}
 ```
+
+A string that has not a letter from `a to z` or from `A to Z`.
+```
+[^a-zA-Z]
+```
