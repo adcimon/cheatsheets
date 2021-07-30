@@ -45,9 +45,9 @@
 
 | Ranges | |
 | - | - |
-| `a-z` | A character in the range `a-z` |
-| `A-Z` | A character in the range `A-Z` |
-| `0-9` | A character in the range `0-9` |
+| `a-z` | Character in range `a-z`. |
+| `A-Z` | Character in range `A-Z`. |
+| `0-9` | Digit in range `0-9`. |
 
 Characters `^.[$()|*+?` can be used with a backslash `\`.
 
