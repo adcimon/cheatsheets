@@ -8,7 +8,7 @@
 
 ## Syntax
 
-| Symbols | |
+| Delimiters | |
 | - | - |
 | `^` | Start of the string. |
 | `$` | End of the string. |
