@@ -2,6 +2,7 @@
 
 Collection of cheatsheets.
 
+* [Color](https://adcimon.github.io/cheatsheets/color/color)
 * [Cryptography](https://adcimon.github.io/cheatsheets/crypto/crypto)
 * [cURL](https://adcimon.github.io/cheatsheets/curl/curl)
 * [Docker](https://adcimon.github.io/cheatsheets/docker/docker)
