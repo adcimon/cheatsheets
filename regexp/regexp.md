@@ -53,8 +53,8 @@
 
 | Flags | |
 | - | - |
-| `/x/g` | Global. |
-| `/x/m` | Multi line. |
+| `/x/g` | Global, does not return after the first match. |
+| `/x/m` | Multi line, `^` and `$` match the start and end of a line. |
 | `/x/i` | Case insensitive. |
 
 Characters `^.[$()|*+?` can be used with a backslash `\`.
