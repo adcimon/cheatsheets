@@ -49,6 +49,12 @@
 | `A-Z` | Character in range `A-Z`. |
 | `0-9` | Digit in range `0-9`. |
 
+| Flags | |
+| - | - |
+| `/abc/g` | Global. |
+| `/abc/m` | Multi-line. |
+| `/abc/i` | Insensitive. |
+
 Characters `^.[$()|*+?` can be used with a backslash `\`.
 
 ## Examples
