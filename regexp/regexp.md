@@ -5,6 +5,7 @@
 * [Syntax](#syntax)
 * [Examples](#examples)
 * [RE2](https://github.com/google/re2/wiki/Syntax)
+* [MDN Cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
 
 ## Syntax
 
