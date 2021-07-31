@@ -51,9 +51,9 @@
 
 | Flags | |
 | - | - |
-| `/abc/g` | Global. |
-| `/abc/m` | Multi line. |
-| `/abc/i` | Case insensitive. |
+| `/x/g` | Global. |
+| `/x/m` | Multi line. |
+| `/x/i` | Case insensitive. |
 
 Characters `^.[$()|*+?` can be used with a backslash `\`.
 
