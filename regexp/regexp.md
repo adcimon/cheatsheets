@@ -53,7 +53,7 @@
 
 | Flags | |
 | - | - |
-| `/x/g` | Global, does not return after the first match. |
+| `/x/g` | Global, find all matches rather than stopping after the first match. |
 | `/x/m` | Multi line, `^` and `$` match the start and end of a line. |
 | `/x/i` | Case insensitive. |
 
