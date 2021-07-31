@@ -14,7 +14,7 @@
 | `$` | End. |
 | `/x/` | Start and end. |
 
-| Characters | |
+| Character Classes | |
 | - | - |
 | `\d` | Digit. |
 | `\w` | Word. |
@@ -29,7 +29,7 @@
 | `xy` | `x` followed by `y`. |
 | `x\|y` | `x` or `y` (prefer `x`). |
 
-| Repetitions | |
+| Quantifiers | |
 | - | - |
 | `x?` | 0 or 1 (prefer 1). |
 | `x+` | 1 or more (prefer more). |
