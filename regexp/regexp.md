@@ -12,6 +12,7 @@
 | - | - |
 | `^` | Start of the string. |
 | `$` | End of the string. |
+| `/x/` |  |
 
 | Characters | |
 | - | - |
