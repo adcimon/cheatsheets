@@ -5,8 +5,8 @@
 
 ## Color Space
 
-A `color space` is the set of colors and luminance values which can be captured, stored or displayed in a medium.
+A [color space](https://en.wikipedia.org/wiki/Color_space) is the set of colors and luminance values which can be captured, stored or displayed in a medium.
 
 ## Color Model
 
-A `color model` is a method of describing a color.
+A [color model](https://en.wikipedia.org/wiki/Color_model) is a method of describing a color.
