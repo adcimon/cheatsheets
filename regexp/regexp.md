@@ -18,9 +18,9 @@
 | `\d` | Digit. |
 | `\w` | Word. |
 | `\s` | Whitespace, tab or line break characters. |
-| `\D` | Not digit. |
-| `\W` | Not word. |
-| `\S` | Not whitespace, tab or line break characters. |
+| `\D` `^\d` | Not digit. |
+| `\W` `^\w` | Not word. |
+| `\S` `^\s` | Not whitespace, tab or line break characters. |
 | `.` | Any character. |
 
 | Composites | |
