@@ -10,9 +10,9 @@
 
 | Delimiters | |
 | - | - |
-| `^` | Start of the string. |
-| `$` | End of the string. |
-| `/x/` |  |
+| `^` | Start. |
+| `$` | End. |
+| `/x/` | Start and end. |
 
 | Characters | |
 | - | - |
