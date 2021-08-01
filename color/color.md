@@ -4,6 +4,7 @@
 
 * [Color Space](#color-space)
 * [Color Model](#color-model)
+* [References](#references)
 
 ## Color Space
 
@@ -17,3 +18,7 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 ## Color Model
 
 A [color model](https://en.wikipedia.org/wiki/Color_model) is a method of describing a color.
+
+## References
+
+* [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
