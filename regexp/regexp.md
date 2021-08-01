@@ -4,8 +4,7 @@
 
 * [Syntax](#syntax)
 * [Examples](#examples)
-* [RE2](https://github.com/google/re2/wiki/Syntax)
-* [MDN Cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
+* [References](#references)
 
 ## Syntax
 
@@ -120,3 +119,9 @@ A string that has not a letter from `a to z` or from `A to Z`.
 ```
 [^a-zA-Z]
 ```
+
+## References
+
+* [RE2](https://github.com/google/re2/wiki/Syntax)
+* [MDN Regular Expression Syntax Cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
+* [Golang Regex Tutorial](https://github.com/StefanSchroeder/Golang-Regex-Tutorial)
