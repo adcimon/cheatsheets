@@ -1,5 +1,7 @@
 # Color
 
+## Table of Contents
+
 * [Color Space](#color-space)
 * [Color Model](#color-model)
 
