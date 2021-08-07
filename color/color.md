@@ -23,7 +23,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 ### YUV
 
-[YUV](https://en.wikipedia.org/wiki/YUV) is a pixel format with a separation of luma (Y) and chrominance (U, blue projection, and V, red projection) components.
+[YUV](https://en.wikipedia.org/wiki/YUV) is a pixel format with a separation of luma (Y) and chrominance (U, V) components.
 
 ## References
 
