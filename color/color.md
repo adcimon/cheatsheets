@@ -17,7 +17,7 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 
 ## Color Model
 
-A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to represent colors, typically as tuples of three or four values or color components.
+A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to represent colors, typically as tuples of three or four values or components.
 
 ## References
 
