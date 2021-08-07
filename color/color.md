@@ -19,6 +19,13 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 
 A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to represent colors, typically as tuples of three or four values or components.
 
+### RGB
+
+### YUV
+
+[YUV](https://en.wikipedia.org/wiki/YUV) is a pixel format with a separation of luma (Y) and chrominance (U, blue projection, and V, red projection) components.
+
 ## References
 
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
+* [YUV Pixel Formats](https://www.fourcc.org/yuv.php)
