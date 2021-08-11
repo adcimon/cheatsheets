@@ -4,7 +4,7 @@
 
 [Python](https://www.python.org/) is an interpreted high-level general-purpose programming language.
 
-## Table of Contents
+## Index
 
 * [General](#general)
 * [Pip](#pip)
