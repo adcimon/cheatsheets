@@ -92,10 +92,7 @@ npm install @nestjs/typeorm
 npm install passport
 npm install passport-local
 npm install @nestjs/passport
-```
 
-[JWT](https://www.npmjs.com/package/passport-jwt)
-```
 npm install passport-jwt
 npm install @nestjs/jwt
 ```
