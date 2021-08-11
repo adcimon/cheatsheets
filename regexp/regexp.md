@@ -2,6 +2,8 @@
 
 [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression) are a particular kind of formal grammar used to parse strings and other textual information that are known as Regular Languages in formal language theory.
 
+## Index
+
 * [Syntax](#syntax)
 * [Examples](#examples)
 * [References](#references)
