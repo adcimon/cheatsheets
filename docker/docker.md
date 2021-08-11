@@ -4,6 +4,11 @@
 
 [Docker](https://www.docker.com/) is a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers.
 
+## Index
+
+* [Images](#images)
+* [Containers](#containers)
+
 ## Images
 
 List all images.
