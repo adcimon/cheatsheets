@@ -1,6 +1,6 @@
 # Color
 
-## Table of Contents
+## Index
 
 * [Color Space](#color-space)
 * [Color Model](#color-model)
