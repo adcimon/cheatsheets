@@ -4,7 +4,7 @@
 
 [Git](https://git-scm.com/) is a free and open source distributed version control system.
 
-## Table of Contents
+## Index
 
 * [Configuration](#configuration)
 * [Repositories](#repositories)
