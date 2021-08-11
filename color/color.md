@@ -19,6 +19,9 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 
 A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to represent colors, typically as tuples of three or four values or components. An image can be represented in memory component-wise or planar-wise.
 
+* Packed formats are represented in memory `[X0Y0Z0...XnYnZn]`.
+* Planar formats are represented in memory `[X0...Xn] [Y0...Yn] [Z0...Zn]`.
+
 ### RGB
 
 [RGB](https://en.wikipedia.org/wiki/RGB_color_model) is an [additive](https://en.wikipedia.org/wiki/Additive_color) color model with a separation of red, green and blue [additive primary colors](https://en.wikipedia.org/wiki/Primary_color).
