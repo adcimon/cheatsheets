@@ -4,7 +4,7 @@
 
 [cURL](https://curl.se/) is a command line tool and library for transferring data with URL syntax.
 
-## Table of Contents
+## Index
 
 * [Basic](#Basic)
 * [HTTP](#http)
