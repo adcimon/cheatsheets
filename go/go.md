@@ -4,6 +4,12 @@
 
 [Go](https://golang.org/) is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
+## Index
+
+* [General](#general)
+* [Modules](#modules)
+* [CGO](#cgo)
+
 ## General
 
 Print the version.
