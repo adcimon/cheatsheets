@@ -6,7 +6,7 @@
 
 ## Index
 
-* [Basic](#Basic)
+* [Basic](#basic)
 * [HTTP](#http)
 
 ## Basic
