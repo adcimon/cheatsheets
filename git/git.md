@@ -99,6 +99,7 @@ git reset <commit>
 
 Discard all history and changes back to the specified commit.
 ```
+git reset --hard
 git reset --hard <commit>
 ```
 
