@@ -1,4 +1,4 @@
-## Table of Contents
+## Index
 
 * [Directory Structure](#directory-structure)
 * [Asset Naming](#asset-naming)
