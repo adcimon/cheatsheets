@@ -4,7 +4,7 @@
 
 [Node.js](https://nodejs.org/) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
 
-## Table of Contents
+## Index
 
 * [npm](#npm)
 * [Nest.js](#nestjs)
@@ -63,44 +63,55 @@ npm run start:prod
 
 ## Packages
 
-Serve static
+[Serve Static](https://www.npmjs.com/package/@nestjs/serve-static)
 ```
 npm install @nestjs/serve-static
 ```
 
-WebSockets
+[WebSockets](https://www.npmjs.com/package/@nestjs/websockets)
 ```
 npm install @nestjs/websockets
 npm install @nestjs/platform-ws
 ```
 
-socket.io
+[socket.io](https://www.npmjs.com/package/socket.io)
 ```
 npm install socket.io
 npm install @nestjs/websockets
 npm install @nestjs/platform-socket.io
 ```
 
-TypeORM
+[TypeORM](https://www.npmjs.com/package/typeorm)
 ```
 npm install typeorm
 npm install @nestjs/typeorm
 ```
 
-Passport
+[Passport](https://www.npmjs.com/package/passport)
 ```
 npm install passport
 npm install passport-local
 npm install @nestjs/passport
 ```
 
-JWT
+[JWT](https://www.npmjs.com/package/passport-jwt)
 ```
 npm install passport-jwt
 npm install @nestjs/jwt
 ```
 
-Nodemailer
+[Schedule](https://www.npmjs.com/package/@nestjs/schedule)
+```
+npm install @nestjs/schedule
+npm install @types/cron
+```
+
+[ms](https://www.npmjs.com/package/ms)
+```
+npm install ms
+```
+
+[Nodemailer](https://www.npmjs.com/package/nodemailer)
 ```
 npm install nodemailer
 npm install @types/nodemailer
