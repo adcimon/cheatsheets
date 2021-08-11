@@ -22,7 +22,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 * Packed formats are represented in memory `[X0Y0Z0...X(n-1)Y(n-1)Z(n-1)]`.
 * Planar formats are represented in memory `[X0...X(n-1)] [Y0...Y(n-1)] [Z0...Z(n-1)]`.
 * Semi-Planar formats are represented in memory `[X0...X(n-1)] [Y0Z0...Y(n-1)Z(n-1)]`.
-* Interleaved formats are represented in memory following a [sampling system](https://en.wikipedia.org/wiki/Chroma_subsampling#Sampling_systems_and_ratios), for example 4:2:2 `[X0Y0X1Z0 X2Y1X3Z1...X(n-2)Y((n-1)/2)X(n-1)Z((n-1)/2)]`.
+* Interleaved formats are represented in memory following a [sampling system](https://en.wikipedia.org/wiki/Chroma_subsampling#Sampling_systems_and_ratios), for example 4:2:2 has the `Y` and `Z` planes subsampled, they have less information than the `X` plane `[X0Y0X1Z0 X2Y1X3Z1...X(n-2)Y((n-1)/2)X(n-1)Z((n-1)/2)]`.
 
 ### RGB
 
