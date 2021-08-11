@@ -4,7 +4,7 @@
 
 [Mercurial](https://www.mercurial-scm.org/) is a free, distributed source control management tool.
 
-## Table of Contents
+## Index
 
 * [Configuration](#configuration)
 * [Repositories](#repositories)
