@@ -70,6 +70,7 @@ npm install @nestjs/serve-static
 
 [WebSockets](https://www.npmjs.com/package/@nestjs/websockets)
 ```
+npm install ws
 npm install @nestjs/websockets
 npm install @nestjs/platform-ws
 ```
