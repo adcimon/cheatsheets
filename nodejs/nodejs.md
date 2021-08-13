@@ -91,8 +91,9 @@ npm install @nestjs/typeorm
 [Passport](https://www.npmjs.com/package/passport)
 ```
 npm install passport
-npm install passport-local
 npm install @nestjs/passport
+
+npm install passport-local
 
 npm install passport-jwt
 npm install @nestjs/jwt
