@@ -46,3 +46,4 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
 * [YUV Pixel Formats](https://www.fourcc.org/yuv.php)
 * [Recommended 8-Bit YUV Formats for Video Rendering](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering)
+* [Image Stride](https://docs.microsoft.com/en-us/windows/win32/medfound/image-stride?redirectedfrom=MSDN)
