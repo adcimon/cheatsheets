@@ -68,6 +68,11 @@ npm run start:prod
 
 ## Packages
 
+[Dotenv](https://www.npmjs.com/package/dotenv)
+```
+npm install dotenv
+```
+
 [Serve Static](https://www.npmjs.com/package/@nestjs/serve-static)
 ```
 npm install @nestjs/serve-static
