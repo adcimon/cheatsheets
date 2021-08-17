@@ -37,7 +37,7 @@ npm uninstall <package>
 Nest is built around the design pattern [Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) and has a built-in container that resolves relationships between providers using a constructor based dependency injection.
 * Providers (classes with `@Injectable()`) are added to the `exports` array of the producer module.
 * Modules (classes with `@Module()`) are added to the `imports` array of a consumer module.
-* Dynamic modules (classes that uses `register` or `forRoot`) should always export the module instead of its services (the module has a configuration necessary for the services to work).
+* Dynamic modules (classes that use `register` or `forRoot`) should always export the module instead of its services (the module has a configuration necessary for the services to work).
 
 Install CLI.
 ```
