@@ -73,15 +73,12 @@ npm run start:prod
 npm install @nestjs/serve-static
 ```
 
-[WebSockets](https://www.npmjs.com/package/@nestjs/websockets)
+WebSockets
 ```
 npm install ws
 npm install @nestjs/websockets
 npm install @nestjs/platform-ws
-```
 
-[socket.io](https://www.npmjs.com/package/socket.io)
-```
 npm install socket.io
 npm install @nestjs/websockets
 npm install @nestjs/platform-socket.io
