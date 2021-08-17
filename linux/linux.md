@@ -18,3 +18,8 @@ Show Ubuntu version.
 ```
 lsb_release -d
 ```
+
+Switch to superuser.
+```
+sudo su -
+```
