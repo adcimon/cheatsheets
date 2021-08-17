@@ -4,6 +4,10 @@
 
 * [Color Space](#color-space)
 * [Color Model](#color-model)
+  * [RGB](#rgb)
+  * [CMY](#cmy)
+  * [HSL/HSV](#hslhsv)
+  * [YUV](#yuv)
 * [References](#references)
 
 ## Color Space
@@ -35,7 +39,9 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 [CMY](https://en.wikipedia.org/wiki/CMY_color_model) is a [subtractive](https://en.wikipedia.org/wiki/Subtractive_color) color model with a separation of cyan, magenta and yellow [subtractive primary colors](https://en.wikipedia.org/wiki/Primary_color#Subtractive_mixing_of_ink_layers).
 
-### HSL/HSB
+### HSL/HSV
+
+[HSL/HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
 
 ### YUV
 
