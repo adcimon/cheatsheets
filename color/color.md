@@ -22,7 +22,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 * Packed formats are represented in memory [X<sub>0</sub>Y<sub>0</sub>Z<sub>0</sub>...X<sub>(n-1)</sub>Y<sub>(n-1)</sub>Z<sub>(n-1)</sub>].
 * Planar formats are represented in memory [X<sub>0</sub>...X<sub>(n-1)</sub>] [Y<sub>0</sub>...Y<sub>(n-1)</sub>] [Z<sub>0</sub>...Z<sub>(n-1)</sub>].
 * Semi-Planar formats are represented in memory [X<sub>0</sub>...X<sub>(n-1)</sub>] [Y<sub>0</sub>Z<sub>0</sub>...Y<sub>(n-1)</sub>Z<sub>(n-1)</sub>].
-* Interleaved formats are represented in memory following a [sampling system](https://en.wikipedia.org/wiki/Chroma_subsampling#Sampling_systems_and_ratios), for example 4:2:2 has the `Y` and `Z` planes subsampled, they have less information than the `X` plane [X<sub>0</sub>Y<sub>0</sub>X<sub>1</sub>Z<sub>0 </sub>X<sub>2</sub>Y<sub>1</sub>X<sub>3</sub>Z<sub>1</sub>...X<sub>(n-2)</sub>Y<sub>((n-1)/2)</sub>X<sub>(n-1)</sub>Z<sub>((n-1)/2)</sub>].
+* Interleaved formats are represented in memory following a [sampling system](https://en.wikipedia.org/wiki/Chroma_subsampling#Sampling_systems_and_ratios), sampling is expressed as a three part ratio `J:a:b`. For example 4:2:2 has the `Y` and `Z` planes subsampled, they have less information than the `X` plane [X<sub>0</sub>Y<sub>0</sub>X<sub>1</sub>Z<sub>0 </sub>X<sub>2</sub>Y<sub>1</sub>X<sub>3</sub>Z<sub>1</sub>...X<sub>(n-2)</sub>Y<sub>((n-1)/2)</sub>X<sub>(n-1)</sub>Z<sub>((n-1)/2)</sub>].
 
 ### RGB
 
