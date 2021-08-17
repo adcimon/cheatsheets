@@ -87,6 +87,11 @@ npm install @nestjs/websockets
 npm install @nestjs/platform-socket.io
 ```
 
+Databases
+```
+npm install sqlite3
+```
+
 [TypeORM](https://www.npmjs.com/package/typeorm)
 ```
 npm install typeorm
