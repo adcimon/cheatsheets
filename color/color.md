@@ -39,7 +39,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 ### YUV
 
-[YUV](https://en.wikipedia.org/wiki/YUV) is a color model with a separation of luma `Y` and chrominance `U,V` components. It was invented when engineers wanted color television in a black-and-white infrastructure. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane.
+[YUV](https://en.wikipedia.org/wiki/YUV) is a color model with a separation of luma `Y` and chrominance `U`, `V` components. It was invented when engineers wanted color television in a black-and-white infrastructure. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane.
 
 ## References
 
