@@ -93,6 +93,11 @@ npm install typeorm
 npm install @nestjs/typeorm
 ```
 
+[Yup](https://www.npmjs.com/package/yup)
+```
+npm install yup
+```
+
 [Passport](https://www.npmjs.com/package/passport)
 ```
 npm install passport
