@@ -32,6 +32,9 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 [RGB](https://en.wikipedia.org/wiki/RGB_color_model) is an [additive](https://en.wikipedia.org/wiki/Additive_color) color model with a separation of red, green and blue [additive primary colors](https://en.wikipedia.org/wiki/Primary_color).
 
+<p align="center"><img align="center" src="rgb_cube.png"></p>
+<p align="center">RGB Color Range</p>
+
 * RGB888 uses 24 bits, 8 bits per component [0, 255].
 * RGB565 uses 16 bits, 5 bits for R, 6 bits for G and 5 bits for B. The mathematical conversion from RGB888 to RGB565 is `short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)`.
 
