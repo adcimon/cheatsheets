@@ -223,7 +223,7 @@ ffmpeg -i <input> -r <fps> out%d.png
 
 Extract frames at a specific time.
 ```
-ffmpeg -i <input> -ss <time> -vframes <frames> thumb.png
+ffmpeg -i <input> -ss <time> -vframes <frames> out%d.png
 ```
 * [`-ss`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the time, e.g. `00:00:10.000` or `10` (in seconds).
 * [`-vframes`](https://ffmpeg.org/ffmpeg.html#Video-Options) specifies the number of frames.
