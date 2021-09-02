@@ -32,6 +32,9 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 [RGB](https://en.wikipedia.org/wiki/RGB_color_model) is an [additive](https://en.wikipedia.org/wiki/Additive_color) color model with a separation of `red`, `green` and `blue` [additive primary colors](https://en.wikipedia.org/wiki/Primary_color).
 
+<p align="center"><img align="center" width="20%" height="20%" src="additive_color_mixing.png"></p>
+<p align="center">Additive Color Mixing</p>
+
 <p align="center"><img align="center" width="30%" height="30%" src="rgb_cube.png"></p>
 <p align="center">RGB Color Range</p>
 
