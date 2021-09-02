@@ -55,12 +55,12 @@ Convert from RGB888 to RGB565: `short pixel = ((R >> 3) << 11) | ((G >> 2) << 5)
 
 [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) is a color model with `hue`, `saturation` and `level` components.
 
-<p align="center"><img align="center" width="50%" height="50%" src="hsl_cylinder.png"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="hsl_cylinder.png"></p>
 <p align="center">HSL Color Range</p>
 
 [HSV](https://en.wikipedia.org/wiki/HSL_and_HSV) is a color model with `hue`, `saturation` and `value` components (also known as HSB, `hue`, `saturation` and `brightness`).
 
-<p align="center"><img align="center" width="50%" height="50%" src="hsv_cylinder.png"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="hsv_cylinder.png"></p>
 <p align="center">HSV Color Range</p>
 
 ### YUV
