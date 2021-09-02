@@ -53,11 +53,12 @@ Convert from RGB888 to RGB565: `short pixel = ((R >> 3) << 11) | ((G >> 2) << 5)
 
 ### HSL/HSV
 
-[HSL/HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
+[HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) is a color model with `hue`, `saturation` and `level` components.
+[HSV](https://en.wikipedia.org/wiki/HSL_and_HSV) is a color model with `hue`, `saturation` and `value` components (also known as HSB, `hue`, `saturation` and `brightness`).
 
 ### YUV
 
-[YUV](https://en.wikipedia.org/wiki/YUV) is a color model with a separation of luma `Y` and chrominance `U`, `V` components. It was invented when engineers wanted color television in a black-and-white infrastructure. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane.
+[YUV](https://en.wikipedia.org/wiki/YUV) is a color model with `luma` and `chrominance` components. It was invented when engineers wanted color television in a black-and-white infrastructure. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane.
 
 ## References
 
