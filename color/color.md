@@ -42,6 +42,9 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 [CMY](https://en.wikipedia.org/wiki/CMY_color_model) is a [subtractive](https://en.wikipedia.org/wiki/Subtractive_color) color model with a separation of `cyan`, `magenta` and `yellow` [subtractive primary colors](https://en.wikipedia.org/wiki/Primary_color#Subtractive_mixing_of_ink_layers).
 
+<p align="center"><img align="center" width="30%" height="30%" src="subtractive_color_mixing.png"></p>
+<p align="center">Subtractive Color Mixing</p>
+
 ### HSL/HSV
 
 [HSL/HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
