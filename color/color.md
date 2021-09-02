@@ -32,7 +32,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 [RGB](https://en.wikipedia.org/wiki/RGB_color_model) is an [additive](https://en.wikipedia.org/wiki/Additive_color) color model with a separation of red, green and blue [additive primary colors](https://en.wikipedia.org/wiki/Primary_color).
 
-<p align="center"><img align="center" width="50%" height="50%" src="rgb_cube.png"></p>
+<p align="center"><img align="center" width="10%" height="10%" src="rgb_cube.png"></p>
 <p align="center">RGB Color Range</p>
 
 * RGB888 uses 24 bits, 8 bits per component [0, 255].
