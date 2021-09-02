@@ -35,7 +35,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 <p align="center"><img align="center" width="20%" height="20%" src="additive_color_mixing.png"></p>
 <p align="center">Additive Color Mixing</p>
 
-When the red, green and blue components have the same range of values the geometric representation has the shape of a cube otherwise it has the shape of a rectangular prism.
+When the red, green and blue components have the same range of values the geometric representation has the shape of a cube otherwise it has the shape of a rectangular prism or cuboid.
 <p align="center"><img align="center" width="30%" height="30%" src="rgb_cube.png"></p>
 <p align="center">RGB Color Range</p>
 
