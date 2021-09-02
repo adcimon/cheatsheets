@@ -30,7 +30,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 ### RGB
 
-[RGB](https://en.wikipedia.org/wiki/RGB_color_model) is an [additive](https://en.wikipedia.org/wiki/Additive_color) color model with a separation of red, green and blue [additive primary colors](https://en.wikipedia.org/wiki/Primary_color).
+[RGB](https://en.wikipedia.org/wiki/RGB_color_model) is an [additive](https://en.wikipedia.org/wiki/Additive_color) color model with a separation of `red`, `green` and `blue` [additive primary colors](https://en.wikipedia.org/wiki/Primary_color).
 
 <p align="center"><img align="center" width="30%" height="30%" src="rgb_cube.png"></p>
 <p align="center">RGB Color Range</p>
@@ -40,7 +40,7 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 ### CMY
 
-[CMY](https://en.wikipedia.org/wiki/CMY_color_model) is a [subtractive](https://en.wikipedia.org/wiki/Subtractive_color) color model with a separation of cyan, magenta and yellow [subtractive primary colors](https://en.wikipedia.org/wiki/Primary_color#Subtractive_mixing_of_ink_layers).
+[CMY](https://en.wikipedia.org/wiki/CMY_color_model) is a [subtractive](https://en.wikipedia.org/wiki/Subtractive_color) color model with a separation of `cyan`, `magenta` and `yellow` [subtractive primary colors](https://en.wikipedia.org/wiki/Primary_color#Subtractive_mixing_of_ink_layers).
 
 ### HSL/HSV
 
