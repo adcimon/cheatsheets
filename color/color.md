@@ -68,7 +68,7 @@ Both color ranges shapes are cylindrical.
 * The central vertical axis is the achromatic grayscale range, from top to bottom, white at lightness 1 to black at lightness 0.
 * Primary and secondary colors are around the outside edge of the cylinder with saturation 1. These saturated colors have lightness 0.5 in HSL and value 1 in HSV.
 * Mixing these saturated colors with black ([shades](https://en.wikipedia.org/wiki/Tints_and_shades)) leaves saturation unchanged.
-* In HSL, mixing with white leaves saturation unchanged.
+* In HSL, mixing with white ([tints](https://en.wikipedia.org/wiki/Tints_and_shades)) leaves saturation unchanged.
 * In HSL, mixing with both black and white ([tones](https://en.wikipedia.org/wiki/Tints_and_shades)) reduces saturation.
 * In HSV, mixing with white ([tints](https://en.wikipedia.org/wiki/Tints_and_shades)) reduces saturation.
 
