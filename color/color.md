@@ -63,6 +63,10 @@ Convert from RGB888 to RGB565: `short pixel = ((R >> 3) << 11) | ((G >> 2) << 5)
 <p align="center"><img align="center" width="30%" height="30%" src="hsv_cylinder.png"></p>
 <p align="center">HSV Color Range</p>
 
+Both color ranges shapes are cylindrical.
+* Hue, the angular dimension, starts at the red primary at 0°, passes through the green primary at 120° and the blue primary at 240°, and then back to red at 360°.
+* The central vertical axis is the achromatic grayscale range, from top to bottom, white at lightness 1 to black at lightness 0.
+
 ### YUV
 
 [YUV](https://en.wikipedia.org/wiki/YUV) is a color model with `luma` and `chrominance` components. It was invented when engineers wanted color television in a black-and-white infrastructure. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane.
