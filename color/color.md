@@ -67,8 +67,10 @@ Both color ranges shapes are cylindrical.
 * Hue, the angular dimension, starts at the red primary at 0°, passes through the green primary at 120° and the blue primary at 240°, and then back to red at 360°.
 * The central vertical axis is the achromatic grayscale range, from top to bottom, white at lightness 1 to black at lightness 0.
 * Primary and secondary colors are around the outside edge of the cylinder with saturation 1. These saturated colors have lightness 0.5 in HSL and value 1 in HSV.
-* Mixing these saturated colors with black ([shading](https://en.wikipedia.org/wiki/Tints_and_shades)) leaves saturation unchanged.
-* In HSL, saturation is also unchanged by tinting with white, and only mixtures with both black and white ([tones](https://en.wikipedia.org/wiki/Tints_and_shades)) have saturation less than 1. In HSV, tinting reduces saturation.
+* Mixing these saturated colors with black ([shades](https://en.wikipedia.org/wiki/Tints_and_shades)) leaves saturation unchanged.
+* In HSL, mixing with white leaves saturation unchanged.
+* In HSL, mixing with both black and white ([tones](https://en.wikipedia.org/wiki/Tints_and_shades)) reduces saturation.
+* In HSV, mixing with white ([tints](https://en.wikipedia.org/wiki/Tints_and_shades)) reduces saturation.
 
 ### YUV
 
