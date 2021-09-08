@@ -39,8 +39,8 @@ When the red, green and blue components have the same range of values the geomet
 <p align="center"><img align="center" width="30%" height="30%" src="rgb_cube.png"></p>
 <p align="center">RGB Color Range</p>
 
-* RGB888 uses 24 bits, 8 bits per component [0,255].
-* RGB565 uses 16 bits, 5 bits for R [0,31], 6 bits for G [0,63] and 5 bits for B [0,31].
+* RGB888 uses 24 bits, 8 bits per component.
+* RGB565 uses 16 bits, 5 bits for R, 6 bits for G and 5 bits for B.
 
 Convert from RGB888 to RGB565: `short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)`
 
