@@ -42,8 +42,6 @@ When the red, green and blue components have the same range of values the geomet
 * RGB888 uses 24 bits, 8 bits per component.
 * RGB565 uses 16 bits, 5 bits for R, 6 bits for G and 5 bits for B.
 
-Convert from RGB888 to RGB565: `short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)`
-
 ### CMY
 
 [CMY](https://en.wikipedia.org/wiki/CMY_color_model) is a [subtractive](https://en.wikipedia.org/wiki/Subtractive_color) color model with a separation of `cyan`, `magenta` and `yellow` [subtractive primary colors](https://en.wikipedia.org/wiki/Primary_color#Subtractive_mixing_of_ink_layers).
@@ -90,6 +88,27 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
   * [IMC4](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#imc4)
   * [YV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
   * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
+
+# Conversion
+
+RGB888 to RGB555.
+```
+short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
+```
+
+RGB to YUV.
+```
+Y  =      (0.257 * R) + (0.504 * G) + (0.098 * B) + 16
+Cr = V =  (0.439 * R) - (0.368 * G) - (0.071 * B) + 128
+Cb = U = -(0.148 * R) - (0.291 * G) + (0.439 * B) + 128
+```
+
+YUV to RGB.
+```
+B = 1.164(Y - 16)                   + 2.018(U - 128)
+G = 1.164(Y - 16) - 0.813(V - 128) - 0.391(U - 128)
+R = 1.164(Y - 16) + 1.596(V - 128)
+```
 
 ## References
 
