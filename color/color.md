@@ -78,18 +78,18 @@ Both color ranges shapes are cylindrical.
 
 There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), grouped by packed or planar layouts. The recommended formats for video rendering are:
 * 4:4:4 (32 bpp)
- * AYUV
+  * [AYUV](#)
 * 4:2:2 (16 bpp)
- * YUY2
- * UYVY
+  * [YUY2](#)
+  * [UYVY](#)
 * 4:2:0 (16 bpp)
- * IMC1
- * IMC3
+  * [IMC1](#)
+  * [IMC3](#)
 * 4:2:0 (12 bpp)
- * IMC2
- * IMC4
- * YV12
- * NV12
+  * [IMC2](#)
+  * [IMC4](#)
+  * [YV12](#)
+  * [NV12](#)
 
 ## References
 
