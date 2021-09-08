@@ -78,18 +78,18 @@ Both color ranges shapes are cylindrical.
 
 There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), grouped by packed or planar layouts. The recommended formats for video rendering are:
 * 4:4:4 (32 bpp)
-  * [AYUV](#)
+  * [AYUV](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#ayuv)
 * 4:2:2 (16 bpp)
-  * [YUY2](#)
-  * [UYVY](#)
+  * [YUY2](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yuy2)
+  * [UYVY](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#uyvy)
 * 4:2:0 (16 bpp)
-  * [IMC1](#)
-  * [IMC3](#)
+  * [IMC1](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#imc1)
+  * [IMC3](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#imc3)
 * 4:2:0 (12 bpp)
-  * [IMC2](#)
-  * [IMC4](#)
-  * [YV12](#)
-  * [NV12](#)
+  * [IMC2](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#imc2)
+  * [IMC4](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#imc4)
+  * [YV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
+  * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
 
 ## References
 
