@@ -76,7 +76,20 @@ Both color ranges shapes are cylindrical.
 
 [YUV](https://en.wikipedia.org/wiki/YUV) is a color model with `luma` and `chrominance` components. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane. It was invented when engineers wanted color television in a black-and-white infrastructure.
 
-There are multitude of [YUV pixel formats](https://www.fourcc.org/yuv.php), grouped by packed or planar layouts.
+There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), grouped by packed or planar layouts. The recommended formats for video rendering are:
+* 4:4:4 (32 bpp)
+ * AYUV
+* 4:2:2 (16 bpp)
+ * YUY2
+ * UYVY
+* 4:2:0 (16 bpp)
+ * IMC1
+ * IMC3
+* 4:2:0 (12 bpp)
+ * IMC2
+ * IMC4
+ * YV12
+ * NV12
 
 ## References
 
