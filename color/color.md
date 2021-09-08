@@ -114,6 +114,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 ## References
 
+* [A Beginner's Guide to CIE Colorimetry](https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a)
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
 * [Recommended 8-Bit YUV Formats for Video Rendering](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering)
 * [Image Stride](https://docs.microsoft.com/en-us/windows/win32/medfound/image-stride?redirectedfrom=MSDN)
