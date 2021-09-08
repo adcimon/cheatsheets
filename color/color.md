@@ -74,7 +74,7 @@ Both color ranges shapes are cylindrical.
 
 ### YUV
 
-[YUV](https://en.wikipedia.org/wiki/YUV) is a color model with `luma` and `chrominance` components. It was invented when engineers wanted color television in a black-and-white infrastructure. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane.
+[YUV](https://en.wikipedia.org/wiki/YUV) is a color model with `luma` and `chrominance` components. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane. It was invented when engineers wanted color television in a black-and-white infrastructure.
 
 ## References
 
