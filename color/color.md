@@ -8,7 +8,7 @@
   * [CMY](#cmy)
   * [HSL/HSV](#hslhsv)
   * [YUV](#yuv)
-* [Color Conversions](#color-conversions)
+  * [Conversions](#conversions)
 * [References](#references)
 
 ## Color Space
@@ -91,7 +91,7 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
   * [YV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
   * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
 
-## Color Conversions
+### Conversions
 
 RGB888 to RGB555.
 ```
@@ -114,6 +114,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 ## References
 
+* [Lists of Colors](https://en.wikipedia.org/wiki/Lists_of_colors)
 * [A Beginner's Guide to CIE Colorimetry](https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a)
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
 * [Recommended 8-Bit YUV Formats for Video Rendering](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering)
