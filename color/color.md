@@ -29,7 +29,13 @@ A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set o
 
 Converting color spaces depend on the `primary colors` and `white points` and must be done with `lineal values`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to convert RGB/XYZ and XYZ/RGB.
 
-RGB/XYZ
+RGB(709)/RGB(2020) (assuming same white points)
+```
+XYZ = RGB709_TO_XYZ_MAT * RGB(709)
+RGB(2020) = XYZ_TO_RGB2020_MAT * XYZ
+```
+
+Convert white points D50/D65
 ```
 ```
 
