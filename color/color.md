@@ -114,6 +114,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 ## References
 
+* [Color Theory](https://en.wikipedia.org/wiki/Color_theory)
 * [Lists of Colors](https://en.wikipedia.org/wiki/Lists_of_colors)
 * [A Beginner's Guide to CIE Colorimetry](https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a)
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
