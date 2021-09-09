@@ -8,9 +8,7 @@
   * [CMY](#cmy)
   * [HSL/HSV](#hslhsv)
   * [YUV](#yuv)
-* [Conversions](#conversions)
-  * [Color Spaces](#color-spaces)
-  * [Color Models](#color-models)
+  * [Conversions](#conversions)
 * [References](#references)
 
 ## Color Space
@@ -28,6 +26,18 @@ A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set o
 * Primary colors (R,G,B).
 * [White point](https://en.wikipedia.org/wiki/White_point). Color spaces use [illuminants](https://en.wikipedia.org/wiki/Template:Color_temperature_white_points) to define reference whites, each illuminant has a [correlated color temperature (CCT)](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature). The commonly used standard illuminant is [D65](https://en.wikipedia.org/wiki/Illuminant_D65).
 * [Transfer function](https://en.wikipedia.org/wiki/Transfer_function). [Gamma correction](https://en.wikipedia.org/wiki/Gamma_correction) is a non-linear operation used to encode and decode luminance or tristimulus values. It is used to take advantage of the non-linear manner in which humans perceive light and color.
+
+RGB to XYZ. The [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) depend on the primary colors and white points.
+```
+```
+
+XYZ to xyY
+```
+x = X / (X + Y + Z)
+y = Y / (X + Y + Z)
+Y = Y
+```
+For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the reference white.
 
 ## Color Model
 
@@ -100,23 +110,7 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
   * [YV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
   * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
 
-## Conversions
-
-### Color Spaces
-
-RGB to XYZ. The [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) depend on the primary colors and white points.
-```
-```
-
-XYZ to xyY
-```
-x = X / (X + Y + Z)
-y = Y / (X + Y + Z)
-Y = Y
-```
-For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the reference white.
-
-### Color Models
+### Conversions
 
 RGB888 to RGB555
 ```
