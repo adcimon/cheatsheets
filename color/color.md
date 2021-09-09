@@ -35,9 +35,13 @@ XYZ = RGB709_TO_XYZ_MAT * RGB(709)
 RGB(2020) = XYZ_TO_RGB2020_MAT * XYZ
 ```
 
-Convert white points D50/D65
+XYZ(D50)/XYZ(D65)
 ```
+LMS(D50) = XYZ_TO_LMS_MAT * XYZ(D50)
+LMS(D65) = D50_TO_D65_CAT * LMS(D50)
+XYZ(D65) = LMS_TO_XYZ_MAT * LMS(D65)
 ```
+[Chromatic Adaptation Transform](https://en.wikipedia.org/wiki/Chromatic_adaptation)
 
 XYZ/xyY
 ```
