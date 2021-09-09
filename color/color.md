@@ -9,6 +9,8 @@
   * [HSL/HSV](#hslhsv)
   * [YUV](#yuv)
 * [Conversions](#conversions)
+  * [Color Spaces](#color-spaces)
+  * [Color Models](#color-models)
 * [References](#references)
 
 ## Color Space
@@ -98,13 +100,15 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
   * [YV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
   * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
 
-### Conversions
+## Conversions
 
-* RGB to XYZ
+### Color Spaces
+
+RGB to XYZ
 ```
 ```
 
-* XYZ to xyY
+XYZ to xyY
 ```
 x = X / (X + Y + Z)
 y = Y / (X + Y + Z)
@@ -112,19 +116,21 @@ Y = Y
 ```
 For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the reference white.
 
-* RGB888 to RGB555
+### Color Models
+
+RGB888 to RGB555
 ```
 short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
 ```
 
-* RGB to YUV
+RGB to YUV
 ```
 Y =  (0.257 * R) + (0.504 * G) + (0.098 * B) + 16
 U = -(0.148 * R) - (0.291 * G) + (0.439 * B) + 128
 V =  (0.439 * R) - (0.368 * G) - (0.071 * B) + 128
 ```
 
-* YUV to RGB
+YUV to RGB
 ```
 R = 1.164(Y - 16)                  + 1.596(V - 128)
 G = 1.164(Y - 16) - 0.391(U - 128) - 0.813(V - 128)
