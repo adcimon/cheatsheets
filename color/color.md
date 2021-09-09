@@ -20,7 +20,7 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 <p align="center"><img align="center" width="50%" height="50%" src="CIE1931_chromaticity_diagram.svg"></p>
 <p align="center">CIE Chromaticity Diagram</p>
 
-In the black band are represented the [spectral colors](https://en.wikipedia.org/wiki/Spectral_color), colors in a relatively narrow band of wavelengths, also known as monochromatic light. Values are expressed in nanometers. This diagram gives a common frame to define color spaces in `xyY` coordinates where `xy` is chrominance and `Y` is luminance.
+In the black band are represented the [spectral colors](https://en.wikipedia.org/wiki/Spectral_color), colors in a relatively narrow band of wavelengths, also known as monochromatic light. Values are expressed in nanometers. This diagram gives a common frame to define color spaces in `xyY` coordinates where `xy` is `chrominance` and `Y` is `luminance`.
 
 A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set of colors that can be represented, and is defined by:
 * Primary colors (R,G,B).
