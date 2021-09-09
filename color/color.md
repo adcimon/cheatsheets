@@ -20,6 +20,8 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 <p align="center"><img align="center" width="50%" height="50%" src="CIE1931_chromaticity_diagram.svg"></p>
 <p align="center">CIE Chromaticity Diagram</p>
 
+In the black band are represented the [spectral colors](https://en.wikipedia.org/wiki/Spectral_color), colors in a relatively narrow band of wavelengths, also known as monochromatic light. Values are expressed in nanometers.
+
 A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set of colors that can be represented, and is defined by:
 * Primary colors (R,G,B).
 * [White point](https://en.wikipedia.org/wiki/White_point). Color spaces use [illuminants](https://en.wikipedia.org/wiki/Template:Color_temperature_white_points) to define reference whites, each illuminant has a [correlated color temperature (CCT)](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature). One of the most common illuminants is [D65](https://en.wikipedia.org/wiki/Illuminant_D65).
