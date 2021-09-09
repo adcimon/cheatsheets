@@ -41,7 +41,7 @@ LMS(D50) = XYZ_TO_LMS_MAT * XYZ(D50)
 LMS(D65) = D50_TO_D65_CAT * LMS(D50)
 XYZ(D65) = LMS_TO_XYZ_MAT * LMS(D65)
 ```
-[Chromatic Adaptation Transform](https://en.wikipedia.org/wiki/Chromatic_adaptation)
+White points conversion matrices are called [Chromatic Adaptation Transform (CAT)](https://en.wikipedia.org/wiki/Chromatic_adaptation) and are equivalent to apply a [white balance](https://en.wikipedia.org/wiki/Color_balance).
 
 XYZ/xyY
 ```
