@@ -22,7 +22,7 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 
 A color space is defined by:
 * Primary colors.
-* [White point](https://en.wikipedia.org/wiki/White_point).
+* [White point](https://en.wikipedia.org/wiki/White_point). A color space uses [illuminants](https://en.wikipedia.org/wiki/Template:Color_temperature_white_points) to define reference whites, each one has a [correlated color temperature (CCT)](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature).
 * Transfer function.
 
 ## Color Model
