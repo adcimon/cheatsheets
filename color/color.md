@@ -104,7 +104,7 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
 
 ### Color Spaces
 
-RGB to XYZ
+RGB to XYZ. The [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) depend on the primary colors and white points.
 ```
 ```
 
