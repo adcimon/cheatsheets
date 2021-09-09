@@ -27,13 +27,13 @@ A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set o
 * [White point](https://en.wikipedia.org/wiki/White_point). Color spaces use [illuminants](https://en.wikipedia.org/wiki/Template:Color_temperature_white_points) to define reference whites, each illuminant has a [correlated color temperature (CCT)](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature). The commonly used standard illuminant is [D65](https://en.wikipedia.org/wiki/Illuminant_D65).
 * [Transfer function](https://en.wikipedia.org/wiki/Transfer_function). [Gamma correction](https://en.wikipedia.org/wiki/Gamma_correction) is a non-linear operation used to encode and decode luminance or tristimulus values. It is used to take advantage of the non-linear manner in which humans perceive light and color.
 
-Transforming color spaces depend on the `primary colors` and `white points` and must be done with `lineal values`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to transform from RGB to XYZ.
+Transforming color spaces depend on the `primary colors` and `white points` and must be done with `lineal values`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to transform from RGB/XYZ and XYZ/RGB.
 
-RGB to XYZ
+RGB/XYZ
 ```
 ```
 
-XYZ to xyY
+XYZ/xyY
 ```
 x = X / (X + Y + Z)
 y = Y / (X + Y + Z)
@@ -114,19 +114,19 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
 
 ### Conversions
 
-RGB888 to RGB555
+RGB888/RGB555
 ```
 short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
 ```
 
-RGB to YUV
+RGB/YUV
 ```
 Y =  (0.257 * R) + (0.504 * G) + (0.098 * B) + 16
 U = -(0.148 * R) - (0.291 * G) + (0.439 * B) + 128
 V =  (0.439 * R) - (0.368 * G) - (0.071 * B) + 128
 ```
 
-YUV to RGB
+YUV/RGB
 ```
 R = 1.164(Y - 16)                  + 1.596(V - 128)
 G = 1.164(Y - 16) - 0.391(U - 128) - 0.813(V - 128)
