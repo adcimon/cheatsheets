@@ -110,6 +110,7 @@ x = X / (X + Y + Z)
 y = Y / (X + Y + Z)
 Y = Y
 ```
+For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the reference white.
 
 RGB888 to RGB555
 ```
