@@ -21,7 +21,12 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 <p align="center"><img align="center" width="50%" height="50%" src="CIE1931_chromaticity_diagram.svg"></p>
 <p align="center">CIE Chromaticity Diagram</p>
 
-In the black band are represented the [spectral colors](https://en.wikipedia.org/wiki/Spectral_color), colors in a relatively narrow band of wavelengths, also known as monochromatic light. Values are expressed in nanometers. This diagram gives a common frame to define color spaces in `xyY` coordinates where `xy` is `chrominance` and `Y` is `luminance`.
+* The diagram represents the colors visible to the average human eye.
+* The edge is called spectral locus, the set of [spectral colors](https://en.wikipedia.org/wiki/Spectral_color) (`most` saturated colors), pure monochromatic light measured by wavelength in nanometers.
+* The `least` saturated colors are at the center.
+* Colors along any line between 2 points can be made by mixing the colors at the end points.
+* The line of purples are fully saturated colors that can only be made by mixing red and blue.
+* The diagram gives a common frame to define color spaces in `xyY` coordinates where `xy` is `chrominance` and `Y` is `luminance`.
 
 A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set of colors that can be represented, and is defined by:
 * Primary colors (R,G,B).
