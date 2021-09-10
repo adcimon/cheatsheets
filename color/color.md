@@ -168,16 +168,19 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 * RRT: Reference Rendering Transform (tone mapping for a Reference Display Device).
 * ODT: Output Device Transform.
 
+ACES has several color spaces, defined by:
+* Primary `AP0` `R(0.7347, 0.2653) G(0, 1) B(0.0001, -0.0770)`.
+* Primary `AP1` `R(0.713, 0.293) G(0.165, 0.830) B(0.128, 0.044)`.
+* Reference illuminant `(0.32168, 0.33767)`, close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60).
+
 <p align="center"><img align="center" width="40%" height="40%" src="aces_color_spaces.png"></p>
 <p align="center">ACES Color Spaces</p>
 
-ACES `working` color spaces:
+ACES `working` color spaces are:
 * ACEScc: Color grading (AP1 / log).
 * ACEScct: Color grading (AP1 / log+toe).
 * ACEScg: VFX and composition (AP1 / lineal).
 * ACESproxy: Interchange (AP0).
-
-The reference illuminant is close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60) standard illuminant, with chromaticities `(0.32168, 0.33767)`.
 
 ## References
 
