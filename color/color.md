@@ -22,10 +22,11 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 <p align="center">CIE Chromaticity Diagram</p>
 
 * The diagram represents the colors visible to the average human eye.
-* The edge is called spectral locus, the set of [spectral colors](https://en.wikipedia.org/wiki/Spectral_color) (`most` saturated colors), pure monochromatic light measured by wavelength in nanometers.
-* The `least` saturated colors are at the center.
+* The edge is called spectral locus, the set of [spectral colors](https://en.wikipedia.org/wiki/Spectral_color), pure monochromatic light measured by wavelength in nanometers.
+* Most saturated colors are at the edge.
+* Least saturated colors are at the center.
 * Colors along any line between 2 points can be made by mixing the colors at the end points.
-* The line of purples are fully saturated colors that can only be made by mixing red and blue.
+* Line of purples are fully saturated colors that can only be made by mixing red and blue.
 * The diagram gives a common frame to define color spaces in `xyY` coordinates where `xy` is `chrominance` and `Y` is `luminance`.
 
 A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set of colors that can be represented, and is defined by:
