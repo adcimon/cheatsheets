@@ -172,7 +172,7 @@ ACES color spaces:
 * ACEScc: Color grading (AP1 / log).
 * ACEScct: Color grading (AP1 / log+toe).
 * ACEScg: VFX and composition (AP1 / lineal).
-* ACESproxy: Interchange.
+* ACESproxy: Interchange (AP0).
 
 ## References
 
