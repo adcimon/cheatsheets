@@ -162,11 +162,17 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 <p align="center"><img align="center" width="30%" height="30%" src="aces_pipeline.png"></p>
 <p align="center">ACES Pipeline</p>
 
-* IDT: Input Device Transform
-* ACES Color Space
-* LMT: Look Modification Transform (optional)
-* RRT: Reference Rendering Transform (tone mapping for a Reference Display Device)
-* ODT: Output Device Transform
+* IDT: Input Device Transform.
+* ACES Color Space.
+* LMT: Look Modification Transform (optional).
+* RRT: Reference Rendering Transform (tone mapping for a Reference Display Device).
+* ODT: Output Device Transform.
+
+ACES color spaces:
+* ACEScc: Color grading (AP1 / log).
+* ACEScct: Color grading (AP1 / log+toe).
+* ACEScg: VFX and composition (AP1 / lineal).
+* ACESproxy: Interchange.
 
 ## References
 
