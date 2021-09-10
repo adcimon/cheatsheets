@@ -157,7 +157,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 ## ACES
 
-[Academy Color Encoding System ACES](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System)
+[Academy Color Encoding System ACES](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System) is a color image encoding system created by industry professionals of [Academy of Motion Picture Arts and Sciences](https://en.wikipedia.org/wiki/Academy_of_Motion_Picture_Arts_and_Sciences).
 
 ## References
 
