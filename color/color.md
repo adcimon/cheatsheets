@@ -174,6 +174,8 @@ ACES `working` color spaces:
 * ACEScg: VFX and composition (AP1 / lineal).
 * ACESproxy: Interchange (AP0).
 
+The reference illuminant is close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60) standard illuminant, with chromaticities `(0.32168, 0.33767)`.
+
 ## References
 
 * [Color Theory](https://en.wikipedia.org/wiki/Color_theory)
