@@ -65,7 +65,7 @@ For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the ref
 
 ## Color Model
 
-A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to represent colors, typically as tuples of three or four values or components. An image can be represented in memory component-wise or planar-wise.
+A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to represent colors, typically as tuples of three or four values or components. An image can be represented in memory (with a [stride](https://docs.microsoft.com/en-us/windows/win32/medfound/image-stride?redirectedfrom=MSDN)) component-wise or planar-wise.
 
 * Packed formats are represented in memory [X<sub>1</sub>Y<sub>1</sub>Z<sub>1</sub>...X<sub>n</sub>Y<sub>n</sub>Z<sub>n</sub>].
 * Planar formats are represented in memory [X<sub>1</sub>...X<sub>n</sub>] [Y<sub>1</sub>...Y<sub>n</sub>] [Z<sub>1</sub>...Z<sub>n</sub>].
@@ -190,5 +190,4 @@ ACES `working` color spaces are:
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
 * [Bruce Lindbloom Web Site](http://www.brucelindbloom.com/index.html)
 * [Recommended 8-Bit YUV Formats for Video Rendering](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering)
-* [Image Stride](https://docs.microsoft.com/en-us/windows/win32/medfound/image-stride?redirectedfrom=MSDN)
 * [Academy Color Encoding System](https://www.oscars.org/science-technology/sci-tech-projects/aces)
