@@ -168,7 +168,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 * RRT: Reference Rendering Transform (tone mapping for a Reference Display Device).
 * ODT: Output Device Transform.
 
-ACES work color spaces:
+ACES `working` color spaces:
 * ACEScc: Color grading (AP1 / log).
 * ACEScct: Color grading (AP1 / log+toe).
 * ACEScg: VFX and composition (AP1 / lineal).
