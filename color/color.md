@@ -159,6 +159,9 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 [Academy Color Encoding System ACES](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System) is a color image encoding system created by industry professionals of [Academy of Motion Picture Arts and Sciences](https://en.wikipedia.org/wiki/Academy_of_Motion_Picture_Arts_and_Sciences).
 
+<p align="center"><img align="center" width="70%" height="70%" src="aces_pipeline.png"></p>
+<p align="center">ACES Pipeline</p>
+
 ## References
 
 * [Color Theory](https://en.wikipedia.org/wiki/Color_theory)
