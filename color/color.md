@@ -2,6 +2,7 @@
 
 ## Index
 
+* [Color History](#color-history)
 * [Color Space](#color-space)
 * [Color Model](#color-model)
   * [RGB](#rgb)
@@ -10,6 +11,12 @@
   * [YUV](#yuv)
 * [ACES](#aces)
 * [References](#references)
+
+## Color History
+
+[Colorimetry]() is the science that quantifies and describes physically the human [color perception](https://en.wikipedia.org/wiki/Color_vision) and [color theory](https://en.wikipedia.org/wiki/Color_theory) in visual arts is a body of practical guidance to color mixing.
+
+During the 20th century two important color systems were created. The [Munsell Color System](https://en.wikipedia.org/wiki/Munsell_color_system) and the [Natural Color System (NCS)](https://en.wikipedia.org/wiki/Natural_Color_System). Both were based on human perception and derived from experiments.
 
 ## Color Space
 
@@ -181,7 +188,6 @@ ACES `working` color spaces are:
 
 ## References
 
-* [Color Theory](https://en.wikipedia.org/wiki/Color_theory)
 * [Lists of Colors](https://en.wikipedia.org/wiki/Lists_of_colors)
 * [A Beginner's Guide to CIE Colorimetry](https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a)
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
