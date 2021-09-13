@@ -4,12 +4,13 @@
 
 * [Color History](#color-history)
 * [Color Space](#color-space)
+  * [CIE](#cie)
+  * [ACES](#aces)
 * [Color Model](#color-model)
   * [RGB](#rgb)
   * [CMY](#cmy)
   * [HSL/HSV](#hslhsv)
   * [YUV](#yuv)
-* [ACES](#aces)
 * [References](#references)
 
 ## Color History
@@ -21,6 +22,8 @@ During the 20th century two important color systems were created. The [Munsell C
 ## Color Space
 
 A [color space](https://en.wikipedia.org/wiki/Color_space) is the set of colors and luminance values which can be captured, stored or displayed in a medium.
+
+### CIE
 
 The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) are the first defined quantitative links between distributions of wavelengths in the electromagnetic visible spectrum, and physiologically perceived colors in human color vision. They were created by the [International Commission on Illumination (CIE)](https://en.wikipedia.org/wiki/International_Commission_on_Illumination) in 1931 from a series of experiments that were combined into the specification of the `CIE RGB` color space, from which the `CIE XYZ` color space was derived.
 
@@ -68,6 +71,33 @@ y = Y / (X + Y + Z)
 Y = Y
 ```
 For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the reference white.
+
+### ACES
+
+[Academy Color Encoding System ACES](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System) is a color image encoding system created by industry professionals of [Academy of Motion Picture Arts and Sciences](https://en.wikipedia.org/wiki/Academy_of_Motion_Picture_Arts_and_Sciences).
+
+<p align="center"><img align="center" width="30%" height="30%" src="aces_pipeline.png"></p>
+<p align="center">ACES Pipeline</p>
+
+* IDT: Input Device Transform.
+* ACES Color Space.
+* LMT: Look Modification Transform (optional).
+* RRT: Reference Rendering Transform (tone mapping for a Reference Display Device).
+* ODT: Output Device Transform.
+
+ACES has several color spaces, defined by:
+* Primary `AP0` `R(0.7347, 0.2653) G(0, 1) B(0.0001, -0.0770)`.
+* Primary `AP1` `R(0.713, 0.293) G(0.165, 0.830) B(0.128, 0.044)`.
+* Reference illuminant `(0.32168, 0.33767)`, close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60).
+
+<p align="center"><img align="center" width="40%" height="40%" src="aces_color_spaces.png"></p>
+<p align="center">ACES Color Spaces</p>
+
+ACES `working` color spaces are:
+* ACEScc: Color grading (AP1 / log).
+* ACEScct: Color grading (AP1 / log+toe).
+* ACEScg: VFX and composition (AP1 / lineal).
+* ACESproxy: Interchange (AP0).
 
 ## Color Model
 
@@ -158,33 +188,6 @@ R = 1.164(Y - 16)                  + 1.596(V - 128)
 G = 1.164(Y - 16) - 0.391(U - 128) - 0.813(V - 128)
 B = 1.164(Y - 16) + 2.018(U - 128)
 ```
-
-## ACES
-
-[Academy Color Encoding System ACES](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System) is a color image encoding system created by industry professionals of [Academy of Motion Picture Arts and Sciences](https://en.wikipedia.org/wiki/Academy_of_Motion_Picture_Arts_and_Sciences).
-
-<p align="center"><img align="center" width="30%" height="30%" src="aces_pipeline.png"></p>
-<p align="center">ACES Pipeline</p>
-
-* IDT: Input Device Transform.
-* ACES Color Space.
-* LMT: Look Modification Transform (optional).
-* RRT: Reference Rendering Transform (tone mapping for a Reference Display Device).
-* ODT: Output Device Transform.
-
-ACES has several color spaces, defined by:
-* Primary `AP0` `R(0.7347, 0.2653) G(0, 1) B(0.0001, -0.0770)`.
-* Primary `AP1` `R(0.713, 0.293) G(0.165, 0.830) B(0.128, 0.044)`.
-* Reference illuminant `(0.32168, 0.33767)`, close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60).
-
-<p align="center"><img align="center" width="40%" height="40%" src="aces_color_spaces.png"></p>
-<p align="center">ACES Color Spaces</p>
-
-ACES `working` color spaces are:
-* ACEScc: Color grading (AP1 / log).
-* ACEScct: Color grading (AP1 / log+toe).
-* ACEScg: VFX and composition (AP1 / lineal).
-* ACESproxy: Interchange (AP0).
 
 ## References
 
