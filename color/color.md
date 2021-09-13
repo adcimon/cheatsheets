@@ -14,7 +14,7 @@
 
 ## Color History
 
-[Colorimetry]() is the science that quantifies and describes physically the human [color perception](https://en.wikipedia.org/wiki/Color_vision) and [color theory](https://en.wikipedia.org/wiki/Color_theory), in visual arts, is a body of practical guidance to color mixing.
+[Colorimetry]() is the science that quantifies and describes physically the human color perception and [color theory](https://en.wikipedia.org/wiki/Color_theory), in visual arts, is a body of practical guidance to color mixing.
 
 During the 20th century two important color systems were created. The [Munsell Color System](https://en.wikipedia.org/wiki/Munsell_color_system) and the [Natural Color System (NCS)](https://en.wikipedia.org/wiki/Natural_Color_System). Both were based on human perception and derived from experiments.
 
