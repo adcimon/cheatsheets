@@ -82,7 +82,7 @@ When the red, green and blue components have the same range of values the geomet
 <p align="center"><img align="center" width="30%" height="30%" src="rgb_cube.png"></p>
 <p align="center">RGB Color Range</p>
 
-There are several [RGB pixel formats](https://en.wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats), the most common formats are:
+There are multitude [RGB pixel formats](https://en.wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats), the most common formats are:
 * RGB888 or RGB24, uses 24 bits (8 bits per component).
 * RGB565, uses 16 bits (5 bits R, 6 bits G and 5 bits B).
 
