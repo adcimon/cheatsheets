@@ -194,6 +194,13 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 [Blend modes](https://en.wikipedia.org/wiki/Blend_modes), in digital image editing and computer graphics, are used to determine how two color layers are blended with each other.
 
+**Normal**
+Mixes two layers using [alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing).
+```
+\alpha<sub>0</sub> = a<sub>a</sub> + a<sub>b</sub>(1 - a<sub>a</sub>)
+C<sub>0</sub> = () / ()
+```
+
 ## References
 
 * [Lists of Colors](https://en.wikipedia.org/wiki/Lists_of_colors)
