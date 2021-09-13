@@ -208,7 +208,7 @@ C<sub>0</sub> = (C<sub>a</sub>α<sub>a</sub> + C<sub>b</sub>α<sub>b</sub>(1 - �
 
 **Dissolve**
 <br>
-Takes random pixels from both layers based on alpha.
+Takes random pixels from both layers based on alpha using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern.
 <br>
 
 ## References
