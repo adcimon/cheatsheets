@@ -38,7 +38,7 @@ Each color space has a [gamut](https://en.wikipedia.org/wiki/Gamut), a subset of
 <p align="center"><img align="center" width="70%" height="70%" src="color_spaces.png"></p>
 <p align="center">Color Spaces</p>
 
-Converting color spaces depend on the `primary colors` and `white points` and must be done with `lineal values`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to convert RGB/XYZ and XYZ/RGB.
+Color space conversion is done with `lineal values` and depends on the `primary colors` and `white points`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to convert RGB/XYZ and XYZ/RGB.
 
 RGB(709)/RGB(2020)
 ```
