@@ -197,7 +197,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 **Normal**
 Mixes two layers using [alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing).
 ```
-\alpha<sub>0</sub> = a<sub>a</sub> + a<sub>b</sub>(1 - a<sub>a</sub>)
+&alpha;<sub>0</sub> = &alpha;<sub>a</sub> + &alpha;<sub>b</sub>(1 - &alpha;<sub>a</sub>)
 C<sub>0</sub> = () / ()
 ```
 
