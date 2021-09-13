@@ -215,9 +215,9 @@ Takes random pixels from both layers using a [diffusion dither](https://en.wikip
 <br>
 Mixes two layers by multiplying the values.
 <br>
-Since values are in range [0,1] the product will be less than each initial value.
-<br>
 The mode is `commutative`.
+<br>
+Since values are in range [0,1] the product will be less than each initial value.
 <br>
 If a pixel contains homogeneous values (grayscale), multiply is equivalent to using normal with the gray value as opacity and a black bottom layer.
 <br>
