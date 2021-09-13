@@ -198,6 +198,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 <p align="center">Blend Modes</p>
 
 * **Normal**
+
 Mixes two layers using [alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing).
 <br>
 α<sub>0</sub> = α<sub>a</sub> + α<sub>b</sub>(1 - α<sub>a</sub>)
@@ -206,6 +207,7 @@ C<sub>0</sub> = (C<sub>a</sub>α<sub>a</sub> + C<sub>b</sub>α<sub>b</sub>(1 - �
 <br>
 
 * **Dissolve**
+
 Takes random pixels from both layers based on alpha.
 <br>
 
