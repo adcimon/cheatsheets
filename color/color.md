@@ -215,7 +215,7 @@ Takes random pixels from both layers using a [diffusion dither](https://en.wikip
 <br>
 Mixes two layers by multiplying the values.
 <br>
-The mode is `commutative`.
+The mode is commutative.
 <br>
 Since values are in range [0,1] the product will be less than each initial value.
 <br>
