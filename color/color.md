@@ -8,7 +8,6 @@
   * [CMY](#cmy)
   * [HSL/HSV](#hslhsv)
   * [YUV](#yuv)
-  * [Conversions](#conversions)
 * [ACES](#aces)
 * [References](#references)
 
@@ -87,6 +86,11 @@ There are several [RGB pixel formats](https://en.wikipedia.org/wiki/List_of_mono
 * RGB888 or RGB24, uses 24 bits (8 bits per component).
 * RGB565, uses 16 bits (5 bits R, 6 bits G and 5 bits B).
 
+RGB888/RGB555
+```
+short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
+```
+
 ### CMY
 
 [CMY](https://en.wikipedia.org/wiki/CMY_color_model) is a [subtractive](https://en.wikipedia.org/wiki/Subtractive_color) color model with a separation of `cyan`, `magenta` and `yellow` [subtractive primary colors](https://en.wikipedia.org/wiki/Primary_color#Subtractive_mixing_of_ink_layers).
@@ -133,13 +137,6 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
   * [IMC4](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#imc4)
   * [YV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
   * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
-
-### Conversions
-
-RGB888/RGB555
-```
-short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
-```
 
 RGB/YUV
 ```
