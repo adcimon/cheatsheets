@@ -11,6 +11,7 @@
   * [CMY](#cmy)
   * [HSL/HSV](#hslhsv)
   * [YUV](#yuv)
+* [Blend Modes](#blend-modes)
 * [References](#references)
 
 ## Color History
@@ -188,6 +189,10 @@ R = 1.164(Y - 16)                  + 1.596(V - 128)
 G = 1.164(Y - 16) - 0.391(U - 128) - 0.813(V - 128)
 B = 1.164(Y - 16) + 2.018(U - 128)
 ```
+
+## Blend Modes
+
+[Blend modes](https://en.wikipedia.org/wiki/Blend_modes), in digital image editing and computer graphics, are used to determine how two color layers are blended with each other.
 
 ## References
 
