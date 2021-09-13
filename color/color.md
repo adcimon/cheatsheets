@@ -194,7 +194,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 [Blend modes](https://en.wikipedia.org/wiki/Blend_modes) are used to determine how two color layers are blended with each other.
 
-<p align="center"><img align="center" width="40%" height="40%" src="blend_modes.png"></p>
+<p align="center"><img align="center" width="70%" height="70%" src="blend_modes.png"></p>
 <p align="center">Blend Modes</p>
 
 **Normal**
