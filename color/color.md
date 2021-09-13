@@ -192,7 +192,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 ## Blend Modes
 
-[Blend modes](https://en.wikipedia.org/wiki/Blend_modes), in digital image editing and computer graphics, are used to determine how two color layers are blended with each other.
+[Blend modes](https://en.wikipedia.org/wiki/Blend_modes) are used to determine how two color layers are blended with each other.
 
 <p align="center"><img align="center" width="40%" height="40%" src="blend_modes.png"></p>
 <p align="center">Blend Modes</p>
@@ -208,7 +208,14 @@ C<sub>0</sub> = (C<sub>a</sub>α<sub>a</sub> + C<sub>b</sub>α<sub>b</sub>(1 - �
 
 **Dissolve**
 <br>
-Takes random pixels from both layers based on alpha using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern.
+Takes random pixels from both layers using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern based on alpha.
+<br>
+
+**Multiply**
+<br>
+Mixes two layers by multiplying the values. Since values are in range [0,1] the product will be less than each initial value. The mode is `commutative`.
+<br>
+C<sub>0</sub> = C<sub>a</sub>C<sub>b</sub>
 <br>
 
 ## References
