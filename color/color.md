@@ -16,7 +16,7 @@
 
 A [color space](https://en.wikipedia.org/wiki/Color_space) is the set of colors and luminance values which can be captured, stored or displayed in a medium.
 
-The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) are the first defined quantitative links between distributions of wavelengths in the electromagnetic visible spectrum, and physiologically perceived colors in human color vision. They were created by the [International Commission on Illumination (CIE)](https://en.wikipedia.org/wiki/International_Commission_on_Illumination) in 1931 from a series of experiments that were combined into the specification of the CIE RGB color space, from which the CIE XYZ color space was derived.
+The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) are the first defined quantitative links between distributions of wavelengths in the electromagnetic visible spectrum, and physiologically perceived colors in human color vision. They were created by the [International Commission on Illumination (CIE)](https://en.wikipedia.org/wiki/International_Commission_on_Illumination) in 1931 from a series of experiments that were combined into the specification of the `CIE RGB` color space, from which the `CIE XYZ` color space was derived.
 
 <p align="center"><img align="center" width="50%" height="50%" src="CIE1931_chromaticity_diagram.svg"></p>
 <p align="center">CIE Chromaticity Diagram</p>
@@ -30,7 +30,7 @@ The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) 
 
 The diagram gives a common frame to define color spaces in `xyY` coordinates where `xy` is `chrominance` and `Y` is `luminance`.
 
-A color space represents a [gamut](https://en.wikipedia.org/wiki/Gamut), a set of colors that can be represented, and is defined by:
+Each color space has a [gamut](https://en.wikipedia.org/wiki/Gamut), a subset of colors that can be represented, and is defined by:
 * Primary colors (R,G,B).
 * [White point](https://en.wikipedia.org/wiki/White_point). Color spaces use [illuminants](https://en.wikipedia.org/wiki/Template:Color_temperature_white_points) to define reference whites, each illuminant has a [correlated color temperature (CCT)](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature). The commonly used standard illuminant is [D65](https://en.wikipedia.org/wiki/Illuminant_D65) at 6504 K.
 * [Transfer function](https://en.wikipedia.org/wiki/Transfer_function). [Gamma correction](https://en.wikipedia.org/wiki/Gamma_correction) is a non-linear operation used to encode and decode luminance or tristimulus values. It is used to take advantage of the non-linear manner in which humans perceive light and color.
