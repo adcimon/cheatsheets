@@ -237,7 +237,7 @@ C<sub>0</sub> = 1 - (1 - C<sub>a</sub>)(1 - C<sub>b</sub>)
 </pre>
 
 **Overlay**<br>
-Combines **multiply** and **screen**.
+Combines **multiply** and **screen**.<br>
 If the base layer is light the result is lighter. If the base layer is dark the result is darker.<br>
 An overlay with the same picture looks like an S-curve.
 <pre>
