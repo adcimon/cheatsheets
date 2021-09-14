@@ -50,14 +50,14 @@ Each color space has a [gamut](https://en.wikipedia.org/wiki/Gamut), a subset of
 
 Color space conversion is done with `lineal values` and depends on the `primary colors` and `white points`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to convert RGB/XYZ and XYZ/RGB.
 
-RGB(709)/RGB(2020)
+**RGB(709)/RGB(2020)**
 ```
 XYZ = RGB709_TO_XYZ_MAT * RGB(709)
 RGB(2020) = XYZ_TO_RGB2020_MAT * XYZ
 ```
 Conversion assuming same white points.
 
-XYZ(D50)/XYZ(D65)
+**XYZ(D50)/XYZ(D65)**
 ```
 LMS(D50) = XYZ_TO_LMS_MAT * XYZ(D50)
 LMS(D65) = D50_TO_D65_CAT * LMS(D50)
@@ -65,7 +65,7 @@ XYZ(D65) = LMS_TO_XYZ_MAT * LMS(D65)
 ```
 White points conversion matrices are called [Chromatic Adaptation Transform (CAT)](https://en.wikipedia.org/wiki/Chromatic_adaptation) and are equivalent to apply a [white balance](https://en.wikipedia.org/wiki/Color_balance).
 
-XYZ/xyY
+**XYZ/xyY**
 ```
 x = X / (X + Y + Z)
 y = Y / (X + Y + Z)
@@ -124,7 +124,7 @@ There are multitude [RGB pixel formats](https://en.wikipedia.org/wiki/List_of_mo
 * RGB888 or RGB24, uses 24 bits (8 bits per component).
 * RGB565, uses 16 bits (5 bits R, 6 bits G and 5 bits B).
 
-RGB888/RGB555
+**RGB888/RGB555**
 ```
 short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
 ```
@@ -176,14 +176,14 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
   * [YV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#yv12)
   * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
 
-RGB/YUV
+**RGB/YUV**
 ```
 Y =  (0.257 * R) + (0.504 * G) + (0.098 * B) + 16
 U = -(0.148 * R) - (0.291 * G) + (0.439 * B) + 128
 V =  (0.439 * R) - (0.368 * G) - (0.071 * B) + 128
 ```
 
-YUV/RGB
+**YUV/RGB**
 ```
 R = 1.164(Y - 16)                  + 1.596(V - 128)
 G = 1.164(Y - 16) - 0.391(U - 128) - 0.813(V - 128)
