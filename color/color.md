@@ -209,7 +209,6 @@ Mixes two layer by taking random pixels from both layers using a [diffusion dith
 
 **Multiply**<br>
 Mixes two layers by multiplying the values.<br>
-The mode is commutative.<br>
 Since values are in range [0,1] the product will be less than each initial value.<br>
 If a pixel contains homogeneous values (grayscale), `multiply` is equivalent to using `normal` with the gray value as opacity and a black bottom layer.
 <pre>
@@ -220,6 +219,9 @@ C<sub>0</sub> = C<sub>a</sub>C<sub>b</sub>
 Mixes two layers by inverting, multiplying and inverting again the values.<br>
 Screen is the opposite of multiply.<br>
 If one layer contains a homogeneous gray, `screen` is equivalent to using `normal` with the gray value as opacity with white top layer.<br>
+<pre>
+C<sub>0</sub> = 1 - (1 - C<sub>a</sub>)(1 - C<sub>b</sub>)
+</pre>
 
 ## References
 
