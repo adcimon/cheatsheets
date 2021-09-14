@@ -223,17 +223,25 @@ Mixes two layer by taking random pixels from both layers using a [diffusion dith
 Mixes two layers by multiplying the values.<br>
 Since color values are in the range `[0,1]`, the result will be less than each initial value.<br>
 Multiplying a color by black produces black. Multiplying a color by white produces the same color.<br>
-If a layer contains homogeneous value, `multiply` is equivalent to using `normal` with the value as opacity and a black bottom layer.
+If a layer contains homogeneous value, **multiply** is equivalent to using **normal** with the value as opacity and a black bottom layer.
 <pre>
 C<sub>0</sub> = C<sub>a</sub>C<sub>b</sub>
 </pre>
 
 **Screen**<br>
 Mixes two layers by inverting, multiplying and inverting again the values.<br>
-Screen is the opposite of multiply.<br>
-If a layer contains a homogeneous value, `screen` is equivalent to using `normal` with the value as opacity and a white top layer.<br>
+**Screen** is the opposite of **multiply**.<br>
+If a layer contains a homogeneous value, **screen** is equivalent to using **normal** with the value as opacity and a white top layer.<br>
 <pre>
 C<sub>0</sub> = 1 - (1 - C<sub>a</sub>)(1 - C<sub>b</sub>)
+</pre>
+
+**Overlay**
+Combines **multiply** and **screen**.
+<pre>
+                | 2C<sub>a</sub>C<sub>b</sub>                  if a < 0.5
+C<sub>0</sub> = |
+                | 1 - 2(1 - C<sub>a</sub>)(1 - C<sub>b</sub>)  otherwise
 </pre>
 
 ## References
