@@ -197,32 +197,25 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 <p align="center"><img align="center" width="70%" height="70%" src="blend_modes.png"></p>
 <p align="center">Blend Modes</p>
 
-**Normal**
-<br>
-Mixes two layers using [alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing).
-<br>
+**Normal**<br>
+Mixes two layers using [alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing).<br>
 α<sub>0</sub> = α<sub>a</sub> + α<sub>b</sub>(1 - α<sub>a</sub>)
 <br>
 C<sub>0</sub> = (C<sub>a</sub>α<sub>a</sub> + C<sub>b</sub>α<sub>b</sub>(1 - α<sub>a</sub>)) / α<sub>0</sub>
-<br>
 
-**Dissolve**
-<br>
+**Dissolve**<br>
 Takes random pixels from both layers using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern based on alpha.
-<br>
 
-**Multiply**
-<br>
-Mixes two layers by multiplying the values.
-<br>
-The mode is commutative.
-<br>
-Since values are in range [0,1] the product will be less than each initial value.
-<br>
-If a pixel contains homogeneous values (grayscale), multiply is equivalent to using normal with the gray value as opacity and a black bottom layer.
-<br>
+**Multiply**<br>
+Mixes two layers by multiplying the values.<br>
+The mode is commutative.<br>
+Since values are in range [0,1] the product will be less than each initial value.<br>
+If a pixel contains homogeneous values (grayscale), multiply is equivalent to using normal with the gray value as opacity and a black bottom layer.<br>
 C<sub>0</sub> = C<sub>a</sub>C<sub>b</sub>
-<br>
+
+**Screen**<br>
+Mixes two layers by inverting, multiplying and inverting again.<br>
+Screen is the opposite of multiply.
 
 ## References
 
