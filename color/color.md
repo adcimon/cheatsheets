@@ -51,26 +51,26 @@ Each color space has a [gamut](https://en.wikipedia.org/wiki/Gamut), a subset of
 Color space conversion is done with `lineal values` and depends on the `primary colors` and `white points`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to convert RGB/XYZ and XYZ/RGB.
 
 **RGB(709)/RGB(2020)**
-```
+<pre>
 XYZ = RGB709_TO_XYZ_MAT * RGB(709)
 RGB(2020) = XYZ_TO_RGB2020_MAT * XYZ
-```
+</pre>
 Conversion assuming same white points.
 
 **XYZ(D50)/XYZ(D65)**
-```
+<pre>
 LMS(D50) = XYZ_TO_LMS_MAT * XYZ(D50)
 LMS(D65) = D50_TO_D65_CAT * LMS(D50)
 XYZ(D65) = LMS_TO_XYZ_MAT * LMS(D65)
-```
+</pre>
 White points conversion matrices are called [Chromatic Adaptation Transform (CAT)](https://en.wikipedia.org/wiki/Chromatic_adaptation) and are equivalent to apply a [white balance](https://en.wikipedia.org/wiki/Color_balance).
 
 **XYZ/xyY**
-```
+<pre>
 x = X / (X + Y + Z)
 y = Y / (X + Y + Z)
 Y = Y
-```
+</pre>
 For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the reference white.
 
 ### ACES
@@ -125,9 +125,9 @@ There are multitude [RGB pixel formats](https://en.wikipedia.org/wiki/List_of_mo
 * RGB565, uses 16 bits (5 bits R, 6 bits G and 5 bits B).
 
 **RGB888/RGB555**
-```
+<pre>
 short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
-```
+</pre>
 
 ### CMY
 
@@ -161,7 +161,7 @@ Both color ranges shapes are cylindrical.
 
 [YUV](https://en.wikipedia.org/wiki/YUV) is a color model with `luma` and `chrominance` components. Sometimes `YUV` is also named `YCrCb`, where `Cr` is the red projection plane and `Cb` is the blue projection plane. It was invented when engineers wanted color television in a black-and-white infrastructure.
 
-There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recommended formats for video rendering are:
+There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the [recommended formats](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering) for video rendering are:
 * 4:4:4 (32 bpp)
   * [AYUV](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#ayuv)
 * 4:2:2 (16 bpp)
@@ -177,18 +177,18 @@ There are several [YUV pixel formats](https://www.fourcc.org/yuv.php), the recom
   * [NV12](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering#nv12)
 
 **RGB/YUV**
-```
+<pre>
 Y =  (0.257 * R) + (0.504 * G) + (0.098 * B) + 16
 U = -(0.148 * R) - (0.291 * G) + (0.439 * B) + 128
 V =  (0.439 * R) - (0.368 * G) - (0.071 * B) + 128
-```
+</pre>
 
 **YUV/RGB**
-```
+<pre>
 R = 1.164(Y - 16)                  + 1.596(V - 128)
 G = 1.164(Y - 16) - 0.391(U - 128) - 0.813(V - 128)
 B = 1.164(Y - 16) + 2.018(U - 128)
-```
+</pre>
 
 ## Blend Modes
 
@@ -205,7 +205,7 @@ C<sub>0</sub> = (C<sub>a</sub>α<sub>a</sub> + C<sub>b</sub>α<sub>b</sub>(1 - �
 </pre>
 
 **Dissolve**<br>
-Takes random pixels from both layers using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern based on alpha.
+Mixes two layer by taking random pixels from both layers using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern based on alpha.
 
 **Multiply**<br>
 Mixes two layers by multiplying the values.<br>
@@ -227,5 +227,4 @@ If one layer contains a homogeneous gray, `screen` is equivalent to using `norma
 * [A Beginner's Guide to CIE Colorimetry](https://medium.com/hipster-color-science/a-beginners-guide-to-colorimetry-401f1830b65a)
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
 * [Bruce Lindbloom Web Site](http://www.brucelindbloom.com/index.html)
-* [Recommended 8-Bit YUV Formats for Video Rendering](https://docs.microsoft.com/en-us/windows/win32/medfound/recommended-8-bit-yuv-formats-for-video-rendering)
 * [Academy Color Encoding System](https://www.oscars.org/science-technology/sci-tech-projects/aces)
