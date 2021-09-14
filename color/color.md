@@ -217,7 +217,8 @@ C<sub>0</sub> = (C<sub>a</sub>α<sub>a</sub> + C<sub>b</sub>α<sub>b</sub>(1 - �
 </pre>
 
 **Dissolve**<br>
-Mixes two layer by taking random pixels from both layers using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern based on alpha.
+Mixes two layer by taking random pixels from both layers using a [diffusion dither](https://en.wikipedia.org/wiki/Dither) pattern based on alpha.<br>
+No anti-aliasing is used so the result looks grainy.
 
 **Multiply**<br>
 Mixes two layers by multiplying the values.<br>
