@@ -209,7 +209,7 @@ Mixes two layer by taking random pixels from both layers using a [diffusion dith
 
 **Multiply**<br>
 Mixes two layers by multiplying the values.<br>
-Since color values are in the range [0,1], the result will be less (darker) than each initial value.<br>
+Since color values are in the range [0,1], the result will be less than each initial value.<br>
 Multiplying a color by black produces black. Multiplying a color by white produces the same color.<br>
 If a layer contains homogeneous value, `multiply` is equivalent to using `normal` with the value as opacity and a black bottom layer.
 <pre>
