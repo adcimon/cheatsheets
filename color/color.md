@@ -239,9 +239,9 @@ C<sub>0</sub> = 1 - (1 - C<sub>a</sub>)(1 - C<sub>b</sub>)
 **Overlay**
 Combines **multiply** and **screen**.
 <pre>
-                | 2C<sub>a</sub>C<sub>b</sub>                  if a < 0.5
+     | 2C<sub>a</sub>C<sub>b</sub>                  if a < 0.5
 C<sub>0</sub> = |
-                | 1 - 2(1 - C<sub>a</sub>)(1 - C<sub>b</sub>)  otherwise
+     | 1 - 2(1 - C<sub>a</sub>)(1 - C<sub>b</sub>)  otherwise
 </pre>
 
 ## References
