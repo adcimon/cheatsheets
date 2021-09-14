@@ -231,17 +231,19 @@ C<sub>0</sub> = C<sub>a</sub>C<sub>b</sub>
 **Screen**<br>
 Mixes two layers by inverting, multiplying and inverting again the values.<br>
 **Screen** is the opposite of **multiply**.<br>
-If a layer contains a homogeneous value, **screen** is equivalent to using **normal** with the value as opacity and a white top layer.<br>
+If a layer contains a homogeneous value, **screen** is equivalent to using **normal** with the value as opacity and a white top layer.
 <pre>
 C<sub>0</sub> = 1 - (1 - C<sub>a</sub>)(1 - C<sub>b</sub>)
 </pre>
 
-**Overlay**
+**Overlay**<br>
 Combines **multiply** and **screen**.
+If the base layer is light the result is lighter. If the base layer is dark the result is darker.<br>
+An overlay with the same picture looks like an S-curve.
 <pre>
-    2C<sub>a</sub>C<sub>b</sub>                  if a < 0.5
+       2C<sub>a</sub>C<sub>b</sub>                  if a < 0.5
 C<sub>0</sub> =
-    1 - 2(1 - C<sub>a</sub>)(1 - C<sub>b</sub>)  otherwise
+       1 - 2(1 - C<sub>a</sub>)(1 - C<sub>b</sub>)  otherwise
 </pre>
 
 ## References
