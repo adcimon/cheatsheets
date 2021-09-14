@@ -198,7 +198,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 <p align="center">Blend Modes</p>
 
 **Normal**<br>
-Mixes two layers using [alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing).
+Mixes two layers by applying [alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing).
 <pre>
 α<sub>0</sub> = α<sub>a</sub> + α<sub>b</sub>(1 - α<sub>a</sub>)
 C<sub>0</sub> = (C<sub>a</sub>α<sub>a</sub> + C<sub>b</sub>α<sub>b</sub>(1 - α<sub>a</sub>)) / α<sub>0</sub>
@@ -209,8 +209,9 @@ Mixes two layer by taking random pixels from both layers using a [diffusion dith
 
 **Multiply**<br>
 Mixes two layers by multiplying the values.<br>
-Since values are in range [0,1] the product will be less than each initial value.<br>
-If a pixel contains homogeneous values (grayscale), `multiply` is equivalent to using `normal` with the gray value as opacity and a black bottom layer.
+Since color values are in the range [0,1], the result will be less (darker) than each initial value.<br>
+Multiplying a color by black produces black. Multiplying a color by white produces the same color.<br>
+If a layer contains homogeneous value, `multiply` is equivalent to using `normal` with the value as opacity and a black bottom layer.
 <pre>
 C<sub>0</sub> = C<sub>a</sub>C<sub>b</sub>
 </pre>
@@ -218,7 +219,7 @@ C<sub>0</sub> = C<sub>a</sub>C<sub>b</sub>
 **Screen**<br>
 Mixes two layers by inverting, multiplying and inverting again the values.<br>
 Screen is the opposite of multiply.<br>
-If one layer contains a homogeneous gray, `screen` is equivalent to using `normal` with the gray value as opacity with white top layer.<br>
+If a layer contains a homogeneous value, `screen` is equivalent to using `normal` with the value as opacity and a white top layer.<br>
 <pre>
 C<sub>0</sub> = 1 - (1 - C<sub>a</sub>)(1 - C<sub>b</sub>)
 </pre>
