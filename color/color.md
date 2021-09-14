@@ -87,9 +87,9 @@ For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the ref
 * ODT: Output Device Transform.
 
 ACES has several color spaces, defined by:
-* Primary `AP0` `R(0.7347, 0.2653) G(0, 1) B(0.0001, -0.0770)`.
-* Primary `AP1` `R(0.713, 0.293) G(0.165, 0.830) B(0.128, 0.044)`.
-* Reference illuminant `(0.32168, 0.33767)`, close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60).
+* Primary `AP0 = R(0.7347,0.2653) G(0,1) B(0.0001,-0.0770)`.
+* Primary `AP1 = R(0.713,0.293) G(0.165,0.830) B(0.128,0.044)`.
+* Reference illuminant `(0.32168,0.33767)`, close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60).
 
 <p align="center"><img align="center" width="40%" height="40%" src="aces_color_spaces.png"></p>
 <p align="center">ACES Color Spaces</p>
