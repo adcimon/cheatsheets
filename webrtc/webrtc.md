@@ -6,9 +6,11 @@
 
 ## Index
 
-* [Basic](#basic)
+* [ICE](#ice)
 * [Architectures](#architectures)
 * [References](#references)
+
+## ICE
 
 ## References
 
