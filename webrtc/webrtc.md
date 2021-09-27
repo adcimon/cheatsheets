@@ -12,6 +12,8 @@
 
 ## ICE
 
+[Interactive Connectivity Establishment (ICE)](https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment) is a standard method of [NAT](https://en.wikipedia.org/wiki/Network_address_translation) traversal that deals with the process of connecting by conducting connectivity checks.
+
 ## References
 
 * [WebRTC for the Curious](https://webrtcforthecurious.com/)
