@@ -14,8 +14,8 @@
 
 [Interactive Connectivity Establishment (ICE)](https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment) is a protocol for [Network Address Translator (NAT)](https://en.wikipedia.org/wiki/Network_address_translation) traversal used in computer networking to find ways for two computers to talk to each other as directly as possible in [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) networking.
 
-* Address discovery using [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN).
-* Relay messages between two peers when direct traffic is not allowed using [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT).
+* Address discovery using [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) protocol.
+* Relay messages between two peers when direct traffic is not allowed using [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) protocol.
 
 ## References
 
