@@ -23,7 +23,9 @@
 
 Simulcast allows peers to publish multiple versions of the same stream with different **spatial** or **temporal** encodings, effectively sending more data.
 
-With **spatial** scalability the lower resolution layers consume less bandwidth than the high resolution ones. For example:
+With **spatial** scalability the lower resolution layers consume less bandwidth than the high resolution ones.
+
+For example:
 * High: 1280x720 2.5mbps
 * Medium: 640x360 400kbps
 * Low: 320x180 125kbps
@@ -34,7 +36,9 @@ With **temporal** scalability it is possible to lower a stream's bitrate by dyna
 
 Streams contain mostly **delta** frames which depend on previous **key** frames. If the decoder needs to apply a delta to a key frame that was dropped, it can't render subsequent frames.
 
-When temporal layers are used only delta frames from one layer reference key frames from the same layer. For a subscriber with limited bandwidth, it is possible to send only the frames of a temporal layer.
+When temporal layers are used, frames from the base layer only reference other base layer frames.
+
+For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer.
 
 ## References
 
