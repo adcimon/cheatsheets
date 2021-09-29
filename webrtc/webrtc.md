@@ -8,6 +8,9 @@
 
 * [ICE](#ice)
 * [Architectures](#architectures)
+  * [Mesh](#mesh)
+  * [MCU](#mcu)
+  * [SFU](#sfu)
 * [Simulcast](#simulcast)
 * [References](#references)
 
@@ -19,6 +22,18 @@
 * Relay messages between two peers when direct traffic is not allowed using [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) protocol.
 
 ## Architectures
+
+### Mesh
+
+<p align="center"><img align="center" width="60%" height="60%" src="mesh_architecture.png"></p>
+
+### MCU
+
+<p align="center"><img align="center" width="60%" height="60%" src="mcu_architecture.png"></p>
+
+### SFU
+
+<p align="center"><img align="center" width="60%" height="60%" src="sfu_architecture.png"></p>
 
 ## Simulcast
 
