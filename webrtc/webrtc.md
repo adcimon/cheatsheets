@@ -38,6 +38,8 @@ Streams contain mostly **delta** frames which depend on previous **key** frames.
 
 When temporal layers are used, frames from the base layer only reference other base layer frames.
 
+<p align="center"><img align="center" src="temporal_simulcast.png"></p>
+
 For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer.
 
 ## References
