@@ -30,9 +30,11 @@ With **spatial** scalability the lower resolution layers consume less bandwidth 
 
 The peer uses just 17% more bandwidth to publish the three layers.
 
-With **temporal** scalability it is possible to lower a stream's bitrate by dynamically reducing the stream's frame rate. Streams contain mostly **delta** frames which depend on previous **key** frames. If the decoder needs to apply a delta to a key frame that was dropped, it can't render subsequent frames. When temporal layers are used only delta frames from one layer reference key frames from the same layer.
+With **temporal** scalability it is possible to lower a stream's bitrate by dynamically reducing the stream's frame rate. 
 
-For a subscriber with limited bandwidth, it is possible to send only the frames of a temporal layer.
+Streams contain mostly **delta** frames which depend on previous **key** frames. If the decoder needs to apply a delta to a key frame that was dropped, it can't render subsequent frames.
+
+When temporal layers are used only delta frames from one layer reference key frames from the same layer. For a subscriber with limited bandwidth, it is possible to send only the frames of a temporal layer.
 
 ## References
 
