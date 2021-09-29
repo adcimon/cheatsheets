@@ -24,6 +24,7 @@
 Simulcast allows peers to publish multiple versions of the same stream with different **spatial** or **temporal** encodings, effectively sending more data.
 
 **Spatial**
+
 With spatial scalability the lower resolution layers consume less bandwidth than the high resolution ones.
 
 For example:
@@ -34,13 +35,14 @@ For example:
 The peer uses just 17% more bandwidth to publish the three layers.
 
 **Temporal**
+
 With temporal scalability it is possible to lower a stream's bitrate by dynamically reducing the stream's frame rate. 
 
 Streams contain mostly **delta** frames which depend on previous **key** frames. If the decoder needs to apply a delta to a key frame that was dropped, it can't render subsequent frames.
 
 When temporal layers are used, frames from the base layer only reference other base layer frames.
 
-<p align="center"><img align="center" src="temporal_simulcast.png"></p>
+<p align="center"><img align="center" width="60%" height="60%" src="temporal_simulcast.png"></p>
 
 For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer.
 
