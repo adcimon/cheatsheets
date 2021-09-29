@@ -8,6 +8,7 @@
 
 * [ICE](#ice)
 * [Architectures](#architectures)
+* [Simulcast](#simulcast)
 * [References](#references)
 
 ## ICE
@@ -19,11 +20,11 @@
 
 ## Architectures
 
-### Simulcast
+## Simulcast
 
 Simulcast allows peers to publish multiple versions of the same stream with different **spatial** or **temporal** encodings, effectively sending more data.
 
-**Spatial**
+### Spatial
 
 With spatial scalability the lower resolution layers consume less bandwidth than the high resolution ones.
 
@@ -34,7 +35,7 @@ For example:
 
 The peer uses just 17% more bandwidth to publish the three layers.
 
-**Temporal**
+### Temporal
 
 With temporal scalability it is possible to lower a stream's bitrate by dynamically reducing the stream's frame rate. 
 
