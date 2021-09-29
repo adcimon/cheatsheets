@@ -44,7 +44,7 @@ When temporal layers are used, frames from the base layer only reference other b
 
 <p align="center"><img align="center" width="60%" height="60%" src="temporal_simulcast.png"></p>
 
-For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer.
+For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer, effectively reducing bandwidth.
 
 ## References
 
