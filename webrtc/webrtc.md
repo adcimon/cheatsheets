@@ -22,10 +22,12 @@
 ### Simulcast
 
 Simulcast allows peers to publish multiple versions of the same stream with different spatial or temporal encodings.
+
 The publisher sends more data, however the lower resolution layers consume less bandwidth than the high resolution ones. For example:
 * High: 1280x720 2.5mbps
 * Medium: 640x360 400kbps
 * Low: 320x180 125kbps
+
 The publisher uses just 17% more bandwidth to publish the three layers.
 
 ## References
