@@ -21,14 +21,16 @@
 
 ### Simulcast
 
-Simulcast allows peers to publish multiple versions of the same stream with different spatial or temporal encodings.
+Simulcast allows peers to publish multiple versions of the same stream with different **spatial** or **temporal** encodings, effectively sending more data.
 
-The publisher sends more data, however the lower resolution layers consume less bandwidth than the high resolution ones. For example:
+With **spatial** scalability the lower resolution layers consume less bandwidth than the high resolution ones. For example:
 * High: 1280x720 2.5mbps
 * Medium: 640x360 400kbps
 * Low: 320x180 125kbps
 
-The publisher uses just 17% more bandwidth to publish the three layers.
+The peer uses just 17% more bandwidth to publish the three layers.
+
+With **temporal** scalability it is possible to lower a stream's bitrate by dynamically reducing the stream's frame rate.
 
 ## References
 
