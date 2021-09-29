@@ -25,15 +25,15 @@
 
 ### Mesh
 
-<p align="center"><img align="center" width="60%" height="60%" src="mesh_architecture.png"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="mesh_architecture.png"></p>
 
 ### MCU
 
-<p align="center"><img align="center" width="60%" height="60%" src="mcu_architecture.png"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="mcu_architecture.png"></p>
 
 ### SFU
 
-<p align="center"><img align="center" width="60%" height="60%" src="sfu_architecture.png"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="sfu_architecture.png"></p>
 
 ## Simulcast
 
