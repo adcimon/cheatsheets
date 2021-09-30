@@ -7,7 +7,7 @@
 ## Index
 
 * [ICE](#ice)
-* [Architectures](#architectures)
+* [Topologies](#topologies)
   * [Mesh](#mesh)
   * [MCU](#mcu)
   * [SFU](#sfu)
@@ -25,9 +25,9 @@
 
 ### Mesh
 
-In a mesh architecture each peer is directly connected to every other peer. Each peer sends their streams to every single peer and download the streams from every peer.
+In a mesh topology each peer is directly connected to every other peer. Each peer sends their streams to every single peer and download the streams from every peer.
 
-<p align="center"><img align="center" width="50%" height="50%" src="mesh_architecture.png"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="mesh_topology.png"></p>
 
 For a session with N peers the total number of connections is `O(N²)`.
 
@@ -50,11 +50,13 @@ Cons:
 
 ### MCU
 
-<p align="center"><img align="center" width="50%" height="50%" src="mcu_architecture.png"></p>
+In a Multipoint Control Point (MCU) topology.
+
+<p align="center"><img align="center" width="50%" height="50%" src="mcu_topology.png"></p>
 
 ### SFU
 
-<p align="center"><img align="center" width="50%" height="50%" src="sfu_architecture.png"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="sfu_topology.png"></p>
 
 ## Simulcast
 
