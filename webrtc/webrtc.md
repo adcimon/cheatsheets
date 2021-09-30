@@ -20,13 +20,13 @@
 
 In a real world scenario, establishing a connection between 2 peers using ICE has the following steps:
 
-1. Address discovery
+**1. Address discovery**
 
 Each peer has a private address behind a NAT, to discover their public addresses each peer uses the [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) protocol.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_1_stun.png"></p>
 
-2. Caller TURN
+**2. Caller relay allocation**
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_2_caller_turn.png"></p>
 
