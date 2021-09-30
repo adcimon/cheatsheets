@@ -39,14 +39,14 @@ For a session with N peers the total number of connections is `O(N²)`.
 | Downlinks<sub>peer</sub> | N-1    |
 
 Pros:
-* Lowest latency.
-* End-to-end encryption.
+* Low latency.
 * Low server loads.
+* End-to-end encryption.
 
 Cons:
 * Poor scaling.
-* Connectivity problems with NATs, firewalls, etc.
 * High peer loads.
+* Connectivity problems with NATs, firewalls, etc.
 
 ### MCU
 
@@ -56,16 +56,22 @@ In a Multipoint Control Point (MCU) topology each peer connects to the MCU serve
 
 For a session with N peers the total number of connections is `O(N)`.
 
-| Peers                    | N      |
-|--------------------------|--------|
-| Uplinks                  | N      |
-| Downlinks                | N      |
-| Uplinks<sub>peer</sub>   | 1      |
-| Downlinks<sub>peer</sub> | 1      |
+| Peers                    | N |
+|--------------------------|---|
+| Uplinks                  | N |
+| Downlinks                | N |
+| Uplinks<sub>peer</sub>   | 1 |
+| Downlinks<sub>peer</sub> | 1 |
 
 Pros:
+* Good scaling.
+* Low peer loads.
+* No connectivity problems.
+* Works well in low bandwidth environments.
 
 Cons:
+* High latency.
+* High server loads.
 
 ### SFU
 
