@@ -50,7 +50,7 @@ Cons:
 
 ### MCU
 
-In a Multipoint Control Point (MCU) topology each peer connects to the MCU server. With a MCU each peer uploads their stream once, the server `decodes` the stream, mixes the streams of all the peers into one and `encodes` the stream to send one stream back to each peer.
+In a Multipoint Control Point (MCU) topology each peer connects to the MCU server. With a MCU each peer uploads their stream once, the server `decodes` the stream, mixes the streams of all the peers into one and `encodes` the stream to send it back to each peer.
 
 <p align="center"><img align="center" width="50%" height="50%" src="mcu_topology.png"></p>
 
