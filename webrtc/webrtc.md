@@ -21,7 +21,7 @@
 * Address discovery using [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) protocol.
 * Relay messages between two peers when direct traffic is not allowed using [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) protocol.
 
-## Architectures
+## Topologies
 
 ### Mesh
 
