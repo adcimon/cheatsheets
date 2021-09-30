@@ -41,12 +41,12 @@ For a session with N peers the total number of connections is `O(N²)`.
 Pros:
 * Lowest latency.
 * End-to-end encryption.
-* Low server costs.
+* Low server loads.
 
 Cons:
 * Scales poorly.
 * Connectivity problems with NATs, firewalls, etc.
-* Heavy load on peers.
+* High peer loads.
 
 ### MCU
 
