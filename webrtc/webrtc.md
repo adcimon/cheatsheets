@@ -25,6 +25,8 @@
 
 ### Mesh
 
+In a mesh architecture each peer is directly connected to every other peer. Each peer sends their streams to every single peer and download the streams from every peer.
+
 <p align="center"><img align="center" width="50%" height="50%" src="mesh_architecture.png"></p>
 
 ### MCU
