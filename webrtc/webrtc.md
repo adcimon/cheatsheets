@@ -54,6 +54,19 @@ In a Multipoint Control Point (MCU) topology each peer connects to the MCU serve
 
 <p align="center"><img align="center" width="50%" height="50%" src="mcu_topology.png"></p>
 
+For a session with N peers the total number of connections is `O(N)`.
+
+| Peers                    | N      |
+|--------------------------|--------|
+| Uplinks                  | N      |
+| Downlinks                | N      |
+| Uplinks<sub>peer</sub>   | 1      |
+| Downlinks<sub>peer</sub> | 1      |
+
+Pros:
+
+Cons:
+
 ### SFU
 
 <p align="center"><img align="center" width="50%" height="50%" src="sfu_topology.png"></p>
