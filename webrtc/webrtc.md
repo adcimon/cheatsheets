@@ -27,6 +27,10 @@
 
 In a mesh architecture each peer is directly connected to every other peer. Each peer sends their streams to every single peer and download the streams from every peer.
 
+<p align="center"><img align="center" width="50%" height="50%" src="mesh_architecture.png"></p>
+
+For a session with N peers the total number of connections is `O(N²)`.
+
 | Peers                    | N      |
 |--------------------------|--------|
 | Uplinks                  | N(N-1) |
@@ -34,7 +38,15 @@ In a mesh architecture each peer is directly connected to every other peer. Each
 | Uplinks<sub>peer</sub>   | N-1    |
 | Downlinks<sub>peer</sub> | N-1    |
 
-<p align="center"><img align="center" width="50%" height="50%" src="mesh_architecture.png"></p>
+Pros:
+* Lowest latency.
+* End-to-end encryption.
+* Low server costs.
+
+Cons:
+* Scales poorly.
+* Connectivity problems with NATs, firewalls, etc.
+* Heavy load on peers.
 
 ### MCU
 
