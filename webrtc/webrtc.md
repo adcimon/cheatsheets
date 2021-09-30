@@ -44,7 +44,7 @@ Pros:
 * Low server loads.
 
 Cons:
-* Scales poorly.
+* Poor scaling.
 * Connectivity problems with NATs, firewalls, etc.
 * High peer loads.
 
