@@ -90,7 +90,8 @@ For a session with N peers the total number of connections is `O(N²)`.
 
 Pros:
 * Good scaling.
-* Medium peer and server loads.
+* Medium peer loads.
+* Low server loads.
 * No connectivity problems.
 
 Cons:
