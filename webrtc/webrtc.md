@@ -75,7 +75,22 @@ Cons:
 
 ### SFU
 
+In a Selective Forwarding Unit (SFU) topology each peer connects to the SFU server.
+
 <p align="center"><img align="center" width="50%" height="50%" src="sfu_topology.png"></p>
+
+For a session with N peers the total number of connections is `O(N²)`.
+
+| Peers                    | N      |
+|--------------------------|--------|
+| Uplinks                  | N      |
+| Downlinks                | N(N-1) |
+| Uplinks<sub>peer</sub>   | 1      |
+| Downlinks<sub>peer</sub> | N-1    |
+
+Pros:
+
+Cons:
 
 ## Simulcast
 
