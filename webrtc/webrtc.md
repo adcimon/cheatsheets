@@ -27,6 +27,13 @@
 
 In a mesh architecture each peer is directly connected to every other peer. Each peer sends their streams to every single peer and download the streams from every peer.
 
+| Peers                    | N      |
+|--------------------------|--------|
+| Uplinks                  | N(N-1) |
+| Downlinks                | N(N-1) |
+| Uplinks<sub>peer</sub>   | N-1    |
+| Downlinks<sub>peer</sub> | N-1    |
+
 <p align="center"><img align="center" width="50%" height="50%" src="mesh_architecture.png"></p>
 
 ### MCU
