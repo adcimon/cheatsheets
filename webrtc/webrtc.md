@@ -75,7 +75,7 @@ Cons:
 
 ### SFU
 
-In a Selective Forwarding Unit (SFU) topology each peer connects to the SFU server.
+In a Selective Forwarding Unit (SFU) topology each peer connects to the SFU server. With a SFU each peer uploads their stream once and the server `forwards` the stream to every peer.
 
 <p align="center"><img align="center" width="50%" height="50%" src="sfu_topology.png"></p>
 
@@ -89,8 +89,12 @@ For a session with N peers the total number of connections is `O(N²)`.
 | Downlinks<sub>peer</sub> | N-1    |
 
 Pros:
+* Good scaling.
+* Medium peer and server loads.
+* No connectivity problems.
 
 Cons:
+* No end-to-end encryption (although there are experimental approaches of header only decryption).
 
 ## Simulcast
 
