@@ -32,6 +32,10 @@ The caller registers a session in the [Traversal Using Relays around NAT (TURN)]
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_2_caller_turn.png"></p>
 
+**3. Caller sends offer**
+
+<p align="center"><img align="center" width="50%" height="50%" src="ice_3_caller_offer.png"></p>
+
 ## Topologies
 
 ### Mesh
