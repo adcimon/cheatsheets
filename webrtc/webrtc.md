@@ -50,6 +50,10 @@ The callee sends a connection **answer** to the caller using the signaling serve
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_5_callee_answer.png"></p>
 
+**6. Candidate exchange**
+
+<p align="center"><img align="center" width="50%" height="50%" src="ice_6_candidate_exchange.png"></p>
+
 ## Topologies
 
 ### Mesh
