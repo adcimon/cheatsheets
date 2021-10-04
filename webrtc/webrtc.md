@@ -44,6 +44,12 @@ The callee receives the **offer** and registers a session in the TURN server.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_4_callee_turn.png"></p>
 
+**5. Callee sends answer**
+
+The callee sends a connection **answer** to the caller using the signaling server.
+
+<p align="center"><img align="center" width="50%" height="50%" src="ice_5_callee_answer.png"></p>
+
 ## Topologies
 
 ### Mesh
