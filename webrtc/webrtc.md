@@ -34,9 +34,15 @@ The caller registers a session in the [Traversal Using Relays around NAT (TURN)]
 
 **3. Caller sends offer**
 
-The caller sends a connection offer to the callee using a [signaling server](https://en.wikipedia.org/wiki/Signaling_gateway) (both peers are already registered in the signaling server).
+The caller sends a connection **offer** to the callee using a [signaling server](https://en.wikipedia.org/wiki/Signaling_gateway) (both peers are already registered in the signaling server).
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_3_caller_offer.png"></p>
+
+**4. Callee relay register**
+
+The callee receives the **offer** and registers a session in the TURN server.
+
+<p align="center"><img align="center" width="50%" height="50%" src="ice_4_callee_turn.png"></p>
 
 ## Topologies
 
