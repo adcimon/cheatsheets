@@ -22,15 +22,15 @@ In a real world scenario, establishing a connection between 2 peers using ICE ha
 
 **1. Address discovery**
 
-Each peer has a private address behind a NAT, to discover their public addresses each peer uses the [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) protocol.
+Each peer has a private address behind a NAT, to discover their public addresses each peer uses the [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) server.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_1_stun.png"></p>
 
-**2. Caller relay allocation**
+**2. Caller relay register**
+
+The caller registers a session in the [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) server. The TURN server **relays** the data between two peers when a direct connection is not possible.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_2_caller_turn.png"></p>
-
-* Relay messages between two peers when direct traffic is not allowed using [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) protocol.
 
 ## Topologies
 
@@ -61,7 +61,7 @@ Cons:
 
 ### MCU
 
-In a Multipoint Control Point (MCU) topology each peer connects to the MCU server. With a MCU each peer uploads their stream once, the server `decodes` the stream, mixes the streams of all the peers into one and `encodes` the stream to send it back to each peer.
+In a Multipoint Conferencing Unit (MCU) topology each peer connects to the MCU server. With a MCU each peer uploads their stream once, the server `decodes` the stream, mixes the streams of all the peers into one and `encodes` the stream to send it back to each peer.
 
 <p align="center"><img align="center" width="50%" height="50%" src="mcu_topology.png"></p>
 
