@@ -79,7 +79,7 @@ This process may produce additional candidates known as **peer reflexive** candi
 | [Full Cone NAT](https://en.wikipedia.org/wiki/Network_address_translation#Full-cone_NAT)                       | X            |
 | [Address Restricted Cone NAT](https://en.wikipedia.org/wiki/Network_address_translation#Restricted-cone_NAT)   | X            |
 | [Port Restricted Cone NAT](https://en.wikipedia.org/wiki/Network_address_translation#Port-restricted_cone_NAT) | X            |
-| [Symmetric NAT](https://en.wikipedia.org/wiki/Network_address_translation#Symmetric_NAT)                       | X            |
+| [Symmetric NAT](https://en.wikipedia.org/wiki/Network_address_translation#Symmetric_NAT)                       |              |
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_7a_direct_connection.png"></p>
 
