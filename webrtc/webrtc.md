@@ -6,6 +6,7 @@
 
 ## Index
 
+* [Signaling](#signaling)
 * [ICE](#ice)
 * [SDP](#sdp)
 * [Media](#media)
@@ -17,6 +18,8 @@
   * [SFU](#sfu)
 * [Simulcast](#simulcast)
 * [References](#references)
+
+## Signaling
 
 ## ICE
 
