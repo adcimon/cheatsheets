@@ -103,6 +103,8 @@ Media streams (audio and video) are delivered through [Real-time Transport Proto
 
 [Secure Real-time Transport Protocol (SRTP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) and [Secure Real-time Transport Control Protocol (SRTCP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) allow secure data transmission for RTP and RTCP. SRTP enables RTP with authentication and encryption features, and may be disabled if desired, without the need of going back to pure RTP.
 
+Media is transmited over [Datagram Transport Layer Security (DTLS)](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security), which is based on [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security). DTLS preserves the semantics of the underlying SRTP and SRTCP but provides means of authentication, symmetric cryptography, privacy and integrity. 
+
 ## Topologies
 
 ### Mesh
