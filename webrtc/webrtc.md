@@ -67,6 +67,15 @@ After each candidate is gathered, the candidate is exchanged with the other peer
 
 **7a. Check direct connection**
 
+Each peer has an ICE agent making connectivity checks:
+
+* Matches its local candidates with its remote candidates creating candidate pairs.
+* Sends connectivity checks every 20ms, in pair priority, over the binding requests from the local candidate to the remote candidate.
+* After receiving the request, the agent generates a response.
+* If the response is received, the check has succeeded.
+
+This process may produce additional candidates known as **peer reflexive** candidates. This happens when there is a symmetric NAT in between peers. During the connectivity check process, a STUN request is sent directly to the peer, which can generate a brand new binding. If it does, the STUN response is sent back informing the originating peer that a new binding was formed. This allows peers to have a direct media path between them, even in the presence of a symmetric NAT.
+
 <p align="center"><img align="center" width="50%" height="50%" src="ice_7a_direct_connection.png"></p>
 
 **7b. Use relay connection**
