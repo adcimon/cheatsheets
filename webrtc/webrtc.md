@@ -8,6 +8,8 @@
 
 * [ICE](#ice)
 * [SDP](#sdp)
+* [Media](#media)
+* [Security](#security)
 * [Topologies](#topologies)
   * [Mesh](#mesh)
   * [MCU](#mcu)
@@ -92,6 +94,14 @@ When a direct connection is not possible the relay candidates are used. TURN ser
 ## SDP
 
 [Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol)
+
+## Media
+
+Media streams (audio and video) are delivered through [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). This protocol was designed to ensure timely and ordered packet arrival while tolerating data loss due to unreliable channels. RTP is usually used in conjunction with [Real-time Transport Control Protocol (RTCP)](https://en.wikipedia.org/wiki/RTP_Control_Protocol), which provides statistics, quality-of-service and synchronization data to the participants of the session.
+
+## Security
+
+[Secure Real-time Transport Protocol (SRTP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) and [Secure Real-time Transport Control Protocol (RTCP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) allow secure data transmission for RTP and RTCP. SRTP enables RTP with authentication and encryption features, and may be disabled if desired, without the need of going back to pure RTP.
 
 ## Topologies
 
