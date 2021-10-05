@@ -104,6 +104,14 @@ Media streams (audio and video) are delivered through [Real-time Transport Proto
 
 Data streams are delivered through [Stream Control Transmission Protocol (SCTP)](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol). SCTP is a message-oriented **transport** protocol that ensures reliable, in-sequence transport of messages and congestion control. It differs from UDP and TCP in providing multi-homing and redundant paths to increase resilience and reliability.
 
+|                    | UDP              | TCP           | SCTP             |
+|--------------------|------------------|---------------|------------------|
+| Reliability        | Unreliable       | Reliable      | Configurable     |
+| Delivery           | Ordered          | Ordered       | Configurable     |
+| Transmission       | Message-oriented | Byte-oriented | Message-oriented |
+| Flow control       | No               | Yes           | Yes              |
+| Congestion control | No               | Yes           | Yes              |
+
 ## Security
 
 [Secure Real-time Transport Protocol (SRTP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) and [Secure Real-time Transport Control Protocol (SRTCP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) allow secure data transmission for RTP and RTCP. SRTP enables RTP with authentication and encryption features, and may be disabled if desired, without the need of going back to pure RTP.
