@@ -9,6 +9,7 @@
 * [ICE](#ice)
 * [SDP](#sdp)
 * [Media](#media)
+* [Data](#data)
 * [Security](#security)
 * [Topologies](#topologies)
   * [Mesh](#mesh)
@@ -99,11 +100,15 @@ When a direct connection is not possible the relay candidates are used. TURN ser
 
 Media streams (audio and video) are delivered through [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). This protocol was designed to ensure timely and ordered packet arrival while tolerating data loss due to unreliable channels. RTP is usually used in conjunction with [Real-time Transport Control Protocol (RTCP)](https://en.wikipedia.org/wiki/RTP_Control_Protocol), which provides statistics, quality-of-service and synchronization data to the participants of the session.
 
+## Data
+
+Data streams are delivered through [Stream Control Transmission Protocol (SCTP)](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol). SCTP is a message-oriented transport protocol that ensures reliable, in-sequence transport of messages and congestion control. It differs from UDP and TCP in providing multi-homing and redundant paths to increase resilience and reliability.
+
 ## Security
 
 [Secure Real-time Transport Protocol (SRTP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) and [Secure Real-time Transport Control Protocol (SRTCP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) allow secure data transmission for RTP and RTCP. SRTP enables RTP with authentication and encryption features, and may be disabled if desired, without the need of going back to pure RTP.
 
-Media is transmited over [Datagram Transport Layer Security (DTLS)](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security), which is based on [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security). DTLS preserves the semantics of the underlying SRTP and SRTCP but provides means of authentication, symmetric cryptography, privacy and integrity. 
+Media and data are transmited over [Datagram Transport Layer Security (DTLS)](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security), which is based on [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security). DTLS preserves the semantics of the underlying SRTP, SRTCP and SCTP but provides means of authentication, symmetric cryptography, privacy and integrity. 
 
 ## Topologies
 
