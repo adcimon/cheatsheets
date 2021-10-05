@@ -85,11 +85,13 @@ This process may produce additional candidates known as **peer reflexive** candi
 
 **7b. Use relay connection**
 
-TURN servers are guaranteed to work, unless NATs where specifically configured to block them, because they are publicly available, however the communication is no longer peer-to-peer
+When a direct connection is not possible the relay candidates are used. TURN servers are guaranteed to work, unless NATs where specifically configured to block them, because they are publicly available.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_7b_relay_connection.png"></p>
 
 ## SDP
+
+[Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol)
 
 ## Topologies
 
