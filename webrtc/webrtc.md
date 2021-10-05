@@ -23,7 +23,7 @@ In a real world scenario, establishing a connection between 2 peers using ICE ha
 
 **1. Address discovery**
 
-Each peer has a private address behind a NAT, to discover their public addresses each peer uses the [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) server.
+Each peer is located in a LAN behind a NAT and has a private address, to discover their public addresses each peer uses the [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) server.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_1_stun.png"></p>
 
