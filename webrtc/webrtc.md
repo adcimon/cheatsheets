@@ -74,6 +74,13 @@ Each peer has an ICE agent making connectivity checks:
 
 This process may produce additional candidates known as **peer reflexive** candidates. This happens when there is a symmetric NAT in between peers. During the connectivity check process, a STUN request is sent directly to the peer, which can generate a brand new binding. If it does, the STUN response is sent back informing the originating peer that a new binding was formed. This allows peers to have a direct media path between them, even in the presence of a symmetric NAT.
 
+| NAT Type                                                                                                       | STUN support |
+|----------------------------------------------------------------------------------------------------------------|--------------|
+| [Full Cone NAT](https://en.wikipedia.org/wiki/Network_address_translation#Full-cone_NAT)                       |       X      |
+| [Address Restricted Cone NAT](https://en.wikipedia.org/wiki/Network_address_translation#Restricted-cone_NAT)   |       X      |
+| [Port Restricted Cone NAT](https://en.wikipedia.org/wiki/Network_address_translation#Port-restricted_cone_NAT) |       X      |
+| [Symmetric NAT](https://en.wikipedia.org/wiki/Network_address_translation#Symmetric_NAT)                       |       X      |
+
 <p align="center"><img align="center" width="50%" height="50%" src="ice_7a_direct_connection.png"></p>
 
 **7b. Use relay connection**
