@@ -29,7 +29,7 @@ Each peer has a private address behind a NAT, to discover their public addresses
 
 **2. Caller relay allocation**
 
-The caller allocates a session in the [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) server. The TURN server **relays** the data between two peers when a direct connection is not possible.
+The caller allocates a connection in the [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) server. The TURN server **relays** the data between two peers when a direct connection is not possible.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_2_caller_turn.png"></p>
 
@@ -41,7 +41,7 @@ The caller sends a connection **offer** to the callee using a [signaling server]
 
 **4. Callee relay allocation**
 
-The callee receives the **offer** and allocates a session in the TURN server.
+The callee receives the **offer** and allocates a connection in the TURN server.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_4_callee_turn.png"></p>
 
