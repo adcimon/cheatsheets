@@ -11,7 +11,7 @@
 |----------------|-----------------------------|
 | ls             | List files and directories. |
 | cd             | Change directory.           |
-| ps ps aux      | Show processes.             |
+| ps<br>ps aux   | Show processes.             |
 | sudo su -      | Switch to superuser.        |
 | lsb_release -d | Show Ubuntu version.        |
 
