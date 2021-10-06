@@ -2,7 +2,7 @@
 
 <p align="center"><img align="center" src="tcpdump.png"></p>
 
-[TCPDUMP](https://www.tcpdump.org/) is a powerful command-line packet analyzer.
+[tcpdump](https://www.tcpdump.org/) is a powerful command-line packet analyzer.
 
 IP traffic.
 ```
