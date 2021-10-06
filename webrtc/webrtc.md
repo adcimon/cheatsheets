@@ -21,6 +21,14 @@
 
 ## Signaling
 
+In WebRTC, although public APIs and protocols are standardized, the initial negotiation and communication establishment is up to the application to implement. This initial handshaking should take care of simple stuff, such as letting one peer know when the other is calling, or more complex stuff like establishing a unique session between two peers and sharing offers, answers and candidates. The part of the application that is in charge of these is called the [signaling server](https://en.wikipedia.org/wiki/Signaling_gateway).
+
+A signaling server should handle:
+
+* Authentication: Exchange certificates for proper secure communication.
+* Media capabilities: Both peers need to agree in the media formats the session will support.
+* ICE candidates: One endpoint needs to know how to deliver the streaming to the other endpoint.
+
 ## ICE
 
 [Interactive Connectivity Establishment (ICE)](https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment) is a protocol for [Network Address Translator (NAT)](https://en.wikipedia.org/wiki/Network_address_translation) traversal used in computer networking to find ways for two computers to talk to each other as directly as possible in [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) networking.
@@ -41,7 +49,7 @@ The caller allocates a connection in the [Traversal Using Relays around NAT (TUR
 
 **3. Caller sends offer**
 
-The caller sends a connection **offer** to the callee using a [signaling server](https://en.wikipedia.org/wiki/Signaling_gateway) (both peers are already registered in the signaling server).
+The caller sends a connection **offer** to the callee using a signaling server (both peers are already registered in the signaling server).
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_3_caller_offer.png"></p>
 
