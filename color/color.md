@@ -2,7 +2,7 @@
 
 ## Index
 
-* [Color History](#color-history)
+* [Introduction](#introduction)
 * [Color Space](#color-space)
   * [CIE](#cie)
   * [ACES](#aces)
@@ -14,7 +14,7 @@
 * [Blend Modes](#blend-modes)
 * [References](#references)
 
-## Color History
+## Introduction
 
 [Colorimetry]() is the science that quantifies and describes physically the human color perception and [color theory](https://en.wikipedia.org/wiki/Color_theory), in visual arts, is a body of practical guidance to color mixing.
 
