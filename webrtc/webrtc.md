@@ -28,7 +28,7 @@ In WebRTC, although public APIs and protocols are standardized, the initial nego
 
 A signaling server should handle:
 
-* **Authentication**. Exchange certificates for proper secure communication.
+* **Authentication**. Exchange certificates for secure communication.
 * **Media capabilities**. Both peers need to agree in the media formats the session will support.
 * **Connection candidates**. Each peer needs to know hot to send data to the other peer.
 
