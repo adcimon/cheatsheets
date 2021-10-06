@@ -109,7 +109,7 @@ When a direct connection is not possible the relay candidates are used. TURN ser
 
 [Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol) is the protocol used to represent the media capabilities of each peer. SDP is already used in other protocols like [Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) or [Session Initiation Protocol (SIP)](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) in streaming applications such as [voice over IP (VoIP)](https://en.wikipedia.org/wiki/Voice_over_IP).
 
-A SDP file is generated and sent from each peer during the offer/answer process. A SDP has the following structure:
+A SDP file is generated and sent from each peer during the **offer/answer** process. A SDP has the following structure:
 
 **Session**
 ```
@@ -144,6 +144,21 @@ b=* (zero or more bandwidth information lines)
 k=* (encryption key)
 a=* (zero or more media attribute lines — overriding the Session attribute lines)
 ```
+
+An example of SDP file is:
+```
+v=0
+o=- 0 0 IN IP4 10.47.16.5
+s=session007
+c=IN IP4 224.2.17.12/127
+t=0 0
+m=audio 8080 RTP/AVP 111
+a=rtpmap:111 OPUS/48000
+m=video 9090 RTP/AVP 96
+a=rtpmap:96 VP8/90000
+```
+
+The session named `session007` has 2 media streams, an audio stream on port `8080` using the codec `OPUS/48000` with payload type `111` and a video stream on port `9090` using the codec `VP8/90000` with payload type `96`.
 
 ## Media
 
