@@ -232,6 +232,7 @@ For a subscriber with limited bandwidth, it is possible to send only the frames 
 * [Troubleshooter](https://test.webrtc.org/)
 * [Samples](https://webrtc.github.io/samples/)
 * [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
+* [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
 * [Any Connect STUN-TURN-ICE](https://anyconnect.com/stun-turn-ice/)
 * [HTML5 Rocks WebRTC Data Channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/)
 * [An Introduction to WebRTC Simulcast](https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb)
