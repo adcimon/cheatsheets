@@ -107,7 +107,25 @@ When a direct connection is not possible the relay candidates are used. TURN ser
 
 ## SDP
 
-[Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol) is the protocol used to represent the media capabilities of each peer. SDP is already used in other protocols like [Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) or [Session Initiation Protocol (SIP)](https://en.wikipedia.org/wiki/Session_Initiation_Protocol).
+[Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol) is the protocol used to represent the media capabilities of each peer. SDP is already used in other protocols like [Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) or [Session Initiation Protocol (SIP)](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) in streaming applications such as [voice over IP (VoIP)](https://en.wikipedia.org/wiki/Voice_over_IP).
+
+An SDP file is generated and sent from each peer during the offer/answer process. A SDP has the following structure:
+```
+v=  (protocol version number, currently only 0)
+o=  (originator and session identifier : username, id, version number, network address)
+s=  (session name : mandatory with at least one UTF-8-encoded character)
+i=* (session title or short information)
+u=* (URI of description)
+e=* (zero or more email address with optional name of contacts)
+p=* (zero or more phone number with optional name of contacts)
+c=* (connection information—not required if included in all media)
+b=* (zero or more bandwidth information lines)
+One or more time descriptions ("t=" and "r=" lines; see below)
+z=* (time zone adjustments)
+k=* (encryption key)
+a=* (zero or more session attribute lines)
+Zero or more Media descriptions (each one starting by an "m=" line; see below)
+```
 
 ## Media
 
