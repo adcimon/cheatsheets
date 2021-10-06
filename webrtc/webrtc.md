@@ -25,9 +25,11 @@ In WebRTC, although public APIs and protocols are standardized, the initial nego
 
 A signaling server should handle:
 
-* Authentication: Exchange certificates for proper secure communication.
-* Media capabilities: Both peers need to agree in the media formats the session will support.
-* ICE candidates: One endpoint needs to know how to deliver the streaming to the other endpoint.
+* **Authentication**. Exchange certificates for proper secure communication.
+* **Media capabilities**. Both peers need to agree in the media formats the session will support.
+* **Connection candidates**. Each peer needs to know hot to send data to the other peer.
+
+It is up to the application to ensure that this out-of-bounds communication is performed securely and accessible for both peers.
 
 ## ICE
 
@@ -105,7 +107,7 @@ When a direct connection is not possible the relay candidates are used. TURN ser
 
 ## SDP
 
-[Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol)
+[Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol) is the protocol used to represent the media capabilities of each peer.
 
 ## Media
 
