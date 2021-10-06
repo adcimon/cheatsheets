@@ -7,29 +7,16 @@
 
 ## Linux
 
-List files and directories.
-```
-ls
-```
-
-Change directory.
-```
-cd
-```
-
-Show Ubuntu version.
-```
-lsb_release -d
-```
-
-Switch to superuser.
-```
-sudo su -
-```
+| Command        | Description                 |
+|----------------|-----------------------------|
+| ls             | List files and directories. |
+| cd             | Change directory.           |
+| ps ps aux      | Show processes.             |
+| sudo su -      | Switch to superuser.        |
+| lsb_release -d | Show Ubuntu version.        |
 
 ## Windows
 
-List files and directories.
-```
-dir
-```
+| Command        | Description                 |
+|----------------|-----------------------------|
+| dir            | List files and directories. |
