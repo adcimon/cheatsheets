@@ -20,7 +20,7 @@
 
 ## Introduction
 
-[Web Real Time Communication (WebRTC)](https://webrtc.org/) is a free and open-source project providing web browsers and mobile applications with real-time peer-to-peer communications. Its specification is still an ongoing work as a cooperative effort between the [World Wide Web Consortium (W3C)](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) defining the APIs and the [Internet Engineering Task Force(IETF)](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force) standardizing the protocols.
+[Web Real Time Communication (WebRTC)](https://webrtc.org/) is a free and open-source project providing web browsers and mobile applications with real-time [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) communications. Its specification is still an ongoing work as a cooperative effort between the [World Wide Web Consortium (W3C)](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) defining the APIs and the [Internet Engineering Task Force(IETF)](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force) standardizing the protocols.
 
 ## Signaling
 
@@ -36,7 +36,7 @@ It is up to the application to ensure that this out-of-bounds communication is p
 
 ## ICE
 
-[Interactive Connectivity Establishment (ICE)](https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment) is a protocol for [Network Address Translator (NAT)](https://en.wikipedia.org/wiki/Network_address_translation) traversal used in computer networking to find ways for two computers to talk to each other as directly as possible in [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) networking.
+[Interactive Connectivity Establishment (ICE)](https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment) is a protocol for [Network Address Translator (NAT)](https://en.wikipedia.org/wiki/Network_address_translation) traversal used in computer networking to find ways for two computers to talk to each other as directly as possible in peer-to-peer networking.
 
 In a real world scenario, establishing a connection between 2 peers using ICE has the following steps:
 
