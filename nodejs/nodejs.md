@@ -68,13 +68,19 @@ npm run start:prod
 
 ## Packages
 
-| Packages                                                                   | Install                                              |
-|----------------------------------------------------------------------------|------------------------------------------------------|
-| [dotenv](https://github.com/motdotla/dotenv)                               | npm install dotenv                                   |
-| [Nest.js Serve Static](https://www.npmjs.com/package/@nestjs/serve-static) | npm install @nestjs/serve-static                     |
-| [Nest.js Schedule](https://www.npmjs.com/package/@nestjs/schedule)         | npm install @nestjs/schedule npm install @types/cron |
-| [ms](https://github.com/vercel/ms)                                         | npm install ms                                       |
-| [Nodemailer](https://github.com/nodemailer/nodemailer)                     | npm install nodemailer npm install @types/nodemailer |
+| Packages                                                                   | Install                                                 |
+|----------------------------------------------------------------------------|---------------------------------------------------------|
+| [dotenv](https://github.com/motdotla/dotenv)                               | npm install dotenv                                      |
+| [ms](https://github.com/vercel/ms)                                         | npm install ms                                          |
+| [Nest.js Schedule](https://www.npmjs.com/package/@nestjs/schedule)         | npm install @nestjs/schedule<br>npm install @types/cron |
+| [Nest.js Serve Static](https://www.npmjs.com/package/@nestjs/serve-static) | npm install @nestjs/serve-static                        |
+| [Nodemailer](https://github.com/nodemailer/nodemailer)                     | npm install nodemailer<br>npm install @types/nodemailer |
+| [Passport](https://github.com/jaredhanson/passport)                        | npm install passport<br>npm install @nestjs/passport    |
+| [Passport Local](https://github.com/jaredhanson/passport-local)            | npm install passport-local                              |
+| [Passport JWT](https://github.com/mikenicholson/passport-jwt)              | npm install passport-jwt<br>npm install @nestjs/jwt     |
+| [SQLite](https://github.com/mapbox/node-sqlite3)                           | npm install sqlite3                                     |
+| [TypeORM](https://github.com/typeorm/typeorm)                              | npm install typeorm<br>npm install @nestjs/typeorm      |
+| [yup](https://github.com/jquense/yup)                                      | npm install yup                                         |
 
 WebSockets
 ```
@@ -85,31 +91,4 @@ npm install @nestjs/platform-ws
 npm install socket.io
 npm install @nestjs/websockets
 npm install @nestjs/platform-socket.io
-```
-
-Databases
-```
-npm install sqlite3
-```
-
-[TypeORM](https://www.npmjs.com/package/typeorm)
-```
-npm install typeorm
-npm install @nestjs/typeorm
-```
-
-[Yup](https://www.npmjs.com/package/yup)
-```
-npm install yup
-```
-
-[Passport](https://www.npmjs.com/package/passport)
-```
-npm install passport
-npm install @nestjs/passport
-
-npm install passport-local
-
-npm install passport-jwt
-npm install @nestjs/jwt
 ```
