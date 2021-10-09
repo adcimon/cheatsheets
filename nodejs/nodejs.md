@@ -68,15 +68,13 @@ npm run start:prod
 
 ## Packages
 
-[Dotenv](https://www.npmjs.com/package/dotenv)
-```
-npm install dotenv
-```
-
-[Serve Static](https://www.npmjs.com/package/@nestjs/serve-static)
-```
-npm install @nestjs/serve-static
-```
+| Packages                                                                   | Install                                              |
+|----------------------------------------------------------------------------|------------------------------------------------------|
+| [dotenv](https://github.com/motdotla/dotenv)                               | npm install dotenv                                   |
+| [Nest.js Serve Static](https://www.npmjs.com/package/@nestjs/serve-static) | npm install @nestjs/serve-static                     |
+| [Nest.js Schedule](https://www.npmjs.com/package/@nestjs/schedule)         | npm install @nestjs/schedule npm install @types/cron |
+| [ms](https://github.com/vercel/ms)                                         | npm install ms                                       |
+| [Nodemailer](https://github.com/nodemailer/nodemailer)                     | npm install nodemailer npm install @types/nodemailer |
 
 WebSockets
 ```
@@ -114,21 +112,4 @@ npm install passport-local
 
 npm install passport-jwt
 npm install @nestjs/jwt
-```
-
-[Schedule](https://www.npmjs.com/package/@nestjs/schedule)
-```
-npm install @nestjs/schedule
-npm install @types/cron
-```
-
-[ms](https://www.npmjs.com/package/ms)
-```
-npm install ms
-```
-
-[Nodemailer](https://www.npmjs.com/package/nodemailer)
-```
-npm install nodemailer
-npm install @types/nodemailer
 ```
