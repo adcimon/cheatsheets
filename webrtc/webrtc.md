@@ -148,7 +148,7 @@ k=* (encryption key)
 a=* (zero or more media attribute lines — overriding the Session attribute lines)
 ```
 
-An example of SDP is:
+An example of SDP:
 ```
 v=0
 o=- 0 0 IN IP4 10.47.16.5
