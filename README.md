@@ -2,21 +2,21 @@
 
 Collection of cheatsheets.
 
-[Color](https://adcimon.github.io/cheatsheets/color/color)<br>
-[C++](https://adcimon.github.io/cheatsheets/cpp/cpp)<br>
-[Cryptography](https://adcimon.github.io/cheatsheets/crypto/crypto)<br>
-[cURL](https://adcimon.github.io/cheatsheets/curl/curl)<br>
-[Docker](https://adcimon.github.io/cheatsheets/docker/docker)<br>
-[FFmpeg](https://adcimon.github.io/cheatsheets/ffmpeg/ffmpeg)<br>
-[Git](https://adcimon.github.io/cheatsheets/git/git)<br>
-[Go](https://adcimon.github.io/cheatsheets/go/go)<br>
-[GStreamer](https://adcimon.github.io/cheatsheets/gstreamer/gstreamer)<br>
-[Mercurial](https://adcimon.github.io/cheatsheets/mercurial/mercurial)<br>
-[Node.js](https://adcimon.github.io/cheatsheets/nodejs/nodejs)<br>
-[Python](https://adcimon.github.io/cheatsheets/python/python)<br>
-[Regular Expressions](https://adcimon.github.io/cheatsheets/regexp/regexp)<br>
-[Shell](https://adcimon.github.io/cheatsheets/shell/shell)<br>
-[tcpdump](https://adcimon.github.io/cheatsheets/tcpdump/tcpdump)<br>
-[TrinityCore](https://adcimon.github.io/cheatsheets/trinitycore/trinitycore)<br>
-[Unity](https://adcimon.github.io/cheatsheets/unity/unity)<br>
-[WebRTC](https://adcimon.github.io/cheatsheets/webrtc/webrtc)<br>
+* [Color](https://adcimon.github.io/cheatsheets/color/color)
+* [C++](https://adcimon.github.io/cheatsheets/cpp/cpp)
+* [Cryptography](https://adcimon.github.io/cheatsheets/crypto/crypto)
+* [cURL](https://adcimon.github.io/cheatsheets/curl/curl)
+* [Docker](https://adcimon.github.io/cheatsheets/docker/docker)
+* [FFmpeg](https://adcimon.github.io/cheatsheets/ffmpeg/ffmpeg)
+* [Git](https://adcimon.github.io/cheatsheets/git/git)
+* [Go](https://adcimon.github.io/cheatsheets/go/go)
+* [GStreamer](https://adcimon.github.io/cheatsheets/gstreamer/gstreamer)
+* [Mercurial](https://adcimon.github.io/cheatsheets/mercurial/mercurial)
+* [Node.js](https://adcimon.github.io/cheatsheets/nodejs/nodejs)
+* [Python](https://adcimon.github.io/cheatsheets/python/python)
+* [Regular Expressions](https://adcimon.github.io/cheatsheets/regexp/regexp)
+* [Shell](https://adcimon.github.io/cheatsheets/shell/shell)
+* [tcpdump](https://adcimon.github.io/cheatsheets/tcpdump/tcpdump)
+* [TrinityCore](https://adcimon.github.io/cheatsheets/trinitycore/trinitycore)
+* [Unity](https://adcimon.github.io/cheatsheets/unity/unity)
+* [WebRTC](https://adcimon.github.io/cheatsheets/webrtc/webrtc)
