@@ -7,11 +7,9 @@
 ## General
 
 Change a project name.
-```
 - Rename the project folder.
-- Open '<ProjectName>/ProjectSettings/ProjectSettings.asset' with a text editor.
-- Find 'productName' and change the name.
-```
+- Open `<ProjectName>/ProjectSettings/ProjectSettings.asset` with a text editor.
+- Find `productName` and change the name.
 
 ## Packages
 A package is a container that holds any combination of Assets, Shaders, Textures, plug-ins, icons, and scripts that enhance various parts of the project.
