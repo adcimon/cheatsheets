@@ -174,7 +174,7 @@ Data streams are delivered through [Stream Control Transmission Protocol (SCTP)]
 |                    | UDP              | TCP           | SCTP             |
 |--------------------|------------------|---------------|------------------|
 | Reliability        | Unreliable       | Reliable      | Configurable     |
-| Delivery           | Ordered          | Ordered       | Configurable     |
+| Delivery           | Unordered        | Ordered       | Configurable     |
 | Transmission       | Message-oriented | Byte-oriented | Message-oriented |
 | Flow control       | No               | Yes           | Yes              |
 | Congestion control | No               | Yes           | Yes              |
