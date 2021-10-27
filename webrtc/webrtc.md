@@ -189,7 +189,7 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 
 ### Mesh
 
-In a mesh topology each peer is directly connected to every other peer. Each peer sends their streams to every single peer and download the streams from every peer.
+In a mesh topology each peer is directly connected to every other peer. Each peer sends their streams to every single peer and downloads the streams from every peer.
 
 <p align="center"><img align="center" width="50%" height="50%" src="mesh_topology.png"></p>
 
