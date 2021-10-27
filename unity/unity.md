@@ -6,10 +6,19 @@
 
 ## General
 
+Check project version.
+- Open `<ProjectName>/ProjectSettings/ProjectVersion.txt`.
+- Find `m_EditorVersion` or `m_EditorVersionWithRevision` (with changeset).
+
 Change a project name.
 - Rename the project folder.
 - Open `<ProjectName>/ProjectSettings/ProjectSettings.asset` with a text editor.
 - Find `productName` and change the name.
+
+Debug Android application.
+- Connect the Android device to the computer using USB.
+- Navigate to the `platform-tools` folder (`C:\Android\sdk\platform-tools`).
+- Run `adb logcat -s Unity`.
 
 ## Packages
 A package is a container that holds any combination of Assets, Shaders, Textures, plug-ins, icons, and scripts that enhance various parts of the project.
