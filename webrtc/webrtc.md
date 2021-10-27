@@ -104,7 +104,7 @@ This process may produce additional candidates known as **peer reflexive** candi
 
 **7b. Use relay connection**
 
-When a direct connection is not possible, the relay candidates are used. TURN servers are guaranteed to work, unless NATs are specifically configured to block them, because they are publicly available.
+When a direct connection is not possible, the relay candidates are used. TURN servers are guaranteed to work because they are publicly available, unless NATs are specifically configured to block them.
 
 <p align="center"><img align="center" width="50%" height="50%" src="ice_7b_relay_connection.png"></p>
 
