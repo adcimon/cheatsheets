@@ -20,3 +20,4 @@
 | Command        | Description                 |
 |----------------|-----------------------------|
 | dir            | List files and directories. |
+| systeminfo     | Displays detailed configuration information about the computer and operating system. |
