@@ -86,7 +86,7 @@ After each candidate is gathered, the candidate is exchanged with the other peer
 
 Each peer has an ICE agent making connectivity checks:
 
-* Matches its local candidates with its remote candidates creating candidate pairs.
+* Matches its local candidates with its remote candidates, creating candidate pairs.
 * Sends connectivity checks every 20ms, in pair priority, over the binding requests from the local candidate to the remote candidate.
 * After receiving the request, the agent generates a response.
 * If the response is received, the check has succeeded.
