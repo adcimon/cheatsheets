@@ -20,6 +20,10 @@ Debug Android application.
 - Navigate to the `platform-tools` folder (`C:\Android\sdk\platform-tools`).
 - Run `adb logcat -s Unity`.
 
+Use a custom Android manifest file.
+- Create the `AndroidManifest.xml` file.
+- Import the manifest file to the folder `Assets/Plugins/Android/`.
+
 ## Packages
 A package is a container that holds any combination of Assets, Shaders, Textures, plug-ins, icons, and scripts that enhance various parts of the project.
 
