@@ -65,10 +65,11 @@ go mod init
 go mod init <name>
 ```
 
-Add dependencies to the module.
+Add a dependency to the module, all dependencies or all test dependencies.
 ```
 go get
 go get -u ./...
+go get -t -u ./...
 ```
 
 Remove unused dependencies.
