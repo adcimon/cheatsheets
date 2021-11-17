@@ -7,13 +7,14 @@
 
 ## Linux
 
-| Command        | Description                 |
-|----------------|-----------------------------|
-| ls             | List files and directories. |
-| cd             | Change directory.           |
-| ps<br>ps aux   | Show processes.             |
-| sudo su -      | Switch to superuser.        |
-| lsb_release -d | Show Ubuntu version.        |
+| Command         | Description                 |
+|-----------------|-----------------------------|
+| ls              | List files and directories. |
+| cd              | Change directory.           |
+| ps<br>ps aux    | Show processes.             |
+| sudo su -       | Switch to superuser.        |
+| lsb_release -d  | Show Ubuntu version.        |
+| shutdown -h now | Shutdown the machine.       |
 
 ## Windows
 
