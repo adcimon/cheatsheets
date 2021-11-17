@@ -68,10 +68,6 @@ go mod init <name>
 Add dependencies to the module.
 ```
 go get
-```
-
-Add all dependencies of the module.
-```
 go get -u ./...
 ```
 
