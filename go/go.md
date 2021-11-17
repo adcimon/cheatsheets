@@ -75,9 +75,10 @@ Remove unused dependencies.
 go mod tidy
 ```
 
-Print the module dependencies.
+List the module dependencies.
 ```
 go list -m all
+go list -u -m all
 ```
 
 Import local module (modify the `go.mod` file to find the module in the local file system).
