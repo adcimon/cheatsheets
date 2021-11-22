@@ -191,7 +191,7 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 
 In a mesh topology each peer is directly connected to every other peer. Each peer sends their streams to every single peer and downloads the streams from every peer.
 
-<p align="center"><img align="center" width="50%" height="50%" src="mesh_topology.jpg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="mesh_topology.jpg"></p>
 
 For a session with N peers the total number of connections is `O(N²)`.
 
@@ -216,7 +216,7 @@ Cons:
 
 In a Multipoint Conferencing Unit (MCU) topology each peer connects to the MCU server. With a MCU each peer uploads their stream once, the server `decodes` the stream, mixes the streams of all the peers into one and `encodes` the stream to send it back to each peer.
 
-<p align="center"><img align="center" width="50%" height="50%" src="mcu_topology.jpg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="mcu_topology.jpg"></p>
 
 For a session with N peers the total number of connections is `O(N)`.
 
@@ -241,7 +241,7 @@ Cons:
 
 In a Selective Forwarding Unit (SFU) topology each peer connects to the SFU server. With a SFU each peer uploads their stream once and the server `forwards` the stream to every peer.
 
-<p align="center"><img align="center" width="50%" height="50%" src="sfu_topology.jpg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="sfu_topology.jpg"></p>
 
 For a session with N peers the total number of connections is `O(N²)`.
 
