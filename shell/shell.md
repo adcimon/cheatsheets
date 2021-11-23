@@ -11,14 +11,15 @@
 |-----------------|-----------------------------|
 | ls              | List files and directories. |
 | cd              | Change directory.           |
-| ps<br>ps aux    | Show processes.             |
+| ps<br>ps -aux   | Show processes.             |
 | sudo su -       | Switch to superuser.        |
 | lsb_release -d  | Show Ubuntu version.        |
 | shutdown -h now | Shutdown the machine.       |
 
 ## Windows
 
-| Command        | Description                 |
-|----------------|-----------------------------|
-| dir            | List files and directories. |
-| systeminfo     | Displays detailed configuration information about the computer and operating system. |
+| Command                  | Description                 |
+|--------------------------|-----------------------------|
+| dir                      | List files and directories. |
+| systeminfo               | Displays detailed configuration information about the computer and operating system. |
+| scp -r file user@ip:path | Copy files or directories to a remote computer through ssh. |
