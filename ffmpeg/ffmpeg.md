@@ -279,7 +279,8 @@ ffplay -f dshow -i audio="Microphone":video="Camera"
 Record to file.
 ```
 ffmpeg -f dshow -i audio="Microphone":video="Camera" <output>
-ffmpeg -f dshow -video_size 1280x720 -framerate 7.5 -pixel_format yuyv422 -i video="Camera" <output>
+ffmpeg -f dshow -video_size <resolution> -framerate <fps> -pixel_format <pixel_format> -i video="Camera" <output>
+ffmpeg -f dshow -video_size 1280x720 -framerate 30 -pixel_format yuyv422 -i video="Camera" output.mp4
 ```
 
 ## Streaming
