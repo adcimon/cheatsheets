@@ -18,7 +18,7 @@ docker image ls
 
 Remove an image.
 ```
-docker image rm <name>
+docker image rm <image>
 ```
 
 ## Containers
@@ -29,28 +29,39 @@ docker ps
 docker ps -a
 ```
 
+Run a container.
+```
+docker run <image>
+```
+
 Inspect a container.
 ```
-docker inspect <name>
+docker inspect <container>
 ```
 
-Stop a container.
+Execute a command inside a container.
 ```
-docker stop <name>
-```
-
-Kill a container.
-```
-docker kill <name>
-```
-
-Remove a container.
-```
-docker rm <name>
+docker exec -it <container> <command>
+docker exec -it <container> </bin/bash>
 ```
 
 Fetch the logs of a container.
 ```
-docker logs <name>
-docker logs -f <name>
+docker logs <container>
+docker logs -f <container>
+```
+
+Stop a container.
+```
+docker stop <container>
+```
+
+Kill a container.
+```
+docker kill <container>
+```
+
+Remove a container.
+```
+docker rm <container>
 ```
