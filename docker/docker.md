@@ -42,7 +42,7 @@ docker inspect <container>
 Execute a command inside a container.
 ```
 docker exec -it <container> <command>
-docker exec -it <container> </bin/bash>
+docker exec -it <container> /bin/bash
 ```
 
 Fetch the logs of a container.
