@@ -6,11 +6,31 @@
 
 ## Index
 
-* [npm](#npm)
+* [Install](#install)
 * [Packages](#packages)
 * [Nest.js](#nestjs)
 
-## npm
+# Install
+
+Ubuntu
+```
+curl -fsSL https://deb.nodesource.com/setup_current.x -o setup_node.sh
+chmod +x setup_node.sh
+./setup_node.sh
+apt-get install -y nodejs
+```
+
+Versions
+```
+https://deb.nodesource.com/setup_current.x
+https://deb.nodesource.com/setup_14.x
+https://deb.nodesource.com/setup_13.x
+https://deb.nodesource.com/setup_12.x
+https://deb.nodesource.com/setup_11.x
+https://deb.nodesource.com/setup_10.x
+```
+
+## Packages
 
 [Node Package Manager (npm)](https://www.npmjs.com/) is a package manager for the JavaScript programming language.
 
@@ -29,8 +49,6 @@ Uninstall a package.
 ```
 npm uninstall <package>
 ```
-
-## Packages
 
 | Packages | Install |
 |---|---|
