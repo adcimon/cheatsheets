@@ -55,6 +55,7 @@ npm uninstall <package>
 |---|---|
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
 | [ms](https://github.com/vercel/ms) | npm install ms |
+| [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
 | [Nest.js](https://github.com/nestjs/nest) | npm install -g @nestjs/cli |
 | [Nest.js Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install @types/cron |
 | [Nest.js Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
