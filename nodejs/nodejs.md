@@ -41,6 +41,7 @@ npm init
 
 Install a package.
 ```
+npm install -help
 npm install <package>
 npm install <package>@<version>
 ```
