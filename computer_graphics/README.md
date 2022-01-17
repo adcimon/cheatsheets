@@ -2,7 +2,7 @@
 
 ## Letterbox
 
-Image data: (wi, hi) and define ri = wi / hi
+Image data: (wi, hi) and define ri = wi / hi<br>
 Screen resolution: (ws, hs) and define rs = ws / hs
 ```
 rs > ri ? (wi * hs/hi, hs) : (ws, hi * ws/wi)
