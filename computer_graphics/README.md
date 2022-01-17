@@ -8,6 +8,7 @@ Screen resolution: (ws, hs) and define rs = ws / hs
 rs > ri ? (wi * hs/hi, hs) : (ws, hi * ws/wi)
 ```
 
+Example.
 ```
 |------------------|
     10
