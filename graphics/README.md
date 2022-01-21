@@ -15,7 +15,7 @@ The new resolution is:
 rc > ri ? (wi * hc/hi, hc) : (wc, hi * wc/wi)
 ```
 
-To center the image.
+To center the image:
 ```
 top = (hc - hnew) / 2
 left = (wc - wnew) / 2
