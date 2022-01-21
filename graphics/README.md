@@ -2,10 +2,23 @@
 
 ## Letterbox
 
-Image data: (wi, hi) and define ri = wi / hi<br>
-Screen resolution: (ws, hs) and define rs = ws / hs
+Given the image:
+* Resolution: `(wi, hi)`
+* Aspect Ratio:  `ri = wi / hi`
+
+Given the canvas:
+* Resolution: `(wc, hc)`
+* Aspect Ratio: `rc = wc / hc`
+
+The new resolution is:
 ```
-rs > ri ? (wi * hs/hi, hs) : (ws, hi * ws/wi)
+rc > ri ? (wi * hc/hi, hc) : (wc, hi * wc/wi)
+```
+
+To center the image.
+```
+top = (hc - hnew) / 2
+left = (wc - wnew) / 2
 ```
 
 Example.
@@ -21,16 +34,10 @@ Example.
 |                  |            |
 --------------------           ---
 
-ws = 20
-hs = 10
+wc = 20
+hc = 10
 wi = 10
 hi = 7
 
-20/10 > 10/7 ==> (wi * hs/hi, hs) = (10 * 10/7, 10) = (100/7, 10) ~ (14.3, 10)
-```
-
-Center the image.
-```
-top = (hs - hnew)/2
-left = (ws - wnew)/2
+20/10 > 10/7 ==> (wi * hc/hi, hc) = (10 * 10/7, 10) = (100/7, 10) ~ (14.3, 10)
 ```
