@@ -54,6 +54,7 @@ npm uninstall <package>
 | Packages | Install |
 |---|---|
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
+| [fs-extra](https://github.com/jprichardson/node-fs-extra) | npm install fs-extra |
 | [ms](https://github.com/vercel/ms) | npm install ms |
 | [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
 | [Nest.js](https://github.com/nestjs/nest) | npm install -g @nestjs/cli |
