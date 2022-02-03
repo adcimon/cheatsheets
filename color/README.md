@@ -254,3 +254,4 @@ C<sub>0</sub> =
 * [The Essential Guide to Color Spaces](https://blog.frame.io/2020/02/03/color-spaces-101/)
 * [Bruce Lindbloom Web Site](http://www.brucelindbloom.com/index.html)
 * [Academy Color Encoding System](https://www.oscars.org/science-technology/sci-tech-projects/aces)
+* [Pixel's Color](https://gitlab.freedesktop.org/pq/color-and-hdr/-/blob/main/doc/pixels_color.md)
