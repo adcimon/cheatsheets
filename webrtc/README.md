@@ -294,6 +294,7 @@ For a subscriber with limited bandwidth, it is possible to send only the frames 
 * [WebRTC Glossary](https://webrtcglossary.com/)
 * [WebRTC API MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 * [Troubleshooter](https://test.webrtc.org/)
+* [Webcam Test](https://webcamtests.com/)
 * [Samples](https://webrtc.github.io/samples/)
 * [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
 * [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
