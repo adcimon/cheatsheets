@@ -1,6 +1,6 @@
 # Computer Graphics
 
-Computer graphics is a sub-field of computer science which studies methods for digitally synthesizing and manipulating visual content.
+[Computer graphics](https://en.wikipedia.org/wiki/Computer_graphics_(computer_science)) is a sub-field of computer science which studies methods for digitally synthesizing and manipulating visual content.
 
 ## Letterbox
 
