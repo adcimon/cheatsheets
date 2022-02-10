@@ -15,6 +15,7 @@
 | mpstat -P ALL            | Monitor CPU.                                          |
 | nvidia-smi               | Monitor NVIDIA GPU.                                   |
 | ps<br>ps -aux            | Show processes.                                       |
+| ps -aef --forest         | Show the tree of processes.                           |
 | scp -r file user@ip:path | Secure copy files or directories between 2 computers. |
 | shutdown -h now          | Shutdown the machine.                                 |
 | sudo su -                | Switch to superuser.                                  |
