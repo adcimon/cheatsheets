@@ -188,3 +188,11 @@ Unset an environment variable.
 ```
 conda env config vars unset <variable> --name <env>
 ```
+
+### Issues
+
+Use Conda in PowerShell.
+```
+conda init powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
