@@ -157,6 +157,11 @@ Install a new package.
 conda install <package>
 ```
 
+Install packages from file.
+```
+conda install --file requirements.txt
+```
+
 Update a package.
 ```
 conda update <package>
