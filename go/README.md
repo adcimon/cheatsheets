@@ -34,6 +34,11 @@ go build -o <name>
 env GOOS=<operating_system> GOARCH=<architecture> go build
 ```
 
+Compile with the linker using static links.
+```
+go build -ldflags="-extldflags=-static"
+```
+
 Compile and install packages and dependencies.
 ```
 go install
