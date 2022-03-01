@@ -4,20 +4,20 @@
 
 ## Index
 
-* [Transformation Matrices](#transformation_matrices)
-  * [Translation](#translation)
-  * [Rotation](#rotation)
-  * [Scaling](#scaling)
+* [Transformation Matrices](#transformation-matrices)
+  * [Translation Matrix](#translation-matrix)
+  * [Rotation Matrix](#rotation-matrix)
+  * [Scaling Matrix](#scaling-matrix)
 * [Algorithms](#algorithms)
   * [Letterbox](#letterbox)
 
 ## Transformation Matrices
 
-# Translation
+### Translation Matrix
 
-# Rotation
+### Rotation Matrix
 
-# Scaling
+### Scaling Matrix
 
 ## Algorithms
 
