@@ -20,9 +20,7 @@
 ### Rotation Matrix
 
 <p align="center"><img align="center" width="25%" height="25%" src="rotationx_matrix.svg"></p>
-
 <p align="center"><img align="center" width="25%" height="25%" src="rotationy_matrix.svg"></p>
-
 <p align="center"><img align="center" width="25%" height="25%" src="rotationz_matrix.svg"></p>
 
 ### Scaling Matrix
