@@ -25,7 +25,7 @@
 
 ### Scaling Matrix
 
-<p align="center"><img align="center" width="50%" height="50%" src="scaling_matrix.svg"></p>
+<p align="center"><img align="center" width="25%" height="25%" src="scaling_matrix.svg"></p>
 
 ## Algorithms
 
