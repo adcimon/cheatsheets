@@ -32,7 +32,7 @@ A signaling server should handle:
 * **Media capabilities**. Both peers need to agree on the media formats the session will support.
 * **Connection endpoints**. Each peer needs to know how to send data to the other peer.
 
-It is up to the application to ensure that this out-of-bounds communication is performed securely and accessible for both peers.
+It is up to the application to ensure that this out-of-bounds communication is performed securely and accessible for both peers. However, there is a draft proposing a signaling protocol for media ingestion called [WebRTC-HTTP ingestion protocol (WHIP)](https://www.ietf.org/archive/id/draft-ietf-wish-whip-01.html). This protocol aims to to solve the need in the broadcast industry of a standard WebRTC signaling protocol for stream ingestion on media servers.
 
 ## ICE
 
