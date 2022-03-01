@@ -15,9 +15,17 @@
 
 ### Translation Matrix
 
+<p align="center"><img align="center" width="50%" height="50%" src="translation_matrix.svg"></p>
+
 ### Rotation Matrix
 
+<p align="center"><img align="center" width="50%" height="50%" src="rotationx_matrix.svg"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="rotationy_matrix.svg"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="rotationz_matrix.svg"></p>
+
 ### Scaling Matrix
+
+<p align="center"><img align="center" width="50%" height="50%" src="scaling_matrix.svg"></p>
 
 ## Algorithms
 
