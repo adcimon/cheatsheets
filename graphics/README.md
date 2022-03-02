@@ -27,6 +27,10 @@
 
 <p align="center"><img align="center" width="25%" height="25%" src="scaling_matrix.svg"></p>
 
+### Shearing Matrix
+
+<p align="center"><img align="center" width="25%" height="25%" src="shearing_matrix.svg"></p>
+
 ## Algorithms
 
 ### Letterbox
