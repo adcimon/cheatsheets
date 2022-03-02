@@ -14,7 +14,7 @@
 
 ## Transformation Matrices
 
-[Transformation matrices](https://en.wikipedia.org/wiki/Transformation_matrix) are a type of matrices that represent [linear transformations](https://en.wikipedia.org/wiki/Linear_map).
+[Transformation matrices](https://en.wikipedia.org/wiki/Transformation_matrix) are a type of matrices that represent [linear transformations](https://en.wikipedia.org/wiki/Linear_map). [Affine transformations](https://en.wikipedia.org/wiki/Affine_transformation) are transformations that preserve lines and parallelism but not necessarily distances and angles.
 
 ### Translation Matrix
 
