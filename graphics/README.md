@@ -18,11 +18,13 @@
 
 ### Translation Matrix
 
+Translation is a transformation that moves objects to a position.
+
 <p align="center"><img align="center" width="25%" height="25%" src="translation_matrix.svg"></p>
 
 ### Rotation Matrix
 
-[Rotation](https://en.wikipedia.org/wiki/Rotation_matrix) is a transformation that moves objects relative to an axis.
+[Rotation](https://en.wikipedia.org/wiki/Rotation_matrix) is a transformation that moves objects relative to an axis by an angle θ.
 
 <p align="center"><img align="center" width="25%" height="25%" src="rotationx_matrix.svg"></p>
 <p align="center"><img align="center" width="25%" height="25%" src="rotationy_matrix.svg"></p>
@@ -36,7 +38,7 @@
 
 ### Shearing Matrix
 
-Shearing is a transformation that skews the coordinate space, stretching it nonuniformly. Areas and volumes are preserved but angles are not.
+[Shearing](https://en.wikipedia.org/wiki/Shear_mapping) is a transformation that skews the coordinate space, stretching it nonuniformly. Areas and volumes are preserved but angles are not.
 
 <p align="center"><img align="center" width="25%" height="25%" src="shearing_matrix.svg"></p>
 
