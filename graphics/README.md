@@ -8,6 +8,7 @@
   * [Translation Matrix](#translation-matrix)
   * [Rotation Matrix](#rotation-matrix)
   * [Scaling Matrix](#scaling-matrix)
+  * [Shearing Matrix](#shearing-matrix)
 * [Algorithms](#algorithms)
   * [Letterbox](#letterbox)
 
