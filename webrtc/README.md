@@ -171,10 +171,12 @@ Media streams (audio and video) are delivered through [Real-time Transport Proto
 WebRTC establishes a baseline set of codecs which all compliant applications are required to support. These codecs are described in [RFC 7742: WebRTC Video Processing and Codec Requirements](https://datatracker.ietf.org/doc/html/rfc7742). Applications may choose to allow other codecs as well. The minimum codecs required are:
 
 * Audio
-  * Opus
+  * [Opus](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#opus)
+  * [G.711 PCM (A-law)](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#g.711_pulse_code_modulation_of_voice_frequencies)
+  * [G.711 PCM (µ-law)](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#g.711_pulse_code_modulation_of_voice_frequencies)
 * Video
-  * VP8
-  * H264 Constrained Baseline
+  * [VP8](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/WebRTC_codecs#vp8)
+  * [AVC/H.264 Constrained Baseline](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/WebRTC_codecs#avc_h.264)
 
 ## Data
 
