@@ -16,6 +16,7 @@
   * [MCU](#mcu)
   * [SFU](#sfu)
 * [Simulcast](#simulcast)
+* [Tools](#tools)
 * [References](#references)
 
 ## Introduction
@@ -38,7 +39,7 @@ It is up to the application to ensure that this out-of-bounds communication is p
 
 [Interactive Connectivity Establishment (ICE)](https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment) is a protocol for [Network Address Translator (NAT)](https://en.wikipedia.org/wiki/Network_address_translation) traversal used in computer networking to find ways for two computers to talk to each other as directly as possible in peer-to-peer networking.
 
-In a real world scenario, establishing a connection between 2 peers using ICE has the following steps:
+In a real world scenario, establishing a WebRTC connection between 2 peers, caller and callee, using ICE has the following steps:
 
 **1. Address discovery**
 
@@ -288,15 +289,18 @@ When temporal layers are used, frames from the base layer only reference other b
 
 For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer, effectively reducing bandwidth.
 
+## Tools
+
+* [Webcam Test](https://webcamtests.com/)
+* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
+* [Troubleshooter](https://test.webrtc.org/)
+
 ## References
 
 * [WebRTC for the Curious](https://webrtcforthecurious.com/)
 * [WebRTC Glossary](https://webrtcglossary.com/)
 * [WebRTC API MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
-* [Troubleshooter](https://test.webrtc.org/)
-* [Webcam Test](https://webcamtests.com/)
 * [Samples](https://webrtc.github.io/samples/)
-* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
 * [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
 * [Any Connect STUN-TURN-ICE](https://anyconnect.com/stun-turn-ice/)
 * [HTML5 Rocks WebRTC Data Channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/)
