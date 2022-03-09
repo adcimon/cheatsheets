@@ -168,6 +168,14 @@ The session named `session007` has 2 media streams, an audio stream on port `808
 
 Media streams (audio and video) are delivered through [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). This protocol was designed to ensure timely and ordered packet arrival while tolerating data loss due to unreliable channels. RTP is usually used in conjunction with [Real-time Transport Control Protocol (RTCP)](https://en.wikipedia.org/wiki/RTP_Control_Protocol), which provides statistics, quality-of-service and synchronization data to the participants of the session.
 
+WebRTC establishes a baseline set of codecs which all compliant applications are required to support. These codecs are described in [RFC 7742: WebRTC Video Processing and Codec Requirements](https://datatracker.ietf.org/doc/html/rfc7742). Applications may choose to allow other codecs as well. The minimum codecs required are:
+
+* Audio
+  * Opus
+* Video
+  * VP8
+  * H264 Constrained Baseline
+
 ## Data
 
 Data streams are delivered through [Stream Control Transmission Protocol (SCTP)](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol). SCTP is a message-oriented **transport** protocol that ensures reliable, in-sequence transport of messages and congestion control. It differs from UDP and TCP in providing multi-homing and redundant paths to increase resilience and reliability.
