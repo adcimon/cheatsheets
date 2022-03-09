@@ -299,7 +299,8 @@ For a subscriber with limited bandwidth, it is possible to send only the frames 
 
 * [WebRTC for the Curious](https://webrtcforthecurious.com/)
 * [WebRTC Glossary](https://webrtcglossary.com/)
-* [WebRTC API MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+* [MDN WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+* [MDN Web Media Technologies](https://developer.mozilla.org/en-US/docs/Web/Media)
 * [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
 * [Any Connect STUN-TURN-ICE](https://anyconnect.com/stun-turn-ice/)
 * [HTML5 Rocks WebRTC Data Channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/)
