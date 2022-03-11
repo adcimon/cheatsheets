@@ -28,6 +28,7 @@
   * [HLS](#hls)
   * [NDI](#ndi)
   * [Synchronization](#synchronization)
+  * [Latency](#latency)
 * [Options](#options)
 
 ## Basic
@@ -311,7 +312,7 @@ ffmpeg -re -i <input> -acodec copy -vcodec copy -f flv rtmp://<ip>:1935/<applica
 
 Play a stream.
 ```
-ffplay -i http://<ip>:<port>/<application>/<stream_name>.m3u8 -fflags nobuffer -flags low_delay
+ffplay -i http://<ip>:<port>/<application>/<stream_name>.m3u8
 ```
 
 Download and concatenate the video fragments.
@@ -354,6 +355,8 @@ ffplay -sync ext -fflags +discardcorrupt -framedrop -i <input>
 * `-sync ext` sets the master clock to an external source to play in realtime. The master clock is used to control audio-video synchronization. Values are `audio`, `video` and `ext`, default is `audio`.
 * `-fflags +discardcorrupt` discards corrupt packets.
 * `-framedrop` drops video frames if video is out of sync. Enabled by default if the master clock is not set to video. Use this option to enable frame dropping for all master clock sources.
+
+### Latency
 
 Minimize live stream latency.
 ```
