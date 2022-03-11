@@ -300,7 +300,7 @@ ffplay -i <sdp> -protocol_whitelist file,udp,rtp
 
 ### RTSP
 
-[Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) is an application-level network protocol designed for multiplexing and packetizing multimedia transport streams. The transmission of streaming data itself is not a task of RTSP, most media servers use RTP in conjunction with RTCP for media stream delivery. Clients of media servers issue commands such as play, record and pause, to facilitate real-time control of the media streaming. The well known TCP port for RTSP traffic is 554.
+[Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) is an application-level network protocol designed for multiplexing and packetizing multimedia transport streams. The transmission of streaming data itself is not a task of RTSP, most media servers use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) in conjunction with [RTCP](https://en.wikipedia.org/wiki/RTP_Control_Protocol) for media stream delivery. Clients of media servers issue commands such as play, record and pause, to facilitate real-time control of the media streaming. The well known TCP port for RTSP traffic is 554.
 
 Play a stream.
 ```
