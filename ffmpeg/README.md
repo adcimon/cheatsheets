@@ -306,6 +306,12 @@ Publish a stream.
 ffmpeg -re -i <input> -acodec copy -vcodec copy -f flv rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>
 ```
 
+Play a stream.
+```
+ffplay -i rtmp://<ip>:1935/<application>/<stream_name>
+ffplay -i "rtmp://<ip>:1935/<application>/<stream_name> live=1"
+```
+
 ### HLS
 
 [HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol. Resembles [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) in that it works by breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an [extended M3U playlist](https://en.wikipedia.org/wiki/M3U).
