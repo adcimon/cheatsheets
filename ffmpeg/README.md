@@ -304,12 +304,12 @@ ffplay -i <sdp> -protocol_whitelist file,udp,rtp
 
 Play a stream.
 ```
-ffplay -i rtsp://@<ip>:<port>/<path/to/stream>.<sdp|mov|avi|etc>
+ffplay -i rtsp://@<ip>:<port>/<path/to/stream>.<sdp|mp4|mov|avi|etc>
 ```
 
 Record to file.
 ```
-ffmpeg -i rtsp://@<ip>:<port>/<path/to/stream>.<sdp|mov|avi|etc> -acodec copy -vcodec copy <output>
+ffmpeg -i rtsp://@<ip>:<port>/<path/to/stream>.<sdp|mp4|mov|avi|etc> -acodec copy -vcodec copy <output>
 ```
 
 ### RTMP
