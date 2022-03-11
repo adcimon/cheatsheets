@@ -24,6 +24,7 @@
   * [DirectShow](#directshow)
 * [Streaming](#streaming)
   * [RTP](#rtp)
+  * [RTMP](#rtmp)
   * [HLS](#hls)
   * [NDI](#ndi)
   * [Synchronization](#synchronization)
@@ -293,6 +294,15 @@ Play a stream.
 ```
 ffmpeg -protocol_whitelist file,udp,rtp -i <sdp> <output>
 ffplay -i <sdp> -protocol_whitelist file,udp,rtp
+```
+
+### RTMP
+
+[Real-Time Messaging Protocol](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) is a communication protocol for streaming audio, video, and data over the Internet that works on top of TCP and uses port number 1935 by default.
+
+Publish a stream.
+```
+ffmpeg -re -i <input> -acodec copy -vcodec copy -f flv rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>
 ```
 
 ### HLS
