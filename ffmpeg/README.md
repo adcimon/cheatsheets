@@ -307,11 +307,16 @@ ffmpeg -re -i <input> -acodec copy -vcodec copy -f flv rtmp://<ip>:1935/<applica
 
 ### HLS
 
-[HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol.
+[HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol. HLS resembles [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) in that it works by breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an [extended M3U playlist](https://en.wikipedia.org/wiki/M3U).
+
+Play a stream.
+```
+ffplay -i http://<ip>:<port>/<application>/<stream_name>.m3u8 -fflags nobuffer -flags low_delay
+```
 
 Download and concatenate the video fragments.
 ```
-ffmpeg -protocol_whitelist file,http,https,tcp,tls -i <m3u8> -c copy -bsf:a aac_adtstoasc <output>
+ffmpeg -protocol_whitelist file,http,https,tcp,tls -i http://<ip>:<port>/<application>/<stream_name>.m3u8 -c copy -bsf:a aac_adtstoasc <output>
 ```
 
 ### NDI
