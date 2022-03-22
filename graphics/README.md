@@ -11,6 +11,7 @@
   * [Shearing Matrix](#shearing-matrix)
 * [Algorithms](#algorithms)
   * [Letterbox](#letterbox)
+* [References](#references)
 
 ## Transformation Matrices
 
@@ -86,3 +87,7 @@ hi = 7
 
 20/10 > 10/7 ==> (wi * hc/hi, hc) = (10 * 10/7, 10) = (100/7, 10) ~ (14.3, 10)
 ```
+
+## References
+
+* [Matrices in Computer Graphics](https://vitaminac.github.io/Matrices-in-Computer-Graphics/)
