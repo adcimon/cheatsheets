@@ -13,13 +13,14 @@
   * [NVENC/NVDEC](#nvencnvdec)
 * [Editing](#editing)
   * [Trimming](#trimming)
-  * [Speed up/Slow down](#speed-upslow-down)
+  * [Speed Up/Slow Down](#speed-upslow-down)
   * [Delay](#delay)
   * [Mute](#mute)
   * [Rotate](#rotate)
   * [Scale](#scale)
   * [Slicing](#slicing)
   * [GIF](#gif)
+  * [Draw](#draw)
 * [Devices](#devices)
   * [DirectShow](#directshow)
 * [Streaming](#streaming)
@@ -254,6 +255,13 @@ ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]
 ```
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) generates a color palette, `palettegen=stats_mode=single` generates a new palette for every input frame.
 * [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) uses a color palette, `paletteuse=new=1` uses a new palette for each frame.
+
+### Draw
+
+Draw frame number and timestamp.
+```
+ffplay -i <input> -vf "drawtext=text='frame %{frame_num}%{pts\:hms}': x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=20: box=1: boxcolor=black: boxborderw=5"
+```
 
 ## Devices
 
