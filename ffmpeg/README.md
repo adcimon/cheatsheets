@@ -262,6 +262,7 @@ Draw frame number and timestamp.
 ```
 ffplay -i <input> -vf "drawtext=text='frame %{frame_num}%{pts\:hms}': x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=20: box=1: boxcolor=black: boxborderw=5"
 ```
+* On Windows, escape the sequences of form `%{...}` with `%`.
 
 ## Devices
 
