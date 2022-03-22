@@ -258,6 +258,8 @@ ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]
 
 ### Draw
 
+This section has examples of the video filter [drawtext](https://ffmpeg.org/ffmpeg-filters.html#drawtext).
+
 Draw frame number and timestamp.
 ```
 ffplay -i <input> -vf "drawtext=text='frame %{frame_num}%{pts\:hms}': x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=20: box=1: boxcolor=black: boxborderw=5"
