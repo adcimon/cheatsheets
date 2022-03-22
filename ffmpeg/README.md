@@ -329,7 +329,7 @@ ffmpeg -i rtsp://@<ip>:<port>/<path/to/stream>.<sdp|mp4|mov|avi|etc> -acodec cop
 
 Publish a stream.
 ```
-ffmpeg -re -i <input> -acodec copy -vcodec copy -f flv rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>
+ffmpeg -re -i <input> -acodec copy -vcodec copy -f <flv|webm|etc> rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>
 ```
 
 Play a stream.
