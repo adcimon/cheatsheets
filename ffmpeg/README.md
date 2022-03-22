@@ -398,7 +398,7 @@ ffplay -i <input> -fflags nobuffer -flags low_delay -reorder_queue_size 0
 | [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input at native frame rate. By default ffmpeg attempts to read the input as fast as possible. |
 | [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
 | [-stream_loop](http://ffmpeg.org/ffmpeg-all.html#Main-options) | Sets the number of times input stream shall be looped, `0` means no loop, `-1` means infinite loop. |
-| [-codec:a](https://ffmpeg.org/ffmpeg.html#Main-options) / [-c:a](https://ffmpeg.org/ffmpeg.html#Main-options) / [-acodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the audio stream. |
-| [-codec:v](https://ffmpeg.org/ffmpeg.html#Main-options) / [-c:v](https://ffmpeg.org/ffmpeg.html#Main-options) / [-vcodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the video stream. |
-| [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options) / [-va](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
-| [-filter:v](https://ffmpeg.org/ffmpeg.html#Main-options) / [-vf](https://ffmpeg.org/ffmpeg.html#Video-Options) | Create a video filtergraph. |
+| [-codec:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-acodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the audio stream. |
+| [-codec:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-vcodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the video stream. |
+| [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-va](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
+| [-filter:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-vf](https://ffmpeg.org/ffmpeg.html#Video-Options) | Create a video filtergraph. |
