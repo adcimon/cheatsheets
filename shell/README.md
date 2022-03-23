@@ -21,7 +21,7 @@
 | shutdown -h now          | Shutdown the machine.                                 |
 | sudo su -                | Switch to superuser.                                  |
 | top                      | Monitor processes.                                    |
-| watch -n <interval>      | Run command at regular intervals.                     |
+| watch -n interval        | Run command at regular intervals.                     |
 
 ## Windows
 
@@ -33,4 +33,4 @@
 | set                      | List the environment variables.                                                      |
 | scp -r file user@ip:path | Secure copy files or directories between 2 computers.                                |
 | systeminfo               | Displays detailed configuration information about the computer and operating system. |
-| $env:<name>="<value>"    | Set an environment variable.                                                         |
+| $env:name="value"        | Set an environment variable.                                                         |
