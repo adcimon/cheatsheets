@@ -39,6 +39,13 @@ Initialize a module directory, creating a `package.json` file.
 npm init
 ```
 
+Run an application.
+```
+npm run
+npm run <script>
+npm run --prefix <path/to/package.json> <script>
+```
+
 Install a package.
 ```
 npm install -help
