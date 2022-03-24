@@ -28,7 +28,7 @@ A [color space](https://en.wikipedia.org/wiki/Color_space) is the set of colors 
 
 The [CIE 1931 color spaces](https://en.wikipedia.org/wiki/CIE_1931_color_space) are the first defined quantitative links between distributions of wavelengths in the electromagnetic visible spectrum, and physiologically perceived colors in human color vision. They were created by the [International Commission on Illumination (CIE)](https://en.wikipedia.org/wiki/International_Commission_on_Illumination) in 1931 from a series of experiments that were combined into the specification of the `CIE RGB` color space, from which the `CIE XYZ` color space was derived.
 
-<p align="center"><img align="center" width="50%" height="50%" src="CIE1931_chromaticity_diagram.svg"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="assets/CIE1931_chromaticity_diagram.svg"></p>
 <p align="center">CIE Chromaticity Diagram</p>
 
 * The diagram represents the colors visible to the average human eye.
@@ -45,7 +45,7 @@ Each color space has a [gamut](https://en.wikipedia.org/wiki/Gamut), a subset of
 * [White point](https://en.wikipedia.org/wiki/White_point). Color spaces use [illuminants](https://en.wikipedia.org/wiki/Template:Color_temperature_white_points) to define reference whites, each illuminant has a [correlated color temperature (CCT)](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature). The commonly used standard illuminant is [D65](https://en.wikipedia.org/wiki/Illuminant_D65) at 6504 K.
 * [Transfer function](https://en.wikipedia.org/wiki/Transfer_function). [Gamma correction](https://en.wikipedia.org/wiki/Gamma_correction) is a non-linear operation used to encode and decode luminance or tristimulus values. It is used to take advantage of the non-linear manner in which humans perceive light and color.
 
-<p align="center"><img align="center" width="70%" height="70%" src="color_spaces.png"></p>
+<p align="center"><img align="center" width="70%" height="70%" src="assets/color_spaces.png"></p>
 <p align="center">Color Spaces</p>
 
 Color space conversion is done with `lineal values` and depends on the `primary colors` and `white points`. There are several lists of [matrices](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html) to convert RGB/XYZ and XYZ/RGB.
@@ -77,7 +77,7 @@ For black, `X=Y=Z=0`, set `x` and `y` to the chromaticity coordinates of the ref
 
 [Academy Color Encoding System ACES](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System) is a color image encoding system created by industry professionals of [Academy of Motion Picture Arts and Sciences](https://en.wikipedia.org/wiki/Academy_of_Motion_Picture_Arts_and_Sciences).
 
-<p align="center"><img align="center" width="30%" height="30%" src="aces_pipeline.png"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/aces_pipeline.png"></p>
 <p align="center">ACES Pipeline</p>
 
 * IDT: Input Device Transform.
@@ -91,7 +91,7 @@ ACES has several color spaces, defined by:
 * Primary `AP1 = R(0.713,0.293) G(0.165,0.830) B(0.128,0.044)`.
 * Reference illuminant `(0.32168,0.33767)`, close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60).
 
-<p align="center"><img align="center" width="40%" height="40%" src="aces_color_spaces.png"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/aces_color_spaces.png"></p>
 <p align="center">ACES Color Spaces</p>
 
 ACES `working` color spaces are:
@@ -125,11 +125,11 @@ A [color model](https://en.wikipedia.org/wiki/Color_model) is a method to repres
 
 [RGB](https://en.wikipedia.org/wiki/RGB_color_model) is an [additive](https://en.wikipedia.org/wiki/Additive_color) color model with a separation of `red`, `green` and `blue` [additive primary colors](https://en.wikipedia.org/wiki/Primary_color).
 
-<p align="center"><img align="center" width="20%" height="20%" src="additive_color_mixing.png"></p>
+<p align="center"><img align="center" width="20%" height="20%" src="assets/additive_color_mixing.png"></p>
 <p align="center">Additive Color Mixing</p>
 
 When the red, green and blue components have the same range of values the geometric representation has the shape of a cube otherwise it has the shape of a rectangular prism or cuboid.
-<p align="center"><img align="center" width="40%" height="40%" src="rgb_cube.png"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/rgb_cube.png"></p>
 <p align="center">RGB Color Range</p>
 
 There are multitude [RGB pixel formats](https://en.wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats), the most common formats are:
@@ -145,19 +145,19 @@ short pixel = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3)
 
 [CMY](https://en.wikipedia.org/wiki/CMY_color_model) is a [subtractive](https://en.wikipedia.org/wiki/Subtractive_color) color model with a separation of `cyan`, `magenta` and `yellow` [subtractive primary colors](https://en.wikipedia.org/wiki/Primary_color#Subtractive_mixing_of_ink_layers).
 
-<p align="center"><img align="center" width="20%" height="20%" src="subtractive_color_mixing.png"></p>
+<p align="center"><img align="center" width="20%" height="20%" src="assets/subtractive_color_mixing.png"></p>
 <p align="center">Subtractive Color Mixing</p>
 
 ### HSL/HSV
 
 [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) is a color model with `hue`, `saturation` and `level` components.
 
-<p align="center"><img align="center" width="30%" height="30%" src="hsl_cylinder.png"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/hsl_cylinder.png"></p>
 <p align="center">HSL Color Range</p>
 
 [HSV](https://en.wikipedia.org/wiki/HSL_and_HSV) is a color model with `hue`, `saturation` and `value` components (also known as HSB, `hue`, `saturation` and `brightness`).
 
-<p align="center"><img align="center" width="30%" height="30%" src="hsv_cylinder.png"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/hsv_cylinder.png"></p>
 <p align="center">HSV Color Range</p>
 
 Both color ranges shapes are cylindrical.
@@ -206,7 +206,7 @@ B = 1.164(Y - 16) + 2.018(U - 128)
 
 [Blend modes](https://en.wikipedia.org/wiki/Blend_modes) are used to determine how two color layers are blended with each other.
 
-<p align="center"><img align="center" width="70%" height="70%" src="blend_modes.png"></p>
+<p align="center"><img align="center" width="70%" height="70%" src="assets/blend_modes.png"></p>
 <p align="center">Blend Modes</p>
 
 **Normal**<br>

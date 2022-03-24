@@ -1,6 +1,6 @@
 # tcpdump
 
-<p align="center"><img align="center" src="tcpdump.png"></p>
+<p align="center"><img align="center" src="assets/tcpdump.png"></p>
 
 [tcpdump](https://www.tcpdump.org/) is a powerful command-line packet analyzer.
 

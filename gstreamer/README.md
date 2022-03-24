@@ -1,6 +1,6 @@
 # GStreamer
 
-<p align="center"><img align="center" src="gstreamer.png"></p>
+<p align="center"><img align="center" src="assets/gstreamer.png"></p>
 
 [GStreamer](https://gstreamer.freedesktop.org/) is a library for constructing graphs of media-handling components.
 
