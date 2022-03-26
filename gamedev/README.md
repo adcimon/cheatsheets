@@ -1,11 +1,14 @@
 ## Index
 
-* [Directory Structure](#directory-structure)
-* [Asset Naming](#asset-naming)
-* [Code Style](#code-style)
+* [Unity](#unity)
+  * [Direcotry Structure](#directory-structure)
+  * [Asset Naming](#asset-naming)
+  * [Code Style](#code-style)
 * [Networking](#networking)
 
-## Directory Structure
+## Unity
+
+### Directory Structure
 
 Prototype.
 ```
@@ -66,7 +69,7 @@ Models
 └── ...
 ```
 
-## Asset Naming
+### Asset Naming
 
 | Asset Type | Asset Name |
 | - | - |
@@ -107,7 +110,7 @@ Models
 | Tile | tile |
 | Vector Field | vectorfield |
 
-## Code Style
+### Code Style
 
 | Language Concept | Convention |
 | - | - |
@@ -126,6 +129,7 @@ Models
 
 ## Networking
 
+Interesting case studies:
 * [Fast-Paced Multiplayer](https://www.gabrielgambetta.com/client-server-game-architecture.html)
 * [Game Networking Demystified](https://ruoyusun.com/2019/03/28/game-networking-1.html)
 * [1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond](https://www.gamedeveloper.com/programming/1500-archers-on-a-28-8-network-programming-in-age-of-empires-and-beyond)
