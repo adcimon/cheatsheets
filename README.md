@@ -16,6 +16,7 @@ Collection of cheatsheets.
 * [Python](https://adcimon.github.io/cheatsheets/python/)
 * [Regular Expressions](https://adcimon.github.io/cheatsheets/regexp/)
 * [Shell](https://adcimon.github.io/cheatsheets/shell/)
+* [Streaming](https://adcimon.github.io/cheatsheets/streaming/)
 * [tcpdump](https://adcimon.github.io/cheatsheets/tcpdump/)
 * [TrinityCore](https://adcimon.github.io/cheatsheets/trinitycore/)
 * [Unity](https://adcimon.github.io/cheatsheets/unity/)
