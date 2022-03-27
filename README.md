@@ -3,13 +3,13 @@
 Collection of cheatsheets.
 
 * [Color](https://adcimon.github.io/cheatsheets/color/)
-* [Computer Graphics](https://adcimon.github.io/cheatsheets/graphics/)
 * [Cryptography](https://adcimon.github.io/cheatsheets/crypto/)
 * [cURL](https://adcimon.github.io/cheatsheets/curl/)
 * [Docker](https://adcimon.github.io/cheatsheets/docker/)
 * [FFmpeg](https://adcimon.github.io/cheatsheets/ffmpeg/)
 * [Git](https://adcimon.github.io/cheatsheets/git/)
 * [Go](https://adcimon.github.io/cheatsheets/go/)
+* [Graphics](https://adcimon.github.io/cheatsheets/graphics/)
 * [GStreamer](https://adcimon.github.io/cheatsheets/gstreamer/)
 * [Mercurial](https://adcimon.github.io/cheatsheets/mercurial/)
 * [Node.js](https://adcimon.github.io/cheatsheets/nodejs/)
