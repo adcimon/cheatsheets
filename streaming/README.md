@@ -16,13 +16,13 @@
 
 ### Mesh
 
-In a mesh topology each peer is directly connected to every other peer. Each peer sends their streams to every single peer and downloads the streams from every peer.
+In a mesh topology each node is directly connected to every other node. Each node sends its streams to every single node and downloads the streams from every node.
 
 <p align="center"><img align="center" width="40%" height="40%" src="assets/mesh_topology.jpg"></p>
 
-For a session with N peers the total number of connections is `O(N²)`.
+For a session with N nodes the total number of connections is `O(N²)`.
 
-| Peers                    | N      |
+| Nodes                    | N      |
 |--------------------------|--------|
 | Uplinks                  | N(N-1) |
 | Downlinks                | N(N-1) |
@@ -36,18 +36,18 @@ Pros:
 
 Cons:
 * Poor scaling.
-* High peer loads.
+* High node loads.
 * Connectivity problems with NATs, firewalls, etc.
 
 ### MCU
 
-In a Multipoint Conferencing Unit (MCU) topology each peer connects to the MCU server. With a MCU each peer uploads their stream once, the server `decodes` the stream, mixes the streams of all the peers into one and `encodes` the stream to send it back to each peer.
+In a Multipoint Conferencing Unit (MCU) topology each node is connected to the MCU server. With a MCU, each node uploads its stream once, the server `decodes` the stream, mixes the streams of all the nodes into one and `encodes` the stream to send it back to each node.
 
 <p align="center"><img align="center" width="40%" height="40%" src="assets/mcu_topology.jpg"></p>
 
-For a session with N peers the total number of connections is `O(N)`.
+For a session with N nodes the total number of connections is `O(N)`.
 
-| Peers                    | N |
+| Nodes                    | N |
 |--------------------------|---|
 | Uplinks                  | N |
 | Downlinks                | N |
@@ -56,7 +56,7 @@ For a session with N peers the total number of connections is `O(N)`.
 
 Pros:
 * Good scaling.
-* Low peer loads.
+* Low node loads.
 * No connectivity problems.
 * Works well in low bandwidth environments.
 
@@ -66,13 +66,13 @@ Cons:
 
 ### SFU
 
-In a Selective Forwarding Unit (SFU) topology each peer connects to the SFU server. With a SFU each peer uploads their stream once and the server `forwards` the stream to every peer.
+In a Selective Forwarding Unit (SFU) topology each node is connected to the SFU server. With a SFU, each node uploads its stream once and the server `forwards` the stream to every node.
 
 <p align="center"><img align="center" width="40%" height="40%" src="assets/sfu_topology.jpg"></p>
 
-For a session with N peers the total number of connections is `O(N²)`.
+For a session with N nodes the total number of connections is `O(N²)`.
 
-| Peers                    | N      |
+| Nodes                    | N      |
 |--------------------------|--------|
 | Uplinks                  | N      |
 | Downlinks                | N(N-1) |
@@ -81,7 +81,7 @@ For a session with N peers the total number of connections is `O(N²)`.
 
 Pros:
 * Good scaling.
-* Medium peer loads.
+* Medium node loads.
 * Low server loads.
 * No connectivity problems.
 
