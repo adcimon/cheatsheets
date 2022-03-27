@@ -1,5 +1,7 @@
 # Streaming
 
+[Streaming](https://en.wikipedia.org/wiki/Streaming_media) is the process of transmitting audio and video data in a continuous flow over a wired or wireless internet connection.
+
 ## Index
 
 * [Topologies](#topologies)
