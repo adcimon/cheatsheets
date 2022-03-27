@@ -3,6 +3,9 @@
 ## Index
 
 * [Topologies](#topologies)
+  * [Mesh](#mesh)
+  * [MCU](#mcu)
+  * [SFU](#sfu)
 * [Simulcast](#simulcast)
 * [Scalable Video Coding](#scalable-video-coding)
 * [References](#references)
