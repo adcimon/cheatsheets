@@ -26,8 +26,8 @@ For a session with N nodes the total number of connections is `O(N²)`.
 |--------------------------|--------|
 | Uplinks                  | N(N-1) |
 | Downlinks                | N(N-1) |
-| Uplinks<sub>peer</sub>   | N-1    |
-| Downlinks<sub>peer</sub> | N-1    |
+| Uplinks<sub>node</sub>   | N-1    |
+| Downlinks<sub>node</sub> | N-1    |
 
 Pros:
 * Low latency.
@@ -51,8 +51,8 @@ For a session with N nodes the total number of connections is `O(N)`.
 |--------------------------|---|
 | Uplinks                  | N |
 | Downlinks                | N |
-| Uplinks<sub>peer</sub>   | 1 |
-| Downlinks<sub>peer</sub> | 1 |
+| Uplinks<sub>node</sub>   | 1 |
+| Downlinks<sub>node</sub> | 1 |
 
 Pros:
 * Good scaling.
@@ -76,8 +76,8 @@ For a session with N nodes the total number of connections is `O(N²)`.
 |--------------------------|--------|
 | Uplinks                  | N      |
 | Downlinks                | N(N-1) |
-| Uplinks<sub>peer</sub>   | 1      |
-| Downlinks<sub>peer</sub> | N-1    |
+| Uplinks<sub>node</sub>   | 1      |
+| Downlinks<sub>node</sub> | N-1    |
 
 Pros:
 * Good scaling.
