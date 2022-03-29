@@ -98,6 +98,8 @@ conda update conda
 
 ### Environments
 
+Environments can be found at `C:/ProgramData/Anaconda3/envs` on Windows.
+
 List all the environments.
 ```
 conda info --envs
