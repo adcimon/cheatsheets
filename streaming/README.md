@@ -4,6 +4,7 @@
 
 ## Index
 
+* [Media Server](#media-server)
 * [Topologies](#topologies)
   * [Mesh](#mesh)
   * [MCU](#mcu)
@@ -11,6 +12,19 @@
 * [Simulcast](#simulcast)
 * [Scalable Video Coding](#scalable-video-coding)
 * [References](#references)
+
+## Media Server
+
+Media servers are software applications that deliver video and audio content to clients who request it. The most common use of media servers is to deliver [video on demand (VOD)](https://en.wikipedia.org/wiki/Video_on_demand), in which the media server retrieves prerecorded video content from storage and delivers it across the Internet. Live streaming media servers deliver content as it is generated in real time or with only a slight delay.
+
+List of streaming media servers:
+* [AntMedia](https://github.com/ant-media)
+* [Janus Server](https://github.com/meetecho)
+* [Jitsi](https://github.com/jitsi)
+* [Kurento Media Server](https://github.com/Kurento/kurento-media-server)
+* [LiveKit](https://github.com/livekit)
+* [Node Media Server](https://github.com/illuspas/Node-Media-Server)
+* [Simple Realtime Server](https://github.com/ossrs/srs)
 
 ## Topologies
 
