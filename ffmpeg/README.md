@@ -301,8 +301,6 @@ ffmpeg -f dshow -video_size 1280x720 -framerate 30 -pixel_format yuyv422 -i vide
 
 ### RTP
 
-[Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) is a network protocol used in communication and entertainment systems that involve streaming media.
-
 Play a stream.
 ```
 ffmpeg -protocol_whitelist file,udp,rtp -i <sdp> <output>
@@ -310,8 +308,6 @@ ffplay -i <sdp> -protocol_whitelist file,udp,rtp
 ```
 
 ### RTSP
-
-[Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) is an application-level network protocol designed for multiplexing and packetizing multimedia transport streams. The transmission of streaming data itself is not a task of RTSP, most media servers use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) in conjunction with [RTCP](https://en.wikipedia.org/wiki/RTP_Control_Protocol) for media stream delivery. Clients of media servers issue commands such as play, record and pause, to facilitate real-time control of the media streaming. The well known TCP port for RTSP traffic is 554.
 
 Play a stream.
 ```
@@ -324,8 +320,6 @@ ffmpeg -i rtsp://@<ip>:<port>/<path/to/stream>.<sdp|mp4|mov|avi|etc> -acodec cop
 ```
 
 ### RTMP
-
-[Real-Time Messaging Protocol](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) is a communication protocol for streaming audio, video, and data over the Internet that works on top of TCP and uses port number 1935 by default.
 
 Publish a stream.
 ```
@@ -340,8 +334,6 @@ ffplay -i "rtmp://<ip>:1935/<application>/<stream_name> live=1"
 
 ### HLS
 
-[HTTP Live Streaming (HLS)](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) is an HTTP-based adaptive bitrate streaming communications protocol. Resembles [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) in that it works by breaking the overall stream into a sequence of small HTTP-based file downloads, each downloading one short chunk of an overall potentially unbounded transport stream. A list of available streams, encoded at different bit rates, is sent to the client using an [extended M3U playlist](https://en.wikipedia.org/wiki/M3U).
-
 Play a stream.
 ```
 ffplay -i http://<ip>:<port>/<application>/<stream_name>.m3u8
@@ -355,8 +347,6 @@ ffmpeg -protocol_whitelist file,http,https,tcp,tls -i http://<ip>:<port>/<applic
 ### NDI
 
 🚩 **NDI removed from FFmpeg due to [license violation](https://trac.ffmpeg.org/ticket/7589)**
-
-[Network Device Interface (NDI)](https://www.ndi.tv/) is a royalty-free software standard developed by NewTek to enable video-compatible products to communicate, deliver, and receive high-definition video over a computer network in a high-quality, low-latency manner that is frame accurate and suitable for switching in a live production environment.
 
 List the available NDI sources.
 ```
