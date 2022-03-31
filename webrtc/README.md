@@ -7,7 +7,7 @@
 ## Index
 
 * [Signaling](#signaling)
-* [ICE](#ice)
+* [Connectivity](#connectivity)
 * [SDP](#sdp)
 * [Media](#media)
 * [Data](#data)
@@ -27,7 +27,7 @@ A signaling server should handle:
 
 It is up to the application to ensure that this out-of-bounds communication is performed securely and accessible for both peers. However, there is a draft proposing a signaling protocol for media ingestion called [WebRTC-HTTP ingestion protocol (WHIP)](https://www.ietf.org/archive/id/draft-ietf-wish-whip-01.html). This protocol aims to to solve the need in the broadcast industry of a standard WebRTC signaling protocol for stream ingestion on media servers.
 
-## ICE
+## Connectivity
 
 [Interactive Connectivity Establishment (ICE)](https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment) is a protocol for [Network Address Translator (NAT)](https://en.wikipedia.org/wiki/Network_address_translation) traversal used in computer networking to find ways for two computers to talk to each other as directly as possible in peer-to-peer networking.
 
