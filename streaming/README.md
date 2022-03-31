@@ -153,7 +153,7 @@ Streaming protocols are standardized methods of delivering different types of me
 
 ### RTMP
 
-[Real-Time Messaging Protocol](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) is a communication protocol for streaming audio, video, and data over the Internet that works on top of TCP and uses port number 1935 by default.
+[Real-Time Messaging Protocol (RTMP)](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) is a communication protocol for streaming audio, video, and data over the Internet that works on top of TCP and uses port number 1935 by default.
 
 ### HLS
 
