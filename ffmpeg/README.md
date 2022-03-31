@@ -346,7 +346,7 @@ ffmpeg -protocol_whitelist file,http,https,tcp,tls -i http://<ip>:<port>/<applic
 
 ### NDI
 
-🚩 **NDI removed from FFmpeg due to [license violation](https://trac.ffmpeg.org/ticket/7589)**
+🚩 **NDI removed from FFmpeg due to [license violation](https://trac.ffmpeg.org/ticket/7589)**.
 
 List the available NDI sources.
 ```
