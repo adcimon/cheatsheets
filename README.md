@@ -3,7 +3,7 @@
 Fields
 * [Color](https://adcimon.github.io/cheatsheets/color/)
 * [Cryptography](https://adcimon.github.io/cheatsheets/crypto/)
-* [Graphics](https://adcimon.github.io/cheatsheets/graphics/)
+* [Computer Graphics](https://adcimon.github.io/cheatsheets/graphics/)
 * [Regular Expressions](https://adcimon.github.io/cheatsheets/regexp/)
 * [Streaming](https://adcimon.github.io/cheatsheets/streaming/)
 
