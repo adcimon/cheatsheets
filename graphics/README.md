@@ -91,3 +91,4 @@ hi = 7
 ## References
 
 * [Matrices in Computer Graphics](https://vitaminac.github.io/Matrices-in-Computer-Graphics/)
+* [Why are 2D vector graphics so much harder than 3D?](https://blog.mecheye.net/2019/05/why-is-2d-graphics-is-harder-than-3d-graphics/)
