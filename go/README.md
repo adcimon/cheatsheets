@@ -70,10 +70,20 @@ go mod init
 go mod init <name>
 ```
 
-Add a dependency to the module or all dependencies.
+Add a dependency to the module.
 ```
 go get
+```
+
+Update all modules and their dependencies.
+```
 go get -u ./...
+```
+
+Update a module to the latest commit or to a branch.
+```
+go get -v -u github.com/user/repo@master
+go get -v -u github.com/user/repo@develop
 ```
 
 Remove unused dependencies.
