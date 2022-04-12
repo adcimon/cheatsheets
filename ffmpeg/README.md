@@ -372,16 +372,25 @@ ffmpeg -f libndi_newtek -i "NDI Input Stream" <output>
 
 Synchronize audio and video.
 ```
+ffmpeg -vsync drop -fflags +discardcorrupt -i <input> <output>
 ffplay -sync ext -fflags +discardcorrupt -framedrop -i <input>
 ```
 * `-sync ext` sets the master clock to an external source to play in realtime. The master clock is used to control audio-video synchronization. Values are `audio`, `video` and `ext`, default is `audio`.
 * `-fflags +discardcorrupt` discards corrupt packets.
 * `-framedrop` drops video frames if video is out of sync. Enabled by default if the master clock is not set to video. Use this option to enable frame dropping for all master clock sources.
 
+Video sync method `vsync`.
+* `passthrough (0)`. Each frame is passed with its timestamp from the demuxer to the muxer.
+* `cfr (1)`. Frames will be duplicated and dropped to achieve exactly the requested constant frame rate.
+* `vfr (2)`. Frames are passed through with their timestamp or dropped so as to prevent 2 frames from having the same timestamp.
+* `drop`. As passthrough but destroys all timestamps, making the muxer generate fresh timestamps based on frame-rate.
+* `auto (-1)`. Chooses between cfr and vfr depending on muxer capabilities. This is the default method.
+
 ### Latency
 
 Minimize live stream latency.
 ```
+ffmpeg -fflags nobuffer -flags low_delay -reorder_queue_size 0 -i <input> <output>
 ffplay -i <input> -fflags nobuffer -flags low_delay -reorder_queue_size 0
 ```
 * `-fflags nobuffer` reduces the latency introduced by optional buffering.
