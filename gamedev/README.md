@@ -1,7 +1,7 @@
 ## Index
 
 * [Unity](#unity)
-  * [Direcotry Structure](#directory-structure)
+  * [Directory Structure](#directory-structure)
   * [Asset Naming](#asset-naming)
   * [Code Style](#code-style)
 * [Networking](#networking)
