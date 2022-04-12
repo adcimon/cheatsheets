@@ -380,11 +380,11 @@ ffplay -sync ext -fflags +discardcorrupt -framedrop -i <input>
 * `-framedrop` drops video frames if video is out of sync. Enabled by default if the master clock is not set to video. Use this option to enable frame dropping for all master clock sources.
 
 Video sync method `vsync`.
-* `passthrough (0)`. Each frame is passed with its timestamp from the demuxer to the muxer.
-* `cfr (1)`. Frames will be duplicated and dropped to achieve exactly the requested constant frame rate.
-* `vfr (2)`. Frames are passed through with their timestamp or dropped so as to prevent 2 frames from having the same timestamp.
-* `drop`. As passthrough but destroys all timestamps, making the muxer generate fresh timestamps based on frame-rate.
-* `auto (-1)`. Chooses between cfr and vfr depending on muxer capabilities. This is the default method.
+* `passthrough (0)` Each frame is passed with its timestamp from the demuxer to the muxer.
+* `cfr (1)` Frames will be duplicated and dropped to achieve exactly the requested constant frame rate.
+* `vfr (2)` Frames are passed through with their timestamp or dropped so as to prevent 2 frames from having the same timestamp.
+* `drop` As passthrough but destroys all timestamps, making the muxer generate fresh timestamps based on frame-rate.
+* `auto (-1)` Chooses between cfr and vfr depending on muxer capabilities. This is the default method.
 
 ### Latency
 
