@@ -12,7 +12,6 @@
 * [Media](#media)
 * [Data](#data)
 * [Security](#security)
-* [Tools](#tools)
 * [References](#references)
 
 ## Signaling
@@ -188,14 +187,9 @@ Data streams are delivered through [Stream Control Transmission Protocol (SCTP)]
 
 Media and data are transmited over [Datagram Transport Layer Security (DTLS)](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security), which is based on [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security). DTLS preserves the semantics of the underlying SRTP, SRTCP and SCTP but provides means of authentication, symmetric cryptography, privacy and integrity.
 
-## Tools
-
-* [Webcam Test](https://webcamtests.com/)
-* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
-* [Troubleshooter](https://test.webrtc.org/)
-
 ## References
 
+Articles
 * [WebRTC for the Curious](https://webrtcforthecurious.com/)
 * [WebRTC Glossary](https://webrtcglossary.com/)
 * [MDN WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
@@ -205,3 +199,13 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 * [HTML5 Rocks WebRTC Data Channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/)
 * [An Introduction to WebRTC Simulcast](https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb)
 * [Samples](https://webrtc.github.io/samples/)
+
+Libraries
+* [Pion](https://github.com/pion/webrtc)
+* [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
+* [aiortc](https://github.com/aiortc/aiortc)
+
+Tools
+* [Webcam Test](https://webcamtests.com/)
+* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
+* [Troubleshooter](https://test.webrtc.org/)
