@@ -21,4 +21,5 @@ Technologies
 * [tcpdump](https://adcimon.github.io/cheatsheets/tcpdump/)
 * [TrinityCore](https://adcimon.github.io/cheatsheets/trinitycore/)
 * [Unity](https://adcimon.github.io/cheatsheets/unity/)
+* [Visual Studio](https://adcimon.github.io/cheatsheets/visualstudio/)
 * [WebRTC](https://adcimon.github.io/cheatsheets/webrtc/)
