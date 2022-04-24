@@ -54,6 +54,8 @@ Project.
 Assets
 ├── Animations
 ├── Audio
+│   ├── Music
+│   └── Sound
 ├── Code
 │   ├── Core
 │   ├── Editor
@@ -92,7 +94,7 @@ Models
 
 | Asset Type | Asset Name |
 | - | - |
-| Atlas | <Name>.atlas |
+| Atlas | \<Name\>.atlas |
 | Animation | [<ModelName>@]<Name>.anim |
 | Animator Controller | <Name> |
 | Avatar Mask | <Name> |
