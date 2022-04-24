@@ -2,12 +2,28 @@
 
 ## Index
 
+* [Animation](#animation)
+* [Networking](#networking)
 * [Unity](#unity)
   * [Directory Structure](#directory-structure)
   * [Asset Naming](#asset-naming)
   * [Code Style](#code-style)
-* [Animation](#animation)
-* [Networking](#networking)
+
+## Animation
+
+* [Animation Instancing - Instancing for SkinnedMeshRenderer](https://blog.unity.com/technology/animation-instancing-instancing-for-skinnedmeshrenderer)
+* [Texture Animation: Applying Morphing and Vertex Animation Techniques](https://medium.com/tech-at-wildlife-studios/texture-animation-techniques-1daecb316657)
+* [How To Render 10,000 Animated Characters With 20 Draw Calls In Unity](https://medium.com/chenjd-xyz/how-to-render-10-000-animated-characters-with-20-draw-calls-in-unity-e30a3036349a)
+* [Dev Diary — Skeletal Animation and GPU Skinning](https://yadiyasheng.medium.com/skeletal-animation-and-gpu-skinning-c99b30eb2ca2)
+
+## Networking
+
+Interesting case studies:
+* [Fast-Paced Multiplayer](https://www.gabrielgambetta.com/client-server-game-architecture.html)
+* [Game Networking Demystified](https://ruoyusun.com/2019/03/28/game-networking-1.html)
+* [1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond](https://www.gamedeveloper.com/programming/1500-archers-on-a-28-8-network-programming-in-age-of-empires-and-beyond)
+* [Overwatch Gameplay Architecture and Netcode](https://www.youtube.com/watch?v=W3aieHjyNvw)
+* [Factorio - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)
 
 ## Unity
 
@@ -129,19 +145,3 @@ Models
 | Parameter | camelCasing |
 | Unary operator overload parameter | value |
 | Binary operator overload parameter | left, right |
-
-## Animation
-
-* [Animation Instancing - Instancing for SkinnedMeshRenderer](https://blog.unity.com/technology/animation-instancing-instancing-for-skinnedmeshrenderer)
-* [Texture Animation: Applying Morphing and Vertex Animation Techniques](https://medium.com/tech-at-wildlife-studios/texture-animation-techniques-1daecb316657)
-* [How To Render 10,000 Animated Characters With 20 Draw Calls In Unity](https://medium.com/chenjd-xyz/how-to-render-10-000-animated-characters-with-20-draw-calls-in-unity-e30a3036349a)
-* [Dev Diary — Skeletal Animation and GPU Skinning](https://yadiyasheng.medium.com/skeletal-animation-and-gpu-skinning-c99b30eb2ca2)
-
-## Networking
-
-Interesting case studies:
-* [Fast-Paced Multiplayer](https://www.gabrielgambetta.com/client-server-game-architecture.html)
-* [Game Networking Demystified](https://ruoyusun.com/2019/03/28/game-networking-1.html)
-* [1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond](https://www.gamedeveloper.com/programming/1500-archers-on-a-28-8-network-programming-in-age-of-empires-and-beyond)
-* [Overwatch Gameplay Architecture and Netcode](https://www.youtube.com/watch?v=W3aieHjyNvw)
-* [Factorio - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)
