@@ -105,7 +105,7 @@ Models
 | Prefab | \<Name\> |
 | Sound Effect | \<Name\>.sfx |
 | Sprite | \<Name\>.sprite |
-| Texture | \<Name\>.<TextureType> |
+| Texture | \<Name\>.\<TextureType\> |
 | Visual Effect | \<Name\>.vfx |
 | Video | \<Name\> |
 
