@@ -2,8 +2,8 @@
 
 Fields
 * [Color](https://adcimon.github.io/cheatsheets/color/)
-* [Cryptography](https://adcimon.github.io/cheatsheets/cryptography/)
 * [Computer Graphics](https://adcimon.github.io/cheatsheets/computer-graphics/)
+* [Cryptography](https://adcimon.github.io/cheatsheets/cryptography/)
 * [Regular Expressions](https://adcimon.github.io/cheatsheets/regular-expressions/)
 * [Streaming](https://adcimon.github.io/cheatsheets/streaming/)
 
