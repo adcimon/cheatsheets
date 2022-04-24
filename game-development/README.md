@@ -95,7 +95,7 @@ Models
 | Asset Type | Asset Name |
 | - | - |
 | Atlas | \<Name\>.atlas |
-| Animation | [\<ModelName\>@]\<Name\>.anim |
+| Animation | [\<ModelName\>@]\<Name\> |
 | Animator Controller | \<ModelName\>Controller |
 | Avatar Mask | \<Name\>Mask |
 | Material | \<Name\> |
