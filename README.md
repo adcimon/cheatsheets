@@ -2,9 +2,9 @@
 
 Fields
 * [Color](https://adcimon.github.io/cheatsheets/color/)
-* [Cryptography](https://adcimon.github.io/cheatsheets/crypto/)
-* [Computer Graphics](https://adcimon.github.io/cheatsheets/graphics/)
-* [Regular Expressions](https://adcimon.github.io/cheatsheets/regexp/)
+* [Cryptography](https://adcimon.github.io/cheatsheets/cryptography/)
+* [Computer Graphics](https://adcimon.github.io/cheatsheets/computer-graphics/)
+* [Regular Expressions](https://adcimon.github.io/cheatsheets/regular-expressions/)
 * [Streaming](https://adcimon.github.io/cheatsheets/streaming/)
 
 Technologies
@@ -19,7 +19,7 @@ Technologies
 * [Python](https://adcimon.github.io/cheatsheets/python/)
 * [Shell](https://adcimon.github.io/cheatsheets/shell/)
 * [tcpdump](https://adcimon.github.io/cheatsheets/tcpdump/)
-* [TrinityCore](https://adcimon.github.io/cheatsheets/trinitycore/)
+* [TrinityCore](https://adcimon.github.io/cheatsheets/trinity-core/)
 * [Unity](https://adcimon.github.io/cheatsheets/unity/)
-* [Visual Studio](https://adcimon.github.io/cheatsheets/visualstudio/)
+* [Visual Studio](https://adcimon.github.io/cheatsheets/visual-studio/)
 * [WebRTC](https://adcimon.github.io/cheatsheets/webrtc/)
