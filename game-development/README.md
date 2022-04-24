@@ -95,19 +95,19 @@ Models
 | Asset Type | Asset Name |
 | - | - |
 | Atlas | \<Name\>.atlas |
-| Animation | [<ModelName>@]<Name>.anim |
-| Animator Controller | <Name> |
-| Avatar Mask | <Name> |
-| Material | <Name> |
-| Mesh | <Name> |
-| Model | <Name> |
-| Music | <Name>.music |
-| Prefab | <Name> |
-| Sound Effect | <Name>.sfx |
-| Sprite | <Name>.sprite |
-| Texture | <Name>.<TextureType> |
-| Visual Effect | <Name>.vfx |
-| Video | <Name> |
+| Animation | [\<ModelName\>@]\<Name\>.anim |
+| Animator Controller | \<ModelName\>Controller |
+| Avatar Mask | \<Name\>Mask |
+| Material | \<Name\> |
+| Mesh | \<Name\> |
+| Model | \<Name\> |
+| Music | \<Name\>.music |
+| Prefab | \<Name\> |
+| Sound Effect | \<Name\>.sfx |
+| Sprite | \<Name\>.sprite |
+| Texture | \<Name\>.<TextureType> |
+| Visual Effect | \<Name\>.vfx |
+| Video | \<Name\> |
 
 | Texture Type | Code |
 | - | - |
