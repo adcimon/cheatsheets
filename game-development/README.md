@@ -5,7 +5,7 @@
 * [Animation](#animation)
 * [Procedural Generation](#procedural-generation)
 * [Networking](#networking)
-* [Unity](#unity)
+* [Unity Conventions](#unity-conventions)
   * [Directory Structure](#directory-structure)
   * [Asset Naming](#asset-naming)
   * [Code Style](#code-style)
@@ -31,7 +31,7 @@ Case studies:
 * [Overwatch Gameplay Architecture and Netcode](https://www.youtube.com/watch?v=W3aieHjyNvw)
 * [Factorio - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)
 
-## Unity
+## Unity Conventions
 
 ### Directory Structure
 
