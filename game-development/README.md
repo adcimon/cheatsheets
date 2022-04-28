@@ -128,6 +128,7 @@ Models
 | Distance Field | df |
 | Emissive | emi |
 | Flow | flow |
+| Gradient | grad |
 | Height | height |
 | Icon | ico |
 | Light | light |
