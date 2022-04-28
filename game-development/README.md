@@ -3,6 +3,7 @@
 ## Index
 
 * [Animation](#animation)
+* [Procedural Generation](#procedural-generation)
 * [Networking](#networking)
 * [Unity](#unity)
   * [Directory Structure](#directory-structure)
@@ -16,11 +17,16 @@
 * [How To Render 10,000 Animated Characters With 20 Draw Calls In Unity](https://medium.com/chenjd-xyz/how-to-render-10-000-animated-characters-with-20-draw-calls-in-unity-e30a3036349a)
 * [Dev Diary — Skeletal Animation and GPU Skinning](https://yadiyasheng.medium.com/skeletal-animation-and-gpu-skinning-c99b30eb2ca2)
 
+## Procedural Generation
+
+* [Wave Function Collapse - Procedural Building Generation in Unity](https://www.uproomgames.com/dev-log/wave-function-collapse)
+
 ## Networking
 
-Interesting case studies:
 * [Fast-Paced Multiplayer](https://www.gabrielgambetta.com/client-server-game-architecture.html)
 * [Game Networking Demystified](https://ruoyusun.com/2019/03/28/game-networking-1.html)
+
+Case studies:
 * [1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond](https://www.gamedeveloper.com/programming/1500-archers-on-a-28-8-network-programming-in-age-of-empires-and-beyond)
 * [Overwatch Gameplay Architecture and Netcode](https://www.youtube.com/watch?v=W3aieHjyNvw)
 * [Factorio - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)
