@@ -19,14 +19,17 @@
 
 ## Procedural Generation
 
+Wave Function Collapse
+* [Infinite procedurally generated city with the Wave Function Collapse algorithm](https://marian42.de/article/wfc/)
 * [Wave Function Collapse - Procedural Building Generation in Unity](https://www.uproomgames.com/dev-log/wave-function-collapse)
+* [The Wavefunction Collapse Algorithm explained very clearly](https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/)
 
 ## Networking
 
 * [Fast-Paced Multiplayer](https://www.gabrielgambetta.com/client-server-game-architecture.html)
 * [Game Networking Demystified](https://ruoyusun.com/2019/03/28/game-networking-1.html)
 
-Case studies:
+Case Studies
 * [1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond](https://www.gamedeveloper.com/programming/1500-archers-on-a-28-8-network-programming-in-age-of-empires-and-beyond)
 * [Overwatch Gameplay Architecture and Netcode](https://www.youtube.com/watch?v=W3aieHjyNvw)
 * [Factorio - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)
