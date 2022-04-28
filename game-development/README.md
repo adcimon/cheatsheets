@@ -132,7 +132,7 @@ Models
 | Metallic | metal |
 | Normal | norm |
 | Roughness | roug |
-| Screen Space Scattering | sss |
+| Subsurface Scattering | sss |
 | Specular | spec |
 | Tile | tile |
 | Vector Field | vf |
