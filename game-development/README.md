@@ -117,25 +117,26 @@ Models
 
 | Texture Type | Code |
 | - | - |
-| Albedo | albedo |
-| Ambient Occlusion | occlusion |
-| Anisotropic Filter | aniso |
-| Diffuse | diffuse |
-| Displacement | displacement |
-| Distance Field | distancefield |
-| Emissive | emissive |
+| Albedo | alb |
+| Ambient Occlusion | occ |
+| Anisotropic Filter | ani |
+| Diffuse | diff |
+| Displacement | disp |
+| Distance Field | df |
+| Emissive | emi |
 | Flow | flow |
 | Height | height |
 | Icon | icon |
 | Light | light |
 | Mask | mask |
-| Metallic | metallic |
-| Normal | normal |
-| Roughness | roughness |
+| Metallic | metal |
+| Normal | norm |
+| Roughness | roug |
 | Screen Space Scattering | sss |
-| Specular | specular |
+| Specular | spec |
 | Tile | tile |
-| Vector Field | vectorfield |
+| Vector Field | vf |
+| Vertex Animation Texture | vat |
 
 ### Code Style
 
