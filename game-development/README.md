@@ -129,7 +129,7 @@ Models
 | Icon | ico |
 | Light | light |
 | Mask | mask |
-| Metallic | metal |
+| Metallic | met |
 | Normal | norm |
 | Roughness | roug |
 | Subsurface Scattering | sss |
