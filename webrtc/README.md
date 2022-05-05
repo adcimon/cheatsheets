@@ -201,9 +201,11 @@ Articles
 * [Samples](https://webrtc.github.io/samples/)
 
 Libraries
+* [libwebrtc](https://webrtc.googlesource.com/src/)
 * [Pion](https://github.com/pion/webrtc)
 * [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
 * [aiortc](https://github.com/aiortc/aiortc)
+* [libdatachannel](https://github.com/paullouisageneau/libdatachannel)
 
 Tools
 * [Webcam Test](https://webcamtests.com/)
