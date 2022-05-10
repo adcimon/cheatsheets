@@ -92,7 +92,12 @@ git commit --amend -m "Updated message"
 
 ## Revert changes
 
-Revert all commits after commit, preserving changes locally.
+Revert the changes made to a file.
+```
+git restore <file>
+```
+
+Revert all commits after the specified commit, preserving changes locally.
 ```
 git reset <commit>
 ```
