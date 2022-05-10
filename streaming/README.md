@@ -30,6 +30,7 @@ List of streaming media servers:
 * [Kurento Media Server](https://github.com/Kurento/kurento-media-server)
 * [LiveKit](https://github.com/livekit)
 * [Node Media Server](https://github.com/illuspas/Node-Media-Server)
+* [RTSP Simple Server](https://github.com/aler9/rtsp-simple-server)
 * [Simple Realtime Server](https://github.com/ossrs/srs)
 
 ## Protocols
