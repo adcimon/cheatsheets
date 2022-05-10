@@ -21,7 +21,7 @@
 
 ## Media Server
 
-Media servers are software applications that deliver video and audio content to clients who request it. The most common use of media servers is to deliver [video on demand (VOD)](https://en.wikipedia.org/wiki/Video_on_demand), in which the media server retrieves prerecorded video content from storage and delivers it across the Internet. Live streaming media servers deliver content as it is generated in real time or with only a slight delay.
+[Media servers](https://en.wikipedia.org/wiki/Media_server) are software applications that deliver video and audio content to clients who request it. The most common use of media servers is to deliver [video on demand (VOD)](https://en.wikipedia.org/wiki/Video_on_demand), in which the media server retrieves prerecorded video content from storage and delivers it across the Internet. Live streaming media servers deliver content as it is generated in real time or with only a slight delay.
 
 List of streaming media servers:
 * [AntMedia](https://github.com/ant-media)
@@ -43,7 +43,7 @@ Streaming protocols are standardized methods of delivering different types of me
 
 ### RTSP
 
-[Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) is an application-level network protocol designed for multiplexing and packetizing multimedia transport streams. The transmission of streaming data itself is not a task of RTSP, most media servers use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) in conjunction with [RTCP](https://en.wikipedia.org/wiki/RTP_Control_Protocol) for media stream delivery. Clients of media servers issue commands such as play, record and pause, to facilitate real-time control of the media streaming. The well known TCP port for RTSP traffic is 554.
+[Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) is an application-level network protocol designed for multiplexing and packetizing multimedia transport streams. The transmission of streaming data itself is not a task of RTSP, most media servers use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) in conjunction with [RTCP](https://en.wikipedia.org/wiki/RTP_Control_Protocol) for media stream delivery. Clients of media servers issue commands such as play, record and pause, to facilitate real-time control of the media streaming. The well known TCP port for RTSP traffic is 554. The most common use case of RTSP is streaming using [IP cameras](https://en.wikipedia.org/wiki/IP_camera).
 
 ### RTMP
 
@@ -169,8 +169,9 @@ For a subscriber with limited bandwidth, it is possible to send only the frames 
 Articles
 * [Internet connection and recommended encoding settings](https://support.video.ibm.com/hc/en-us/articles/207852117-Internet-connection-and-recommended-encoding-settings)
 * [H.264 is Magic](https://sidbala.com/h-264-is-magic/)
+* [iSpy Camera Connection Database](https://www.ispyconnect.com/cameras)
 
-Software
+Tools
 * [Open Broadcaster Software (OBS)](https://obsproject.com/)
 * [VLC Media Player](https://www.videolan.org/vlc/)
 * [mpv](https://mpv.io/)
