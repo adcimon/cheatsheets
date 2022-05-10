@@ -198,6 +198,7 @@ Articles
 * [Any Connect STUN-TURN-ICE](https://anyconnect.com/stun-turn-ice/)
 * [HTML5 Rocks WebRTC Data Channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/)
 * [An Introduction to WebRTC Simulcast](https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb)
+* [Tweaking WebRTC Video Quality](https://bloggeek.me/tweaking-webrtc-video-quality-unpacking-bitrate-resolution-and-frame-rates/)
 * [Samples](https://webrtc.github.io/samples/)
 
 Libraries
