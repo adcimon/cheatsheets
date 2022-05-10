@@ -170,6 +170,6 @@ Articles
 * [H.264 is Magic](https://sidbala.com/h-264-is-magic/)
 
 Software
-* [OBS](https://obsproject.com/)
-* [VLC](https://www.videolan.org/vlc/)
+* [Open Broadcaster Software (OBS)](https://obsproject.com/)
+* [VLC Media Player](https://www.videolan.org/vlc/)
 * [mpv](https://mpv.io/)
