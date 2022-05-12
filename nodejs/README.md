@@ -74,6 +74,7 @@ List of packages.
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
 | [Passport JWT](https://github.com/mikenicholson/passport-jwt) | npm install passport-jwt<br>npm install @nestjs/jwt |
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
+| [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install -D tailwindcss |
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
 | [uuid](https://github.com/uuidjs/uuid) | npm install uuid |
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
@@ -121,6 +122,11 @@ npm run start:prod
 ```
 
 ## Tailwind CSS
+
+Install.
+```
+npm install -D tailwindcss
+```
 
 Create default configuration file [tailwind.config.js](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js).
 ```
