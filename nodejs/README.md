@@ -123,6 +123,8 @@ npm run start:prod
 
 ## Tailwind CSS
 
+[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework for rapidly building custom user interfaces.
+
 Install.
 ```
 npm install -D tailwindcss
