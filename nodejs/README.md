@@ -58,6 +58,7 @@ Uninstall a package.
 npm uninstall <package>
 ```
 
+List of packages.
 | Packages | Install |
 |---|---|
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
@@ -77,6 +78,10 @@ npm uninstall <package>
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
+
+List of [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
+* [UNPKG](https://unpkg.com/)
+* [JsDelivr](https://www.jsdelivr.com/)
 
 ## Nest.js
 
