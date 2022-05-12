@@ -9,6 +9,7 @@
 * [Install](#install)
 * [Packages](#packages)
 * [Nest.js](#nestjs)
+* [Tailwind CSS](#tailwind-css)
 
 # Install
 
@@ -117,4 +118,11 @@ Run the application.
 npm run start:dev
 npm run start:debug
 npm run start:prod
+```
+
+## Tailwind CSS
+
+Create default configuration file [tailwind.config.js](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js).
+```
+npx tailwindcss init --full
 ```
