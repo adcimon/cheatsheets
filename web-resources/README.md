@@ -26,3 +26,4 @@ https://demo.marpi.pl/biomes/
 https://avseoul.net/particleEqualizer/
 http://weavesilk.com/
 https://epok.tech/work/tendrils/
+http://haxiomic.github.io/GPU-Fluid-Experiments/html5/
