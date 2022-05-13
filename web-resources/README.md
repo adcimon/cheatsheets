@@ -1,21 +1,12 @@
 # Web Resources
 
-Image Processing
-* [Remove Background](https://www.remove.bg/)
-* [Resize Image](https://resizeimage.net/)
-
-Development
-* https://httpbin.org/
-* https://regex101.com/
-* [LaTeX Equation Editor](https://editor.codecogs.com/)
+Animations
+* [Loading.io](https://loading.io/)
+* [CSS Loaders](https://loading.io/css/)
 
 Avatars
-* https://avatars.dicebear.com/
-* https://www.uifaces.co/
-
-Animations
-* https://loading.io/
-* https://loading.io/css/
+* [DiceBear Avatars](https://avatars.dicebear.com/)
+* [UI Faces](https://www.uifaces.co/)
 
 Artistic
 * https://demo.marpi.pl/biomes/
@@ -23,3 +14,12 @@ Artistic
 * http://weavesilk.com/
 * https://epok.tech/work/tendrils/
 * http://haxiomic.github.io/GPU-Fluid-Experiments/html5/
+
+Development
+* [HTTP Bin](https://httpbin.org/)
+* https://regex101.com/
+* [LaTeX Equation Editor](https://editor.codecogs.com/)
+
+Image Processing
+* [Remove Background](https://www.remove.bg/)
+* [Resize Image](https://resizeimage.net/)
