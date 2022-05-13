@@ -1,4 +1,4 @@
-# Web Resources
+# Resources
 
 Animations
 * [Loading.io](https://loading.io/)
