@@ -134,3 +134,20 @@ Create default configuration file [tailwind.config.js](https://github.com/tailwi
 ```
 npx tailwindcss init --full
 ```
+
+Build CSS.
+```
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
+
+Build all the classes with the configuration file;
+```
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  safelist: [
+    {
+      pattern: /(.*?)/,
+    },
+  ],
+  ...
+```
