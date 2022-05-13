@@ -1,9 +1,5 @@
 # Web Resources
 
-Speedtests
-* [Google Speed Test](https://fiber.google.com/speedtest/)
-* [Netflix Speed Test](https://fast.com/)
-
 Image Processing
 * [Remove Background](https://www.remove.bg/)
 * [Resize Image](https://resizeimage.net/)
