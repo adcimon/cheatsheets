@@ -2,7 +2,7 @@
 
 Speedtests
 * [Google Speed Test](https://fiber.google.com/speedtest/)
-* [Netflix](https://fast.com/)
+* [Netflix Speed Test](https://fast.com/)
 
 Image Processing
 * [Remove Background](https://www.remove.bg/)
