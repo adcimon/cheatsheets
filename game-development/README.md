@@ -38,7 +38,7 @@ Case Studies
 
 ### Directory Structure
 
-Prototype.
+Prototype
 ```
 Assets
 ├── Animations
@@ -58,7 +58,7 @@ Assets
 └── Video
 ```
 
-Project.
+Project
 ```
 Assets
 ├── Animations
