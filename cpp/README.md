@@ -18,9 +18,9 @@ There are 2 types of libraries, [static](https://en.wikipedia.org/wiki/Static_li
 * Static files (`lib`) can contain either `static` libraries (containing object files) or `import` libraries (containing symbols to allow the linker to link `dll` or `so` files).
 * Dynamic files (`dll` or `so`) contain `dynamic` libraries.
 
-When linking is performed during the creation of an executable or an object file, it is known as static linking or early binding. In this case, the linking is usually done by a linker, but may also be done by the compiler.
+When linking is performed during the creation of an executable or an object file, it is known as [static linking](https://en.wikipedia.org/wiki/Library_(computing)#Static_libraries) ([early binding](https://en.wikipedia.org/wiki/Name_binding)). In this case, the linking is usually done by a linker, but may also be done by the compiler.
 
-When linking is performed during runtime, it is known as [dynamic linking](https://en.wikipedia.org/wiki/Dynamic_linker).
+When linking is performed during runtime, it is known as [dynamic linking](https://en.wikipedia.org/wiki/Dynamic_linker) ([late binding](https://en.wikipedia.org/wiki/Late_binding)).
 
 Dynamic libraries have 2 types of linking.
 * Implicit. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
