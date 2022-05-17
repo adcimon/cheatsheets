@@ -15,6 +15,8 @@ A [library](https://en.wikipedia.org/wiki/Library_(computing)) is a collection o
 
 There are 2 types of libraries, [static](https://en.wikipedia.org/wiki/Static_library) and [dynamic](https://en.wikipedia.org/wiki/Dynamic-link_library).
 
+When linking is performed during the creation of an executable or another object file, it is known as static linking or early binding. In this case, the linking is usually done by a linker, but may also be done by the compiler.
+
 * Static files (`lib`) can contain either `static` libraries (containing object files) or `import` libraries (containing symbols to allow the linker to link `dll` or `so` files).
 * Dynamic files (`dll` or `so`) contain `dynamic` libraries.
 
