@@ -136,7 +136,7 @@ Build CSS.
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ```
 
-Build all the classes with the configuration file.
+Build CSS with all the classes.
 ```
 module.exports = {
   content: ["./src/**/*.{html,js}"],
