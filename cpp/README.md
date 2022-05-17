@@ -19,8 +19,8 @@ There are 2 types of libraries, [static](https://en.wikipedia.org/wiki/Static_li
 * Dynamic files (`dll` or `so`) contain `dynamic` libraries.
 
 Dynamic libraries have 2 types of [dynamic linking](https://en.wikipedia.org/wiki/Dynamic_linker).
-* **Implicit**. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
-* **Explicit**. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
+* Implicit. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
+* Explicit. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
 
 ## References
 
