@@ -81,10 +81,6 @@ List of packages.
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
 
-List of [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
-* [UNPKG](https://unpkg.com/)
-* [JsDelivr](https://www.jsdelivr.com/)
-
 ## Nest.js
 
 [Nest.js](https://nestjs.com/) is a framework for building efficient, scalable Node.js web applications.
