@@ -15,7 +15,7 @@ A [library](https://en.wikipedia.org/wiki/Library_(computing)) is a collection o
 
 There are 2 types of libraries, `static` and `dynamic`.
 
-Static files (`lib`) can contain either `static libraries` (containing object files) or `import libraries` (containing symbols to allow the linker to link to a `dll`).
+Static files (`lib`) can contain either `static libraries` (containing object files) or `import libraries` (containing symbols to allow the linker to link `dll` or `so` files).
 
 ## References
 
