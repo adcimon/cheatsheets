@@ -39,6 +39,11 @@ Compile with the linker using static links.
 go build -ldflags="-extldflags=-static"
 ```
 
+Compile with the windows console hidden.
+```
+go build -ldflags="-Hwindowsgui"
+```
+
 Compile and install packages and dependencies.
 ```
 go install
