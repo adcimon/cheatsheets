@@ -145,6 +145,11 @@ Update the working directory at the changeset point.
 hg update -C <changeset>
 ```
 
+Update the working directory at the last changeset.
+```
+hg update -C
+```
+
 ## Show changes
 
 Show changed files in the working directory.
