@@ -199,6 +199,7 @@ Articles
 * [HTML5 Rocks WebRTC Data Channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/)
 * [Tweaking WebRTC Video Quality](https://bloggeek.me/tweaking-webrtc-video-quality-unpacking-bitrate-resolution-and-frame-rates/)
 * [An Introduction to WebRTC Simulcast](https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb)
+* [WebRTC H.264 Profiles](https://www.programmersought.com/article/15615289761/)
 * [Samples](https://webrtc.github.io/samples/)
 
 Libraries
