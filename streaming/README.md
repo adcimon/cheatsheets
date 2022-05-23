@@ -38,7 +38,7 @@ List of streaming media servers:
 
 [Codecs](https://en.wikipedia.org/wiki/Codec) are devices or computer programs which encode or decode data streams or signals.
 
-## Protocols
+## Transport
 
 Transport protocols are standardized methods of delivering different types of media over the internet. They send chunks of content from one endpoint to another and define the method for reassembling these chunks into playable content on the other endpoint.
 
