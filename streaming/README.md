@@ -5,7 +5,8 @@
 ## Index
 
 * [Media Server](#media-server)
-* [Protocols](#protocols)
+* [Codecs](#codecs)
+* [Transport](#transport)
   * [RTP](#rtp)
   * [RTSP](#rtsp)
   * [RTMP](#rtmp)
@@ -33,9 +34,13 @@ List of streaming media servers:
 * [RTSP Simple Server](https://github.com/aler9/rtsp-simple-server)
 * [Simple Realtime Server](https://github.com/ossrs/srs)
 
+## Codecs
+
+[Codecs](https://en.wikipedia.org/wiki/Codec) are devices or computer programs which encode or decode data streams or signals.
+
 ## Protocols
 
-Streaming protocols are standardized methods of delivering different types of media over the internet. They send chunks of content from one endpoint to another and define the method for reassembling these chunks into playable content on the other endpoint.
+Transport protocols are standardized methods of delivering different types of media over the internet. They send chunks of content from one endpoint to another and define the method for reassembling these chunks into playable content on the other endpoint.
 
 ### RTP
 
