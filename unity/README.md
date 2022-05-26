@@ -4,6 +4,12 @@
 
 [Unity](https://unity.com/) is a cross-platform game engine.
 
+## Index
+
+* [General](#general)
+* [Packages](#packages)
+  * [Newtonsoft JSON](#newtonsoft-json)
+
 ## General
 
 Check project version.
@@ -36,12 +42,14 @@ Package manifests, `package.json` files, determine which version of the package 
     "type": "library",
     "unity": "2019.3",
     "description": "My awesome package",
-    "keywords": [
+    "keywords":
+    [
         "gui",
         "maths"
     ],
     "category": "Interface",
-    "dependencies": {
+    "dependencies":
+    {
         "com.unity.ugui": "1.0.0"
     }
 }
@@ -55,3 +63,14 @@ Package manifests, `package.json` files, determine which version of the package 
 * `keywords` are used for searching in the Package Manager, specified as a JSON array of strings.
 * `category` specifies the category the packages is in.
 * `dependencies` is a list of packages that the package depends on, expressed as a JSON dictionary where the key is the package name and the value is the version number. Unity downloads all dependencies and loads them into the project alongside the package.
+
+### Newtonsoft JSON
+
+Add the package.
+```
+"dependencies":
+{
+    ...
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+}
+```
