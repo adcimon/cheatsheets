@@ -43,8 +43,8 @@ void MyFunction()
 
     // Pass a reference to a method.
     ProcessObject(*p);
-
-} // Unique pointer is deleted automatically when function block goes out of scope.
+}
+// Unique pointer is deleted automatically when function block goes out of scope.
 ```
 
 * shared_ptr
