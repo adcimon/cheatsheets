@@ -29,9 +29,9 @@ Dynamic libraries have 2 types of linking.
 
 ## Pointers
 
-* `raw pointer`
+* `raw pointer`<br>
 
-* `unique_ptr`
+* `unique_ptr`<br>
 ```
 void MyFunction()
 {    
@@ -47,9 +47,9 @@ void MyFunction()
 // Unique pointer is deleted automatically when function block goes out of scope.
 ```
 
-* `shared_ptr`
+* `shared_ptr`<br>
 
-* `weak_ptr`
+* `weak_ptr`<br>
 Special-case smart pointer for use in conjunction with `shared_ptr`. A `weak_ptr` provides access to an object that is owned by one or more `shared_ptr` instances, but does not participate in reference counting. Use when you want to observe an object, but do not require it to remain alive. Required in some cases to break circular references between `shared_ptr` instances.
 
 ## References
