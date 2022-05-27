@@ -36,6 +36,10 @@ A [pointer](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) is a v
 * `unique_ptr`<br>
 Allows exactly one owner of the underlying pointer. Use as the default choice for POCO unless you know for certain that you require a `shared_ptr`. Can be moved to a new owner, but not copied or shared.
 ```
+#include <memory>
+
+...
+
 void MyFunction()
 {    
     // Create the object and pass it to a unique pointer.
