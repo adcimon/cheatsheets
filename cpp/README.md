@@ -58,5 +58,6 @@ Special-case smart pointer for use in conjunction with `shared_ptr`. A `weak_ptr
 
 ## References
 
+* [cplusplus.com](https://www.cplusplus.com/)
 * [C++ Cheat Sheets & Infographics](https://hackingcpp.com/cpp/cheat_sheets.html)
 * [Smart Pointers](https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp)
