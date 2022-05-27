@@ -29,6 +29,8 @@ Dynamic libraries have 2 types of linking.
 
 ## Pointers
 
+A [pointer](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) is a variable that stores the address of another variable.
+
 * `raw pointer`<br>
 
 * `unique_ptr`<br>
