@@ -7,6 +7,7 @@
 ## Index
 
 * [Libraries](#libraries)
+* [Pointers](#pointers)
 * [References](#references)
 
 ## Libraries
@@ -25,6 +26,30 @@ When linking is performed while a program is being loaded ([load time](https://e
 Dynamic libraries have 2 types of linking.
 * Implicit. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
 * Explicit. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
+
+## Pointers
+
+* raw pointer
+
+* unique_ptr
+```
+void MyFunction()
+{    
+    // Create the object and pass it to a unique pointer.
+    std::unique_ptr<MyClass> p(new MyClass());
+
+    // Call a method on the object.
+    p->DoSomething();
+
+    // Pass a reference to a method.
+    ProcessObject(*p);
+
+} // Unique pointer p is deleted automatically when function block goes out of scope.
+```
+
+* shared_ptr
+
+* weak_ptr
 
 ## References
 
