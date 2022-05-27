@@ -100,6 +100,10 @@ When a direct connection is not possible, the relay candidates are used. TURN se
 
 <p align="center"><img align="center" width="60%" height="60%" src="assets/ice7b.jpg"></p>
 
+A complete message flow of a peer to peer connection establishment is shown in the diagram below:
+
+<p align="center"><img align="center" width="60%" height="60%" src="assets/p2p_connection.png"></p>
+
 ## SDP
 
 [Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol) is the protocol used to represent the media capabilities of each peer. SDP is already used in other protocols like [Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) or [Session Initiation Protocol (SIP)](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) in streaming applications such as [voice over IP (VoIP)](https://en.wikipedia.org/wiki/Voice_over_IP).
