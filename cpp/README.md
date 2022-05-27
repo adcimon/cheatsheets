@@ -42,7 +42,7 @@ Allows exactly one owner of the underlying pointer. Use as the default choice fo
 
 void MyFunction()
 {    
-    // Create the object and pass it to a unique pointer.
+    // Create an object and pass it to a unique pointer.
     std::unique_ptr<MyClass> p(new MyClass());
 
     // Call a method on the object.
