@@ -33,6 +33,7 @@ Case Studies
 * [1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond](https://www.gamedeveloper.com/programming/1500-archers-on-a-28-8-network-programming-in-age-of-empires-and-beyond)
 * [Overwatch Gameplay Architecture and Netcode](https://www.youtube.com/watch?v=W3aieHjyNvw)
 * [Factorio - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)
+* [How do Video Games Stay in Sync](https://medium.com/geekculture/how-do-video-games-stay-in-sync-an-intro-to-the-fascinating-networking-of-real-time-games-e923e66e8a0f)
 
 ## Unity Conventions
 
