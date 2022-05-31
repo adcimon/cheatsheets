@@ -1,5 +1,3 @@
-# Cheatsheets
-
 Fields
 * [Color](https://adcimon.github.io/cheatsheets/color/)
 * [Computer Graphics](https://adcimon.github.io/cheatsheets/computer-graphics/)
