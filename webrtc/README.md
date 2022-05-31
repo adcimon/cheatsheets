@@ -36,31 +36,31 @@ In a real world scenario, establishing a WebRTC connection between 2 peers, call
 
 Each peer is located in a LAN behind a NAT and has a private address, to discover their public addresses each peer uses the [Session Traversal Utilities for NAT (STUN)](https://en.wikipedia.org/wiki/STUN) server.
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/ice1.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice1.jpg"></p>
 
 **2. Caller relay allocation**
 
 The caller allocates a connection in the [Traversal Using Relays around NAT (TURN)](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) server. The TURN server **relays** the data between two peers when a direct connection is not possible.
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/ice2.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice2.jpg"></p>
 
 **3. Caller sends offer**
 
 The caller sends a connection **offer** to the callee using a signaling server (both peers are already registered in the signaling server).
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/ice3.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice3.jpg"></p>
 
 **4. Callee relay allocation**
 
 The callee receives the **offer** and allocates a connection in the TURN server.
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/ice4.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice4.jpg"></p>
 
 **5. Callee sends answer**
 
 The callee sends a connection **answer** to the caller using the signaling server.
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/ice5.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice5.jpg"></p>
 
 **6. Candidate exchange**
 
@@ -72,7 +72,7 @@ During the offer/answer process, each peer **gathers** candidates to be used for
 
 After each candidate is gathered, the candidate is exchanged with the other peer via the offer/answer or standalone using trickle ICE.
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/ice6.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice6.jpg"></p>
 
 **7a. Check direct connection**
 
@@ -92,17 +92,17 @@ This process may produce additional candidates known as **peer reflexive** candi
 | [Port Restricted Cone NAT](https://en.wikipedia.org/wiki/Network_address_translation#Port-restricted_cone_NAT) | Yes          |
 | [Symmetric NAT](https://en.wikipedia.org/wiki/Network_address_translation#Symmetric_NAT)                       | No           |
 
-<p align="center"><img align="center" width="60%" height="60%" src="assets/ice7a.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice7a.jpg"></p>
 
 **7b. Use relay connection**
 
 When a direct connection is not possible, the relay candidates are used. TURN servers are guaranteed to work because they are publicly available, unless NATs are specifically configured to block them.
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/ice7b.jpg"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/ice7b.jpg"></p>
 
 A complete message flow of a peer to peer connection establishment is shown in the diagram below:
 
-<p align="center"><img align="center" width="70%" height="70%" src="assets/p2p_connection.png"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/p2p_connection.png"></p>
 
 ## SDP
 
