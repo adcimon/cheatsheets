@@ -91,7 +91,7 @@ ACES has several color spaces, defined by:
 * Primary `AP1 = R(0.713,0.293) G(0.165,0.830) B(0.128,0.044)`.
 * Reference illuminant `(0.32168,0.33767)`, close to CIE [D60](https://en.wikipedia.org/wiki/CIE_D60).
 
-<p align="center"><img align="center" width="50%" height="50%" src="assets/aces_color_spaces.png"></p>
+<p align="center"><img align="center" width="60%" height="60%" src="assets/aces_color_spaces.png"></p>
 <p align="center">ACES Color Spaces</p>
 
 ACES `working` color spaces are:
