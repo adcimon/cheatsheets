@@ -43,4 +43,4 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out cer
 * `-keyout` specifies the name of the generated private key file.
 * `-out` specifies the name of the generated certificate file.
 
-<p align="center"><img align="center" width="80%" height="80%" src="assets/certificate_diagram.png"></p>
+<p align="center"><img align="center" width="90%" height="90%" src="assets/certificate_diagram.png"></p>
