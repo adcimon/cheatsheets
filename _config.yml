@@ -1,1 +1,4 @@
+# Jekyll Configuration
+
 theme: jekyll-theme-slate
+markdown: kramdown
