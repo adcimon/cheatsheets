@@ -68,7 +68,7 @@ Transport protocols are standardized methods of delivering different types of me
 
 In a mesh topology each node is directly connected to every other node. Each node sends its streams to every single node and downloads the streams from every node.
 
-<p align="center"><img align="center" width="40%" height="40%" src="assets/mesh_topology.jpg"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="assets/mesh_topology.jpg"></p>
 
 For a session with N nodes the total number of connections is `O(N²)`.
 
@@ -93,7 +93,7 @@ Cons:
 
 In a Multipoint Conferencing Unit (MCU) topology each node is connected to the MCU server. With a MCU, each node uploads its stream once, the server `decodes` the stream, mixes the streams of all the nodes into one and `encodes` the stream to send it back to each node.
 
-<p align="center"><img align="center" width="40%" height="40%" src="assets/mcu_topology.jpg"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="assets/mcu_topology.jpg"></p>
 
 For a session with N nodes the total number of connections is `O(N)`.
 
@@ -118,7 +118,7 @@ Cons:
 
 In a Selective Forwarding Unit (SFU) topology each node is connected to the SFU server. With a SFU, each node uploads its stream once and the server `forwards` the stream to every node.
 
-<p align="center"><img align="center" width="40%" height="40%" src="assets/sfu_topology.jpg"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="assets/sfu_topology.jpg"></p>
 
 For a session with N nodes the total number of connections is `O(N²)`.
 
@@ -161,7 +161,7 @@ Streams contain mostly **delta** frames which depend on previous **key** frames.
 
 When temporal layers are used, frames from the base layer only reference other base layer frames.
 
-<p align="center"><img align="center" width="60%" height="60%" src="assets/temporal_simulcast.png"></p>
+<p align="center"><img align="center" width="70%" height="70%" src="assets/temporal_simulcast.png"></p>
 
 For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer, effectively reducing bandwidth.
 
