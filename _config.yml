@@ -1,4 +1,5 @@
 # Jekyll Configuration
 theme: jekyll-theme-slate
 markdown: GFM
+baseurl: /cheatsheets
 title: Cheatsheets
