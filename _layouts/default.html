@@ -17,7 +17,10 @@
 	<!-- Header -->
 	<div id="header_wrap" class="outer">
 		<header class="inner">
-			<h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+			<div style="display: inline-block;">
+				<img style="display: inline; margin: 0 5px;" src="assets/img/favicon.png"/>
+				<h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+			</div>
 			<h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 		</header>
 	</div>
