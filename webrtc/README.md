@@ -223,5 +223,6 @@ Libraries
 
 Tools
 * [Webcam Test](https://webcamtests.com/)
+* [Camera Resolution Finder](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)
 * [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
 * [Troubleshooter](https://test.webrtc.org/)
