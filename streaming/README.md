@@ -26,9 +26,9 @@
 
 List of streaming media servers:
 * [AntMedia](https://github.com/ant-media)
-* [Janus Server](https://github.com/meetecho)
+* [Janus](https://github.com/meetecho)
 * [Jitsi](https://github.com/jitsi)
-* [Kurento Media Server](https://github.com/Kurento/kurento-media-server)
+* [Kurento](https://github.com/Kurento/kurento-media-server)
 * [LiveKit](https://github.com/livekit)
 * [Node Media Server](https://github.com/illuspas/Node-Media-Server)
 * [RTSP Simple Server](https://github.com/aler9/rtsp-simple-server)
