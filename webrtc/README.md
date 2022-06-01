@@ -217,6 +217,7 @@ Libraries
 * [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
 * [aiortc](https://github.com/aiortc/aiortc)
 * [libdatachannel](https://github.com/paullouisageneau/libdatachannel)
+* [werift](https://github.com/shinyoshiaki/werift-webrtc)
 * [WebRTC Builds](https://github.com/shiguredo-webrtc-build/webrtc-build)
 
 Tools
