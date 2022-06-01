@@ -10,7 +10,7 @@
 
 ## JWT
 
-[JSON Web Tokens (JWT)](https://datatracker.ietf.org/doc/html/rfc7519) are an open, industry standard method for representing claims securely between two parties. [JWT.IO](https://jwt.io/) allows to decode, verify and generate tokens.
+[JSON Web Tokens (JWT)](https://en.wikipedia.org/wiki/JSON_Web_Token) are an open, industry standard method for representing claims securely between two parties. [JWT.IO](https://jwt.io/) allows to decode, verify and generate tokens.
 
 ## TLS
 
