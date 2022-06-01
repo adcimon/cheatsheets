@@ -21,27 +21,27 @@
 
 Translation is a transformation that moves objects to a position.
 
-<p align="center"><img align="center" width="50%" height="50%" src="assets/translation_matrix.svg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/translation_matrix.svg"></p>
 
 ### Rotation Matrix
 
 [Rotation](https://en.wikipedia.org/wiki/Rotation_matrix) is a transformation that moves objects relative to an axis by an angle θ.
 
-<p align="center"><img align="center" width="50%" height="50%" src="assets/rotationx_matrix.svg"></p>
-<p align="center"><img align="center" width="50%" height="50%" src="assets/rotationy_matrix.svg"></p>
-<p align="center"><img align="center" width="50%" height="50%" src="assets/rotationz_matrix.svg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/rotationx_matrix.svg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/rotationy_matrix.svg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/rotationz_matrix.svg"></p>
 
 ### Scaling Matrix
 
 [Scaling](https://en.wikipedia.org/wiki/Scaling_(geometry)) is a transformation that enlarges (increases) or shrinks (diminishes) objects by a scale factor.
 
-<p align="center"><img align="center" width="50%" height="50%" src="assets/scaling_matrix.svg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/scaling_matrix.svg"></p>
 
 ### Shearing Matrix
 
 [Shearing](https://en.wikipedia.org/wiki/Shear_mapping) is a transformation that skews the coordinate space, stretching it nonuniformly. Areas and volumes are preserved but angles are not.
 
-<p align="center"><img align="center" width="50%" height="50%" src="assets/shearing_matrix.svg"></p>
+<p align="center"><img align="center" width="40%" height="40%" src="assets/shearing_matrix.svg"></p>
 
 ## Algorithms
 
