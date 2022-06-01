@@ -173,6 +173,11 @@ WebRTC establishes a baseline set of codecs which all compliant applications are
 
 Media streams (audio and video) are delivered through [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). This protocol was designed to ensure timely and ordered packet arrival while tolerating data loss due to unreliable channels. RTP is usually used in conjunction with [Real-time Transport Control Protocol (RTCP)](https://en.wikipedia.org/wiki/RTP_Control_Protocol), which provides statistics, quality-of-service and synchronization data to the participants of the session.
 
+Some of the packets sent using RTCP are:
+
+* [Picture Loss Indication](https://webrtcglossary.com/pli/). Used to request the sender to send a new keyframe.
+* [Receiver Estimated Maximum Bitrate (REMB)](https://webrtcglossary.com/remb/). Used to provide bandwidth estimation in order to avoid creating congestion in the network.
+
 ## Data
 
 Data streams are delivered through [Stream Control Transmission Protocol (SCTP)](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol). SCTP is a message-oriented **transport** protocol that ensures reliable, in-sequence transport of messages and congestion control. It differs from UDP and TCP in providing multi-homing and redundant paths to increase resilience and reliability.
