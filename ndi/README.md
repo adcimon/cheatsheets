@@ -12,8 +12,8 @@ C:\Program Files\NDI\NDI 5 Tools\Discovery
 ```
 By default it runs on port `5959`.
 
-<p align="center"><img align="center" width="90%" height="90%" src="assets/discovery_service.png"></p>
+<p align="center"><img align="center" width="80%" height="80%" src="assets/discovery_service.png"></p>
 
 2. Run the `Access Manager` application from `NDI Tools` in the discovereable machines, go to `Advanced`, toggle on `Discovery Servers` and insert the IP address.
 
-<p align="center"><img align="center" width="90%" height="90%" src="assets/access_manager.png"></p>
+<p align="center"><img align="center" width="50%" height="50%" src="assets/access_manager.png"></p>
