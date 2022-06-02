@@ -202,12 +202,15 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 ```
 chrome://webrtc-internals
 ```
+<br>
 
 2. Select read stats from `Legacy Non-Standard`.
 <p align="center"><img align="center" src="assets/read_stats.png"></p>
+<br>
 
 3. Look for `Stats graphs for bweforvideo (VideoBwe)`.
 <p align="center"><img align="center" src="assets/stats_bwe.png"></p>
+<br>
 
 ## References
 
