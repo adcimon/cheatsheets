@@ -8,7 +8,6 @@
 
 * [Signaling](#signaling)
 * [Connectivity](#connectivity)
-* [SDP](#sdp)
 * [Media](#media)
 * [Data](#data)
 * [Security](#security)
@@ -104,7 +103,7 @@ A complete message flow of a peer to peer connection establishment is shown in t
 
 <p align="center"><img align="center" width="90%" height="90%" src="assets/p2p_connection.png"></p>
 
-## SDP
+## Media
 
 [Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol) is the protocol used to represent the media capabilities of each peer. SDP is already used in other protocols like [Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) or [Session Initiation Protocol (SIP)](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) in streaming applications such as [voice over IP (VoIP)](https://en.wikipedia.org/wiki/Voice_over_IP).
 
@@ -158,8 +157,6 @@ a=rtpmap:96 VP8/90000
 ```
 
 The session named `session007` has 2 media streams, an audio stream on port `8080` using the codec `OPUS/48000` with payload type `111` and a video stream on port `9090` using the codec `VP8/90000` with payload type `96`.
-
-## Media
 
 WebRTC establishes a baseline set of codecs which all compliant applications are required to support. These codecs are described in [RFC 7742: WebRTC Video Processing and Codec Requirements](https://datatracker.ietf.org/doc/html/rfc7742). Applications may choose to allow other codecs as well. The minimum codecs required are:
 
