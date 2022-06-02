@@ -173,8 +173,8 @@ Media streams (audio and video) are delivered through [Real-time Transport Proto
 
 Some of the packets sent using RTCP are:
 
-* [Picture Loss Indication (PLI)](https://webrtcglossary.com/pli/). Used to request the sender to send a new keyframe.
 * [Receiver Estimated Maximum Bitrate (REMB)](https://webrtcglossary.com/remb/). Used to provide bandwidth estimation in order to avoid creating congestion in the network.
+* [Picture Loss Indication (PLI)](https://webrtcglossary.com/pli/). Used to request the sender to send a new keyframe.
 
 ## Data
 
