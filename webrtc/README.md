@@ -158,7 +158,7 @@ a=rtpmap:96 VP8/90000
 
 The session named `session007` has 2 media streams, an audio stream on port `8080` using the codec `OPUS/48000` with payload type `111` and a video stream on port `9090` using the codec `VP8/90000` with payload type `96`.
 
-WebRTC establishes a baseline set of codecs which all compliant applications are required to support. These codecs are described in [RFC 7742: WebRTC Video Processing and Codec Requirements](https://datatracker.ietf.org/doc/html/rfc7742). Applications may choose to allow other codecs as well. The minimum codecs required are:
+WebRTC establishes a [baseline set of codecs](https://datatracker.ietf.org/doc/html/rfc7742) which all compliant applications are required to support. Applications may choose to allow other codecs as well. The minimum codecs required are:
 
 * Audio
   * [Opus](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#opus)
