@@ -11,6 +11,7 @@
 * [Media](#media)
 * [Data](#data)
 * [Security](#security)
+* [Profiling](#profiling)
 * [References](#references)
 
 ## Signaling
@@ -192,6 +193,21 @@ Data streams are delivered through [Stream Control Transmission Protocol (SCTP)]
 [Secure Real-time Transport Protocol (SRTP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) and [Secure Real-time Transport Control Protocol (SRTCP)](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) allow secure data transmission for RTP and RTCP. SRTP enables RTP with authentication and encryption features, and may be disabled if desired, without the need of going back to pure RTP.
 
 Media and data are transmited over [Datagram Transport Layer Security (DTLS)](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security), which is based on [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security). DTLS preserves the semantics of the underlying SRTP, SRTCP and SCTP but provides means of authentication, symmetric cryptography, privacy and integrity.
+
+## Profiling
+
+### Bandwidth/Bitrate Stats
+
+1. Run Google Chrome and type:
+```
+chrome://webrtc-internals
+```
+
+2. Select read stats from `Legacy Non-Standard`.
+<p align="center"><img align="center" src="assets/read_stats.png"></p>
+
+3. Look for `Stats graphs for bweforvideo (VideoBwe)`.
+<p align="center"><img align="center" src="assets/stats_bwe.png"></p>
 
 ## References
 
