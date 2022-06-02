@@ -198,7 +198,7 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 
 ### Bandwidth/Bitrate Stats
 
-1. Run Google Chrome and type:
+1. Run Google Chrome and go to:
 ```
 chrome://webrtc-internals
 ```
