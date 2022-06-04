@@ -1,6 +1,6 @@
 # Unity
 
-<p align="center"><img align="center" src="assets/unity.png"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/unity.svg"></p>
 
 [Unity](https://unity.com/) is a cross-platform game engine.
 

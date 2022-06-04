@@ -1,6 +1,6 @@
 # Docker
 
-<p align="center"><img align="center" src="assets/docker.png"></p>
+<p align="center"><img align="center" src="assets/docker.svg"></p>
 
 [Docker](https://www.docker.com/) is a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers.
 
