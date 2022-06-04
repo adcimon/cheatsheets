@@ -1,5 +1,7 @@
 # Shell
 
+<p align="center"><img align="center" src="assets/shell.svg"></p>
+
 ## Index
 
 * [Linux](#linux)

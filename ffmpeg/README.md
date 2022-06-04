@@ -1,6 +1,6 @@
 # FFmpeg
 
-<p align="center"><img align="center" src="assets/ffmpeg.png"></p>
+<p align="center"><img align="center" src="assets/ffmpeg.svg"></p>
 
 [FFmpeg](https://www.ffmpeg.org/) is a complete, cross-platform solution to record, convert and stream audio and video.
 

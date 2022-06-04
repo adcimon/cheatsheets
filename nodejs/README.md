@@ -1,6 +1,6 @@
 # Node.js
 
-<p align="center"><img align="center" src="assets/nodejs.png"></p>
+<p align="center"><img align="center" src="assets/nodejs.svg"></p>
 
 [Node.js](https://nodejs.org/) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
 

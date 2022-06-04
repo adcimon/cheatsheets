@@ -1,6 +1,6 @@
 # WebRTC
 
-<p align="center"><img align="center" src="assets/webrtc.png"></p>
+<p align="center"><img align="center" src="assets/webrtc.svg"></p>
 
 [Web Real Time Communication (WebRTC)](https://webrtc.org/) is a free and open-source project providing web browsers and mobile applications with real-time [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) communications. Its specification is still an ongoing work as a cooperative effort between the [World Wide Web Consortium (W3C)](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) defining the APIs and the [Internet Engineering Task Force(IETF)](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force) standardizing the protocols.
 

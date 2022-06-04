@@ -1,6 +1,6 @@
 # Go
 
-<p align="center"><img align="center" src="assets/go.png"></p>
+<p align="center"><img align="center" src="assets/go.svg"></p>
 
 [Go](https://golang.org/) is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
