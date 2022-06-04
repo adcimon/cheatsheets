@@ -1,6 +1,6 @@
 # Python
 
-<p align="center"><img align="center" src="assets/python.svg"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/python.svg"></p>
 
 [Python](https://www.python.org/) is an interpreted high-level general-purpose programming language.
 

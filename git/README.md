@@ -1,6 +1,6 @@
 # Git
 
-<p align="center"><img align="center" src="assets/git.svg"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/git.svg"></p>
 
 [Git](https://git-scm.com/) is a free and open source distributed version control system.
 

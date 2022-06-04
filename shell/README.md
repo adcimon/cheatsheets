@@ -1,6 +1,6 @@
 # Shell
 
-<p align="center"><img align="center" src="assets/shell.svg"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/shell.svg"></p>
 
 ## Index
 
