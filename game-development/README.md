@@ -19,10 +19,22 @@
 
 ## Procedural Generation
 
+Map Generation
+* [Procedural City Generator](https://www.tmwhere.com/city_generation.html)
+* [Hempuli's Map Generator](http://www.hempuli.com/blogblog/archives/1699)
+
 Wave Function Collapse
 * [Infinite procedurally generated city with the Wave Function Collapse algorithm](https://marian42.de/article/wfc/)
 * [Wave Function Collapse - Procedural Building Generation in Unity](https://www.uproomgames.com/dev-log/wave-function-collapse)
 * [The Wavefunction Collapse Algorithm explained very clearly](https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/)
+
+Superformula
+* [Superformula Calculator](https://www.desmos.com/calculator/gcu5pigs0g?lang=es)
+* [Superformula Generator](https://superformula.club/)
+* [Supershapes](http://paulbourke.net/geometry/supershape/)
+
+Case Studies
+* [watabou](https://watabou.itch.io/)
 
 ## Networking
 
