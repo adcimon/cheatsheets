@@ -2,39 +2,11 @@
 
 ## Index
 
-* [Animation](#animation)
-* [Procedural Generation](#procedural-generation)
 * [Networking](#networking)
 * [Unity Conventions](#unity-conventions)
   * [Directory Structure](#directory-structure)
   * [Asset Naming](#asset-naming)
   * [Code Style](#code-style)
-
-## Animation
-
-* [Animation Instancing - Instancing for SkinnedMeshRenderer](https://blog.unity.com/technology/animation-instancing-instancing-for-skinnedmeshrenderer)
-* [Texture Animation: Applying Morphing and Vertex Animation Techniques](https://medium.com/tech-at-wildlife-studios/texture-animation-techniques-1daecb316657)
-* [How To Render 10,000 Animated Characters With 20 Draw Calls In Unity](https://medium.com/chenjd-xyz/how-to-render-10-000-animated-characters-with-20-draw-calls-in-unity-e30a3036349a)
-* [Dev Diary — Skeletal Animation and GPU Skinning](https://yadiyasheng.medium.com/skeletal-animation-and-gpu-skinning-c99b30eb2ca2)
-
-## Procedural Generation
-
-Map Generation
-* [Procedural City Generator](https://www.tmwhere.com/city_generation.html)
-* [Hempuli's Map Generator](http://www.hempuli.com/blogblog/archives/1699)
-
-Wave Function Collapse
-* [Infinite procedurally generated city with the Wave Function Collapse algorithm](https://marian42.de/article/wfc/)
-* [Wave Function Collapse - Procedural Building Generation in Unity](https://www.uproomgames.com/dev-log/wave-function-collapse)
-* [The Wavefunction Collapse Algorithm explained very clearly](https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/)
-
-Superformula
-* [Superformula Calculator](https://www.desmos.com/calculator/gcu5pigs0g?lang=es)
-* [Superformula Generator](https://superformula.club/)
-* [Supershapes](http://paulbourke.net/geometry/supershape/)
-
-Case Studies
-* [watabou](https://watabou.itch.io/)
 
 ## Networking
 
