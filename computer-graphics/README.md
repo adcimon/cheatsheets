@@ -47,6 +47,7 @@ Translation is a transformation that moves objects to a position.
 
 ## Animation
 
+Case Studies
 * [Animation Instancing - Instancing for SkinnedMeshRenderer](https://blog.unity.com/technology/animation-instancing-instancing-for-skinnedmeshrenderer)
 * [Texture Animation: Applying Morphing and Vertex Animation Techniques](https://medium.com/tech-at-wildlife-studios/texture-animation-techniques-1daecb316657)
 * [How To Render 10,000 Animated Characters With 20 Draw Calls In Unity](https://medium.com/chenjd-xyz/how-to-render-10-000-animated-characters-with-20-draw-calls-in-unity-e30a3036349a)
