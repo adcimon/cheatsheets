@@ -47,6 +47,8 @@ Translation is a transformation that moves objects to a position.
 
 ## Animation
 
+[Computer animation](https://en.wikipedia.org/wiki/Computer_animation) is the process used for digitally generating animated images.
+
 Case Studies
 * [Animation Instancing - Instancing for SkinnedMeshRenderer](https://blog.unity.com/technology/animation-instancing-instancing-for-skinnedmeshrenderer)
 * [Texture Animation: Applying Morphing and Vertex Animation Techniques](https://medium.com/tech-at-wildlife-studios/texture-animation-techniques-1daecb316657)
@@ -55,22 +57,26 @@ Case Studies
 
 ## Procedural Generation
 
-Map Generation
+[Procedural generation](https://en.wikipedia.org/wiki/Procedural_generation) is a method of creating data algorithmically as opposed to manually, typically through a combination of human-generated assets and algorithms coupled with computer-generated randomness and processing power.
+
+### Map Generation
+
 * [Procedural City Generator](https://www.tmwhere.com/city_generation.html)
 * [Hempuli's Map Generator](http://www.hempuli.com/blogblog/archives/1699)
 
-Wave Function Collapse
+### Wave Function Collapse
+
 * [Infinite procedurally generated city with the Wave Function Collapse algorithm](https://marian42.de/article/wfc/)
 * [Wave Function Collapse - Procedural Building Generation in Unity](https://www.uproomgames.com/dev-log/wave-function-collapse)
 * [The Wavefunction Collapse Algorithm explained very clearly](https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/)
 
-Superformula
+### Superformula
+
+The [superformula](https://en.wikipedia.org/wiki/Superformula) is a generalization of the [superellipse](https://en.wikipedia.org/wiki/Superellipse) that can be used to describe many complex shapes and curves that are found in nature.
+
 * [Superformula Calculator](https://www.desmos.com/calculator/gcu5pigs0g?lang=es)
 * [Superformula Generator](https://superformula.club/)
 * [Supershapes](http://paulbourke.net/geometry/supershape/)
-
-Case Studies
-* [watabou](https://watabou.itch.io/)
 
 ## Algorithms
 
