@@ -7,6 +7,9 @@
 
 ## Peer to Peer
 
+Case Studies
+* [Peer-to-Peer Communication Across Network Address Translators](https://pdos.csail.mit.edu/papers/p2pnat.pdf)
+
 ## Game Networking
 
 Case Studies
