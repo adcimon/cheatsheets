@@ -145,11 +145,15 @@ a=* (zero or more media attribute lines — overriding the Session attribute lin
 ```
 
 **Example 1**<br>
-The session named `session007` has 2 media streams, an audio stream on port `8080` with payload type `111` corresponding to the codec `OPUS/48000` and a video stream on port `9090` with payload type `96` corresponding to the codec `VP8/90000`.
+* Session named `session9000`.
+* NTP timestamps for start and end of the session `0 0`.
+* Media:
+ * Audio stream on RTP port `8080` with payload type `111` corresponding to the codec `OPUS/48000`.
+ * Video stream on RTP port `9090` with payload type `96` corresponding to the codec `VP8/90000`.
 ```
 v=0
 o=- 0 0 IN IP4 10.47.16.5
-s=session007
+s=session9000
 c=IN IP4 224.2.17.12/127
 t=0 0
 m=audio 8080 RTP/AVP 111
@@ -158,38 +162,30 @@ m=video 9090 RTP/AVP 96
 a=rtpmap:96 VP8/90000
 ```
 
-**Example 2**
+**Example 2**<br>
+* NTP timestamps for start and end of the session `2873397496 2873404696`.
+* Media:
+  * The RTP port is 5004.
+  * The RTCP port is 5005 (implicitly by using RTP+1).
+  * RTP Profile for Audio and Video (RTP/AVP).
+  * Payload Type can be 96 or 97.
+  * Payload Type 96 corresponds to VP8/90000.
+  * Payload Type 97 corresponds to H264/90000.
 ```
-# Protocol version
 v=0
-
-# Originator and session identifier
 o=jdoe 2890844526 2890842807 IN IP4 224.2.17.12
-
-# Session description
-s=Example
-
-# Connection information (network type and host address, like in 'o=')
+s=session9000
 c=IN IP4 224.2.17.12
-
-# NTP timestamps for start and end of the session (can be 0)
 t=2873397496 2873404696
-
-# Media:
-# * The RTP port is 5004
-# * The RTCP port is 5005 (implicitly by using RTP+1)
-# * RTP Profile for Audio and Video (RTP/AVP)
-# * Payload Type can be 96 or 97
 m=video 5004 RTP/AVP 96 97
-
-# Payload Type 96 encoding corresponds to VP8 codec
 a=rtpmap:96 VP8/90000
-
-# Payload Type 97 encoding corresponds to H.264 codec
 a=rtpmap:97 H264/90000
 ```
 
-**Example 3**
+**Example 3**<br>
+* `fmpt` (format parameter) lines have advanced codec parameters.
+  *  `minptime` and `useinbandfec` for Opus.
+  *  `profile-level-id` for H.264.
 ```
 v=0
 o=- 0 0 IN IP4 127.0.0.1
@@ -206,7 +202,6 @@ a=rtpmap:98 VP9/90000
 a=rtpmap:102 H264/90000
 a=fmtp:102 profile-level-id=42001f
 ```
-The `fmpt` (format parameter) lines have advanced codec parameters, `minptime`, `useinbandfec` for Opus and `profile-level-id` for H.264.
 
 WebRTC establishes a [baseline set of codecs](https://datatracker.ietf.org/doc/html/rfc7742) which all compliant applications are required to support. Applications may choose to allow other codecs as well. The minimum codecs required are:
 
