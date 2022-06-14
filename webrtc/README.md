@@ -148,8 +148,8 @@ a=* (zero or more media attribute lines — overriding the Session attribute lin
 * Session named `session9000`.
 * NTP timestamps for start and end of the session `0 0`.
 * Media:
- * Audio stream on RTP port `8080` with payload type `111` corresponding to the codec `OPUS/48000`.
- * Video stream on RTP port `9090` with payload type `96` corresponding to the codec `VP8/90000`.
+  * Audio stream on RTP port `8080` with payload type `111` corresponding to the codec `OPUS/48000`.
+  * Video stream on RTP port `9090` with payload type `96` corresponding to the codec `VP8/90000`.
 ```
 v=0
 o=- 0 0 IN IP4 10.47.16.5
@@ -174,7 +174,7 @@ a=rtpmap:96 VP8/90000
 ```
 v=0
 o=jdoe 2890844526 2890842807 IN IP4 224.2.17.12
-s=session9000
+s=-
 c=IN IP4 224.2.17.12
 t=2873397496 2873404696
 m=video 5004 RTP/AVP 96 97
