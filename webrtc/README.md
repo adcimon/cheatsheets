@@ -113,8 +113,8 @@ A SDP is generated and sent from each peer during the **offer/answer** process. 
 **Session**
 ```
 v=  (protocol version number, currently only 0)
-o=  (originator and session identifier : username, id, version number, network address)
-s=  (session name : mandatory with at least one UTF-8-encoded character)
+o=  (originator and session identifier: username, id, version number, network address)
+s=  (session name: mandatory with at least one UTF-8-encoded character)
 i=* (session title or short information)
 u=* (URI of description)
 e=* (zero or more email address with optional name of contacts)
@@ -144,8 +144,8 @@ k=* (encryption key)
 a=* (zero or more media attribute lines — overriding the Session attribute lines)
 ```
 
-**Example 1**
-The session named `session007` has 2 media streams, an audio stream on port `8080` using the codec `OPUS/48000` with payload type `111` and a video stream on port `9090` using the codec `VP8/90000` with payload type `96`.
+**Example 1**<br>
+The session named `session007` has 2 media streams, an audio stream on port `8080` with payload type `111` corresponding to the codec `OPUS/48000` and a video stream on port `9090` with payload type `96` corresponding to the codec `VP8/90000`.
 ```
 v=0
 o=- 0 0 IN IP4 10.47.16.5
@@ -175,7 +175,7 @@ c=IN IP4 224.2.17.12
 # NTP timestamps for start and end of the session, can be 0
 t=2873397496 2873404696
 
-# First media: a video stream with these parameters:
+# Media:
 # * The RTP port is 5004
 # * The RTCP port is 5005 (implicitly by using RTP+1)
 # * RTP Profile for Audio and Video (RTP/AVP)
