@@ -201,7 +201,7 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 * [Webcam Test](https://webcamtests.com/)
 * [Camera Resolution Finder](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)
 
-### Connectivity
+### Connectivity Tests
 
 * [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
 
