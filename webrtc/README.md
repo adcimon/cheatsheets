@@ -192,7 +192,7 @@ a=rtpmap:96 VP8/90000
   * RTP port `5004`.
   * RTCP port `5005` (RTP+1).
   * RTP Profile for Audio and Video `RTP/AVP`.
-  * Payload Type can be `96` or `97`.
+  * Payload Type can be `96` or `97`, the participant prefers `96`, but remotes could choose to send any of them.
   * Payload type `96` corresponds to codec `VP8/90000`.
   * Payload type `97` corresponds to codec `H264/90000`.
 ```
