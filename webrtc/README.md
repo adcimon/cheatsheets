@@ -196,6 +196,15 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 
 ## Profiling
 
+### Webcam Tests
+
+* [Webcam Test](https://webcamtests.com/)
+* [Camera Resolution Finder](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)
+
+### Connectivity
+
+* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
+
 ### Bandwidth/Bitrate Stats
 
 1. Run Google Chrome and go to:
@@ -236,9 +245,3 @@ Libraries
 * [werift](https://github.com/shinyoshiaki/werift-webrtc)
 * [Simple Peer](https://github.com/feross/simple-peer)
 * [WebRTC Builds](https://github.com/shiguredo-webrtc-build/webrtc-build)
-
-Tools
-* [Webcam Test](https://webcamtests.com/)
-* [Camera Resolution Finder](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)
-* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
-* [Troubleshooter](https://test.webrtc.org/)
