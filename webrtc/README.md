@@ -106,6 +106,23 @@ A complete message flow of a peer to peer connection establishment is shown in t
 
 ## Media
 
+WebRTC establishes a [baseline set of codecs](https://datatracker.ietf.org/doc/html/rfc7742) which all compliant applications are required to support. Applications may choose to allow other codecs as well. The minimum codecs required are:
+
+* Audio
+  * [Opus](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#opus)
+  * [G.711 PCM (A-law)](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#g.711_pulse_code_modulation_of_voice_frequencies)
+  * [G.711 PCM (µ-law)](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#g.711_pulse_code_modulation_of_voice_frequencies)
+* Video
+  * [VP8](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/WebRTC_codecs#vp8)
+  * [AVC/H.264 Constrained Baseline](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/WebRTC_codecs#avc_h.264)
+
+Media streams (audio and video) are delivered through [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). This protocol was designed to ensure timely and ordered packet arrival while tolerating data loss due to unreliable channels. RTP is usually used in conjunction with [Real-time Transport Control Protocol (RTCP)](https://en.wikipedia.org/wiki/RTP_Control_Protocol), which provides statistics, quality-of-service and synchronization data to the participants of the session.
+
+Some of the packets sent using RTCP are:
+
+* [Receiver Estimated Maximum Bitrate (REMB)](https://webrtcglossary.com/remb/). Used to provide bandwidth estimation in order to avoid creating congestion in the network.
+* [Picture Loss Indication (PLI)](https://webrtcglossary.com/pli/). Used to request the sender to send a new keyframe.
+
 [Session Description Protocol (SDP)](https://en.wikipedia.org/wiki/Session_Description_Protocol) is the protocol used to represent the media capabilities of each peer. SDP is already used in other protocols like [Real Time Streaming Protocol (RTSP)](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol) or [Session Initiation Protocol (SIP)](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) in streaming applications such as [voice over IP (VoIP)](https://en.wikipedia.org/wiki/Voice_over_IP).
 
 A SDP is generated and sent from each peer during the **offer/answer** process. A SDP has the following structure:
@@ -210,23 +227,6 @@ a=rtpmap:98 VP9/90000
 a=rtpmap:102 H264/90000
 a=fmtp:102 profile-level-id=42001f
 ```
-
-WebRTC establishes a [baseline set of codecs](https://datatracker.ietf.org/doc/html/rfc7742) which all compliant applications are required to support. Applications may choose to allow other codecs as well. The minimum codecs required are:
-
-* Audio
-  * [Opus](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#opus)
-  * [G.711 PCM (A-law)](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#g.711_pulse_code_modulation_of_voice_frequencies)
-  * [G.711 PCM (µ-law)](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs#g.711_pulse_code_modulation_of_voice_frequencies)
-* Video
-  * [VP8](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/WebRTC_codecs#vp8)
-  * [AVC/H.264 Constrained Baseline](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/WebRTC_codecs#avc_h.264)
-
-Media streams (audio and video) are delivered through [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). This protocol was designed to ensure timely and ordered packet arrival while tolerating data loss due to unreliable channels. RTP is usually used in conjunction with [Real-time Transport Control Protocol (RTCP)](https://en.wikipedia.org/wiki/RTP_Control_Protocol), which provides statistics, quality-of-service and synchronization data to the participants of the session.
-
-Some of the packets sent using RTCP are:
-
-* [Receiver Estimated Maximum Bitrate (REMB)](https://webrtcglossary.com/remb/). Used to provide bandwidth estimation in order to avoid creating congestion in the network.
-* [Picture Loss Indication (PLI)](https://webrtcglossary.com/pli/). Used to request the sender to send a new keyframe.
 
 ## Data
 
