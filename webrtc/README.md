@@ -172,7 +172,7 @@ s=Example
 # Connection information (network type and host address, like in 'o=')
 c=IN IP4 224.2.17.12
 
-# NTP timestamps for start and end of the session, can be 0
+# NTP timestamps for start and end of the session (can be 0)
 t=2873397496 2873404696
 
 # Media:
