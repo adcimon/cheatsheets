@@ -190,6 +190,7 @@ a=rtpmap:97 H264/90000
 ```
 
 **Example 3**<br>
+* RTCP port `54321`.
 * `fmpt` (format parameter) lines have advanced codec parameters.
   *  `minptime` and `useinbandfec` for Opus.
   *  `profile-level-id` for H.264.
