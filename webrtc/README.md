@@ -189,6 +189,25 @@ a=rtpmap:96 VP8/90000
 a=rtpmap:97 H264/90000
 ```
 
+**Example 3**
+```
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=-
+c=IN IP4 127.0.0.1
+t=0 0
+m=audio 5006 RTP/AVP 111
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+m=video 5004 RTP/AVP 96 98 102
+a=rtcp:54321
+a=rtpmap:96 VP8/90000
+a=rtpmap:98 VP9/90000
+a=rtpmap:102 H264/90000
+a=fmtp:102 profile-level-id=42001f
+```
+The `fmpt` (format parameter) lines have advanced codec parameters, `minptime`, `useinbandfec` for Opus and `profile-level-id` for H.264.
+
 WebRTC establishes a [baseline set of codecs](https://datatracker.ietf.org/doc/html/rfc7742) which all compliant applications are required to support. Applications may choose to allow other codecs as well. The minimum codecs required are:
 
 * Audio
