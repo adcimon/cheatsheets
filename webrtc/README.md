@@ -16,7 +16,7 @@
 
 ## Signaling
 
-In WebRTC, although public APIs and protocols are standardized, the initial negotiation and communication establishment is up to the application to implement. This initial handshaking should take care of simple stuff, such as letting one peer know when the other is calling, or more complex stuff like establishing a unique session between two peers and sharing offers, answers and candidates. The part of the application that is in charge of these is called the [signaling server](https://en.wikipedia.org/wiki/Signaling_gateway).
+WebRTC uses a [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) distributed architecture. Although public APIs and protocols are standardized, the initial negotiation and communication establishment is up to the application to implement. This initial handshaking should take care of simple stuff, such as letting one peer know when the other is calling, or more complex stuff like establishing a unique session between two peers and sharing offers, answers and candidates. The part of the application that is in charge of these is called the [signaling server](https://en.wikipedia.org/wiki/Signaling_gateway).
 
 A signaling server should handle:
 
