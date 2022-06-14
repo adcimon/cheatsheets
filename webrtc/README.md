@@ -147,9 +147,16 @@ a=* (zero or more media attribute lines — overriding the Session attribute lin
 **Example 1**<br>
 * Session named `session9000`.
 * NTP timestamps for start and end of the session `0 0`.
-* Media:
-  * Audio stream on RTP port `8080` with payload type `111` corresponding to the codec `OPUS/48000`.
-  * Video stream on RTP port `9090` with payload type `96` corresponding to the codec `VP8/90000`.
+* Audio:
+  * RTP port `8080`.
+  * RTCP port `8081` (RTP+1).
+  * RTP Profile for Audio and Video (RTP/AVP).
+  * Payload type `111` corresponds to codec `OPUS/48000`.
+* Video:
+  * RTP port `9090`.
+  * RTCP port `9091` (RTP+1).
+  * RTP Profile for Audio and Video `RTP/AVP`.
+  * Payload type `96` corresponds to codec `VP8/90000`.
 ```
 v=0
 o=- 0 0 IN IP4 10.47.16.5
@@ -164,13 +171,13 @@ a=rtpmap:96 VP8/90000
 
 **Example 2**<br>
 * NTP timestamps for start and end of the session `2873397496 2873404696`.
-* Media:
-  * The RTP port is 5004.
-  * The RTCP port is 5005 (implicitly by using RTP+1).
-  * RTP Profile for Audio and Video (RTP/AVP).
-  * Payload Type can be 96 or 97.
-  * Payload Type 96 corresponds to VP8/90000.
-  * Payload Type 97 corresponds to H264/90000.
+* Video:
+  * RTP port `5004`.
+  * RTCP port `5005` (RTP+1).
+  * RTP Profile for Audio and Video `RTP/AVP`.
+  * Payload Type can be `96` or `97`.
+  * Payload type `96` corresponds to codec `VP8/90000`.
+  * Payload type `97` corresponds to codec `H264/90000`.
 ```
 v=0
 o=jdoe 2890844526 2890842807 IN IP4 224.2.17.12
