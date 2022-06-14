@@ -200,7 +200,7 @@ s=-
 c=IN IP4 127.0.0.1
 t=0 0
 m=audio 5006 RTP/AVP 111
-a=rtpmap:111 opus/48000/2
+a=rtpmap:111 OPUS/48000/2
 a=fmtp:111 minptime=10;useinbandfec=1
 m=video 5004 RTP/AVP 96 98 102
 a=rtcp:54321
