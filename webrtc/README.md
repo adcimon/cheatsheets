@@ -144,7 +144,8 @@ k=* (encryption key)
 a=* (zero or more media attribute lines — overriding the Session attribute lines)
 ```
 
-An example of SDP:
+**Example 1**
+The session named `session007` has 2 media streams, an audio stream on port `8080` using the codec `OPUS/48000` with payload type `111` and a video stream on port `9090` using the codec `VP8/90000` with payload type `96`.
 ```
 v=0
 o=- 0 0 IN IP4 10.47.16.5
@@ -157,7 +158,36 @@ m=video 9090 RTP/AVP 96
 a=rtpmap:96 VP8/90000
 ```
 
-The session named `session007` has 2 media streams, an audio stream on port `8080` using the codec `OPUS/48000` with payload type `111` and a video stream on port `9090` using the codec `VP8/90000` with payload type `96`.
+**Example 2**
+```
+# Protocol version
+v=0
+
+# Originator and session identifier
+o=jdoe 2890844526 2890842807 IN IP4 224.2.17.12
+
+# Session description
+s=Example
+
+# Connection information (network type and host address, like in 'o=')
+c=IN IP4 224.2.17.12
+
+# NTP timestamps for start and end of the session, can be 0
+t=2873397496 2873404696
+
+# First media: a video stream with these parameters:
+# * The RTP port is 5004
+# * The RTCP port is 5005 (implicitly by using RTP+1)
+# * RTP Profile for Audio and Video (RTP/AVP)
+# * Payload Type can be 96 or 97
+m=video 5004 RTP/AVP 96 97
+
+# Payload Type 96 encoding corresponds to VP8 codec
+a=rtpmap:96 VP8/90000
+
+# Payload Type 97 encoding corresponds to H.264 codec
+a=rtpmap:97 H264/90000
+```
 
 WebRTC establishes a [baseline set of codecs](https://datatracker.ietf.org/doc/html/rfc7742) which all compliant applications are required to support. Applications may choose to allow other codecs as well. The minimum codecs required are:
 
