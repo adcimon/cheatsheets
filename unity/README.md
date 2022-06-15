@@ -8,7 +8,6 @@
 
 * [General](#general)
 * [Packages](#packages)
-  * [Newtonsoft JSON](#newtonsoft-json)
 * [Profiling](#profiling)
 
 ## General
@@ -65,7 +64,7 @@ Package manifests, `package.json` files, determine which version of the package 
 * `category` specifies the category the packages is in.
 * `dependencies` is a list of packages that the package depends on, expressed as a JSON dictionary where the key is the package name and the value is the version number. Unity downloads all dependencies and loads them into the project alongside the package.
 
-### Newtonsoft JSON
+**Newtonsoft JSON**
 
 Add the package.
 ```
