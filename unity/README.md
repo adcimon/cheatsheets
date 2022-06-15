@@ -79,3 +79,6 @@ Add the package.
 ## Profiling
 
 <p align="center"><img align="center" width="90%" height="90%" src="assets/profiling_flowchart.png"></p>
+
+* [Ultimate guide to profiling Unity games](https://resources.unity.com/games/ultimate-guide-to-profiling-unity-games)
+* [Profiling in Unity 2021 LTS: What, when, and how](https://blog.unity.com/technology/profiling-in-unity-2021-lts-what-when-and-how)
