@@ -9,6 +9,7 @@
 * [General](#general)
 * [Packages](#packages)
   * [Newtonsoft JSON](#newtonsoft-json)
+* [Profiling](#profiling)
 
 ## General
 
@@ -74,3 +75,7 @@ Add the package.
     "com.unity.nuget.newtonsoft-json": "3.0.2"
 }
 ```
+
+## Profiling
+
+<p align="center"><img align="center" width="90%" height="90%" src="assets/profiling_flowchart.png"></p>
