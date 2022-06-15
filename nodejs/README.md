@@ -73,7 +73,7 @@ List of packages.
 | [Passport](https://github.com/jaredhanson/passport) | npm install passport<br>npm install @nestjs/passport |
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
 | [Passport JWT](https://github.com/mikenicholson/passport-jwt) | npm install passport-jwt<br>npm install @nestjs/jwt |
-| [serve]([https://github.com/mapbox/node-sqlite3](https://github.com/vercel/serve)) | npm install -g serve |
+| [serve](https://github.com/vercel/serve) | npm install -g serve |
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
 | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install -D tailwindcss |
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
