@@ -161,7 +161,18 @@ k=* (encryption key)
 a=* (zero or more media attribute lines — overriding the Session attribute lines)
 ```
 
-**Example 1**<br>
+**Example 1**
+```
+v=0
+o=- 0 0 IN IP4 10.47.16.5
+s=session9000
+c=IN IP4 224.2.17.12/127
+t=0 0
+m=audio 8080 RTP/AVP 111
+a=rtpmap:111 OPUS/48000
+m=video 9090 RTP/AVP 96
+a=rtpmap:96 VP8/90000
+```
 * Session named `session9000`.
 * NTP timestamps for start and end of the session `0 0`.
 * Audio:
@@ -174,27 +185,8 @@ a=* (zero or more media attribute lines — overriding the Session attribute lin
   * RTCP port `9091` (RTP+1).
   * RTP Profile for Audio and Video `RTP/AVP`.
   * Payload type `96` corresponds to codec `VP8/90000`.
-```
-v=0
-o=- 0 0 IN IP4 10.47.16.5
-s=session9000
-c=IN IP4 224.2.17.12/127
-t=0 0
-m=audio 8080 RTP/AVP 111
-a=rtpmap:111 OPUS/48000
-m=video 9090 RTP/AVP 96
-a=rtpmap:96 VP8/90000
-```
 
-**Example 2**<br>
-* NTP timestamps for start and end of the session `2873397496 2873404696`.
-* Video:
-  * RTP port `5004`.
-  * RTCP port `5005` (RTP+1).
-  * RTP Profile for Audio and Video `RTP/AVP`.
-  * Payload Type can be `96` or `97`, the participant prefers `96`, but remotes could choose to send any of them.
-  * Payload type `96` corresponds to codec `VP8/90000`.
-  * Payload type `97` corresponds to codec `H264/90000`.
+**Example 2**
 ```
 v=0
 o=jdoe 2890844526 2890842807 IN IP4 224.2.17.12
@@ -205,12 +197,16 @@ m=video 5004 RTP/AVP 96 97
 a=rtpmap:96 VP8/90000
 a=rtpmap:97 H264/90000
 ```
+* NTP timestamps for start and end of the session `2873397496 2873404696`.
+* Video:
+  * RTP port `5004`.
+  * RTCP port `5005` (RTP+1).
+  * RTP Profile for Audio and Video `RTP/AVP`.
+  * Payload Type can be `96` or `97`, the participant prefers `96`, but remotes could choose to send any of them.
+  * Payload type `96` corresponds to codec `VP8/90000`.
+  * Payload type `97` corresponds to codec `H264/90000`.
 
-**Example 3**<br>
-* RTCP port `54321`.
-* `fmpt` (format parameter) lines have advanced codec parameters.
-  *  `minptime` and `useinbandfec` for Opus.
-  *  `profile-level-id` for H.264.
+**Example 3**
 ```
 v=0
 o=- 0 0 IN IP4 127.0.0.1
@@ -227,6 +223,10 @@ a=rtpmap:98 VP9/90000
 a=rtpmap:102 H264/90000
 a=fmtp:102 profile-level-id=42001f
 ```
+* RTCP port `54321`.
+* `fmpt` (format parameter) lines have advanced codec parameters.
+  *  `minptime` and `useinbandfec` for Opus.
+  *  `profile-level-id` for H.264.
 
 ## Data
 
