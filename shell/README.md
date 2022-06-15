@@ -13,7 +13,7 @@
 |--------------------------|-------------------------------------------------------|
 | cd                       | Change directory.                                     |
 | clear                    | Clear the console.                                    |
-| ls                       | List files and directories.                           |
+| ls<br>ls -l<br>ls -a     | List files and directories.                           |
 | lsb_release -d           | Show Ubuntu version.                                  |
 | mpstat -P ALL            | Monitor CPU.                                          |
 | nvidia-smi               | Monitor NVIDIA GPU.                                   |
