@@ -70,6 +70,10 @@ Decoders conforming to the `Constrained Baseline` profile at a specific level sh
 * `640032`
   * The first byte `0x64` (100) corresponds to profile `High Profile`.
   * The third byte `0x32` (50) corresponds to level `5.0`.
+* `640c34`
+  * The first byte `0x64` (100) corresponds to profile `High Profile`.
+  * The second byte `0x0c` matchs to `Constrained`.
+  * The third byte `0x34` (52) corresponds to level `5.2`.
 
 ## Transport
 
