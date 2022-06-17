@@ -6,6 +6,7 @@
 
 * [Media Server](#media-server)
 * [Codecs](#codecs)
+  * [H.264](#h.264)
 * [Transport](#transport)
   * [RTP](#rtp)
   * [RTSP](#rtsp)
@@ -39,6 +40,15 @@ List of streaming media servers:
 ## Codecs
 
 [Codecs](https://en.wikipedia.org/wiki/Codec) are devices or computer programs which encode or decode data streams or signals.
+
+### H.264
+
+[Advanced Video Coding (AVC) or H.264](https://en.wikipedia.org/wiki/Advanced_Video_Coding) is a video compression standard based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation). There are many kinds of H.264 [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
+
+* `42001f` The first byte 0x42 (66) corresponds to profile `Baseline Profile`. The third byte 0x1f (31) corresponds to level `3.1`.
+* `42e01f` The first byte 0x42 (66) corresponds to profile `Baseline Profile`. The third byte 0x1f (31) corresponds to level `3.1`.
+* `4d0032` The first byte 0x4d (77) corresponds to profile `Main Profile`. The third byte 0x32 (50) corresponds to level `5.0`.
+* `640032` The first byte 0x64 (100) corresponds to profile `High Profile`. The third byte 0x32 (50) corresponds to level `5.0`.
 
 ## Transport
 
