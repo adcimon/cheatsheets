@@ -47,8 +47,8 @@ List of streaming media servers:
 
 **profile-level-id**
 * The first byte represents `profile_idc`.
-* The second byte represents `profile-iop`. Each bit of it corresponds to `constraint_set{0,1,2,3,4,5}_flag`, a total of 6 bits, the last 2 bits are reserved bits, which are always 0.
-* The third byte represents `level`.
+* The second byte represents `profile_iop`. Each bit of it corresponds to `constraint_set{0,1,2,3,4,5}_flag`, a total of 6 bits, the last 2 bits are reserved bits, which are always 0.
+* The third byte represents `level_idc`.
 
 **Examples**
 * `42001f`
