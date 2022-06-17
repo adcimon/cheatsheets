@@ -62,7 +62,7 @@ Decoders conforming to the `Constrained Baseline` profile at a specific level sh
   * The third byte `0x1f` (31) corresponds to level `3.1`.
 * `42e01f`
   * The first byte `0x42` (66) corresponds to profile `Baseline Profile`.
-  * The second byte `0xe0` (11 10 00 00) matchs to `Constrained`.
+  * The second byte `0xe0` (1 1 1 0 0 0 00) matchs to `Constrained`.
   * The third byte `0x1f` (31) corresponds to level `3.1`.
 * `4d0032`
   * The first byte `0x4d` (77) corresponds to profile `Main Profile`.
