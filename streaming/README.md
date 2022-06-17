@@ -17,6 +17,8 @@
   * [MCU](#mcu)
   * [SFU](#sfu)
 * [Simulcast](#simulcast)
+  * [Spatial](#spatial)
+  * [Temporal](#temporal)
 * [Scalable Video Coding](#scalable-video-coding)
 * [References](#references)
 
