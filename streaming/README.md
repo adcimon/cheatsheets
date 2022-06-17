@@ -50,6 +50,7 @@ List of streaming media servers:
 * The second byte represents `profile-iop`. Each bit of it corresponds to `constraint_set{0,1,2,3,4,5}_flag`, a total of 6 bits, the last 2 bits are reserved bits, which are always 0.
 * The third byte represents `level`.
 
+**Examples**
 * `42001f`
   * The first byte `0x42` (66) corresponds to profile `Baseline Profile`.
   * The third byte `0x1f` (31) corresponds to level `3.1`.
