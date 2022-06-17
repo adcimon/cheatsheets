@@ -52,8 +52,8 @@ List of streaming media servers:
 
 **Constrained Baseline**<br>
 Decoders conforming to the `Constrained Baseline` profile at a specific level shall be capable of decoding all bitstreams in which all of the following are true:
-* `profile_idc` is equal to 66 or constraint_set0_flag is equal to 1,
-* `constraint_set1_flag` is equal to 1,
+* `profile_idc` is equal to 66 or constraint_set0_flag is equal to 1.
+* `constraint_set1_flag` is equal to 1.
 * `level_idc` and `constraint_set3_flag` represent a level less than or equal to the specified level.
 
 **Examples**
