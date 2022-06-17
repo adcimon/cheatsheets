@@ -248,16 +248,20 @@ Media and data are transmited over [Datagram Transport Layer Security (DTLS)](ht
 
 ## Profiling
 
-### Webcam Tests
+### Webcam
 
 * [Webcam Test](https://webcamtests.com/)
 * [Camera Resolution Finder](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)
 
-### Connectivity Tests
+### SDP
+
+* [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
+
+### Connectivity
 
 * [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
 
-### Bandwidth/Bitrate Stats
+### Bandwidth/Bitrate
 
 1. Run Google Chrome and go to:
 ```
