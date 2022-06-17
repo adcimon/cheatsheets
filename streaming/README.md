@@ -46,6 +46,10 @@ List of streaming media servers:
 [Advanced Video Coding (AVC)](https://en.wikipedia.org/wiki/Advanced_Video_Coding) or H.264 is a [video compression standard](https://en.wikipedia.org/wiki/Video_coding_format) based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation). There are many kinds of H.264 [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
 
 **profile-level-id**
+* The first byte represents `profile_idc`.
+* The second byte represents `profile-iop`. Each bit of it corresponds to `constraint_set{0,1,2,3,4,5}_flag`, a total of 6 bits, the last 2 bits are reserved bits, which are always 0.
+* The third byte represents `level`.
+
 * `42001f`
   * The first byte `0x42` (66) corresponds to profile `Baseline Profile`.
   * The third byte `0x1f` (31) corresponds to level `3.1`.
