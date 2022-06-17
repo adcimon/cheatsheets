@@ -50,12 +50,19 @@ List of streaming media servers:
 * The second byte represents `profile_iop`. Each bit of it corresponds to `constraint_set{0,1,2,3,4,5}_flag`, a total of 6 bits, the last 2 bits are reserved bits, which are always 0.
 * The third byte represents `level_idc`.
 
+**Constrained Baseline**
+Decoders conforming to the `Constrained Baseline` profile at a specific level shall be capable of decoding all bitstreams in which all of the following are true:
+– `profile_idc` is equal to 66 or constraint_set0_flag is equal to 1,
+– `constraint_set1_flag` is equal to 1,
+– `level_idc` and `constraint_set3_flag` represent a level less than or equal to the specified level.
+
 **Examples**
 * `42001f`
   * The first byte `0x42` (66) corresponds to profile `Baseline Profile`.
   * The third byte `0x1f` (31) corresponds to level `3.1`.
 * `42e01f`
   * The first byte `0x42` (66) corresponds to profile `Baseline Profile`.
+  * The second byte `0xe0` matchs to `Constrained`.
   * The third byte `0x1f` (31) corresponds to level `3.1`.
 * `4d0032`
   * The first byte `0x4d` (77) corresponds to profile `Main Profile`.
