@@ -280,11 +280,12 @@ Articles
 * [WebRTC Glossary](https://webrtcglossary.com/)
 * [MDN WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 * [MDN Web Media Technologies](https://developer.mozilla.org/en-US/docs/Web/Media)
-* [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
+* [WebRTC Work](https://webrtcwork.com/)
 * [Any Connect STUN-TURN-ICE](https://anyconnect.com/stun-turn-ice/)
 * [HTML5 Rocks WebRTC Data Channels](https://www.html5rocks.com/en/tutorials/webrtc/datachannels/)
 * [Tweaking WebRTC Video Quality](https://bloggeek.me/tweaking-webrtc-video-quality-unpacking-bitrate-resolution-and-frame-rates/)
 * [An Introduction to WebRTC Simulcast](https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb)
+* [How Discord handles two and half million concurrent voice users using WebRTC](https://discord.com/blog/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc)
 * [WebRTC H.264 Profiles](https://www.programmersought.com/article/15615289761/)
 * [Samples](https://webrtc.github.io/samples/)
 
