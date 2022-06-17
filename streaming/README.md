@@ -57,20 +57,20 @@ Decoders conforming to the `Constrained Baseline` profile at a specific level sh
 * `level_idc` and `constraint_set3_flag` represent a level less than or equal to the specified level.
 
 **Examples**
-* `42001f`
+* `0x42001f`
   * The first byte `0x42` (66) corresponds to profile `Baseline Profile`.
   * The third byte `0x1f` (31) corresponds to level `3.1`.
-* `42e01f`
+* `0x42e01f`
   * The first byte `0x42` (66) corresponds to profile `Baseline Profile`.
   * The second byte `0xe0` (1 1 1 0 0 0 00) matchs to `Constrained`.
   * The third byte `0x1f` (31) corresponds to level `3.1`.
-* `4d0032`
+* `0x4d0032`
   * The first byte `0x4d` (77) corresponds to profile `Main Profile`.
   * The third byte `0x32` (50) corresponds to level `5.0`.
-* `640032`
+* `0x640032`
   * The first byte `0x64` (100) corresponds to profile `High Profile`.
   * The third byte `0x32` (50) corresponds to level `5.0`.
-* `640c34`
+* `0x640c34`
   * The first byte `0x64` (100) corresponds to profile `High Profile`.
   * The second byte `0x0c` matchs to `Constrained`.
   * The third byte `0x34` (52) corresponds to level `5.2`.
