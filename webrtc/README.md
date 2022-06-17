@@ -230,7 +230,7 @@ a=fmtp:102 profile-level-id=42001f
 
 ## Data
 
-WebRTC lets you send text or binary data over an active connection to a peer, these active connections are called [data channels](https://developer.mozilla.org/en-US/docs/Games/Techniques/WebRTC_data_channels). The underlying data streams are delivered through [Stream Control Transmission Protocol (SCTP)](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol). SCTP is a message-oriented transport protocol that ensures reliable, in-sequence transport of messages and congestion control. It differs from UDP and TCP in providing multi-homing and redundant paths to increase resilience and reliability.
+WebRTC lets you send text or binary data over an active connection to a peer, these connections are called [data channels](https://developer.mozilla.org/en-US/docs/Games/Techniques/WebRTC_data_channels). The underlying data streams are delivered through [Stream Control Transmission Protocol (SCTP)](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol). SCTP is a message-oriented transport protocol that ensures reliable, in-sequence transport of messages and congestion control. It differs from UDP and TCP in providing multi-homing and redundant paths to increase resilience and reliability.
 
 |                    | UDP              | TCP           | SCTP             |
 |--------------------|------------------|---------------|------------------|
