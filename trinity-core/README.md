@@ -4,7 +4,14 @@
 
 [TrinityCore](https://www.trinitycore.org/) is an MMORPG framework that's built using C++, and using a back-end of MySQL for the DB content.
 
-## GM commands
+## Index
+
+* [General](#general)
+* [Teleportation](#teleportation)
+* [Reputations](#reputations)
+* [Items](#items)
+
+## General
 
 Set the character level.
 ```
@@ -22,7 +29,7 @@ Modify the character money.
 .modify money 10000000000
 ```
 
-### Teleportation
+## Teleportation
 
 Print your current coordinates.
 ```
@@ -44,7 +51,7 @@ Access all taxi nodes until logout.
 .cheat taxi on
 ```
 
-### Reputations
+## Reputations
 
 Find the ID of the faction with the provided name.
 ```
@@ -55,6 +62,7 @@ Modify the character reputation.
 ```
 .modify rep <id> exalted
 ```
+<br>
 
 | Name | ID |
 | - | - |
@@ -118,7 +126,7 @@ Modify the character reputation.
 | Netherwing | 1015 |
 | The Scale of the Sands | 990 |
 
-### Items
+## Items
 
 White Lion
 ```
