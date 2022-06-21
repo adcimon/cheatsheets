@@ -4,6 +4,7 @@
 
 List all connections.
 ```
+netstat
 netstat -a
 ```
 
