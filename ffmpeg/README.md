@@ -6,7 +6,7 @@
 
 ## Index
 
-* [Basic](#basic)
+* [General](#general)
 * [Muxing](#muxing)
 * [Transcoding](#transcoding)
   * [x264](#x264)
@@ -33,7 +33,7 @@
   * [Latency](#latency)
 * [Options](#options)
 
-## Basic
+## General
 
 Check version.
 ```
