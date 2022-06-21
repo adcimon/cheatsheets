@@ -6,10 +6,10 @@
 
 ## Index
 
-* [Basic](#basic)
+* [General](#general)
 * [HTTP](#http)
 
-## Basic
+## General
 
 Check version.
 ```
