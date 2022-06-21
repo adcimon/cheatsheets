@@ -188,7 +188,7 @@ git show <commit>
 
 ## More
 
-Delete a tag.
+Delete a remote tag.
 ```
 git push --delete origin <tag>
 ```
