@@ -16,8 +16,8 @@ By default it runs on port `5959`.
 
 <p align="center"><img align="center" width="80%" height="80%" src="assets/discovery_service.png"></p>
 
-2. Run the `Access Manager` application from `NDI Tools` in the discovereable machines, go to `Advanced`, toggle on `Discovery Servers` and insert the IP address.
+2. Run the `Access Manager` application from `NDI Tools` in the discovereable machines, go to `Advanced`, toggle on `Discovery Servers` and insert the IP address of the machine that runs the server.
 
 <p align="center"><img align="center" width="50%" height="50%" src="assets/access_manager.png"></p>
 
-NDI is now using your the discovery service instead of mDNS. Do this on all sources and listeners on the network.
+NDI is now using the discovery service instead of mDNS.
