@@ -1,4 +1,4 @@
-# Netstat
+# netstat
 
 [Netstat](https://en.wikipedia.org/wiki/Netstat) is a command-line network utility that displays network connections, routing tables, network interfaces and network protocol statistics.
 
