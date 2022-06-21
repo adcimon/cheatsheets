@@ -53,9 +53,14 @@ Display only IP addresses.
 netstat -n
 ```
 
-Display with process PID.
+Display connections with process PID.
 ```
 netstat -o
+```
+
+Displays connections with the executable involved in creating each connection or listening port.
+```
+netstat -b
 ```
 
 Show kernel's network routing table and information.
