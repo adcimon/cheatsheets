@@ -188,6 +188,11 @@ git show <commit>
 
 ## More
 
+Delete a tag.
+```
+git push --delete origin <tag>
+```
+
 Large file storage.
 ```
 git lfs install
