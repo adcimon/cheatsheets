@@ -8,23 +8,15 @@ netstat
 netstat -a
 ```
 
-List TCP connections.
+List TCP or UDP connections.
 ```
 netstat -at
-```
-
-List UDP connections.
-```
 netstat -au
 ```
 
-List listening TCP ports.
+List listening TCP or UDP ports.
 ```
 netstat -lt
-```
-
-List listening UDP ports.
-```
 netstat -lu
 ```
 
@@ -33,24 +25,10 @@ Display statistics.
 netstat -s
 ```
 
-Display TCP statistics.
+Display TCP or UDP statistics.
 ```
 netstat -st
-```
-
-Display UDP statistics.
-```
 netstat -su
-```
-
-Display domain name for IP addresses.
-```
-netstat -F
-```
-
-Display only IP addresses.
-```
-netstat -n
 ```
 
 Display connections with process PID.
