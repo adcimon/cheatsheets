@@ -2,7 +2,7 @@
 
 <p align="center"><img align="center" width="50%" height="50%" src="assets/nodejs.svg"></p>
 
-[Node.js](https://nodejs.org/) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
+[Node.js](https://nodejs.org/) is a JavaScript runtime built on [V8](https://v8.dev/) JavaScript engine.
 
 ## Index
 
