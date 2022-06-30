@@ -12,7 +12,7 @@
 
 ## Web Control
 
-Studio Monitor can be controlled via HTTP requests on ports 80 (first window), 81 (second window), etc.
+Studio Monitor can be controlled via HTTP requests on port `80` (each new window on `81`, `82`, etc).
 
 Get source list.
 ```
