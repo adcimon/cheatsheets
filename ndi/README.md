@@ -12,6 +12,8 @@
 
 ## Web Control
 
+Studio Monitor can be controlled via HTTP requests on ports 80 (first window), 81 (second window), etc.
+
 Get source list.
 ```
 curl http://127.0.0.1/v1/sources
