@@ -67,7 +67,7 @@ Test using [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnec
 
 3. Check candidates.
 
-<p align="center"><img align="center" width="50%" height="50%" src="assets/candidates.png"></p>
+<p align="center"><img align="center" width="60%" height="60%" src="assets/candidates.png"></p>
 
 ## References
 
