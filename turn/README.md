@@ -6,7 +6,7 @@
 
 [Coturn](https://github.com/coturn) is a media traffic NAT traversal server and gateway that can be used as a general-purpose network traffic TURN server.
 
-Install using Docker.
+Install using official docker image [instrumentisto/coturn](https://hub.docker.com/r/instrumentisto/coturn).
 ```
 docker run -d --network=host \
            -v $(pwd)/turnserver.conf:/etc/coturn/turnserver.conf \
