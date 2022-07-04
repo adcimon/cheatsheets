@@ -73,4 +73,3 @@ Test using [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnec
 
 * [Coturn Wiki](https://github.com/coturn/coturn/wiki/)
 * [BigBlueButton Configure TURN](https://docs.bigbluebutton.org/admin/setup-turn-server.html)
-* [How to set up and configure your own TURN server using Coturn](https://gabrieltanner.org/blog/turn-server/)
