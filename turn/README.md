@@ -13,7 +13,7 @@ docker run -d --network=host \
            instrumentisto/coturn
 ```
 
-Configuration file.
+Configure using the [config file](https://github.com/coturn/coturn/blob/master/examples/etc/turnserver.conf).
 ```
 # TURN server name and realm.
 realm=test
