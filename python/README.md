@@ -27,6 +27,11 @@ python -m http.server 8080
 
 [Pip](https://pip.pypa.io/en/latest/) is the package installer for Python.
 
+Install.
+```
+apt install python3-pip
+```
+
 Update.
 ```
 python -m pip install --upgrade pip
