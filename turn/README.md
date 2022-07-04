@@ -23,7 +23,7 @@ server-name=turntest
 listening-ip=0.0.0.0
 
 # External IP-Address of the TURN server.
-external-ip=213.4.91.211
+external-ip=203.0.113.1
 
 # Main listening port.
 listening-port=3478
