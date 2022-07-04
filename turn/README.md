@@ -55,6 +55,20 @@ cli-password=test123
 lt-cred-mech
 ```
 
+Test using [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/).
+
+1. Add the TURN server.
+
+<p align="center"><img align="center" width="50%" height="50%" src="assets/add_turn.png"></p>
+
+2. Gather ICE candidates.
+
+<p align="center"><img align="center" width="50%" height="50%" src="assets/gather_candidates.png"></p>
+
+3. Check candidates.
+
+<p align="center"><img align="center" width="50%" height="50%" src="assets/candidates.png"></p>
+
 ## References
 
 * [Coturn Wiki](https://github.com/coturn/coturn/wiki/)
