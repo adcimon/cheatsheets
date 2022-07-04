@@ -12,3 +12,9 @@ docker run -d --network=host \
            -v $(pwd)/turnserver.conf:/etc/coturn/turnserver.conf \
            instrumentisto/coturn
 ```
+
+## References
+
+* [Coturn Wiki](https://github.com/coturn/coturn/wiki/)
+* [BigBlueButton Configure TURN](https://docs.bigbluebutton.org/admin/setup-turn-server.html)
+* [How to set up and configure your own TURN server using Coturn](https://gabrieltanner.org/blog/turn-server/)
