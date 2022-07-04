@@ -33,6 +33,8 @@ List of streaming media servers:
 * [Jitsi](https://github.com/jitsi)
 * [Kurento](https://github.com/Kurento/kurento-media-server)
 * [LiveKit](https://github.com/livekit)
+* [Medooze](https://github.com/medooze)
+* [Millicast](https://www.millicast.com/)
 * [Node Media Server](https://github.com/illuspas/Node-Media-Server)
 * [RTSP Simple Server](https://github.com/aler9/rtsp-simple-server)
 * [Simple Realtime Server](https://github.com/ossrs/srs)
