@@ -12,15 +12,15 @@
   * [x264](#x264)
   * [NVENC/NVDEC](#nvencnvdec)
 * [Editing](#editing)
-  * [Trimming](#trimming)
-  * [Looping](#looping)
+  * [Trim](#trim)
+  * [Loop](#loop)
   * [Speed Up/Slow Down](#speed-upslow-down)
   * [Delay](#delay)
   * [Mute](#mute)
   * [Rotate](#rotate)
   * [Scale](#scale)
   * [Draw](#draw)
-  * [Slicing](#slicing)
+  * [Slice](#slice)
   * [GIF](#gif)
 * [Devices](#devices)
   * [DirectShow](#directshow)
@@ -124,7 +124,7 @@ ffmpeg -vsync 0 -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i <input> -c:a
 
 ## Editing
 
-### Trimming
+### Trim
 
 ```
 ffmpeg -ss <start> -t <duration> -i <input> -c copy <output>
@@ -134,7 +134,7 @@ ffmpeg -ss <start> -t <duration> -i <input> -c copy <output>
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
 
-### Looping
+### Loop
 
 Loop a video `n` times.
 ```
@@ -231,7 +231,7 @@ ffplay -i <input> -vf "drawtext=text='frame %{frame_num}%{pts\:hms}': x=(w-tw)/2
 ```
 * On Windows, escape the sequences of form `%{...}` with `%`.
 
-### Slicing
+### Slice
 
 Extract all the input frames.
 ```
