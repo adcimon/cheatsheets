@@ -6,10 +6,18 @@
 
 ## Index
 
+* [General](#general)
 * [Images](#images)
 * [Containers](#containers)
 * [Volumes](#volumes)
 * [Networks](#networks)
+
+## General
+
+Check version.
+```
+docker version
+```
 
 ## Images
 
