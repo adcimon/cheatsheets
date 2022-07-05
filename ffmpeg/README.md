@@ -19,9 +19,9 @@
   * [Mute](#mute)
   * [Rotate](#rotate)
   * [Scale](#scale)
-  * [Draw](#draw)
   * [Slice](#slice)
   * [GIF](#gif)
+  * [Draw](#draw)
 * [Streaming](#streaming)
   * [RTP](#rtp)
   * [RTSP](#rtsp)
@@ -221,16 +221,6 @@ ffmpeg -i <input> -c:a copy -vf scale=720:-1 <output>
 
 Some codecs, like `libx264` requires even values, odd values result in the error `width or height not divisible by 2`. To scale with a given width or height value use `scale="1280:trunc(ow/a/2)*2"` or `scale="trunc(oh*a/2)*2:720"`.
 
-### Draw
-
-This section has examples of the video filter [drawtext](https://ffmpeg.org/ffmpeg-filters.html#drawtext).
-
-Draw frame number and timestamp.
-```
-ffplay -i <input> -vf "drawtext=text='frame %{frame_num}%{pts\:hms}': x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=20: box=1: boxcolor=black: boxborderw=5"
-```
-* On Windows, escape the sequences of form `%{...}` with `%`.
-
 ### Slice
 
 Extract all the input frames.
@@ -274,6 +264,16 @@ ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]
 ```
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) generates a color palette, `palettegen=stats_mode=single` generates a new palette for every input frame.
 * [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) uses a color palette, `paletteuse=new=1` uses a new palette for each frame.
+
+### Draw
+
+This section has examples of the video filter [drawtext](https://ffmpeg.org/ffmpeg-filters.html#drawtext).
+
+Draw frame number and timestamp.
+```
+ffplay -i <input> -vf "drawtext=text='frame %{frame_num}%{pts\:hms}': x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=20: box=1: boxcolor=black: boxborderw=5"
+```
+* On Windows, escape the sequences of form `%{...}` with `%`.
 
 ## Streaming
 
