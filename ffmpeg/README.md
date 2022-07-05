@@ -424,5 +424,5 @@ ffmpeg -f dshow -video_size 1280x720 -framerate 30 -pixel_format yuyv422 -i vide
 | [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
 | [-codec:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-acodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the audio stream. |
 | [-codec:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-vcodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the video stream. |
-| [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-va](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
+| [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-af](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
 | [-filter:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-vf](https://ffmpeg.org/ffmpeg.html#Video-Options) | Create a video filtergraph. |
