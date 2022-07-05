@@ -419,10 +419,10 @@ ffmpeg -f dshow -video_size 1280x720 -framerate 30 -pixel_format yuyv422 -i vide
 | [-an](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Blocks all audio streams from being filtered or being automatically selected or mapped for any output. |
 | [-vn](https://ffmpeg.org/ffmpeg.html#Video-Options) | Blocks all video streams from being filtered or being automatically selected or mapped for any output. |
 | [-sn](https://ffmpeg.org/ffmpeg.html#Subtitle-options) | Blocks all subtitle streams from being filtered or being automatically selected or mapped for any output. |
-| [-r](https://ffmpeg.org/ffmpeg.html#Video-Options) | Sets the frame rate. |
-| [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input at native frame rate. By default ffmpeg attempts to read the input as fast as possible. |
-| [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
 | [-codec:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-acodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the audio stream. |
 | [-codec:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-vcodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the video stream. |
 | [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-af](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
 | [-filter:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-vf](https://ffmpeg.org/ffmpeg.html#Video-Options) | Create a video filtergraph. |
+| [-r](https://ffmpeg.org/ffmpeg.html#Video-Options) | Sets the frame rate. |
+| [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input at native frame rate. By default ffmpeg attempts to read the input as fast as possible. |
+| [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
