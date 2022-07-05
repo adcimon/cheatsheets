@@ -47,20 +47,40 @@ docker container ls
 docker container ls -a
 ```
 
-Run a container.
-```
-docker container run <image>
-```
-
 Inspect a container.
 ```
 docker container inspect <container>
 ```
 
+List container port mappings.
+```
+docker container port <container>
+```
+
+Run a container.
+```
+docker container run <image>
+```
+
+Run a container and start an interactive shell.
+```
+docker container run -i -t <image> bash
+```
+
+Run a container, start an interactive shell and remove it on exit.
+```
+docker container run --rm -i -t <image> bash
+```
+
+Run a stopped container and start an interactive shell.
+```
+docker container start -a -i <container>
+```
+
 Execute a command inside a container.
 ```
-docker container exec -it <container> <command>
-docker container exec -it <container> /bin/bash
+docker container exec -i -t <container> <command>
+docker container exec -i -t <container> bash
 ```
 
 Fetch the logs of a container.
