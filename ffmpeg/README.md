@@ -16,7 +16,7 @@
   * [Loop](#loop)
   * [Speed Up/Slow Down](#speed-upslow-down)
   * [Delay](#delay)
-  * [Mute](#mute)
+  * [Volume](#volume)
   * [Rotate](#rotate)
   * [Scale](#scale)
   * [Slice](#slice)
@@ -176,7 +176,13 @@ ffmpeg -i <input> -itsoffset <time> -i <input> -map 1:v -map 0:a -c:v copy -c:a 
 ```
 * [`-itsoffset`](https://ffmpeg.org/ffmpeg.html#Main-options) specifies the time to delay, e.g. `3.00` seconds.
 
-### Mute
+### Volume
+
+Increase audio volume.
+```
+ffmpeg -i <input> -af "volume=1.5" -c:v copy <output>
+ffmpeg -i <input> -af "volume=10dB" -c:v copy <output>
+```
 
 Mute audio in an interval.
 ```
