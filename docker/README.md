@@ -8,6 +8,7 @@
 
 * [Images](#images)
 * [Containers](#containers)
+* [Volumes](#volumes)
 * [Networks](#networks)
 
 ## Images
@@ -18,9 +19,24 @@ docker image ls
 docker image ls -a
 ```
 
+Build an image base on a dockerfile.
+```
+docker image build -t <image> <path>
+```
+
+Tag an image.
+```
+docker image tag <image>:<tag> <target_image>:<tag>
+```
+
 Remove an image.
 ```
 docker image rm <image>
+```
+
+Remove all images without a container.
+```
+docker image prune -a
 ```
 
 ## Containers
@@ -66,6 +82,18 @@ docker container kill <container>
 Remove a container.
 ```
 docker container rm <container>
+```
+
+## Volumes
+
+List volumes.
+```
+docker volume ls
+```
+
+Remove all unused volumes.
+```
+docker volume prune -f
 ```
 
 ## Networks
