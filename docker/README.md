@@ -8,12 +8,14 @@
 
 * [Images](#images)
 * [Containers](#containers)
+* [Networks](#networks)
 
 ## Images
 
-List all images.
+List images.
 ```
 docker image ls
+docker image ls -a
 ```
 
 Remove an image.
@@ -25,43 +27,66 @@ docker image rm <image>
 
 List containers.
 ```
-docker ps
-docker ps -a
+docker container ls
+docker container ls -a
 ```
 
 Run a container.
 ```
-docker run <image>
+docker container run <image>
 ```
 
 Inspect a container.
 ```
-docker inspect <container>
+docker container inspect <container>
 ```
 
 Execute a command inside a container.
 ```
-docker exec -it <container> <command>
-docker exec -it <container> /bin/bash
+docker container exec -it <container> <command>
+docker container exec -it <container> /bin/bash
 ```
 
 Fetch the logs of a container.
 ```
-docker logs <container>
-docker logs -f <container>
+docker container logs <container>
+docker container logs -f <container>
 ```
 
 Stop a container.
 ```
-docker stop <container>
+docker container stop <container>
 ```
 
 Kill a container.
 ```
-docker kill <container>
+docker container kill <container>
 ```
 
 Remove a container.
 ```
-docker rm <container>
+docker container rm <container>
+```
+
+## Networks
+
+List networks.
+```
+docker network ls
+```
+
+Create a network.
+```
+docker network create <network>
+docker network create --driver <driver> <network>
+```
+
+Connect a container to a network.
+```
+docker network connect <network> <container>
+```
+
+Disconnect a container from a network.
+```
+docker network disconnect <network> <container>
 ```
