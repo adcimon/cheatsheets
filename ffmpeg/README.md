@@ -22,8 +22,6 @@
   * [Draw](#draw)
   * [Slice](#slice)
   * [GIF](#gif)
-* [Devices](#devices)
-  * [DirectShow](#directshow)
 * [Streaming](#streaming)
   * [RTP](#rtp)
   * [RTSP](#rtsp)
@@ -32,6 +30,8 @@
   * [NDI](#ndi)
   * [Synchronization](#synchronization)
   * [Latency](#latency)
+* [Devices](#devices)
+  * [DirectShow](#directshow)
 * [Options](#options)
 
 ## General
@@ -275,37 +275,6 @@ ffmpeg -i <input> -vf "split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]
 * [`palettegen`](https://ffmpeg.org/ffmpeg-filters.html#palettegen) generates a color palette, `palettegen=stats_mode=single` generates a new palette for every input frame.
 * [`paletteuse`](https://ffmpeg.org/ffmpeg-filters.html#paletteuse) uses a color palette, `paletteuse=new=1` uses a new palette for each frame.
 
-## Devices
-
-This section describes the input and output devices provided by the [libavdevice](https://ffmpeg.org/ffmpeg-devices.html) library.
-
-### DirectShow
-
-Windows [DirectShow](https://trac.ffmpeg.org/wiki/DirectShow) input devices.
-
-List devices.
-```
-ffmpeg -list_devices true -f dshow -i dummy
-```
-
-List options.
-```
-ffmpeg -list_options true -f dshow -i audio="Microphone"
-ffmpeg -list_options true -f dshow -i video="Camera"
-```
-
-Play camera.
-```
-ffplay -f dshow -i audio="Microphone":video="Camera"
-```
-
-Record to file.
-```
-ffmpeg -f dshow -i audio="Microphone":video="Camera" <output>
-ffmpeg -f dshow -video_size <resolution> -framerate <fps> -pixel_format <pixel_format> -i video="Camera" <output>
-ffmpeg -f dshow -video_size 1280x720 -framerate 30 -pixel_format yuyv422 -i video="Camera" output.mp4
-```
-
 ## Streaming
 
 ### RTP
@@ -405,6 +374,37 @@ ffplay -i <input> -fflags nobuffer -flags low_delay -reorder_queue_size 0
 * `-fflags nobuffer` reduces the latency introduced by optional buffering.
 * `-flags low_delay` forces low delay.
 * `-reorder_queue_size 0` sets the number of packets to buffer for handling of reordered packets to 0.
+
+## Devices
+
+This section describes the input and output devices provided by the [libavdevice](https://ffmpeg.org/ffmpeg-devices.html) library.
+
+### DirectShow
+
+Windows [DirectShow](https://trac.ffmpeg.org/wiki/DirectShow) input devices.
+
+List devices.
+```
+ffmpeg -list_devices true -f dshow -i dummy
+```
+
+List options.
+```
+ffmpeg -list_options true -f dshow -i audio="Microphone"
+ffmpeg -list_options true -f dshow -i video="Camera"
+```
+
+Play camera.
+```
+ffplay -f dshow -i audio="Microphone":video="Camera"
+```
+
+Record to file.
+```
+ffmpeg -f dshow -i audio="Microphone":video="Camera" <output>
+ffmpeg -f dshow -video_size <resolution> -framerate <fps> -pixel_format <pixel_format> -i video="Camera" <output>
+ffmpeg -f dshow -video_size 1280x720 -framerate 30 -pixel_format yuyv422 -i video="Camera" output.mp4
+```
 
 ## Options
 
