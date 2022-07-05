@@ -140,7 +140,7 @@ Loop a video `n` times.
 ```
 ffmpeg -stream_loop <n> -i <input> -c copy <output>
 ```
-Loop `0` means no loop, loop `-1` means infinite loop. 
+* Loop `0` means no loop, loop `-1` means infinite loop. 
 
 ### Speed Up/Slow Down
 
