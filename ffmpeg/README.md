@@ -13,6 +13,7 @@
   * [NVENC/NVDEC](#nvencnvdec)
 * [Editing](#editing)
   * [Trimming](#trimming)
+  * [Looping](#looping)
   * [Speed Up/Slow Down](#speed-upslow-down)
   * [Delay](#delay)
   * [Mute](#mute)
@@ -132,6 +133,14 @@ ffmpeg -ss <start> -t <duration> -i <input> -c copy <output>
 * [`-t`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the duration of the clip.
 * [`-to`](http://ffmpeg.org/ffmpeg-all.html#Main-options) specifies the end time, `-to` and `-t` are mutually exclusive and `-t` has priority.
 * [`-c`](http://ffmpeg.org/ffmpeg-all.html#Main-options) copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them. This won't harm the quality and make the command run within seconds.
+
+### Looping
+
+Loop a video `n` times.
+```
+ffmpeg -stream_loop <n> -i <input> -c copy <output>
+```
+Loop `0` means no loop, loop `-1` means infinite loop. 
 
 ### Speed Up/Slow Down
 
@@ -407,7 +416,6 @@ ffplay -i <input> -fflags nobuffer -flags low_delay -reorder_queue_size 0
 | [-r](https://ffmpeg.org/ffmpeg.html#Video-Options) | Sets the frame rate. |
 | [-re](https://ffmpeg.org/ffmpeg.html#Advanced-options) | Reads input at native frame rate. By default ffmpeg attempts to read the input as fast as possible. |
 | [-f](https://ffmpeg.org/ffmpeg.html#Main-options) | Forces input or output file format. The format is normally auto detected for input files and guessed from the file extension for output files, so this option is not needed in most cases. |
-| [-stream_loop](http://ffmpeg.org/ffmpeg-all.html#Main-options) | Sets the number of times input stream shall be looped, `0` means no loop, `-1` means infinite loop. |
 | [-codec:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-acodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the audio stream. |
 | [-codec:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-c:v](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-vcodec](https://ffmpeg.org/ffmpeg.html#Main-options) | Select the encoder or decoder for the video stream. |
 | [-filter:a](https://ffmpeg.org/ffmpeg.html#Main-options)<br>[-va](https://ffmpeg.org/ffmpeg.html#Audio-Options) | Create an audio filtergraph. |
