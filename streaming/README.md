@@ -17,10 +17,9 @@
   * [Mesh](#mesh)
   * [MCU](#mcu)
   * [SFU](#sfu)
-* [Simulcast](#simulcast)
-  * [Spatial](#spatial)
-  * [Temporal](#temporal)
-* [Scalable Video Coding](#scalable-video-coding)
+* [Bandwidth Strategies](#bandwidth-strategies)
+  * [Simulcast](#simulcast)
+  * [Scalable Video Coding](#scalable-video-coding)
 * [References](#references)
 
 ## Media Server
@@ -177,11 +176,13 @@ Pros:
 Cons:
 * No end-to-end encryption (although there are experimental approaches of header only decryption).
 
-## Simulcast
+## Bandwidth Strategies
+
+### Simulcast
 
 Simulcast allows peers to publish multiple versions of the same stream with different **spatial** or **temporal** encodings, effectively sending more data.
 
-### Spatial
+#### Spatial
 
 With spatial scalability the lower resolution layers consume less bandwidth than the high resolution ones.
 
@@ -192,7 +193,7 @@ For example:
 
 The peer uses just 17% more bandwidth to publish the three layers.
 
-### Temporal
+#### Temporal
 
 With temporal scalability it is possible to lower a stream's bitrate by dynamically reducing the stream's frame rate. 
 
@@ -204,7 +205,7 @@ When temporal layers are used, frames from the base layer only reference other b
 
 For a subscriber with limited bandwidth, it is possible to send only the frames of a specific temporal layer, effectively reducing bandwidth.
 
-## Scalable Video Coding
+### Scalable Video Coding
 
 [Scalable Video Coding (SVC)](https://en.wikipedia.org/wiki/Scalable_Video_Coding) is a video compression standard that defines encoding of a high-quality video bitstream that also contains one or more subset bitstreams (a form of layered coding). A subset video bitstream is derived by dropping packets from the larger video to reduce the bandwidth required for the subset bitstream. The subset bitstream can represent a lower spatial resolution (smaller screen), lower temporal resolution (lower frame rate), or lower quality video signal.
 
