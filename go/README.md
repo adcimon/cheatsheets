@@ -9,6 +9,7 @@
 * [General](#general)
 * [Modules](#modules)
 * [CGO](#cgo)
+* [More](#more)
 
 ## General
 
@@ -197,3 +198,46 @@ go tool cgo main.go
 ```
 
 It generates C header and source files into the `_obj` directory.
+
+## More
+
+### Test
+
+1. Install MinGW.
+
+2. Create the `main.exe.manifest` file.
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="1.0.0.0"
+    processorArchitecture="x86"
+    name="controls"
+    type="win32"
+/>
+<dependency>
+    <dependentAssembly>
+        <assemblyIdentity
+            type="win32"
+            name="Microsoft.Windows.Common-Controls"
+            version="6.0.0.0"
+            processorArchitecture="*"
+            publicKeyToken="6595b64144ccf1df"
+            language="*"
+        />
+    </dependentAssembly>
+</dependency>
+</assembly>
+```
+
+3. Create the `main.rc` file.
+```
+100 ICON    "main.ico"
+100 24      "main.exe.manifest"
+101 RCDATA  "content.zip"
+```
+
+4. Build.
+```
+windres -o main-res.syso main.rc && go build -i
+```
