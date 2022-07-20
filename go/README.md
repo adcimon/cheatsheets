@@ -201,7 +201,7 @@ It generates C header and source files into the `_obj` directory.
 
 ## More
 
-### Add icon and metadata to exe
+### Embed icon and metadata into exe
 
 1. Install MinGW.
 
