@@ -229,6 +229,7 @@ It generates C header and source files into the `_obj` directory.
 </dependency>
 </assembly>
 ```
+<br>
 
 3. Create the `main.rc` file.
 ```
@@ -236,6 +237,7 @@ It generates C header and source files into the `_obj` directory.
 100 24      "main.exe.manifest"
 101 RCDATA  "content.zip"
 ```
+<br>
 
 4. Build.
 ```
