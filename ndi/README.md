@@ -6,11 +6,12 @@
 
 ## Index
 
-* [Web Control](#web-control)
-* [Remove Authentication](#remove-authentication)
-* [Discover Machines](#discover-machines)
+* [Studio Monitor](#studio-monitor)
+* [Discovery Service](#discovery-service)
 
-## Web Control
+## Studio Monitor
+
+### Web Control
 
 Studio Monitor can be controlled via HTTP requests on port `80` (each new window on `81`, `82`, etc).
 
@@ -48,7 +49,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"version":1,"decorations":
 curl -H "Content-Type: application/json" -X POST -d "{\"version\":1,\"decorations\":{\"tally\":false}}" http://127.0.0.1/v1/configuration
 ```
 
-## Remove Authentication
+### Remove Authentication
 
 Navigate to the folder:
 ```
@@ -57,7 +58,7 @@ C:\Users\<User>\AppData\Local\NDI\Studio Monitor\authentication\
 
 Delete the file `web_passwords`.
 
-## Discover Machines
+## Discovery Service
 
 Discovery service may help mitigate certain issues related to [Multicast DNS (mDNS)](https://en.wikipedia.org/wiki/Multicast_DNS) traffic on computer networks.
 
