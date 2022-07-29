@@ -10,4 +10,4 @@
 2. Select the faces.
 3. Go to `UV` and choose `Reset`.
 
-<p align="center"><img align="center" width="20%" height="20%" src="assets/reset_uv_projection.png"></p>
+<p align="center"><img align="center" width="30%" height="30%" src="assets/reset_uv_projection.png"></p>
