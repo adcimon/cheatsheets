@@ -1,6 +1,8 @@
 # Windows
 
-<p align="center"><img align="center" width="30%" height="30%" src="assets/windows.svg"></p>
+<p align="center"><img align="center" width="20%" height="20%" src="assets/windows.svg"></p>
+
+[Windows](https://www.microsoft.com/windows/) is a group of several proprietary graphical operating system families developed and marketed by [Microsoft](https://www.microsoft.com/).
 
 ## Terminal
 
