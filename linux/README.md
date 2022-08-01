@@ -1,6 +1,8 @@
 # Linux
 
-<p align="center"><img align="center" width="30%" height="30%" src="assets/linux.svg"></p>
+<p align="center"><img align="center" width="20%" height="20%" src="assets/linux.svg"></p>
+
+[Linux](https://www.linux.org/) is a family of open-source Unix-like operating systems based on the Linux kernel.
 
 ## Terminal
 
