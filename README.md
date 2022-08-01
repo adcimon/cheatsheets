@@ -27,3 +27,4 @@ Technologies
 * [Visual Studio Code](https://adcimon.github.io/cheatsheets/visual-studio-code/)
 * [Visual Studio](https://adcimon.github.io/cheatsheets/visual-studio/)
 * [WebRTC](https://adcimon.github.io/cheatsheets/webrtc/)
+* [Windows](https://adcimon.github.io/cheatsheets/windows/)
