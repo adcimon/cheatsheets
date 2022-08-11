@@ -8,6 +8,7 @@
 
 * [General](#general)
 * [Packages](#packages)
+* [Serialization](#serialization)
 * [Profiling](#profiling)
 
 ## General
@@ -74,6 +75,10 @@ Add the package.
     "com.unity.nuget.newtonsoft-json": "3.0.2"
 }
 ```
+
+## Serialization
+
+* [Serialization Best Practices](https://forum.unity.com/threads/serialization-best-practices-megapost.155352/)
 
 ## Profiling
 
