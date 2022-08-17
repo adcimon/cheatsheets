@@ -35,6 +35,11 @@ https://deb.nodesource.com/setup_10.x
 
 [Node Package Manager (npm)](https://www.npmjs.com/) is a package manager for the JavaScript programming language.
 
+Update npm.
+```
+npm install -g npm@latest
+```
+
 Initialize a module directory, creating a `package.json` file.
 ```
 npm init
