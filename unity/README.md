@@ -86,3 +86,4 @@ Add the package.
 
 * [Ultimate guide to profiling Unity games](https://resources.unity.com/games/ultimate-guide-to-profiling-unity-games)
 * [Profiling in Unity 2021 LTS: What, when, and how](https://blog.unity.com/technology/profiling-in-unity-2021-lts-what-when-and-how)
+* [Pick up these helpful tips on advanced profiling](https://blog.unity.com/technology/pick-up-these-helpful-tips-on-advanced-profiling)
