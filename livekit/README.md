@@ -4,9 +4,14 @@
 
 ## Index
 
-* [Profiling](#profiling)
+* [General](#general)
+* [Profile](#profile)
 
-## Profiling
+## General
+
+LiveKit has a configuration file to deploy the server [config-sample.yaml](https://github.com/livekit/livekit/blob/master/config-sample.yaml).
+
+## Profile
 
 * [Connection Test](https://livekit.io/connection-test)
 * [Example](https://example.livekit.io/)
