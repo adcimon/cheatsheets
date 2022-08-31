@@ -1,6 +1,6 @@
 # LiveKit
 
-[LiveKit]([https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT](https://github.com/livekit)) is an open source project that provides scalable, multi-user conferencing over WebRTC.
+[LiveKit](https://github.com/livekit) is an open source project that provides scalable, multi-user conferencing over WebRTC.
 
 ## Index
 
