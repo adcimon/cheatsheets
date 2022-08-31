@@ -1,6 +1,6 @@
 # LiveKit
 
-[LiveKit](https://github.com/livekit) is an open source project that provides scalable, multi-user conferencing over WebRTC.
+[LiveKit](https://livekit.io/) is an open source project that provides scalable, multi-user conferencing over WebRTC.
 
 ## Index
 
@@ -9,7 +9,9 @@
 
 ## General
 
-LiveKit has a configuration file to deploy the server, a sample [config-sample.yaml](https://github.com/livekit/livekit/blob/master/config-sample.yaml) is provided in the repository.
+The [documentation](https://docs.livekit.io/) has guides and API references for deployment, working with rooms, etc.
+
+Deployment can be made using the official [Docker image](https://hub.docker.com/r/livekit/livekit-server). The server is configured using the `livekit.yaml` configuration file, a sample [config-sample.yaml](https://github.com/livekit/livekit/blob/master/config-sample.yaml) is available in the [repository](https://github.com/livekit/livekit).
 
 Example of `livekit.yaml`:
 ```
@@ -29,4 +31,5 @@ logging:
 ## Profiling
 
 * [Connection Test](https://livekit.io/connection-test)
+* [Playground](https://livekit.io/playground)
 * [Example](https://example.livekit.io/)
