@@ -2,6 +2,10 @@
 
 [Artificial intelligence art](https://en.wikipedia.org/wiki/Artificial_intelligence_art) refers to any artwork created through the use of [artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence).
 
+## Index
+
+* [References](#references)
+
 ## References
 
 Articles
