@@ -1,5 +1,7 @@
 # LiveKit
 
+<p align="center"><img align="center" width="20%" height="20%" src="assets/livekit.png"></p>
+
 [LiveKit](https://livekit.io/) is an open source project that provides scalable, multi-user conferencing over WebRTC.
 
 ## Index
