@@ -87,8 +87,8 @@ Add the package.
 
 ## WebGL
 
-* C#/JavaScript interop: https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html
-* WebGL deploying: https://docs.unity3d.com/Manual/webgl-deploying.html
+* C#/JavaScript Interop: https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html
+* WebGL Deploying: https://docs.unity3d.com/Manual/webgl-deploying.html
 
 ## References
 
