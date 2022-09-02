@@ -9,6 +9,7 @@
 * [General](#general)
 * [Packages](#packages)
 * [Profiling](#profiling)
+* [WebGL](#webgl)
 * [References](#references)
 
 ## General
@@ -84,7 +85,11 @@ Add the package.
 
 <p align="center"><img align="center" src="assets/profiling_flowchart.png"></p>
 
+## WebGL
+
+* C#/JavaScript interop: https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html
+* WebGL deploying: https://docs.unity3d.com/Manual/webgl-deploying.html
+
 ## References
 
 * [Serialization Best Practices](https://forum.unity.com/threads/serialization-best-practices-megapost.155352/)
-* [WebGL Deploying](https://docs.unity3d.com/Manual/webgl-deploying.html)
