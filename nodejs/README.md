@@ -90,7 +90,7 @@ List of packages.
 
 ## Electron
 
-[Electron](https://www.electronjs.org/) is a free and open-source software framework developed and maintained by GitHub designed to create desktop applications using web technologies which are rendered using a flavor of the Chromium browser engine, and a backend using the Node.js runtime environment.
+[Electron](https://www.electronjs.org/) is a free and open-source software framework developed and maintained by GitHub designed to create desktop applications using web technologies which are rendered using a flavor of the [Chromium](https://www.chromium.org/) browser engine, and a backend using the [Node.js](https://nodejs.org/) runtime environment.
 
 Build with [Electron Forge](https://www.electronforge.io/).
 ```
