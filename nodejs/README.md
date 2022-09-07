@@ -101,7 +101,7 @@ npm run make
 
 ## Nest.js
 
-[Nest.js](https://nestjs.com/) is a framework for building efficient, scalable Node.js web applications.
+[Nest.js](https://nestjs.com/) is a framework for building efficient, scalable web applications.
 
 Nest is built around the design pattern [Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) and has a built-in container that resolves relationships between providers using a constructor based dependency injection.
 * Providers (classes with `@Injectable()`) are added to the `exports` array of the producer module.
