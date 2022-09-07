@@ -8,6 +8,7 @@
 
 * [Install](#install)
 * [Packages](#packages)
+* [Electron](#electron)
 * [Nest.js](#nestjs)
 * [Tailwind CSS](#tailwind-css)
 
@@ -86,6 +87,17 @@ List of packages.
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
+
+## Electron
+
+[Electron](https://www.electronjs.org/) is a free and open-source software framework developed and maintained by GitHub designed to create desktop applications using web technologies which are rendered using a flavor of the Chromium browser engine, and a backend using the Node.js runtime environment.
+
+Build with [Electron Forge](https://www.electronforge.io/).
+```
+npm install --save-dev @electron-forge/cli
+npx electron-forge import
+npm run make
+```
 
 ## Nest.js
 
