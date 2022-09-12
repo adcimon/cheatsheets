@@ -128,3 +128,12 @@ Models
 | Parameter | camelCasing |
 | Unary operator overload parameter | value |
 | Binary operator overload parameter | left, right |
+
+### References
+
+* [Create a C# style guide: Write cleaner code that scales](https://resources.unity.com/games/create-code-style-guide-e-book)
+* [Clean up your code: How to create your own C# code style](https://blog.unity.com/technology/clean-up-your-code-how-to-create-your-own-c-code-style)
+* [.NET Framework Design Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/)
+* [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+* [C# at Google Style Guide](https://google.github.io/styleguide/csharp-style.html)
+* [Unity C# Code Style Guide Example](https://github.com/thomasjacobsen-unity/Unity-Code-Style-Guide)
