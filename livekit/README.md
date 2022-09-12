@@ -7,6 +7,7 @@
 ## Index
 
 * [General](#general)
+* [CLI](#cli)
 * [Profiling](#profiling)
 
 ## General
@@ -35,6 +36,10 @@ Start in development mode.
 livekit-server --dev
 ```
 
+## CLI
+
+LiveKit has the command-line interface [livekit-cli](https://github.com/livekit/livekit-cli) that can be used to access server APIs, create tokens, create and join rooms, generate test traffic, etc.
+
 Create a token.
 ```
 livekit-cli create-token \
@@ -51,6 +56,15 @@ livekit-cli join-room \
     --room <ROOM> --identity <USER> \
     --publish-demo
 ```
+
+Publish media files.
+```
+livekit-cli join-room --room <ROOM> --identity <USER> \
+  --publish path/to/video.ivf \
+  --publish path/to/audio.ogg \
+  --fps 23.98
+```
+Note that it's important to match video framerate with the source to prevent out of sync issues.
 
 ## Profiling
 
