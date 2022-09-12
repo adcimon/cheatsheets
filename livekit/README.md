@@ -30,6 +30,28 @@ logging:
     level: info
 ```
 
+Start in development mode.
+```
+livekit-server --dev
+```
+
+Create a token.
+```
+livekit-cli create-token \
+    --api-key <KEY> --api-secret <SECRET> \
+    --join --room <ROOM> --identity <USER> \
+    --valid-for 24h
+```
+
+Simulate a test publisher.
+```
+livekit-cli join-room \
+    --url ws://localhost:7880 \
+    --api-key <KEY> --api-secret <SECRET> \
+    --room <ROOM> --identity <USER> \
+    --publish-demo
+```
+
 ## Profiling
 
 * [Connection Test](https://livekit.io/connection-test)
