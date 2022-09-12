@@ -1,15 +1,12 @@
-# Game Development
+# Unity Conventions
 
 ## Index
 
-* [Unity Conventions](#unity-conventions)
-  * [Directory Structure](#directory-structure)
-  * [Asset Naming](#asset-naming)
-  * [Code Style](#code-style)
+* [Directory Structure](#directory-structure)
+* [Asset Naming](#asset-naming)
+* [Code Style](#code-style)
 
-## Unity Conventions
-
-### Directory Structure
+## Directory Structure
 
 Prototype
 ```
@@ -72,7 +69,7 @@ Models
 └── ...
 ```
 
-### Asset Naming
+## Asset Naming
 
 | Asset Type | Asset Name |
 | - | - |
@@ -115,7 +112,7 @@ Models
 | Vector Field | vf |
 | Vertex Animation Texture | vat |
 
-### Code Style
+## Code Style
 
 | Language Concept | Convention |
 | - | - |
