@@ -115,7 +115,7 @@ replace github.com/adcimon/mymodule => ../mymodule
 ### Windows
 
 In order to use CGO on Windows a gcc compiler is needed.
-1. Download a MinGW-W64 installer from [MinGW-W64-builds](http://mingw-w64.org/doku.php/download/mingw-builds).
+1. Download a [MinGW-W64](https://www.mingw-w64.org/) installer from [MinGW-W64 files](https://sourceforge.net/projects/mingw-w64/files/).
 2. Install MinGW-W64 with `Architecture` to `x86_64` and `Threads` to `win32`.
 3. Add `mingw64/bin` to the PATH environment variable.
 
