@@ -15,3 +15,10 @@
 | scp -r file user@ip:path | Secure copy files or directories between 2 computers.                                |
 | systeminfo               | Displays detailed configuration information about the computer and operating system. |
 | $env:name="value"        | Set an environment variable.                                                         |
+
+## PowerShell
+
+PowerShell script `ps1` cannot be loaded because running scripts is disabled on this system.
+* Run PowerShell as administrator by clicking "Run as Administrator".
+* Get the current execution policy with the command `Get-ExecutionPolicy`, the value would be `Restricted`.
+* Set the execution policy with the command `Set-ExecutionPolicy RemoteSigned` and type "Y".
