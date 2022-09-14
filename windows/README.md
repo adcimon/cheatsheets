@@ -11,7 +11,8 @@
 | cd                       | Change directory.                                                                    |
 | cls<br>clear             | Clear the console.                                                                   |
 | dir<br>ls                | List files and directories.                                                          |
-| set                      | List the environment variables.                                                      |
+| dir env:<br>ls env:      | List the environment variables.                                                      |
+| set                      | Set an environment variable.                                                         |
 | scp -r file user@ip:path | Secure copy files or directories between 2 computers.                                |
 | systeminfo               | Displays detailed configuration information about the computer and operating system. |
 | $env:name="value"        | Set an environment variable.                                                         |
