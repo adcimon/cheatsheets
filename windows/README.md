@@ -23,3 +23,9 @@ PowerShell script `ps1` cannot be loaded because running scripts is disabled on 
 * Run PowerShell as administrator by clicking "Run as Administrator".
 * Get the current execution policy with the command `Get-ExecutionPolicy`, the value would be `Restricted`.
 * Set the execution policy with the command `Set-ExecutionPolicy RemoteSigned` and type "Y".
+
+Redirect `stdin` and `stdout`.
+```
+Get-Content input.txt | program.exe > output.txt
+Start-Process "program.exe" -RedirectStandardInput "input.txt" -RedirectStandardOutput "output.txt" -NoNewWindow -Wait
+```
