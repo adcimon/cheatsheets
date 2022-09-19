@@ -4,6 +4,25 @@
 
 [Linux](https://www.linux.org/) is a family of open-source Unix-like operating systems based on the Linux kernel.
 
+## Environment Variables
+
+Environment variable with command scope.
+```
+FOO=bar command
+
+export FOO=bar
+command
+unset FOO
+```
+
+Environment variable with terminal scope.
+```
+export FOO=bar
+command0
+command1
+...
+```
+
 ## Terminal
 
 | Command                  | Description                                           |
