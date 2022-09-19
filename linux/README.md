@@ -9,9 +9,10 @@
 Environment variable with command scope.
 ```
 FOO=bar command
-
 FOO=bar; command
+```
 
+```
 export FOO=bar
 command
 unset FOO
