@@ -36,6 +36,11 @@ Start in development mode.
 livekit-server --dev
 ```
 
+Create a room join token.
+```
+LIVEKIT_KEYS="<KEY>: <SECRET>" ./livekit-server create-join-token --room <ROOM> --identity <USER>
+```
+
 ## CLI
 
 LiveKit has the command-line interface [livekit-cli](https://github.com/livekit/livekit-cli) that can be used to access server APIs, create tokens, create and join rooms, generate test traffic, etc.
