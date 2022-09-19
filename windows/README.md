@@ -4,7 +4,7 @@
 
 [Windows](https://www.microsoft.com/windows/) is a group of several proprietary graphical operating system families developed and marketed by [Microsoft](https://www.microsoft.com/).
 
-## Terminal
+## Commands
 
 | Command                  | Description                                                                          |
 |--------------------------|--------------------------------------------------------------------------------------|
