@@ -29,4 +29,4 @@
 | Stable Diffusion [DreamBooth](https://dreambooth.github.io/) | [Xavier Xiao](https://github.com/XavierXiao) | https://github.com/XavierXiao/Dreambooth-Stable-Diffusion |
 | Stable Diffusion Videos | [Nathan Raw](https://github.com/nateraw) | https://github.com/nateraw/stable-diffusion-videos<br>https://replicate.com/nateraw/stable-diffusion-videos |
 | Stable Diffusion Animation | [Andreas Jansson](https://github.com/andreasjansson) | https://github.com/andreasjansson/cog-stable-diffusion<br>https://replicate.com/andreasjansson/stable-diffusion-animation |
-| text-to-pokemon | [LambdaLabs](https://lambdalabs.com/) | https://github.com/LambdaLabsML/lambda-diffusers/tree/main/notebooks<br>https://replicate.com/lambdal/text-to-pokemon |
+| Text-to-pokemon | [LambdaLabs](https://lambdalabs.com/) | https://github.com/LambdaLabsML/lambda-diffusers/tree/main/notebooks<br>https://replicate.com/lambdal/text-to-pokemon |
