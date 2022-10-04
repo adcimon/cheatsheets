@@ -1,4 +1,5 @@
 Fields
+* [Artificial Intelligence](https://adcimon.github.io/cheatsheets/artificial-intelligence/)
 * [Color](https://adcimon.github.io/cheatsheets/color/)
 * [Computer Graphics](https://adcimon.github.io/cheatsheets/computer-graphics/)
 * [Cryptography](https://adcimon.github.io/cheatsheets/cryptography/)
