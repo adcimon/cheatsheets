@@ -6,6 +6,7 @@
 
 * [Machine Learning](#machine-learning)
 * [Art Generation](#art-generation)
+  * [Text-to-image](#text-to-image)
 
 ## Machine Learning
 
