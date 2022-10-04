@@ -16,7 +16,7 @@
 
 [Artificial intelligence art](https://en.wikipedia.org/wiki/Artificial_intelligence_art) refers to any artwork created through the use of artificial intelligence.
 
-### Text-to-Image
+### Text-to-image
 
 [Text-to-image](https://en.wikipedia.org/wiki/Text-to-image_model) algorithms and models allow to produce images from text prompts.
 
