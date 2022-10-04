@@ -9,4 +9,8 @@
 
 ## Machine Learning
 
+[Machine learning](https://en.wikipedia.org/wiki/Machine_learning) is a field whose goal is to develop algorithms that allow computers to learn from data.
+
 ## Art Generation
+
+[Artificial intelligence art](https://en.wikipedia.org/wiki/Artificial_intelligence_art) refers to any artwork created through the use of artificial intelligence.
