@@ -20,9 +20,9 @@
 
 [Text-to-image](https://en.wikipedia.org/wiki/Text-to-image_model) algorithms and models allow to produce images from text prompts.
 
-| Model | Owner |
-|---|---|
-| [Stable Diffusion](https://github.com/CompVis/stable-diffusion) | [StabilityAI](https://stability.ai/) |
-| [DALL-E 2](https://openai.com/dall-e-2/) | [OpenAI](https://openai.com/) |
-| [Imagen](https://imagen.research.google/) | [Google](https://www.google.com/) |
-| [Midjourney](https://www.midjourney.com/) | [Midjourney](https://www.midjourney.com/) |
+| Model | Owner | Code |
+|---|---|---|
+| [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) | [StabilityAI](https://stability.ai/) | https://github.com/CompVis/stable-diffusion |
+| [DALL-E 2](https://openai.com/dall-e-2/) | [OpenAI](https://openai.com/) | - |
+| [Imagen](https://imagen.research.google/) | [Google](https://www.google.com/) | - |
+| [Midjourney](https://www.midjourney.com/) | [Midjourney](https://www.midjourney.com/) | - |
