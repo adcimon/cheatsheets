@@ -20,7 +20,7 @@
 
 [Text-to-image](https://en.wikipedia.org/wiki/Text-to-image_model) algorithms and models allow to produce images from text prompts.
 
-| Model | Owner | Links |
+| Model | Source | Links |
 |---|---|---|
 | [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) | [StabilityAI](https://stability.ai/) | https://github.com/CompVis/stable-diffusion<br>https://github.com/sd-webui/stable-diffusion-webui<br>https://github.com/cmdr2/stable-diffusion-ui<br>https://nmkd.itch.io/t2i-gui<br>https://lexica.art/ |
 | [DALL-E 2](https://en.wikipedia.org/wiki/DALL-E) | [OpenAI](https://openai.com/) | https://openai.com/dall-e-2/ |
