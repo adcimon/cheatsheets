@@ -1,6 +1,6 @@
 # Brainstorm
 
-[Brainstorm](https://www.brainstorm3d.com/) Brainstorm is a specialist company dedicated to providing industry-leading real-time 3D graphics and virtual set solutions for broadcast, feature film production and corporate presentations.
+[Brainstorm](https://www.brainstorm3d.com/) is a specialist company dedicated to providing industry-leading real-time 3D graphics and virtual set solutions for broadcast, feature film production and corporate presentations.
 
 ## Plugins
 
