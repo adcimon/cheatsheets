@@ -11,3 +11,7 @@ Run plugin at program start.
 Run plugin when the layout is loaded.
 1. Go to `C:\Program Files\Brainstorm\Suite 5.0\share\presets\modes\plugins`
 2. Copy the plugin.
+
+Add script to the `File/Scripts` menu.
+1. Go to `C:\Users\<USER>\Documents\Brainstorm\<PRODUCT>\Scripts`.
+2. Copy the script.
