@@ -201,6 +201,32 @@ It generates C header and source files into the `_obj` directory.
 
 ## More
 
+### Set string variable at build time
+
+The [Go linker](https://pkg.go.dev/cmd/link) has an option to set the value of an uninitialised string variable:
+```
+-X importpath.name=value
+  Set the value of the string variable in importpath named name to
+```
+
+For example:
+```
+package main
+
+import "log"
+
+var version string
+
+func main() {
+    log.Println(version)
+}
+```
+
+Setting the `ldflags`:
+```
+go run -ldflags "-X main.version=1.0.0" main.go
+```
+
 ### Embed icon and metadata into exe
 
 1. Install MinGW.
