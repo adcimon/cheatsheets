@@ -117,14 +117,19 @@ a(bc)*
 a(bc){2,5}
 ```
 
-A string that doesn't have a character from `a to z` or from `A to Z`.
+A string that doesn't contain characters from `a` to `z` or from `A` to `Z`.
 ```
 [^a-zA-Z]
 ```
 
-A string that doesn't have the character `-`.
+A string that doesn't contain the character `-`.
 ```
 [^-]
+```
+
+A string that doesn't contain the characters `<>`.
+```
+[^<>]
 ```
 
 ## References
