@@ -127,7 +127,7 @@ A string that doesn't contain the character `-`.
 [^-]
 ```
 
-A string that doesn't contain the characters `<` `>`.
+A string that doesn't contain the characters `<>`.
 ```
 [^<>]
 ```
