@@ -70,7 +70,7 @@ List of packages.
 |---|---|
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
 | [Electron](https://github.com/electron/electron) | npm install --save-dev electron |
-| [Electron Forge](https://github.com/electron-userland/electron-forge) | npm install --save-dev @electron-forge/cli |
+| [Electron Builder](https://github.com/electron-userland/electron-builder) | npm install --save-dev @electron-builder |
 | [fs-extra](https://github.com/jprichardson/node-fs-extra) | npm install fs-extra |
 | [ms](https://github.com/vercel/ms) | npm install ms |
 | [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
