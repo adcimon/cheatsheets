@@ -4,7 +4,12 @@
 
 [Windows](https://www.microsoft.com/windows/) is a group of several proprietary graphical operating system families developed and marketed by [Microsoft](https://www.microsoft.com/).
 
-## Commands
+## Index
+
+* [Shell](#shell)
+* [File System](#file-system)
+
+## Shell
 
 | Command                  | Description                                                                          |
 |--------------------------|--------------------------------------------------------------------------------------|
@@ -17,15 +22,20 @@
 | systeminfo               | Displays detailed configuration information about the computer and operating system. |
 | $env:name="value"        | Set an environment variable.                                                         |
 
-## PowerShell
-
 PowerShell script `ps1` cannot be loaded because running scripts is disabled on this system.
 * Run PowerShell as administrator by clicking "Run as Administrator".
 * Get the current execution policy with the command `Get-ExecutionPolicy`, the value would be `Restricted`.
 * Set the execution policy with the command `Set-ExecutionPolicy RemoteSigned` and type "Y".
 
-Redirect `stdin` and `stdout`.
+PowerShell redirect `stdin` and `stdout`.
 ```
 Get-Content input.txt | program.exe > output.txt
 Start-Process "program.exe" -RedirectStandardInput "input.txt" -RedirectStandardOutput "output.txt" -NoNewWindow -Wait
+```
+
+## File System
+
+Hosts file maps human-friendly hostnames to numerical Internet Protocol (IP) addresses.
+```
+C:\Windows\System32\Drivers\etc\hosts
 ```
