@@ -72,8 +72,7 @@ go env -w GO111MODULE=on
 
 Create a new module.
 ```
-go mod init
-go mod init <name>
+go mod init <module>
 ```
 
 Add a dependency.
