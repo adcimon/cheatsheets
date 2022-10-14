@@ -6,7 +6,8 @@
 
 ### Inconsistent line endings
 
-* Edit -> Find and Replace -> Quick Replace -> Use Regular Expressions<br>
+* Go to `Edit → Find and Replace → Quick Replace`.
+* Check `Use Regular Expressions`.
 * `(?<!\r)\n` for `\r\n`
 
 ### Hide vertical dotted indentation
