@@ -79,7 +79,7 @@ Add a dependency.
 ```
 go get <module>
 ```
-If the module is private then add the repository to the `GOPRIVATE` environment variable: `go env -w GOPRIVATE=github.com/<user>/<module>`.
+* If the module is private then `go env -w GOPRIVATE=github.com/<user>/<module>`.
 
 Add a local dependency (modify the `go.mod` file).
 ```
