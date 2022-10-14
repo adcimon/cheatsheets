@@ -70,26 +70,31 @@ Activate modules.
 go env -w GO111MODULE=on
 ```
 
-Create a new module, initializing the `go.mod` file.
+Create a new module.
 ```
 go mod init
 go mod init <name>
 ```
 
-Add a dependency to the module.
+Add a dependency.
 ```
-go get
+go get <module>
+```
+If the module is private then add the repository to the `GOPRIVATE` environment variable: `go env -w GOPRIVATE=github.com/<user>/<module>`.
+
+Add a local dependency (modify the `go.mod` file).
+```
+replace github.com/<user>/mymodule => ../mymodule
 ```
 
-Update all modules and their dependencies.
+Update a dependency to the latest commit or branch.
+```
+go get -v -u github.com/<user>/mymodule@master
+```
+
+Update all dependencies.
 ```
 go get -u ./...
-```
-
-Update a module to the latest commit or to a branch.
-```
-go get -v -u github.com/user/repo@master
-go get -v -u github.com/user/repo@develop
 ```
 
 Remove unused dependencies.
@@ -97,15 +102,16 @@ Remove unused dependencies.
 go mod tidy
 ```
 
-List the module dependencies.
+List dependencies.
 ```
 go list -m all
 go list -u -m all
 ```
 
-Import local module (modify the `go.mod` file to find the module in the local file system).
+Version a git module.
 ```
-replace github.com/adcimon/mymodule => ../mymodule
+git tag <version>
+git push origin <version>
 ```
 
 ## CGO
