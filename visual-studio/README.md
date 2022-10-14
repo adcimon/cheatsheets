@@ -8,7 +8,7 @@
 
 * Go to `Edit → Find and Replace → Quick Replace`.
 * Check `Use Regular Expressions`.
-* `(?<!\r)\n` for `\r\n`
+* Replace `(?<!\r)\n` for `\r\n`
 
 ### Hide vertical dotted indentation
 
