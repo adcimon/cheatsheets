@@ -11,7 +11,7 @@
 
 ## Publish
 
-The `dotnet publish` command ([docs](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish)) publishes the application and its dependencies to a folder for deployment to a hosting system.
+The [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish) command publishes the application and its dependencies to a folder for deployment to a hosting system.
 
 ## Special Folders
 
