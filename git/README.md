@@ -9,12 +9,12 @@
 * [Configuration](#configuration)
 * [Repositories](#repositories)
 * [Branches](#branches)
+* [Tags](#tags)
 * [Make changes](#make-changes)
 * [Revert changes](#revert-changes)
 * [Stash changes](#stash-changes)
 * [Synchronize changes](#synchronize-changes)
 * [Show changes](#show-changes)
-* [Tags](#tags)
 * [More](#more)
 
 ## Configuration
@@ -63,6 +63,31 @@ git checkout <branch>
 Combine the specified branch's history into the current branch.
 ```
 git merge <branch>
+```
+
+## Tags
+
+Create a tag.
+```
+git tag <tag>
+```
+
+Upload a tag to the remote repository.
+```
+git push origin <tag>
+```
+
+Delete a remote tag.
+```
+git push --delete origin <tag>
+```
+
+Move a tag to a different commit.
+```
+git tag -d <tag>
+git push origin :refs/tags/<tag>
+git tag <tag>
+git push origin <tag>
 ```
 
 ## Make changes
@@ -185,21 +210,6 @@ git diff <branch1>...<branch2>
 Show metadata and content changes of the specified commit.
 ```
 git show <commit>
-```
-
-## Tags
-
-Delete a remote tag.
-```
-git push --delete origin <tag>
-```
-
-Move a tag to a different commit.
-```
-git tag -d <tag>
-git push origin :refs/tags/<tag>
-git tag <tag>
-git push origin <tag>
 ```
 
 ## More
