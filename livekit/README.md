@@ -43,7 +43,7 @@ LIVEKIT_KEYS="<KEY>: <SECRET>" ./livekit-server create-join-token --room <ROOM> 
 
 ## CLI
 
-LiveKit has the command-line interface [livekit-cli](https://github.com/livekit/livekit-cli) that can be used to access server APIs, create tokens, create and join rooms, generate test traffic, etc.
+The [livekit-cli](https://github.com/livekit/livekit-cli) command-line interface can be used to access server APIs, create tokens, create and join rooms, generate test traffic, etc.
 
 Create a token.
 ```
