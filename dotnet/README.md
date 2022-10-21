@@ -16,13 +16,13 @@
 | `C:/Users/<User>/Videos` | `MyVideos` |
 | `C:/Users/<User>/Desktop` | `Desktop` |
 | `C:/Users/<User>/Favorites` | `Favorites` |
+| `C:/Users/<User>/AppData/Roaming` | `ApplicationData` |
+| `C:/Users/<User>/AppData/Roaming/Microsoft/Windows/Start Menu` | `StartMenu` |
+| `C:/Users/<User>/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup` | `Startup` |
 | `C:/Users/Public/Documents` | `CommonDocuments` |
 | `C:/Users/Public/Pictures` | `CommonPictures` |
 | `C:/Users/Public/Music` | `CommonMusic` |
 | `C:/Users/Public/Videos` | `CommonVideos` |
-| `C:/Users/<User>/AppData/Roaming` | `ApplicationData` |
-| `C:/Users/<User>/AppData/Roaming/Microsoft/Windows/Start Menu` | `StartMenu` |
-| `C:/Users/<User>/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup` | `Startup` |
 | `C:/Program Files` | `ProgramFiles` |
 | `C:/Program Files/Common Files` | `CommonProgramFiles` |
 | `C:/ProgramData` | `CommonApplicationData` |
