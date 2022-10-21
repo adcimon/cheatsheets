@@ -12,7 +12,7 @@
 
 ## Dotnet
 
-The [dotnet](https://learn.microsoft.com/en-us/dotnet/core/tools/) command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications.
+The [dotnet](https://learn.microsoft.com/en-us/dotnet/core/tools/) command-line interface is a cross-platform toolchain for developing, building, running, and publishing .NET applications.
 
 ### Publish
 
