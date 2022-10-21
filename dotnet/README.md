@@ -15,7 +15,9 @@ The [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-
 
 ## Special Folders
 
-[Special folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder) are system-defined paths. The function `System.Environment.GetFolderPath(System.Environment.SpecialFolder)` returns the path of a special folder. The enum `System.Environment.SpecialFolder` is a list of special folders constants.
+[Special folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder) are system-defined paths.
+* The function `System.Environment.GetFolderPath(System.Environment.SpecialFolder)` returns the path of a special folder.
+* The enum `System.Environment.SpecialFolder` is a list of special folders constants.
 
 | Path | Name |
 |---|---|
