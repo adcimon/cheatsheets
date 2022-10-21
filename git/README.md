@@ -14,6 +14,7 @@
 * [Stash changes](#stash-changes)
 * [Synchronize changes](#synchronize-changes)
 * [Show changes](#show-changes)
+* [Tags](#tags)
 * [More](#more)
 
 ## Configuration
@@ -186,12 +187,22 @@ Show metadata and content changes of the specified commit.
 git show <commit>
 ```
 
-## More
+## Tags
 
 Delete a remote tag.
 ```
 git push --delete origin <tag>
 ```
+
+Move a tag to a different commit.
+```
+git tag -d <tag>
+git push origin :refs/tags/<tag>
+git tag <tag>
+git push origin <tag>
+```
+
+## More
 
 Large file storage.
 ```
