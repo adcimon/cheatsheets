@@ -15,7 +15,7 @@
 * Go to `Tools → Options → Text Editor`.
 * Uncheck `Show structure guide lines`.
 
-### Run Debug as Administrator
+### Run debug as administrator
 
 Go to `app.manifest` → `<requestedPrivileges>` and add the execution level requirement:
 ```
