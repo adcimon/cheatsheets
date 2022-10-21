@@ -4,7 +4,16 @@
 
 [.NET](https://en.wikipedia.org/wiki/.NET) is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. The project is primarily developed by Microsoft employees by way of the [.NET Foundation](https://en.wikipedia.org/wiki/.NET_Foundation), and released under the MIT License.
 
-### Special Folders
+## Index
+
+* [Publish](#publish)
+* [Special Folders](#special-folders)
+
+## Publish
+
+The `dotnet publish` command ([docs](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish)) publishes the application and its dependencies to a folder for deployment to a hosting system.
+
+## Special Folders
 
 [Special folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder) are system-defined paths. The function `System.Environment.GetFolderPath(System.Environment.SpecialFolder)` returns the path of a special folder. The enum `System.Environment.SpecialFolder` is a list of special folders constants.
 
