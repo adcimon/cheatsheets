@@ -70,14 +70,10 @@ git merge <branch>
 Create a tag.
 ```
 git tag <tag>
-```
-
-Upload a tag to the remote repository.
-```
 git push origin <tag>
 ```
 
-Delete a remote tag.
+Delete a tag.
 ```
 git push --delete origin <tag>
 ```
