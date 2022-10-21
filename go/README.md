@@ -96,7 +96,7 @@ Update all dependencies.
 go get -u ./...
 ```
 
-Download dependencies and remove unused ones.
+Download new dependencies and remove unused ones.
 ```
 go mod tidy
 ```
