@@ -14,6 +14,7 @@
 * [Revert changes](#revert-changes)
 * [Synchronize changes](#synchronize-changes)
 * [Show changes](#show-changes)
+* [More](#more)
 
 ## Configuration
 
@@ -171,4 +172,11 @@ hg log --follow <file>
 Show current commit changeset.
 ```
 hg id -i
+```
+
+## More
+
+Ignore SSL certificate error `error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)`.
+```
+--insecure
 ```
