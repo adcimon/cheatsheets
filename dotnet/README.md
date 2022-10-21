@@ -6,10 +6,15 @@
 
 ## Index
 
-* [Publish](#publish)
+* [Dotnet](#dotnet)
+  * [Publish](#publish)
 * [Special Folders](#special-folders)
 
-## Publish
+## Dotnet
+
+The command-line interface (CLI) [dotnet](https://learn.microsoft.com/en-us/dotnet/core/tools/) is a cross-platform toolchain for developing, building, running, and publishing .NET applications.
+
+### Publish
 
 The [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish) command publishes the application and its dependencies to a folder for deployment to a hosting system.
 
