@@ -176,7 +176,7 @@ hg id -i
 
 ## More
 
-Ignore SSL certificate error `error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate`.
+Ignore SSL certificate error `[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate`.
 ```
 --insecure
 ```
