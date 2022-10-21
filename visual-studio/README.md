@@ -15,6 +15,11 @@
 * Go to `Tools → Options → Text Editor`.
 * Uncheck `Show structure guide lines`.
 
+### Add manifest file
+
+* Right click on `Solution Explorer → <Project> → Add → New Item → Application Manifest File`.
+* The file `app.manifest` will be created.
+
 ### Run debug as administrator
 
 Go to `app.manifest` → `<requestedPrivileges>` and add the execution level requirement:
