@@ -113,6 +113,11 @@ git tag <version>
 git push origin <version>
 ```
 
+Clean the module cache.
+```
+go clean -modcache
+```
+
 ## CGO
 
 [CGO](https://golang.org/pkg/cmd/cgo/) enables the creation of Go packages that call C code.
