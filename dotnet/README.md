@@ -24,8 +24,11 @@
 | `C:/Program Files` | `ProgramFiles` |
 | `C:/Program Files/Common Files` | `CommonProgramFiles` |
 | `C:/ProgramData` | `CommonApplicationData` |
-| `C:/ProgramData/Microsoft/Windows/Start Menu/Programs` | `CommonPrograms` |
+| `C:/Users/<User>/AppData/Roaming/Microsoft/Windows/Start Menu` | `StartMenu` |
+| `C:/Users/<User>/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup` | `Startup` |
 | `C:/ProgramData/Microsoft/Windows/Start Menu` | `CommonStartMenu` |
+| `C:/ProgramData/Microsoft/Windows/Start Menu/Programs` | `CommonPrograms` |
 | `C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Startup` | `CommonStartup` |
 | `C:/WINDOWS/` | `Windows` |
 | `C:/WINDOWS/system32` | `System` |
+| `C:/WINDOWS/fonts` | `Fonts` |
