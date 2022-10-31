@@ -49,6 +49,28 @@ IHost host = Host.CreateDefaultBuilder(args)
     .Build();
 ```
 
+Once the worker service is built, the windows service can be controlled using the Service Control application.
+
+[Create](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-create)
+```
+sc.exe create "My Service" binpath="path/to/service"
+```
+
+Start
+```
+sc.exe start "My Service"
+```
+
+Stop
+```
+sc.exe stop "My Service"
+```
+
+[Delete](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-delete)
+```
+sc.exe delete "My Service"
+```
+
 ## Special Folders
 
 [Special folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder) are system-defined paths.
