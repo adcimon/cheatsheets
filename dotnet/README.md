@@ -53,7 +53,7 @@ Once the worker service is built, the windows service can be controlled using th
 
 * [Create](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-create)
 ```
-sc.exe create "My Service" binpath="path/to/service"
+sc.exe create "My Service" binpath="path/to/service.exe"
 ```
 
 * Start
