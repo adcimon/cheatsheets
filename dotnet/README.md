@@ -51,22 +51,22 @@ IHost host = Host.CreateDefaultBuilder(args)
 
 Once the worker service is built, the windows service can be controlled using the Service Control application.
 
-[Create](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-create)
+* [Create](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-create)
 ```
 sc.exe create "My Service" binpath="path/to/service"
 ```
 
-Start
+* Start
 ```
 sc.exe start "My Service"
 ```
 
-Stop
+* Stop
 ```
 sc.exe stop "My Service"
 ```
 
-[Delete](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-delete)
+* [Delete](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-delete)
 ```
 sc.exe delete "My Service"
 ```
