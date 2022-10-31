@@ -18,6 +18,16 @@ The [dotnet](https://learn.microsoft.com/en-us/dotnet/core/tools/) command-line 
 
 The [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish) command publishes the application and its dependencies to a folder for deployment to a hosting system.
 
+| Argument | Description |
+|---|---|
+| `-p:PublishSingleFile=true` | Packages into a single-file executable. |
+| `--arch` | Target architecture.<br>`x64` |
+| `--configuration` | Build configuration.<br>`Debug` `Release` |
+| `--framework` | Target framework.<br>`net6.0` |
+| `--output` | Output directory.<br>`Build` |
+| `--os` | Target operating system.<br>`win` |
+| `--self-contained` | Packages the .NET runtime with the application so the runtime doesn't need to be installed on the target machine.<br>`true` `false` |
+
 ## Special Folders
 
 [Special folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder) are system-defined paths.
