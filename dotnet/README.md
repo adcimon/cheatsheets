@@ -33,10 +33,10 @@ The [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-
 
 [Worker services](https://learn.microsoft.com/en-us/dotnet/core/extensions/workers) are applications that can be used to perform processor-intensive tasks, queue operations in the background or schedule operations to execute at a later time. The project template `Worker Service Template` is available in Visual Studio and dotnet CLI.
 
-Windows services are supported.
-* Install the NuGet package `Microsoft.Extensions.Hosting.WindowsServices`.
-* Modify the program to use the windows service:
-```
+Windows services are also supported.
+1. Install the NuGet package `Microsoft.Extensions.Hosting.WindowsServices`.
+2. Modify the program to use the windows service:
+```csharp
 IHost host = Host.CreateDefaultBuilder(args)
     .UseWindowsService(options =>
     {
