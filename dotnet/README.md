@@ -8,6 +8,7 @@
 
 * [Dotnet](#dotnet)
   * [Publish](#publish)
+* [Worker Services](#worker-services)
 * [Special Folders](#special-folders)
 
 ## Dotnet
@@ -27,6 +28,26 @@ The [dotnet publish](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-
 | `--output` | Output directory.<br>`Build` |
 | `--os` | Target operating system.<br>`win` |
 | `--self-contained` | Packages the .NET runtime with the application so the runtime doesn't need to be installed on the target machine.<br>`true` `false` |
+
+## Worker Services
+
+[Worker services](https://learn.microsoft.com/en-us/dotnet/core/extensions/workers) are applications that can be used to perform processor-intensive tasks, queue operations in the background or schedule operations to execute at a later time. The project template `Worker Service Template` is available in Visual Studio and dotnet CLI.
+
+Windows services are supported.
+* Install the NuGet package `Microsoft.Extensions.Hosting.WindowsServices`.
+* Modify the program to use the windows service:
+```
+IHost host = Host.CreateDefaultBuilder(args)
+    .UseWindowsService(options =>
+    {
+        options.ServiceName = "My Windows Service";
+    })
+    .ConfigureServices(services =>
+    {
+        services.AddHostedService<Worker>();
+    })
+    .Build();
+```
 
 ## Special Folders
 
