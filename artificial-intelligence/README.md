@@ -22,13 +22,10 @@
 
 | Model | Source | Links |
 |---|---|---|
-| [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) | [StabilityAI](https://stability.ai/) | https://github.com/CompVis/stable-diffusion<br>https://github.com/sd-webui/stable-diffusion-webui<br>https://nmkd.itch.io/t2i-gui<br>https://lexica.art/ |
+| [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) | [StabilityAI](https://stability.ai/) | https://github.com/CompVis/stable-diffusion<br>https://github.com/sd-webui/stable-diffusion-webui<br>https://nmkd.itch.io/t2i-gui<br>https://github.com/XavierXiao/Dreambooth-Stable-Diffusion<br>https://github.com/nateraw/stable-diffusion-videos<br>https://github.com/andreasjansson/cog-stable-diffusion<br>https://lexica.art/ |
 | [DALL-E 2](https://en.wikipedia.org/wiki/DALL-E) | [OpenAI](https://openai.com/) | https://openai.com/dall-e-2/ |
 | [Midjourney](https://www.midjourney.com/) | [Midjourney](https://www.midjourney.com/) | https://www.midjourney.com/ |
 | [Imagen](https://imagen.research.google/) | [Google](https://www.google.com/) | https://imagen.research.google/ |
-| Stable Diffusion [DreamBooth](https://dreambooth.github.io/) | [Xavier Xiao](https://github.com/XavierXiao) | https://github.com/XavierXiao/Dreambooth-Stable-Diffusion |
-| Stable Diffusion Videos | [Nathan Raw](https://github.com/nateraw) | https://github.com/nateraw/stable-diffusion-videos<br>https://replicate.com/nateraw/stable-diffusion-videos |
-| Stable Diffusion Animation | [Andreas Jansson](https://github.com/andreasjansson) | https://github.com/andreasjansson/cog-stable-diffusion<br>https://replicate.com/andreasjansson/stable-diffusion-animation |
 
 ### Face Restoration
 
