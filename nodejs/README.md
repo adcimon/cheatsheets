@@ -8,9 +8,9 @@
 
 * [Install](#install)
 * [Packages](#packages)
-* [Electron](#electron)
-* [Nest.js](#nestjs)
-* [Tailwind CSS](#tailwind-css)
+  * [Electron](#electron)
+  * [Nest.js](#nestjs)
+  * [Tailwind CSS](#tailwind-css)
 
 # Install
 
@@ -90,7 +90,7 @@ List of packages.
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
 
-## Electron
+### Electron
 
 [Electron](https://www.electronjs.org/) is a free and open-source software framework developed and maintained by GitHub designed to create desktop applications using web technologies which are rendered using a flavor of the [Chromium](https://www.chromium.org/) browser engine, and a backend using the [Node.js](https://nodejs.org/) runtime environment.
 
@@ -107,7 +107,7 @@ Build with [Electron Builder](https://www.electron.build/).
 electron-builder --win [nsis|nsis-web|portable]
 ```
 
-## Nest.js
+### Nest.js
 
 [Nest.js](https://nestjs.com/) is a framework for building efficient, scalable web applications.
 
@@ -143,7 +143,7 @@ npm run start:debug
 npm run start:prod
 ```
 
-## Tailwind CSS
+### Tailwind CSS
 
 [Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework for rapidly building custom user interfaces.
 
