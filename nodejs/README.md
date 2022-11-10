@@ -102,11 +102,9 @@ npm init
 npm install --save-dev electron
 ```
 
-Build with [Electron Forge](https://www.electronforge.io/).
+Build with [Electron Builder](https://www.electron.build/).
 ```
-npm install --save-dev @electron-forge/cli
-npx electron-forge import
-npm run make
+electron-builder --win [nsis|nsis-web|portable]
 ```
 
 ## Nest.js
