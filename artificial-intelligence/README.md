@@ -20,7 +20,7 @@
 
 [Text-to-image](https://en.wikipedia.org/wiki/Text-to-image_model) algorithms and models allow to produce images from text prompts.
 
-| Model | Links |
+| Model | Link |
 |---|---|
 | [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) | https://github.com/CompVis/stable-diffusion<br>https://github.com/sd-webui/stable-diffusion-webui<br>https://nmkd.itch.io/t2i-gui<br>https://github.com/XavierXiao/Dreambooth-Stable-Diffusion<br>https://github.com/nateraw/stable-diffusion-videos<br>https://github.com/andreasjansson/cog-stable-diffusion<br>https://lexica.art/ |
 | [DALL-E 2](https://en.wikipedia.org/wiki/DALL-E) | https://openai.com/dall-e-2/ |
@@ -29,6 +29,6 @@
 
 ### Face Restoration
 
-| Model | Source |
+| Model | Link |
 |---|---|
-| https://github.com/TencentARC/GFPGAN | Tencent |
+| GFPGAN | https://github.com/TencentARC/GFPGAN |
