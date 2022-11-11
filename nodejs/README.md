@@ -65,6 +65,11 @@ Uninstall a package.
 npm uninstall <package>
 ```
 
+List global packages.
+```
+npm list -g
+```
+
 List of packages.
 | Packages | Install |
 |---|---|
