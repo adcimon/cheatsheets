@@ -41,7 +41,7 @@ Update npm.
 npm install -g npm@latest
 ```
 
-Initialize a module directory, creating a `package.json` file.
+Initialize a module directory.
 ```
 npm init
 ```
@@ -55,7 +55,6 @@ npm run --prefix <path/to/package.json> <script>
 
 Install a package.
 ```
-npm install -help
 npm install <package>
 npm install <package>@<version>
 ```
@@ -64,6 +63,18 @@ Uninstall a package.
 ```
 npm uninstall <package>
 ```
+
+Install global package.
+```
+npm install -g <package>
+npm install -g <package>@<version>
+```
+
+Uninstall a global package.
+* Run `npm list -g`.
+* Go to the path `C:\Users\<User>\AppData\Roaming\npm`.
+* Delete all the files of the package.
+* Go to `node_modules` and delete the package.
 
 List global packages.
 ```
