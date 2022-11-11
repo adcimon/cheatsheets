@@ -64,7 +64,7 @@ Uninstall a package.
 npm uninstall <package>
 ```
 
-Install global package.
+Install a global package.
 ```
 npm install -g <package>
 npm install -g <package>@<version>
@@ -76,7 +76,7 @@ Uninstall a global package.
 * Delete the package files.
 * Go to `node_modules` and delete the package.
 
-List global packages.
+List the global packages.
 ```
 npm list -g
 ```
