@@ -58,6 +58,8 @@ hg checkout <branch>
 Combine the specified branch's history into the current branch.
 ```
 hg merge <branch>
+hg commit -m "Merge branch into current branch"
+hg push
 ```
 
 ## Tags
