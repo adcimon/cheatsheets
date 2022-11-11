@@ -72,8 +72,8 @@ npm install -g <package>@<version>
 
 Uninstall a global package.
 * Run `npm list -g`.
-* Go to the path `C:\Users\<User>\AppData\Roaming\npm`.
-* Delete all the files of the package.
+* Go to `C:\Users\<User>\AppData\Roaming\npm`.
+* Delete the package files.
 * Go to `node_modules` and delete the package.
 
 List global packages.
