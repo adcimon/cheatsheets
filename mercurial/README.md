@@ -6,7 +6,7 @@
 
 ## Index
 
-* [Configuration](#configuration)
+* [General](#general)
 * [Repositories](#repositories)
 * [Branches](#branches)
 * [Tags](#tags)
@@ -14,13 +14,18 @@
 * [Revert changes](#revert-changes)
 * [Synchronize changes](#synchronize-changes)
 * [Show changes](#show-changes)
-* [More](#more)
+* [Merge branches](#merge-branches)
 
-## Configuration
+## General
 
 Configure mercurial.
 ```
 hg config --edit
+```
+
+Ignore SSL certificate error `[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate`.
+```
+--insecure
 ```
 
 ## Repositories
@@ -53,13 +58,8 @@ Switch to the specified branch.
 ```
 hg update <branch>
 hg checkout <branch>
-```
 
-Combine the specified branch's history into the current branch.
-```
-hg merge <branch>
-hg commit -m "Merge branch into current branch"
-hg push
+hg update -C <branch>
 ```
 
 ## Tags
@@ -176,9 +176,21 @@ Show current commit changeset.
 hg id -i
 ```
 
-## More
+## Merge Branches
 
-Ignore SSL certificate error `[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate`.
+Merge 2 branches.
 ```
---insecure
+hg merge <branch>
+hg commit -m "Merge branch into current branch"
+hg push
+```
+
+List conflicts.
+```
+hg resolve --list
+```
+
+Resolve a conflict.
+```
+hg resolve --mark <file>
 ```
