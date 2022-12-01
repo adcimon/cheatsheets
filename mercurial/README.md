@@ -132,11 +132,6 @@ Upload all local branch commits.
 hg push
 ```
 
-Push a new branch.
-```
-hg push --new-branch
-```
-
 Update the working directory with all new commits from the corresponding remote branch.
 ```
 hg pull
