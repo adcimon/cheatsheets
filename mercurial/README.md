@@ -176,7 +176,7 @@ Show current commit changeset.
 hg id -i
 ```
 
-## Merge Branches
+## Merge branches
 
 Merge 2 branches.
 ```
