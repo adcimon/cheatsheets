@@ -6,7 +6,7 @@
 
 ## Index
 
-* [Configuration](#configuration)
+* [General](#general)
 * [Repositories](#repositories)
 * [Branches](#branches)
 * [Tags](#tags)
@@ -15,9 +15,9 @@
 * [Stash changes](#stash-changes)
 * [Synchronize changes](#synchronize-changes)
 * [Show changes](#show-changes)
-* [More](#more)
+* [Advanced](#advanced)
 
-## Configuration
+## General
 
 Configure user information.
 ```
@@ -208,7 +208,7 @@ Show metadata and content changes of the specified commit.
 git show <commit>
 ```
 
-## More
+## Advanced
 
 Large file storage.
 ```
