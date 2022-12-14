@@ -14,7 +14,9 @@
 
 # Install
 
-Ubuntu
+A list of available versions can be found in the [releases](https://nodejs.org/en/blog/release/) section of the blog.
+
+Ubuntu.
 ```
 curl -fsSL https://deb.nodesource.com/setup_current.x -o setup_node.sh
 chmod +x setup_node.sh
@@ -22,7 +24,7 @@ chmod +x setup_node.sh
 apt-get install -y nodejs
 ```
 
-Versions
+Versions.
 ```
 https://deb.nodesource.com/setup_current.x
 https://deb.nodesource.com/setup_14.x
