@@ -36,7 +36,7 @@ https://deb.nodesource.com/setup_10.x
 
 ## Packages
 
-[Node Package Manager (npm)](https://www.npmjs.com/) is a package manager for the JavaScript programming language.
+[Node Package Manager (npm)](https://www.npmjs.com/) is the package manager of Node.
 
 Update npm.
 ```
