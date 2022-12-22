@@ -21,6 +21,7 @@ Technologies
 * [Mercurial](https://adcimon.github.io/cheatsheets/mercurial/)
 * [NDI](https://adcimon.github.io/cheatsheets/ndi/)
 * [netstat](https://adcimon.github.io/cheatsheets/netstat/)
+* [NGINX](https://adcimon.github.io/cheatsheets/nginx/)
 * [Node.js](https://adcimon.github.io/cheatsheets/nodejs/)
 * [Python](https://adcimon.github.io/cheatsheets/python/)
 * [tcpdump](https://adcimon.github.io/cheatsheets/tcpdump/)
