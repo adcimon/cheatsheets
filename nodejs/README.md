@@ -83,6 +83,16 @@ List the global packages.
 npm list -g
 ```
 
+Check outdated packages.
+```
+npm outdated
+```
+
+Update packages.
+```
+npm update
+```
+
 List of packages.
 | Packages | Install |
 |---|---|
