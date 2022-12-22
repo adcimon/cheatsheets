@@ -67,6 +67,11 @@ git merge <branch>
 
 ## Tags
 
+List tags.
+```
+git tag -n
+```
+
 Create a tag.
 ```
 git tag <tag>
