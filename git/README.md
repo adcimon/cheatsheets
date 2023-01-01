@@ -19,8 +19,7 @@
 
 ## General
 
-<p align="center">Workflow</p>
-<p align="center"><img align="center" width="50%" height="50%" src="assets/git_workflow.png"></p>
+<p align="center"><img align="center" width="60%" height="60%" src="assets/git_workflow.png"></p>
 
 Configure user information.
 ```
