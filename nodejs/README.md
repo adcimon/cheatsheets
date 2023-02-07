@@ -55,6 +55,11 @@ npm run <script>
 npm run --prefix <path/to/package.json> <script>
 ```
 
+Install all packages.
+```
+npm install
+```
+
 Install a package.
 ```
 npm install <package>
@@ -91,6 +96,11 @@ npm outdated
 Update packages.
 ```
 npm update
+```
+
+Recreate `package-lock.json`.
+```
+npm install --package-lock-only
 ```
 
 List of packages.
