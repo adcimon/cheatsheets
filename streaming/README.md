@@ -41,7 +41,7 @@ List of streaming media servers:
 
 ## Codecs
 
-[Codecs](https://en.wikipedia.org/wiki/Codec) are devices or computer programs which encode or decode data streams or signals.
+[Codecs](https://en.wikipedia.org/wiki/Codec) are devices or computer programs which encode or decode data streams or signals. [Quantization](https://en.wikipedia.org/wiki/Quantization_(signal_processing)) is used to map input values from a large set (often a continuous set) to output values in a countable smaller set (often a finite set). The greater the quantization step, the lower the quality of the encoded video (lower [Peak signal-to-noise ratio (PSNR)](https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio)) and the lower the bitrates. Greater quantization comes with lower computation complexity.
 
 ### H.264
 
