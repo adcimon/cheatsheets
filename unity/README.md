@@ -92,4 +92,5 @@ Add the package.
 
 ## References
 
+* [Unity Best Practices](https://unity.com/how-to)
 * [Serialization Best Practices](https://forum.unity.com/threads/serialization-best-practices-megapost.155352/)
