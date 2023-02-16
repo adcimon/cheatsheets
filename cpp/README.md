@@ -7,7 +7,6 @@
 ## Index
 
 * [Libraries](#libraries)
-* [Pointers](#pointers)
 * [References](#references)
 
 ## Libraries
@@ -26,39 +25,6 @@ When linking is performed while a program is being loaded ([load time](https://e
 Dynamic libraries have 2 types of linking.
 * Implicit. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
 * Explicit. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
-
-## Pointers
-
-A [pointer](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) is a variable that stores the address of another variable.
-
-* `raw pointer`<br>
-
-* `unique_ptr`<br>
-Allows exactly one owner of the underlying pointer. Use as the default choice for POCO unless you know for certain that you require a `shared_ptr`. Can be moved to a new owner, but not copied or shared.
-```
-#include <memory>
-
-...
-
-void MyFunction()
-{    
-    // Create an object and pass it to a unique pointer.
-    std::unique_ptr<MyClass> p(new MyClass());
-
-    // Call a method on the object.
-    p->DoSomething();
-
-    // Pass a reference to a method.
-    ProcessObject(*p);
-}
-// Unique pointer is deleted automatically when function block goes out of scope.
-```
-
-* `shared_ptr`<br>
-Reference-counted smart pointer. Use when you want to assign one raw pointer to multiple owners, for example, when you return a copy of a pointer from a container but want to keep the original. The raw pointer is not deleted until all `shared_ptr` owners have gone out of scope or have otherwise given up ownership. The size is two pointers, one for the object and one for the shared control block that contains the reference count.
-
-* `weak_ptr`<br>
-Special-case smart pointer for use in conjunction with `shared_ptr`. A `weak_ptr` provides access to an object that is owned by one or more `shared_ptr` instances, but does not participate in reference counting. Use when you want to observe an object, but do not require it to remain alive. Required in some cases to break circular references between `shared_ptr` instances.
 
 ## References
 
