@@ -26,6 +26,8 @@ Redirect stdout to a file and stderr to stdout.
 command >out 2>&1
 ```
 
+<br>
+
 | Command                  | Description                                           |
 |--------------------------|-------------------------------------------------------|
 | cd                       | Change directory.                                     |
