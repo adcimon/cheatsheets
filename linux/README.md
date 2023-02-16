@@ -11,19 +11,19 @@
 
 ## Shell
 
-Redirect stdout to a file.
+Redirect `stdout` to a file.
 ```
 command > out
 ```
 
-Redirect stderr to a file.
+Redirect `stderr` to a file.
 ```
 command 2> error
 ```
 
-Redirect stdout to a file and stderr to stdout.
+Redirect `stdout` to a file and `stderr` to `stdout`.
 ```
-command >out 2>&1
+command > out 2> &1
 ```
 
 <br>
