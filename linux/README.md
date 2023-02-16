@@ -11,6 +11,21 @@
 
 ## Shell
 
+Redirect stdout to a file.
+```
+command > out
+```
+
+Redirect stderr to a file.
+```
+command 2> error
+```
+
+Redirect stdout to a file and stderr to stdout.
+```
+command >out 2>&1
+```
+
 | Command                  | Description                                           |
 |--------------------------|-------------------------------------------------------|
 | cd                       | Change directory.                                     |
