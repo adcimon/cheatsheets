@@ -8,6 +8,7 @@
 
 * [Studio Monitor](#studio-monitor)
 * [Discovery Service](#discovery-service)
+* [References](#references)
 
 ## Studio Monitor
 
@@ -75,3 +76,7 @@ By default it runs on port `5959`.
 <p align="center"><img align="center" width="50%" height="50%" src="assets/access_manager.png"></p>
 
 NDI is now using the discovery service instead of mDNS.
+
+## References
+
+* [Networking Best Practice](https://ndi.tv/tools/education/networking/best-practices/networking-best-practice/)
