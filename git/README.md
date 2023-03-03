@@ -205,8 +205,9 @@ List version history for a file, including renames.
 git log --follow <file>
 ```
 
-Show content differences between two branches.
+Show content differences.
 ```
+git diff <file>
 git diff <branch1>...<branch2>
 ```
 
