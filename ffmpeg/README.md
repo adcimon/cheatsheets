@@ -27,6 +27,7 @@
   * [RTSP](#rtsp)
   * [RTMP](#rtmp)
   * [HLS](#hls)
+  * [Dash](#dash)
   * [NDI](#ndi)
   * [Synchronization](#synchronization)
   * [Latency](#latency)
@@ -323,9 +324,21 @@ Play a stream.
 ffplay -i http://<ip>:<port>/<application>/<stream_name>.m3u8
 ```
 
-Download and concatenate the video fragments.
+Download and concatenate the stream video fragments.
 ```
 ffmpeg -protocol_whitelist file,http,https,tcp,tls -i http://<ip>:<port>/<application>/<stream_name>.m3u8 -c copy -bsf:a aac_adtstoasc <output>
+```
+
+Convert an input to `.m3u8` list and `.ts` packets.
+```
+ffmpeg -i <input> -codec: copy -start_number 0 -hls_time 10 -hls_list_size 0 -f hls output.m3u8
+```
+
+### DASH
+
+Play a stream.
+```
+ffplay -i http://<ip>:<port>/<application>/<stream_name>.mpd
 ```
 
 ### NDI
