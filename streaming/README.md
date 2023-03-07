@@ -8,6 +8,7 @@
 * [Media Servers](#media-servers)
 * [Codecs](#codecs)
   * [AVC/H.264](#avc/h.264)
+  * [HEVC/H.265](#hevc/h.265)
 * [Transport](#transport)
   * [RTP](#rtp)
   * [RTSP](#rtsp)
@@ -56,7 +57,7 @@ There are many streaming media servers available, including:
 
 ### AVC/H.264
 
-[Advanced Video Coding (AVC)](https://en.wikipedia.org/wiki/Advanced_Video_Coding), or H.264, is a [video compression standard](https://en.wikipedia.org/wiki/Video_coding_format) based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation). Is the most commonly used format for the recording, compression, and distribution of video content but it is not well suited for the high bandwidth demands of 4K streaming due to the high compression ratios. It has many kinds of [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
+[Advanced Video Coding (AVC)](https://en.wikipedia.org/wiki/Advanced_Video_Coding), also known as H.264, is a [video compression standard](https://en.wikipedia.org/wiki/Video_coding_format) based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation). Is the most commonly used format for the recording, compression, and distribution of video content but it is not well suited for the high bandwidth demands of 4K streaming due to the high compression ratios. It has many kinds of [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
 
 **profile-level-id**
 * The first byte represents `profile_idc`.
@@ -87,6 +88,10 @@ Decoders conforming to the `Constrained Baseline` profile at a specific level sh
   * The first byte `0x64` (100) corresponds to profile `High Profile`.
   * The second byte `0x0c` matchs to `Constrained`.
   * The third byte `0x34` (52) corresponds to level `5.2`.
+
+### HEVC/H.265
+
+[High Efficiency Video Coding (HEVC)](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding), also known as H.265, is a video compression standard designed as a successor to the widely used [AVC/H.264](https://en.wikipedia.org/wiki/Advanced_Video_Coding). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate. It supports resolutions up to 8192x4320, including 8K UHD.
 
 ## Transport
 
