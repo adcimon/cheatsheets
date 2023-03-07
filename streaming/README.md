@@ -7,7 +7,7 @@
 * [Applications](#applications)
 * [Media Servers](#media-servers)
 * [Codecs](#codecs)
-  * [H.264](#h.264)
+  * [AVC/H.264](#avc/h.264)
 * [Transport](#transport)
   * [RTP](#rtp)
   * [RTSP](#rtsp)
@@ -54,9 +54,9 @@ There are many streaming media servers available, including:
 
 [Codecs](https://en.wikipedia.org/wiki/Codec) are devices or computer programs which encode or decode data streams or signals. [Quantization](https://en.wikipedia.org/wiki/Quantization_(signal_processing)) is used to map input values from a large set (often a continuous set) to output values in a countable smaller set (often a finite set). The greater the quantization step, the lower the quality of the encoded video (lower [Peak signal-to-noise ratio (PSNR)](https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio)) and the lower the bitrates. Greater quantization comes with lower computation complexity.
 
-### H.264
+### AVC/H.264
 
-[Advanced Video Coding (AVC)](https://en.wikipedia.org/wiki/Advanced_Video_Coding) or H.264 is a [video compression standard](https://en.wikipedia.org/wiki/Video_coding_format) based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation). There are many kinds of H.264 [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
+[Advanced Video Coding (AVC)](https://en.wikipedia.org/wiki/Advanced_Video_Coding), or H.264, is a [video compression standard](https://en.wikipedia.org/wiki/Video_coding_format) based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation). There are many kinds of H.264 [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
 
 **profile-level-id**
 * The first byte represents `profile_idc`.
