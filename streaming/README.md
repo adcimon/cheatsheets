@@ -4,8 +4,8 @@
 
 ## Index
 
-* [Tools](#tools)
-* [Media Server](#media-server)
+* [Applications](#applications)
+* [Media Servers](#media-servers)
 * [Codecs](#codecs)
   * [H.264](#h.264)
 * [Transport](#transport)
@@ -23,17 +23,20 @@
   * [Scalable Video Coding](#scalable-video-coding)
 * [References](#references)
 
-## Tools
+## Applications
 
+Streaming applications are software programs that allow users to reproduce streams or to stream content over the internet. These applications are designed to facilitate the transmission and playback of video data, making it easy for users to watch audiovisual content from anywhere with an internet connection.
+
+There are many streaming applications available, including:
 * [Open Broadcaster Software (OBS)](https://obsproject.com/)
 * [VLC Media Player](https://www.videolan.org/vlc/)
 * [mpv](https://mpv.io/)
 
-## Media Server
+## Media Servers
 
-[Media servers](https://en.wikipedia.org/wiki/Media_server) are software applications that deliver video and audio content to clients who request it. The most common use of media servers is to deliver [video on demand (VOD)](https://en.wikipedia.org/wiki/Video_on_demand), in which the media server retrieves prerecorded video content from storage and delivers it across the Internet. Live streaming media servers deliver content as it is generated in real time or with only a slight delay.
+[Media servers](https://en.wikipedia.org/wiki/Media_server) are software programs that deliver video and audio content to clients who request it. The most common use of media servers is to deliver [video on demand (VOD)](https://en.wikipedia.org/wiki/Video_on_demand), in which the media server retrieves prerecorded video content from storage and delivers it across the Internet. Live streaming media servers deliver content as it is generated in real time or with only a slight delay.
 
-List of streaming media servers:
+There are many streaming media servers available, including:
 * [AntMedia](https://github.com/ant-media)
 * [Janus](https://github.com/meetecho)
 * [Jitsi](https://github.com/jitsi)
