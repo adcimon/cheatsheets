@@ -91,7 +91,7 @@ Decoders conforming to the `Constrained Baseline` profile at a specific level sh
 
 ### HEVC/H.265
 
-[High Efficiency Video Coding (HEVC)](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding), also known as H.265, is a video compression standard designed as a successor to the widely used [AVC/H.264](https://en.wikipedia.org/wiki/Advanced_Video_Coding). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate. It supports resolutions up to 8192x4320, including 8K UHD.
+[High Efficiency Video Coding (HEVC)](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding), also known as H.265, is a video compression standard designed as a successor to the widely used [AVC](https://en.wikipedia.org/wiki/Advanced_Video_Coding). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate. It supports resolutions up to 8192x4320, including 8K UHD.
 
 ## Transport
 
