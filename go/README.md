@@ -133,7 +133,7 @@ Add a module to the workspace.
 go work use ./<module>
 ```
 
-Replace the remote module version to the local module (edit the `go.work` file).
+Replace the remote module version to the local module one (edit the `go.work` file).
 ```
 go 1.18
 
