@@ -56,7 +56,7 @@ There are many streaming media servers available, including:
 
 ### AVC/H.264
 
-[Advanced Video Coding (AVC)](https://en.wikipedia.org/wiki/Advanced_Video_Coding), or H.264, is a [video compression standard](https://en.wikipedia.org/wiki/Video_coding_format) based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation). Is the most commonly used format for the recording, compression, and distribution of video content. Given H.264's high compression ratios, it is not well suited for the high bandwidth demands of 4K streaming. H.264 has many kinds of [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
+[Advanced Video Coding (AVC)](https://en.wikipedia.org/wiki/Advanced_Video_Coding), or H.264, is a [video compression standard](https://en.wikipedia.org/wiki/Video_coding_format) based on block-oriented, [motion-compensated coding](https://en.wikipedia.org/wiki/Motion_compensation) and is the most commonly used format for the recording, compression, and distribution of video content. It is not well suited for the high bandwidth demands of 4K streaming due to the high compression ratios. It has many kinds of [profiles](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles) and [levels](https://en.wikipedia.org/wiki/Advanced_Video_Coding#Levels), and not every encoder or decoder supports every profile and level.
 
 **profile-level-id**
 * The first byte represents `profile_idc`.
