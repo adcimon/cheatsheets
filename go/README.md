@@ -8,6 +8,7 @@
 
 * [General](#general)
 * [Modules](#modules)
+* [Workspaces](#workspaces)
 * [CGO](#cgo)
 * [More](#more)
 
@@ -116,6 +117,31 @@ git push origin <version>
 Clean the module cache.
 ```
 go clean -modcache
+```
+
+## Workspaces
+
+Requires Go 1.18 or later.
+
+Initialize a workspace.
+```
+go work init <workspace>
+```
+
+Add a module to the workspace.
+```
+go work use ./<module>
+```
+
+Replace the remote module version to the local module.
+```
+go 1.18
+
+use (
+    ./<module>
+)
+
+replace github.com/adcimon/<workspace>/<module> v1.0.0 => ./<module>
 ```
 
 ## CGO
