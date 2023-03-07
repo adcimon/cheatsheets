@@ -110,7 +110,7 @@ Transport protocols are standardized methods of delivering different types of me
 
 ### DASH
 
-[Dynamic Adaptive Streaming over HTTP (DASH), also known as MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) is an adaptive bitrate streaming technique that enables high quality streaming of media content over the Internet delivered from conventional HTTP web servers. Similar to Apple's HTTP Live Streaming (HLS), MPEG-DASH works by breaking the content into a sequence of small segments, which are served over HTTP.
+[Dynamic Adaptive Streaming over HTTP (DASH)](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP), also known as MPEG-DASH, is an adaptive bitrate streaming technique that enables high quality streaming of media content over the Internet delivered from conventional HTTP web servers. Similar to Apple's HTTP Live Streaming (HLS), MPEG-DASH works by breaking the content into a sequence of small segments, which are served over HTTP.
 
 ### NDI
 
