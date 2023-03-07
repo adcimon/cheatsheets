@@ -82,7 +82,7 @@ go get <module>
 ```
 * If the module is private then `go env -w GOPRIVATE=github.com/<user>/<module>`.
 
-Add a local dependency (modify the `go.mod` file).
+Add a local dependency (edit the `go.mod` file).
 ```
 replace github.com/<user>/mymodule => ../mymodule
 ```
@@ -133,7 +133,7 @@ Add a module to the workspace.
 go work use ./<module>
 ```
 
-Replace the remote module version to the local module.
+Replace the remote module version to the local module (edit the `go.work` file).
 ```
 go 1.18
 
