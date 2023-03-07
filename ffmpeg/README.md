@@ -324,7 +324,7 @@ Play a stream.
 ffplay -i http://<ip>:<port>/<application>/<stream_name>.m3u8
 ```
 
-Download and concatenate the stream video fragments.
+Download a stream.
 ```
 ffmpeg -protocol_whitelist file,http,https,tcp,tls -i http://<ip>:<port>/<application>/<stream_name>.m3u8 -c copy -bsf:a aac_adtstoasc <output>
 ```
