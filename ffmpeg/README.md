@@ -300,7 +300,7 @@ Serve a stream.
 ffmpeg -re -thread_queue_size 4 -i <input> -strict 2 -acodec copy -vn -f rtp rtp://<ip>:<audio_port> -vcodec copy -an -f rtp rtp://<ip>:<video_port> -sdp_file <sdp>
 ```
 
-Server an RTP MPEG-TS stream.
+Serve an RTP MPEG-TS stream.
 ```
 ffmpeg -re -i <input> -c:v copy -c:a copy -f rtp_mpegts -sdp_file <sdp> "rtp://<ip>:<port>"
 ```
