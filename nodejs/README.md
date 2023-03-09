@@ -64,6 +64,8 @@ Install a package.
 ```
 npm install <package>
 npm install <package>@<version>
+npm install git+https://<host>/<user>/<package>.git
+npm install git+ssh://git@<host>/<user>/<package>.git
 ```
 
 Uninstall a package.
