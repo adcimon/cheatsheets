@@ -290,11 +290,19 @@ Play a stream.
 ```
 ffmpeg -protocol_whitelist file,udp,rtp -i <sdp> <output>
 ffplay -i <sdp> -protocol_whitelist file,udp,rtp
+
+ffmpeg -protocol_whitelist rtp,udp -i "rtp://<ip>:<port>" <output>
+ffplay -protocol_whitelist rtp,udp -i "rtp://<ip>:<port>"
 ```
 
 Serve a stream.
 ```
 ffmpeg -re -thread_queue_size 4 -i <input> -strict 2 -acodec copy -vn -f rtp rtp://<ip>:<audio_port> -vcodec copy -an -sdp_file <sdp> -f rtp rtp://<ip>:<video_port>
+```
+
+Server an RTP MPEG-TS stream.
+```
+ffmpeg -re -i <input> -c:v copy -c:a copy -f rtp_mpegts -sdp_file <sdp> "rtp://<ip>:<port>"
 ```
 
 ### RTSP
