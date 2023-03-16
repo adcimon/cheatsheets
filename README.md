@@ -7,6 +7,8 @@ Fields
 * [Streaming](https://adcimon.github.io/cheatsheets/streaming/)
 
 Technologies
+
+[<img class="badge" src="https://github.com/adcimon/badges/blob/main/blender.svg">](https://adcimon.github.io/cheatsheets/blender/)
 * [Blender](https://adcimon.github.io/cheatsheets/blender/)
 * [C++](https://adcimon.github.io/cheatsheets/cpp/)
 * [cURL](https://adcimon.github.io/cheatsheets/curl/)
