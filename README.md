@@ -1,11 +1,11 @@
 Fields
 
-[Artificial Intelligence](https://adcimon.github.io/cheatsheets/artificial-intelligence/)<br>
-[Color](https://adcimon.github.io/cheatsheets/color/)<br>
-[Computer Graphics](https://adcimon.github.io/cheatsheets/computer-graphics/)<br>
-[Cryptography](https://adcimon.github.io/cheatsheets/cryptography/)<br>
-[Regular Expressions](https://adcimon.github.io/cheatsheets/regular-expressions/)<br>
-[Streaming](https://adcimon.github.io/cheatsheets/streaming/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/artificial_intelligence.svg">](https://adcimon.github.io/cheatsheets/artificial-intelligence/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/color.svg">](https://adcimon.github.io/cheatsheets/color/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/computer_graphics.svg">](https://adcimon.github.io/cheatsheets/computer-graphics/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/cryptography.svg">](https://adcimon.github.io/cheatsheets/cryptography/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/regular_expressions.svg">](https://adcimon.github.io/cheatsheets/regular-expressions/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/streaming.svg">](https://adcimon.github.io/cheatsheets/streaming/)<br>
 
 Technologies
 
