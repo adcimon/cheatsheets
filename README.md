@@ -1,4 +1,4 @@
-Fields
+<h2>Fields</h2>
 
 [<img class="badge" src="https://adcimon.github.io/badges/artificial_intelligence.svg">](https://adcimon.github.io/cheatsheets/artificial-intelligence/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/color.svg">](https://adcimon.github.io/cheatsheets/color/)<br>
@@ -7,7 +7,7 @@ Fields
 [<img class="badge" src="https://adcimon.github.io/badges/regular_expressions.svg">](https://adcimon.github.io/cheatsheets/regular-expressions/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/streaming.svg">](https://adcimon.github.io/cheatsheets/streaming/)<br>
 
-Technologies
+<h2>Technologies</h2>
 
 [<img class="badge" src="https://adcimon.github.io/badges/blender.svg">](https://adcimon.github.io/cheatsheets/blender/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/cpp.svg">](https://adcimon.github.io/cheatsheets/cpp/)<br>
