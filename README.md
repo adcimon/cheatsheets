@@ -25,7 +25,7 @@ Technologies
 [<img class="badge" src="https://adcimon.github.io/badges/nginx.svg">](https://adcimon.github.io/cheatsheets/nginx/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/nodejs.svg">](https://adcimon.github.io/cheatsheets/nodejs/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/python.svg">](https://adcimon.github.io/cheatsheets/python/)<br>
-[<img class="badge" src="https://adcimon.github.io/badges/tcpdump.svg">](https://adcimon.github.io/cheatsheets/tcpdump/)<br>p/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/tcpdump.svg">](https://adcimon.github.io/cheatsheets/tcpdump/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/trinity_core.svg">](https://adcimon.github.io/cheatsheets/trinity-core/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/turn.svg">](https://adcimon.github.io/cheatsheets/turn/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/unity.svg">](https://adcimon.github.io/cheatsheets/unity/)<br>
