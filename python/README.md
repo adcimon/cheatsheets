@@ -101,6 +101,11 @@ Update.
 conda update conda
 ```
 
+List available Python versions.
+```
+conda search python
+```
+
 ### Environments
 
 Environments can be found at `C:/ProgramData/Anaconda3/envs` on Windows.
