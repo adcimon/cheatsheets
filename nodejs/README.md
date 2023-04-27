@@ -106,6 +106,29 @@ Recreate `package-lock.json`.
 npm install --package-lock-only
 ```
 
+Symlink a package folder, handy to work and test a package iteratively without having to continually rebuild.
+```
+npm link <package>
+npm unlink <package>
+```
+
+Create a `tarball` from a package.
+```
+npm pack
+```
+
+Login to a registry.
+```
+npm login --registry=<url> --scope=<user>
+npm login --registry=https://npm.pkg.github.com --scope=@adcimon
+```
+
+Publish a package.
+```
+npm publish
+npm publish <folder>
+```
+
 List of packages.
 | Packages | Install |
 |---|---|
