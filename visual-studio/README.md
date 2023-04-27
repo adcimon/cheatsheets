@@ -15,6 +15,11 @@
 * Go to `Tools → Options → Text Editor`.
 * Uncheck `Show structure guide lines`.
 
+### Hide reference counts
+
+* Go to `Tools → Options → Text Editor → All Languages → CodeLens`.
+* Uncheck `Enable CodeLens` or `Show C# and Visual Basic References`.
+
 ### Add manifest file
 
 * Right click on `Solution Explorer → <Project> → Add → New Item → Application Manifest File`.
