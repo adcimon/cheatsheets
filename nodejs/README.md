@@ -8,6 +8,7 @@
 
 * [Install](#install)
 * [Packages](#packages)
+  * [TypeScript](#typescript)
   * [Tailwind CSS](#tailwind-css)
   * [Nest.js](#nestjs)
   * [Electron](#electron)
@@ -133,6 +134,30 @@ List of packages.
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
+
+### TypeScript
+
+[TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+
+Install globally.
+```
+npm install -g typescript
+```
+
+Check version.
+```
+tsc -v
+```
+
+Generate `tsconfig.json`.
+```
+tsc --init
+```
+
+Install default [tsconfig.json](https://github.com/tsconfig/bases) files.
+```
+npm install --save-dev @tsconfig/recommended
+```
 
 ### Tailwind CSS
 
