@@ -129,7 +129,7 @@ List of packages.
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
 | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install -d tailwindcss |
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
-| [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript |
+| [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript<br>npm install -g typescript |
 | [uuid](https://github.com/uuidjs/uuid) | npm install uuid |
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
@@ -139,8 +139,9 @@ List of packages.
 
 [TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
-Install globally.
+Install.
 ```
+npm install typescript
 npm install -g typescript
 ```
 
@@ -154,7 +155,7 @@ Generate `tsconfig.json`.
 tsc --init
 ```
 
-Install default [tsconfig.json](https://github.com/tsconfig/bases) files.
+Install base [tsconfig.json](https://github.com/tsconfig/bases) files.
 ```
 npm install --save-dev @tsconfig/recommended
 ```
