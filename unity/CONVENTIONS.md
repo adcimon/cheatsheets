@@ -98,6 +98,7 @@ Models
 | Distance Field | df |
 | Emissive | emi |
 | Flow | flow |
+| Glossiness | gloss |
 | Gradient | grad |
 | Height | height |
 | Icon | ico |
