@@ -1,6 +1,5 @@
 <h2>Fields</h2>
 
-[<img class="badge" src="https://adcimon.github.io/badges/artificial_intelligence.svg">](https://adcimon.github.io/cheatsheets/artificial-intelligence/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/color.svg">](https://adcimon.github.io/cheatsheets/color/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/computer_graphics.svg">](https://adcimon.github.io/cheatsheets/computer-graphics/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/cryptography.svg">](https://adcimon.github.io/cheatsheets/cryptography/)<br>
