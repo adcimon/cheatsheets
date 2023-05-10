@@ -245,3 +245,10 @@ git remote add origin https://<url>/<username>/<repository>.git
 
 git push -u --force origin master
 ```
+
+Rewrite user name and email from *ALL* commits.
+```
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME='name'; GIT_AUTHOR_EMAIL='email'; GIT_COMMITTER_NAME='name'; GIT_COMMITTER_EMAIL='email';" HEAD
+git push -f origin
+git push -f origin +yourbranch
+```
