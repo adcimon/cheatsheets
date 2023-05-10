@@ -44,11 +44,11 @@ There are many streaming media servers available, including:
 * [Jitsi](https://github.com/jitsi)
 * [Kurento](https://github.com/Kurento/kurento-media-server)
 * [LiveKit](https://github.com/livekit)
+* [MediaMTX](https://github.com/aler9/mediamtx)
 * [Medooze](https://github.com/medooze)
 * [Millicast](https://www.millicast.com/)
 * [Node Media Server](https://github.com/illuspas/Node-Media-Server)
 * [Oven Media Engine](https://github.com/AirenSoft/OvenMediaEngine)
-* [RTSP Simple Server](https://github.com/aler9/rtsp-simple-server)
 * [Simple Realtime Server](https://github.com/ossrs/srs)
 
 ## Codecs
