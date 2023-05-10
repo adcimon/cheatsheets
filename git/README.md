@@ -47,6 +47,11 @@ git clone --branch <tag> <url>
 
 ## Branches
 
+List branches.
+```
+git branch
+```
+
 Create a new branch.
 ```
 git branch <name>
