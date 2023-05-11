@@ -230,13 +230,13 @@ git show <commit>
 
 ## Advanced
 
-Install credential manager.
+Install credential manager.<br>
+<img width="40%" height="40%" src="assets/git_credential_manager.png">
 ```
 git config --system --unset credential.https://dev.azure.com.useHttpPath 
 git config --system credential.helper manager
 ```
 * [Git Credential Manager Core: Building a universal authentication experience](https://github.blog/2020-07-02-git-credential-manager-core-building-a-universal-authentication-experience/)
-<p align="center"><img align="center" width="30%" height="30%" src="assets/git_credential_manager.png"></p>
 
 Large file storage.
 ```
