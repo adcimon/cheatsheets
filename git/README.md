@@ -231,7 +231,7 @@ git show <commit>
 ## Advanced
 
 Install credential manager.<br>
-<img width="40%" height="40%" src="assets/git_credential_manager.png">
+<img width="50%" height="50%" src="assets/git_credential_manager.png">
 ```
 git config --system --unset credential.https://dev.azure.com.useHttpPath 
 git config --system credential.helper manager
