@@ -21,7 +21,7 @@
 
 <p align="center"><img align="center" width="60%" height="60%" src="assets/git_workflow.png"></p>
 
-Configure git options.
+Configure options.
 ```
 git config --global user.name <name>
 git config --global user.email <email>
@@ -29,7 +29,7 @@ git config --global user.email contact.adcimon@gmail.com
 git config --global user.email 37084114+adcimon@users.noreply.github.com
 ```
 
-List git options.
+List options.
 ```
 git config --list
 ```
