@@ -230,7 +230,7 @@ git show <commit>
 
 ## Advanced
 
-Install credential manager ([Git for Windows](https://git-scm.com/download/win)).<br>
+Install credential manager with [Git for Windows](https://git-scm.com/download/win).<br>
 <img width="60%" height="60%" src="assets/git_credential_manager.png">
 ```
 git config --system --unset credential.https://dev.azure.com.useHttpPath 
