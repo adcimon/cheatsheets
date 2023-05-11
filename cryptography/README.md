@@ -6,7 +6,7 @@
 
 * [JWT](#jwt)
 * [TLS](#tls)
-* [OpenSSL](#openssl)
+  * [OpenSSL](#openssl)
 
 ## JWT
 
@@ -16,7 +16,7 @@
 
 [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network. It is used as the security layer in [HTTPS](https://en.wikipedia.org/wiki/HTTPS) and [WSS](https://en.wikipedia.org/wiki/WebSocket).
 
-## OpenSSL
+### OpenSSL
 
 [OpenSSL](https://www.openssl.org/) is a robust, commercial-grade, and full-featured toolkit for the [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) and [Secure Sockets Layer (SSL)](https://en.wikipedia.org/wiki/Transport_Layer_Security) protocols. It is also a general-purpose cryptography library.
 
