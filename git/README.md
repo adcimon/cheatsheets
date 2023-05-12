@@ -25,6 +25,8 @@ Configure options.
 ```
 git config --global user.name <name>
 git config --global user.email <email>
+
+git config --global user.name adcimon
 git config --global user.email contact.adcimon@gmail.com
 git config --global user.email 37084114+adcimon@users.noreply.github.com
 ```
