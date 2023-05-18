@@ -54,6 +54,11 @@ Download a repository at a specific tag.
 git clone --branch <tag> <url>
 ```
 
+Add a submodule.
+```
+git submodule add <submodule> <path>
+```
+
 ## Branches
 
 List branches.
