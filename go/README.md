@@ -26,6 +26,7 @@ go env
 
 Compile and run a program.
 ```
+go run .
 go run main.go
 ```
 
