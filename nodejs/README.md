@@ -130,7 +130,7 @@ npm publish <folder>
 ```
 
 List of packages.
-| Packages | Install |
+| Package | Install |
 |---|---|
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
 | [Electron](https://github.com/electron/electron) | npm install --save-dev electron |
