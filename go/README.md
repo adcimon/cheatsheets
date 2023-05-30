@@ -120,6 +120,13 @@ Clean the module cache.
 go clean -modcache
 ```
 
+List of modules.
+| Module | Install |
+|---|---|
+| [godotenv](https://github.com/joho/godotenv) | go get github.com/joho/godotenv |
+| [jwt](https://github.com/golang-jwt/jwt) | go get github.com/golang-jwt/jwt/v5 |
+| [webrtc](https://github.com/pion/webrtc) | go get github.com/pion/webrtc/v3 |
+
 ## Workspaces
 
 Requires Go 1.18 or later.
