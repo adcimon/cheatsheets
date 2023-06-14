@@ -4,26 +4,31 @@
 
 [Visual Studio](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) is an [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) from Microsoft.
 
-### Inconsistent line endings
+### Add manifest file
+
+* Right click on `Solution Explorer → <Project> → Add → New Item → Application Manifest File`.
+* The file `app.manifest` will be created.
+
+### Automatically close console when debug stops
+
+* Go to `Tools->Options->Debugging`.
+* Check `Automatically close the console when debugging stops`.
+
+### Fix inconsistent line endings
 
 * Go to `Edit → Find and Replace → Quick Replace`.
 * Check `Use Regular Expressions`.
-* Replace `(?<!\r)\n` for `\r\n`
-
-### Hide vertical dotted indentation
-
-* Go to `Tools → Options → Text Editor`.
-* Uncheck `Show structure guide lines`.
+* Replace `(?<!\r)\n` for `\r\n`.
 
 ### Hide reference counts
 
 * Go to `Tools → Options → Text Editor → All Languages → CodeLens`.
 * Uncheck `Enable CodeLens` or `Show C# and Visual Basic References`.
 
-### Add manifest file
+### Hide vertical dotted indentation
 
-* Right click on `Solution Explorer → <Project> → Add → New Item → Application Manifest File`.
-* The file `app.manifest` will be created.
+* Go to `Tools → Options → Text Editor`.
+* Uncheck `Show structure guide lines`.
 
 ### Run debug as administrator
 
