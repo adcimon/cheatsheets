@@ -136,6 +136,7 @@ List of packages.
 | [Electron](https://github.com/electron/electron) | npm install --save-dev electron |
 | [Electron Builder](https://github.com/electron-userland/electron-builder) | npm install --save-dev electron-builder |
 | [fs-extra](https://github.com/jprichardson/node-fs-extra) | npm install fs-extra |
+| [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) | npm install jsonwebtoken |
 | [ms](https://github.com/vercel/ms) | npm install ms |
 | [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
 | [Nest.js](https://github.com/nestjs/nest) | npm install -g @nestjs/cli |
