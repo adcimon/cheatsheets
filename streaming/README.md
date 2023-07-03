@@ -236,6 +236,7 @@ For a subscriber with limited bandwidth, it is possible to send only the frames 
 * [IBM Internet connection and recommended encoding settings](https://support.video.ibm.com/hc/en-us/articles/207852117-Internet-connection-and-recommended-encoding-settings)
 * [IBM Keyframes, Interframe and Video Compression](https://blog.video.ibm.com/streaming-video-tips/keyframes-interframe-video-compression/)
 * [Twitch Broadcasting Guidelines](https://stream.twitch.tv/encoding/)
+* [A Tale of Two Protocols: Comparing WebRTC against HLS for Live Streaming](https://blog.livekit.io/webrtc-vs-hls-livestreaming/)
 * [H.264 is Magic](https://sidbala.com/h-264-is-magic/)
 * [H.264 Profiles](https://www.programmersought.com/article/15615289761/)
 * [iSpy Camera Connection Database](https://www.ispyconnect.com/cameras)
