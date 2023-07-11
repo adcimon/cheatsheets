@@ -132,6 +132,11 @@ A string that doesn't contain the characters `<>`.
 [^<>]
 ```
 
+A string that can be empty.
+```
+^(^$)|(<OTHER_REGEXP>)$
+```
+
 ## References
 
 * [RE2](https://github.com/google/re2/wiki/Syntax)
