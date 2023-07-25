@@ -8,10 +8,10 @@
 
 * [Install](#install)
 * [Packages](#packages)
-  * [TypeScript](#typescript)
-  * [Tailwind CSS](#tailwind-css)
-  * [Nest.js](#nestjs)
   * [Electron](#electron)
+  * [Nest.js](#nestjs)
+  * [Tailwind CSS](#tailwind-css)
+  * [TypeScript](#typescript)
 
 # Install
 
@@ -159,61 +159,26 @@ List of packages.
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
 
-### TypeScript
+### Electron
 
-[TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
-
-Install.
-```
-npm install typescript
-npm install --save-dev typescript
-npm install -g typescript
-```
-
-Check version.
-```
-tsc -v
-```
-
-Generate `tsconfig.json`.
-```
-tsc --init
-```
-
-Install base [tsconfig.json](https://github.com/tsconfig/bases) files.
-```
-npm install --save-dev @tsconfig/recommended
-```
-
-### Tailwind CSS
-
-[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework for rapidly building custom user interfaces.
+[Electron](https://www.electronjs.org/) is a free and open-source software framework developed and maintained by GitHub designed to create desktop applications using web technologies which are rendered using a flavor of the [Chromium](https://www.chromium.org/) browser engine, and a backend using the [Node.js](https://nodejs.org/) runtime environment.
 
 Install.
 ```
-npm install -D tailwindcss
+mkdir my-app
+cd my-app
+npm init
+npm install --save-dev electron
 ```
 
-Create default configuration file [tailwind.config.js](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js).
+Build with [Electron Builder](https://www.electron.build/).
 ```
-npx tailwindcss init --full
-```
-
-Build CSS.
-```
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+electron-builder --win [nsis|nsis-web|portable]
 ```
 
-Build CSS with all the classes.
+Startup project.
 ```
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  safelist: [
-    {
-      pattern: /(.*?)/,
-    },
-  ],
-  ...
+https://github.com/electron-react-boilerplate/electron-react-boilerplate
 ```
 
 ### Nest.js
@@ -262,24 +227,59 @@ Run integration tests.
 npm run test:e2e
 ```
 
-### Electron
+### Tailwind CSS
 
-[Electron](https://www.electronjs.org/) is a free and open-source software framework developed and maintained by GitHub designed to create desktop applications using web technologies which are rendered using a flavor of the [Chromium](https://www.chromium.org/) browser engine, and a backend using the [Node.js](https://nodejs.org/) runtime environment.
+[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework for rapidly building custom user interfaces.
 
 Install.
 ```
-mkdir my-app
-cd my-app
-npm init
-npm install --save-dev electron
+npm install -D tailwindcss
 ```
 
-Build with [Electron Builder](https://www.electron.build/).
+Create default configuration file [tailwind.config.js](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js).
 ```
-electron-builder --win [nsis|nsis-web|portable]
+npx tailwindcss init --full
 ```
 
-Startup project.
+Build CSS.
 ```
-https://github.com/electron-react-boilerplate/electron-react-boilerplate
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
+
+Build CSS with all the classes.
+```
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  safelist: [
+    {
+      pattern: /(.*?)/,
+    },
+  ],
+  ...
+```
+
+### TypeScript
+
+[TypeScript](https://www.typescriptlang.org/) is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+
+Install.
+```
+npm install typescript
+npm install --save-dev typescript
+npm install -g typescript
+```
+
+Check version.
+```
+tsc -v
+```
+
+Generate `tsconfig.json`.
+```
+tsc --init
+```
+
+Install base [tsconfig.json](https://github.com/tsconfig/bases) files.
+```
+npm install --save-dev @tsconfig/recommended
 ```
