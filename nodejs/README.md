@@ -150,6 +150,8 @@ List of packages.
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
 | [Passport JWT](https://github.com/mikenicholson/passport-jwt) | npm install passport-jwt<br>npm install @nestjs/jwt |
 | [React](https://github.com/facebook/react) | npm install react<br>npm install @types/react<br>npm install @types/react-dom |
+| [React Beautiful DnD](https://github.com/atlassian/react-beautiful-dnd) | npm install react-beautiful-dnd |
+| [React Hot Toast](https://github.com/timolins/react-hot-toast) | npm install react-hot-toast |
 | [React Transition Group](https://github.com/reactjs/react-transition-group) | npm install react-transition-group<br>npm install @types/react-transition-group |
 | [Recoil](https://github.com/facebookexperimental/Recoil) | npm install recoil |
 | [serve](https://github.com/vercel/serve) | npm install -g serve |
