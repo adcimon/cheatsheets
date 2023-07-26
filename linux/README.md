@@ -6,8 +6,13 @@
 
 ## Index
 
+* [File System](#file-system)
 * [Shell](#shell)
 * [Environment Variables](#environment-variables)
+
+## File System
+
+<p align="center"><img align="center" width="80%" height="80%" src="assets/linux_file_system.png"></p>
 
 ## Shell
 
