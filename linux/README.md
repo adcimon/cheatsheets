@@ -12,7 +12,7 @@
 
 ## File System
 
-<p align="center"><img align="center" width="80%" height="80%" src="assets/linux_file_system.png"></p>
+<p align="center"><img align="center" width="100%" height="100%" src="assets/linux_file_system.png"></p>
 
 ## Shell
 
