@@ -119,6 +119,7 @@ Clean the module cache.
 ```
 go clean -modcache
 ```
+* Deletes the folder `go/pkg/mod`.
 
 List of modules.
 | Module | Install |
