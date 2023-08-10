@@ -79,5 +79,4 @@ Note that it's important to match video framerate with the source to prevent out
 ## Profiling
 
 * [Connection Test](https://livekit.io/connection-test)
-* [Example](https://example.livekit.io/)
-* [Playground](https://livekit.io/playground)
+* [Meet](https://meet.livekit.io/)
