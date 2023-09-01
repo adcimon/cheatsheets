@@ -1,5 +1,7 @@
 # Brainstorm
 
+<p align="center"><img align="center" src="assets/brainstorm.png"></p>
+
 [Brainstorm](https://www.brainstorm3d.com/) is a specialist company dedicated to providing industry-leading real-time 3D graphics and virtual set solutions for broadcast, feature film production and corporate presentations.
 
 ## Scripts
