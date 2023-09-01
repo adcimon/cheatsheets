@@ -240,3 +240,4 @@ For a subscriber with limited bandwidth, it is possible to send only the frames 
 * [H.264 is Magic](https://sidbala.com/h-264-is-magic/)
 * [H.264 Profiles](https://www.programmersought.com/article/15615289761/)
 * [iSpy Camera Connection Database](https://www.ispyconnect.com/cameras)
+* [What is a Codec?](https://superuser.com/questions/300897/what-is-a-codec-e-g-divx-and-how-does-it-differ-from-a-file-format-e-g-mp)
