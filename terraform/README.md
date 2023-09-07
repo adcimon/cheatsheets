@@ -33,3 +33,8 @@ Execute the actions proposed in a plan.
 ```
 terraform apply
 ```
+
+Destroy all remote objects.
+```
+terraform destroy
+```
