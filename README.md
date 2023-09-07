@@ -8,6 +8,7 @@
 
 <h2>Technologies</h2>
 
+[<img class="badge" src="https://adcimon.github.io/badges/aws.svg">](https://adcimon.github.io/cheatsheets/aws/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/blender.svg">](https://adcimon.github.io/cheatsheets/blender/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/brainstorm.svg">](https://adcimon.github.io/cheatsheets/brainstorm/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/cpp.svg">](https://adcimon.github.io/cheatsheets/cpp/)<br>
