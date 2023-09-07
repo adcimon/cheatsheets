@@ -8,7 +8,7 @@
 
 ## Install
 
-Install the `aws` tool.
+Install the `aws` command-line tool.
 * https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 ## Usage
