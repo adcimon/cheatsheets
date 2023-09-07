@@ -48,7 +48,7 @@ Execute the actions proposed in a plan.
 terraform apply
 ```
 
-Destroy all remote objects.
+Destroy all remote objects of a plan.
 ```
 terraform destroy
 ```
