@@ -4,6 +4,20 @@
 
 [Terraform](https://www.terraform.io/) is an infrastructure-as-code (IaC) software tool created by [HashiCorp](https://www.hashicorp.com/).
 
+## Index
+
+* [Install](#install)
+* [Usage](#usage)
+
+# Install
+
+HashiCorp distributes Terraform as a binary package.
+* Go to the [Downloads](https://developer.hashicorp.com/terraform/downloads) page.
+* Download the precompiled binary.
+* Add the precompiled binary to the PATH.
+
+# Usage
+
 Check version.
 ```
 terraform version
