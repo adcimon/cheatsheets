@@ -1,5 +1,6 @@
-# Amazon Web Services
+# AWS
 
+</br>
 <p align="center"><img align="center" width="30%" height="30%" src="assets/aws.svg"></p>
 
 [Amazon Web Services (AWS)](https://aws.amazon.com/) provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.
