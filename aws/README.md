@@ -23,3 +23,8 @@ Configure.
 ```
 aws configure
 ```
+
+List Cognito user pools.
+```
+aws cognito-idp list-user-pools --max-results 10
+```
