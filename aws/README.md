@@ -24,6 +24,12 @@ Configure.
 aws configure
 ```
 
+Login with SSO.
+```
+aws configure sso
+aws sso login
+```
+
 List services.
 ```
 aws list-services
