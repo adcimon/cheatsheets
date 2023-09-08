@@ -29,6 +29,11 @@ List services.
 aws list-services
 ```
 
+List S3 buckets.
+```
+aws s3 ls
+```
+
 List Cognito user pools.
 ```
 aws cognito-idp list-user-pools --max-results 10
