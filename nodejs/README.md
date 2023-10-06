@@ -141,6 +141,7 @@ List of packages.
 | [ms](https://github.com/vercel/ms) | npm install ms |
 | [Material UI](https://github.com/mui/material-ui) | npm install @mui/material @emotion/react @emotion/styled |
 | [Material UI Icons](https://github.com/mui/material-ui) | npm install @mui/icons-material |
+| [Moment](https://github.com/moment/moment/) | npm install moment |
 | [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
 | [Nest.js](https://github.com/nestjs/nest) | npm install -g @nestjs/cli |
 | [Nest.js Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install @types/cron |
