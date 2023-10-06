@@ -143,9 +143,9 @@ List of packages.
 | [Material UI Icons](https://github.com/mui/material-ui) | npm install @mui/icons-material |
 | [Moment](https://github.com/moment/moment/) | npm install moment |
 | [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
-| [Nest.js](https://github.com/nestjs/nest) | npm install -g @nestjs/cli |
-| [Nest.js Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install @types/cron |
-| [Nest.js Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
+| [Nest](https://github.com/nestjs/nest) | npm install -g @nestjs/cli |
+| [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install @types/cron |
+| [Nest Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
 | [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install @types/nodemailer |
 | [Passport](https://github.com/jaredhanson/passport) | npm install passport<br>npm install @nestjs/passport |
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
