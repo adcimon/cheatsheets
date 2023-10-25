@@ -44,7 +44,7 @@ aws list-services
 
 ## Cognito
 
-List Cognito user pools.
+List user pools.
 ```
 aws cognito-idp list-user-pools --max-results 10
 ```
@@ -58,7 +58,7 @@ aws dynamodb delete-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<va
 
 ## S3
 
-List S3 buckets.
+List buckets.
 ```
 aws s3 ls
 ```
