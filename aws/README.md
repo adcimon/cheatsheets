@@ -5,14 +5,21 @@
 
 [Amazon Web Services (AWS)](https://aws.amazon.com/) provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.
 
-# CLI
+## Index
+
+* [Install](#install)
+* [General](#general)
+* [Cognito](#cognito)
+* [DynamoDB](#dynamodb)
+* [S3](#s3)
+* [SES](#ses)
 
 ## Install
 
 Install the `aws` command-line tool.
 * https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
-## Usage
+## General
 
 Check version.
 ```
@@ -35,12 +42,49 @@ List services.
 aws list-services
 ```
 
+## Cognito
+
+List Cognito user pools.
+```
+aws cognito-idp list-user-pools --max-results 10
+```
+
+## DynamoDB
+
+Delete item.
+```
+aws dynamodb delete-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<value>\"}}'
+```
+
+## S3
+
 List S3 buckets.
 ```
 aws s3 ls
 ```
 
-List Cognito user pools.
+## SES
+
+Send email command.
 ```
-aws cognito-idp list-user-pools --max-results 10
+{
+	"Content": {
+		"Simple": {
+			"Subject": {
+				"Charset": "utf-8",
+				"Data": "The subject"
+			},
+			"Body": {
+				"Text": {
+					"Charset": "utf-8",
+					"Data": "The body"
+				}
+			}
+		}
+	},
+	"FromEmailAddress": "from@email.com",
+	"Destination": {
+		"ToAddresses": [ "to@email.com" ]
+	}
+}
 ```
