@@ -11,8 +11,8 @@
 * [General](#general)
 * [Cognito](#cognito)
 * [DynamoDB](#dynamodb)
-* [S3](#s3)
 * [SES](#ses)
+* [S3](#s3)
 
 ## Install
 
@@ -56,13 +56,6 @@ Delete item.
 aws dynamodb delete-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<value>\"}}'
 ```
 
-## S3
-
-List buckets.
-```
-aws s3 ls
-```
-
 ## SES
 
 Send email command.
@@ -87,4 +80,11 @@ Send email command.
 		"ToAddresses": [ "to@email.com" ]
 	}
 }
+```
+
+## S3
+
+List buckets.
+```
+aws s3 ls
 ```
