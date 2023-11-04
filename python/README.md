@@ -108,7 +108,9 @@ conda search python
 
 ### Environments
 
-Environments can be found at `C:/ProgramData/Anaconda3/envs` on Windows.
+Environments are located at:
+* `C:/ProgramData/Anaconda3/envs`
+* `C:/Users/<user>/.conda/envs`
 
 List all the environments.
 ```
