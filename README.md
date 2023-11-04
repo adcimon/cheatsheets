@@ -18,6 +18,7 @@
 [<img class="badge" src="https://adcimon.github.io/badges/git.svg">](https://adcimon.github.io/cheatsheets/git/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/go.svg">](https://adcimon.github.io/cheatsheets/go/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/gstreamer.svg">](https://adcimon.github.io/cheatsheets/gstreamer/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/http.svg">](https://adcimon.github.io/cheatsheets/http/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/linux.svg">](https://adcimon.github.io/cheatsheets/linux/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/livekit.svg">](https://adcimon.github.io/cheatsheets/livekit/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/mercurial.svg">](https://adcimon.github.io/cheatsheets/mercurial/)<br>
