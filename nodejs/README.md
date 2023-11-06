@@ -86,7 +86,7 @@ Uninstall a global package.
 * Delete the package files.
 * Go to `node_modules` and delete the package.
 
-List the global packages.
+List global packages.
 ```
 npm list --global
 ```
