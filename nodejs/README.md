@@ -204,7 +204,7 @@ Nest is built around the design pattern [Dependency injection](https://en.wikipe
 
 Install CLI.
 ```
-npm install -g @nestjs/cli
+npm install --global @nestjs/cli
 ```
 
 Print version.
@@ -245,7 +245,7 @@ npm run test:e2e
 
 Install.
 ```
-npm install -D tailwindcss
+npm install --save-dev tailwindcss
 ```
 
 Create default configuration file [tailwind.config.js](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js).
