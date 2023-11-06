@@ -41,7 +41,7 @@ https://deb.nodesource.com/setup_10.x
 
 Update npm.
 ```
-npm install -g npm@latest
+npm install --global npm@latest
 ```
 
 Initialize a module directory.
@@ -76,13 +76,13 @@ npm uninstall <package>
 
 Install a global package.
 ```
-npm install -g <package>
-npm install -g <package>@<version>
+npm install --global <package>
+npm install --global <package>@<version>
 ```
 
 Uninstall a global package.
-* Run `npm list -g`.
-* Go to `C:\Users\<User>\AppData\Roaming\npm`.
+* Run `npm list --global`.
+* Go to `C:\Users\<user>\AppData\Roaming\npm`.
 * Delete the package files.
 * Go to `node_modules` and delete the package.
 
