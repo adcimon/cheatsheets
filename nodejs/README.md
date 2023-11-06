@@ -278,12 +278,12 @@ Install.
 ```
 npm install typescript
 npm install --save-dev typescript
-npm install -g typescript
+npm install --global typescript
 ```
 
 Check version.
 ```
-tsc -v
+tsc --version
 ```
 
 Generate `tsconfig.json`.
