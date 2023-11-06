@@ -149,7 +149,7 @@ List of packages.
 | [Material UI Icons](https://github.com/mui/material-ui) | npm install @mui/icons-material |
 | [Moment](https://github.com/moment/moment/) | npm install moment |
 | [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
-| [Nest](https://github.com/nestjs/nest) | npm install -g @nestjs/cli |
+| [Nest](https://github.com/nestjs/nest) | npm install --global @nestjs/cli |
 | [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install @types/cron |
 | [Nest Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
 | [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install @types/nodemailer |
@@ -161,11 +161,11 @@ List of packages.
 | [React Hot Toast](https://github.com/timolins/react-hot-toast) | npm install react-hot-toast |
 | [React Transition Group](https://github.com/reactjs/react-transition-group) | npm install react-transition-group<br>npm install @types/react-transition-group |
 | [Recoil](https://github.com/facebookexperimental/Recoil) | npm install recoil |
-| [serve](https://github.com/vercel/serve) | npm install -g serve |
+| [serve](https://github.com/vercel/serve) | npm install --global serve |
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
 | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install -d tailwindcss |
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
-| [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript<br>npm install --save-dev typescript<br>npm install -g typescript |
+| [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript<br>npm install --save-dev typescript<br>npm install --global typescript |
 | [uuid](https://github.com/uuidjs/uuid) | npm install uuid |
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
