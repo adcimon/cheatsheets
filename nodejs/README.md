@@ -88,7 +88,12 @@ Uninstall a global package.
 
 List the global packages.
 ```
-npm list -g
+npm list --global
+```
+
+List packages.
+```
+npm list --depth=0
 ```
 
 Check outdated packages.
@@ -99,6 +104,7 @@ npm outdated
 Update packages.
 ```
 npm update
+npm update --save
 ```
 
 Recreate `package-lock.json`.
