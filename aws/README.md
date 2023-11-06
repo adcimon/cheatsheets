@@ -51,6 +51,11 @@ aws cognito-idp list-user-pools --max-results 10
 
 ## DynamoDB
 
+Get item.
+```
+aws dynamodb get-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<value>\"}}'
+```
+
 Delete item.
 ```
 aws dynamodb delete-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<value>\"}}'
