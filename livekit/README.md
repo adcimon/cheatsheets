@@ -75,7 +75,7 @@ livekit-cli join-room \
     --publish path/to/audio.ogg \
     --fps 23.98
 ```
-Note that it's important to match video framerate with the source to prevent out of sync issues.
+* Note that it's important to match video framerate with the source to prevent out of sync issues.
 
 Simulate audio room.
 ```
