@@ -43,7 +43,7 @@ livekit-server --dev
 
 Create a room join token.
 ```
-LIVEKIT_KEYS="<KEY>: <SECRET>" ./livekit-server create-join-token --room <ROOM> --identity <USER>
+LIVEKIT_KEYS="<key>: <secret>" ./livekit-server create-join-token --room <room> --identity <user>
 ```
 
 ## CLI
@@ -53,28 +53,53 @@ The [livekit-cli](https://github.com/livekit/livekit-cli) command-line interface
 Create a token.
 ```
 livekit-cli create-token \
-    --api-key <KEY> --api-secret <SECRET> \
-    --join --room <ROOM> --identity <USER> \
+    --api-key <key> --api-secret <secret> \
+    --join --room <room> --identity <user> \
     --valid-for 24h
 ```
 
 Simulate a test publisher.
 ```
 livekit-cli join-room \
-    --url ws://localhost:7880 \
-    --api-key <KEY> --api-secret <SECRET> \
-    --room <ROOM> --identity <USER> \
+    --url <url> \
+    --api-key <key> --api-secret <secret> \
+    --room <room> --identity <user> \
     --publish-demo
 ```
 
 Publish media files.
 ```
-livekit-cli join-room --room <ROOM> --identity <USER> \
-  --publish path/to/video.ivf \
-  --publish path/to/audio.ogg \
-  --fps 23.98
+livekit-cli join-room \
+    --room <room> --identity <user> \
+    --publish path/to/video.ivf \
+    --publish path/to/audio.ogg \
+    --fps 23.98
 ```
 Note that it's important to match video framerate with the source to prevent out of sync issues.
+
+Simulate audio room.
+```
+livekit-cli load-test \
+    --url <url> \
+    --api-key <key> --api-secret <secret> \
+    --room <room> --audio-publishers 10 --subscribers 1000
+```
+
+Simulate large meeting.
+```
+livekit-cli load-test \
+    --url <url> \
+    --api-key <key> --api-secret <secret> \
+    --room <room> --video-publishers 150 --subscribers 150
+```
+
+Simulate livestreaming.
+```
+livekit-cli load-test \
+    --url <url> \
+    --api-key <key> --api-secret <secret> \
+    --room <room> --video-publishers 1 --subscribers 3000
+```
 
 ## Profiling
 
