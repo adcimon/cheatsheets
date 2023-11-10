@@ -80,3 +80,4 @@ Note that it's important to match video framerate with the source to prevent out
 
 * [Connection Test](https://livekit.io/connection-test)
 * [Meet](https://meet.livekit.io/)
+* [Benchmarking](https://docs.livekit.io/realtime/self-hosting/benchmark/)
