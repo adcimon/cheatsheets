@@ -11,6 +11,14 @@
 
 ## Methods
 
+HTTP methods (`verbs`) indicate the desired action to be performed on the identified resource.
+
+* `GET` method requests that the target resource transfer a representation of its state, it should only retrieve data and should have no other effect.
+* `POST` method requests that the target resource process the representation enclosed in the request according to the semantics of the target resource.
+* `PUT` method requests that the target resource create or update its state with the `total` state defined by the representation enclosed in the request.
+* `PATCH` method requests that the target resource modify its state according to the `partial` update defined in the representation enclosed in the request.
+* `DELETE` method requests that the target resource delete its state.
+
 ## REST
 
 [Representational State Transfer (REST)](https://en.wikipedia.org/wiki/REST) is a software architectural style that was created to guide the design and development of the architecture for the World Wide Web.
