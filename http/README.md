@@ -28,7 +28,7 @@ It has been employed throughout the software industry to create [stateless](http
 /store/inventory-management
 ```
 
-* Version the API.
+* Versioning.
 ```
 /v1/customers/{id}
 /v2/customers/{id}
