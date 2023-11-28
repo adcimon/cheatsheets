@@ -14,7 +14,7 @@
 ## REST
 
 [Representational State Transfer (REST)](https://en.wikipedia.org/wiki/REST) is a software architectural style that was created to guide the design and development of the architecture for the World Wide Web.
-It has been employed throughout the software industry to create stateless, reliable Web-based applications and HTTP-based APIs.
+It has been employed throughout the software industry to create [stateless](https://en.wikipedia.org/wiki/Stateless_protocol), [idempotent](https://en.wikipedia.org/wiki/Idempotence) and [reliable](https://en.wikipedia.org/wiki/Reliability,_availability_and_serviceability) Web-based applications and HTTP-based APIs.
 
 * Use plural noums to represent collection of resources.
 ```
