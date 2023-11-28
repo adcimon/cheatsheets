@@ -16,4 +16,15 @@
 [Representational State Transfer (REST)](https://en.wikipedia.org/wiki/REST) is a software architectural style that was created to guide the design and development of the architecture for the World Wide Web.
 
 * Stateless.
-* Use noums to represent resources.
+* Use plural noums to represent collection of resources.
+```
+example.com/users/{id}
+example.com/customers/{id}/orders
+example.com/store/items/{id}
+```
+* Use hyphens instead of underscores.
+* Version the API.
+```
+example.com/v1/users/{id}
+example.com/v2/users/{id}
+```
