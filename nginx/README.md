@@ -17,7 +17,7 @@ proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header  X-Forwarded-Host $server_name;
 ```
 
-Redirect requests removing API version.
+Redirect requests removing the API version.
 ```
 server {
   ...
