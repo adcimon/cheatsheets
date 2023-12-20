@@ -10,6 +10,7 @@
 * [Pip](#pip)
 * [Virtualenv](#virtualenv)
 * [Conda](#conda)
+* [PyInstaller](#pyinstaller)
 
 ## General
 
@@ -214,4 +215,19 @@ Use Conda in PowerShell.
 ```
 conda init powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+## PyInstaller
+
+[PyInstaller](https://pyinstaller.org/) bundles a Python application and all its dependencies into a single package.
+
+Install.
+```
+pip install pyinstaller
+```
+
+Usage.
+```
+pyinstaller main.py
+pyinstaller main.py --onefile
 ```
