@@ -18,6 +18,11 @@ Print the version.
 python --version
 ```
 
+Print path.
+```
+python -c "import sys; print('\n'.join(sys.path))"
+```
+
 Run an HTTP server.
 ```
 python -m http.server 8080
