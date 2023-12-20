@@ -116,6 +116,11 @@ Discard all local changes.
 hg revert --all
 ```
 
+Revert last local commit.
+```
+hg rollback
+```
+
 Revert changes between 2 commits.
 ```
 hg diff -r <from_changeset> -r <to_changeset>
