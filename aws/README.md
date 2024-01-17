@@ -51,6 +51,11 @@ aws cognito-idp list-user-pools --max-results 10
 
 ## DynamoDB
 
+Scan table.
+```
+aws dynamodb scan --table-name "<table>"
+```
+
 Get item.
 ```
 aws dynamodb get-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<value>\"}}'
