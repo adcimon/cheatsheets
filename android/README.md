@@ -11,5 +11,5 @@
 3. Go to `Additional settings -> Developer options`.
 4. Allow `USB debugging` on the device.
 5. Install `Android Studio`, then `Android SDK`.
-6. Add `adb` to path `%USERPROFILE%\AppData\Local\Android\sdk\platform-tools`.
+6. Add `adb` to path (located at `%USERPROFILE%\AppData\Local\Android\sdk\platform-tools`).
 7. Run [Universal Android Debloater](https://github.com/0x192/universal-android-debloater)
