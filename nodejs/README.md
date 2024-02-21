@@ -153,6 +153,7 @@ List of packages.
 | [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install @types/cron |
 | [Nest Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
 | [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install @types/nodemailer |
+| [node-qrcode](https://github.com/soldair/node-qrcode) | npm install qrcode |
 | [Passport](https://github.com/jaredhanson/passport) | npm install passport<br>npm install @nestjs/passport |
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
 | [Passport JWT](https://github.com/mikenicholson/passport-jwt) | npm install passport-jwt<br>npm install @nestjs/jwt |
