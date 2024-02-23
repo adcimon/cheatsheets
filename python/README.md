@@ -49,6 +49,11 @@ pip install <package>
 pip install -r <requirements.txt>
 ```
 
+Update package.
+```
+pip install --upgrade <package>
+```
+
 Export packages and versions.
 ```
 pip freeze > <requirements.txt>
