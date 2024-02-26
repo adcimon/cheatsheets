@@ -52,6 +52,11 @@ ffmpeg -i <input> <output>
 
 ## Muxing
 
+List available muxers and demuxers.
+```
+ffmpeg -formats
+```
+
 Remux a mkv into mp4.
 ```
 ffmpeg -i input.mkv -c:a copy -c:v copy output.mp4
@@ -71,7 +76,6 @@ List available encoders and decoders.
 ```
 ffmpeg -encoders
 ffmpeg -decoders
-ffmpeg -formats
 ```
 
 Decode input.
