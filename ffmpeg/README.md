@@ -29,6 +29,7 @@
   * [RTMP](#rtmp)
   * [HLS](#hls)
   * [Dash](#dash)
+  * [SRT](#srt)
   * [NDI](#ndi)
   * [Synchronization](#synchronization)
   * [Latency](#latency)
@@ -362,9 +363,29 @@ Play a stream.
 ffplay -i http://<ip>:<port>/<application>/<stream_name>.mpd
 ```
 
+### SRT
+
+🚩 **FFmpeg needs to be compiled with `--enable-libsrt`.**
+
+Listen for connections to send a stream.
+```
+ffmpeg -i <input> srt://:9710?mode=listener
+ffmpeg -i <input> srt://:9710?mode=listener&latency=500
+```
+
+Play a stream.
+```
+ffplay -i srt://:9710?mode=caller
+```
+
+Receive a stream.
+```
+ffmpeg -i srt://:9710?mode=caller <output>
+```
+
 ### NDI
 
-🚩 **NDI removed from FFmpeg due to a [license violation](https://trac.ffmpeg.org/ticket/7589)**.
+🚩 **NDI removed from FFmpeg due to a [license violation](https://trac.ffmpeg.org/ticket/7589).**
 
 List the available NDI sources.
 ```
