@@ -121,7 +121,11 @@ Transport protocols are standardized methods of delivering different types of me
 
 ### SRT
 
-[Secure Reliable Transport (SRT)](https://en.wikipedia.org/wiki/Secure_Reliable_Transport) is an open source transport protocol that provides connection and control, reliable transmission at the application layer using UDP as the underlying transport layer. It supports packet recovery while maintaining low latency (120ms default) and also supports encryption using AES.
+[Secure Reliable Transport (SRT)](https://en.wikipedia.org/wiki/Secure_Reliable_Transport) is an open source transport protocol that provides connection and control, reliable transmission at the application layer using UDP as the underlying transport layer. It supports packet recovery while maintaining low latency (120ms by default) and also supports encryption using AES.
+It has 3 working modes:
+* `Listener` runs a server to listen for incoming connections.
+* `Caller` starts a connection to a known listener.
+* `Rendezvous` creates a bi-directional link where the first to initiate handshake is considered caller.
 
 ### NDI
 
