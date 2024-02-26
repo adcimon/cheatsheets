@@ -293,6 +293,8 @@ ffmpeg -i <input> -map_metadata -1 <output>
 
 ## Streaming
 
+This section has examples of the [supported transport protocols](https://ffmpeg.org/ffmpeg-protocols.html).
+
 ### RTP
 
 Play a stream.
