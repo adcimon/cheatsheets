@@ -375,12 +375,12 @@ ffmpeg -i <input> srt://:9710?mode=listener&latency=500
 
 Play a stream.
 ```
-ffplay -i srt://:9710?mode=caller
+ffplay -i srt://192.168.1.1:9710?mode=caller
 ```
 
 Receive a stream.
 ```
-ffmpeg -i srt://:9710?mode=caller <output>
+ffmpeg -i srt://192.168.1.1:9710?mode=caller <output>
 ```
 
 ### NDI
