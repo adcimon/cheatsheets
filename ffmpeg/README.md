@@ -28,7 +28,7 @@
   * [RTSP](#rtsp)
   * [RTMP](#rtmp)
   * [HLS](#hls)
-  * [Dash](#dash)
+  * [DASH](#dash)
   * [SRT](#srt)
   * [NDI](#ndi)
   * [Synchronization](#synchronization)
