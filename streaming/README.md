@@ -15,6 +15,7 @@
   * [RTMP](#rtmp)
   * [HLS](#hls)
   * [DASH](#dash)
+  * [SRT](#srt)
   * [NDI](#ndi)
 * [Topologies](#topologies)
   * [Mesh](#mesh)
@@ -117,6 +118,10 @@ Transport protocols are standardized methods of delivering different types of me
 ### DASH
 
 [Dynamic Adaptive Streaming over HTTP (DASH)](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP), also known as MPEG-DASH, is an adaptive bitrate streaming technique that enables high quality streaming of media content over the Internet delivered from conventional HTTP web servers. Similar to [HLS](https://en.wikipedia.org/wiki/HTTP_Live_Streaming), DASH works by breaking the content into a sequence of small segments, which are served over HTTP.
+
+### SRT
+
+[Secure Reliable Transport (SRT)](https://en.wikipedia.org/wiki/Secure_Reliable_Transport) is an open source transport protocol that provides connection and control, reliable transmission at the application layer using UDP as the underlying transport layer. It supports packet recovery while maintaining low latency (120ms default) and also supports encryption using AES.
 
 ### NDI
 
