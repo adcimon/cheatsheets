@@ -371,6 +371,7 @@ Listen for connections to send a stream.
 ```
 ffmpeg -i <input> srt://:9710?mode=listener
 ffmpeg -i <input> srt://:9710?mode=listener&latency=500
+ffmpeg -i <input> -c:v libx264 -f mpegts srt://:9710?mode=listener&latency=500
 ```
 
 Play a stream.
