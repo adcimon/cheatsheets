@@ -345,6 +345,11 @@ ffplay -i rtmp://<ip>:1935/<application>/<stream_name>
 ffplay -i "rtmp://<ip>:1935/<application>/<stream_name> live=1"
 ```
 
+Record to file.
+```
+ffmpeg -i rtmp://<ip>:1935/<application>/<stream_name> -acodec copy -vcodec copy <output>
+```
+
 ### HLS
 
 Play a stream.
