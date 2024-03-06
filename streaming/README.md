@@ -7,8 +7,8 @@
 * [Applications](#applications)
 * [Media Servers](#media-servers)
 * [Codecs](#codecs)
-  * [AVC/H.264](#avc/h.264)
-  * [HEVC/H.265](#hevc/h.265)
+  * [AVC/H.264](#avch264)
+  * [HEVC/H.265](#hevch265)
 * [Transport](#transport)
   * [RTP](#rtp)
   * [RTSP](#rtsp)
@@ -32,6 +32,7 @@ Streaming applications are software programs that allow users to reproduce strea
 
 There are many streaming applications available, including:
 * [Open Broadcaster Software (OBS)](https://obsproject.com/)
+  * [obs-ndi](https://github.com/obs-ndi/obs-ndi)
 * [VideoLan Media Player (VLC)](https://www.videolan.org/vlc/)
 * [mpv](https://mpv.io/)
 
