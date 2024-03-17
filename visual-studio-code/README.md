@@ -2,7 +2,7 @@
 
 <p align="center"><img align="center" width="20%" height="20%" src="assets/visualstudiocode.svg"></p>
 
-[Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) is a [source-code editor](https://en.wikipedia.org/wiki/Source-code_editor) made by Microsoft for Windows, Linux and macOS.
+[Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) is a source-code editor made by Microsoft for Windows, Linux and macOS.
 
 ### Extensions
 
