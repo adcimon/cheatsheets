@@ -30,7 +30,7 @@ Use Visual Studio Code.
 * Select `Visual Studio Code` in `External Script Editor`.
 * Click `Regenerate project files`.
 * Go to Visual Studio Code.
-* Install [Unity](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc) plugin (requires .NET SDK).
+* Install [Unity](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc) plugin (requires [.NET SDK](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks)).
 
 Debug Android application.
 * Connect the Android device to the computer using USB.
