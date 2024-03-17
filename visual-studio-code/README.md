@@ -27,4 +27,4 @@
 
 * Go to `File → Preferences → Settings`.
 * Type `Editor: Code Lens`.
-* Disable.
+* Disable the option.
