@@ -22,3 +22,9 @@
 * Press `Ctrl+Shift+P` to open Command Palette.
 * Type `indent` to search for settings related to indentation.
 * Select `Reindent Lines`.
+
+### Disable CodeLens
+
+* Go to `File > Preferences > Settings`.
+* Type `Editor: Code Lens`.
+* Disable.
