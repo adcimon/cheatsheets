@@ -15,22 +15,32 @@
 ## General
 
 Check project version.
-- Open `<ProjectName>/ProjectSettings/ProjectVersion.txt`.
-- Find `m_EditorVersion` or `m_EditorVersionWithRevision` (with changeset).
+* Open `<ProjectName>/ProjectSettings/ProjectVersion.txt`.
+* Find `m_EditorVersion` or `m_EditorVersionWithRevision` (with changeset).
 
 Change a project name.
-- Rename the project folder.
-- Open `<ProjectName>/ProjectSettings/ProjectSettings.asset` with a text editor.
-- Find `productName` and change the name.
+* Rename the project folder.
+* Open `<ProjectName>/ProjectSettings/ProjectSettings.asset` with a text editor.
+* Find `productName` and change the name.
+
+Use Visual Studio Code.
+* Go to `Package Manager`.
+* Install `Visual Studio Editor` package.
+* Go to `Edit → Preferences → External Tools`.
+* Select `Visual Studio Code` in `External Script Editor`.
+* Click `Regenerate project files`.
+* Go to Visual Studio Code.
+* Install [Unity](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc) plugin.
+  * Requires .NET SDK.
 
 Debug Android application.
-- Connect the Android device to the computer using USB.
-- Navigate to the `platform-tools` folder (`C:\Android\sdk\platform-tools`).
-- Run `adb logcat -s Unity`.
+* Connect the Android device to the computer using USB.
+* Navigate to the `platform-tools` folder (`C:\Android\sdk\platform-tools`).
+* Run `adb logcat -s Unity`.
 
 Use a custom Android manifest file.
-- Create the `AndroidManifest.xml` file.
-- Import the manifest file to the folder `Assets/Plugins/Android/`.
+* Create the `AndroidManifest.xml` file.
+* Import the manifest file to the folder `Assets/Plugins/Android/`.
 
 ## Packages
 A package is a container that holds any combination of Assets, Shaders, Textures, plug-ins, icons, and scripts that enhance various parts of the project.
