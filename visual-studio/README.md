@@ -11,7 +11,7 @@
 
 ### Automatically close console when debug stops
 
-* Go to `Tools->Options->Debugging`.
+* Go to `Tools → Options → Debugging`.
 * Check `Automatically close the console when debugging stops`.
 
 ### Fix inconsistent line endings
