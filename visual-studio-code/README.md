@@ -10,7 +10,6 @@
 |---|---|
 | [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) | - |
 | [Colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize) | - |
-| [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) | - |
 | [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next) | - |
 | [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) | - |
 | [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) | - |
