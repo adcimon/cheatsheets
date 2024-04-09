@@ -17,14 +17,19 @@
 | [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) | - |
 | [Unity](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc) | [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)<br>[C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)<br>[.NET Install Tool](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime) |
 
+### Disable CodeLens
+
+* Go to `File → Preferences → Settings`.
+* Type `Editor: Code Lens`.
+* Uncheck.
+
 ### Reindent lines
 
 * Press `Ctrl + Shift + P` to open Command Palette.
 * Type `indent` to search for settings related to indentation.
 * Select `Reindent Lines`.
 
-### Disable CodeLens
+Sort lines alphabetically
 
-* Go to `File → Preferences → Settings`.
-* Type `Editor: Code Lens`.
-* Uncheck.
+* Press `Ctrl + Shift + P` to open Command Palette.
+* Type `Sort Lines Ascending` or press `Alt + A`.
