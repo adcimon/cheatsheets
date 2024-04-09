@@ -29,7 +29,7 @@
 * Type `indent` to search for settings related to indentation.
 * Select `Reindent Lines`.
 
-Sort lines alphabetically
+### Sort lines alphabetically
 
 * Press `Ctrl + Shift + P` to open Command Palette.
 * Type `Sort Lines Ascending` or press `Alt + A`.
