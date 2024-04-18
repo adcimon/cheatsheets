@@ -210,6 +210,16 @@ Cons:
 
 ## Bandwidth Strategies
 
+In video streaming, bandwidth usage directly impacts the resolution, clarity, and overall viewing experience. Higher resolutions like high definition (HD) or standard definition (SD) require more bandwidth for smooth playback than lower ones.
+
+For example:
+<br>
+* A videoconference of 2 streams of 1920x1080 at 30fps, assuming a 3mbps bitrate.<br>
+3/8 `(1MB/s = 8Mb/s)` * 60 `(seconds)` * 2 `(streams)` = 45MB/min
+
+* A videoconference of 2 streams of 640x360 at 30fps, assuming a 1mbps bitrate.<br>
+1/8 `(1MB/s = 8Mb/s)` * 60 `(seconds)` * 2 `(streams)` = 15MB/min
+
 ### Simulcast
 
 Simulcast allows peers to publish multiple versions of the same stream with different **spatial** or **temporal** encodings, effectively sending more data.
