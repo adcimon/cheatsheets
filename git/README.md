@@ -36,6 +36,13 @@ List options.
 git config --list
 ```
 
+`HEAD` is a symbolic reference pointing to a position in the commit history.
+* Attached. It points to a branch reference. When performing certain operations (commits, resets, etc.), the attached branch will move along with `HEAD`.
+* Detached. It points to a commit. New commits will not be associated with a branch reference.
+```
+cat .git/HEAD
+```
+
 ## Repositories
 
 Initialize a repository
@@ -143,6 +150,12 @@ git commit --amend -m "Updated message"
 Revert the changes made to a file.
 ```
 git restore <file>
+```
+
+Undo the last commit, preserving changes locally.
+```
+git reset
+git reset HEAD~
 ```
 
 Revert all commits after the specified commit, preserving changes locally.
