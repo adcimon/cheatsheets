@@ -139,6 +139,7 @@ List of packages.
 | Package | Install |
 |---|---|
 | [Axios](https://github.com/axios/axios) | npm install axios |
+| [dnd-kit](https://github.com/clauderic/dnd-kit) | npm install @dnd-kit/core |
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
 | [Electron](https://github.com/electron/electron) | npm install --save-dev electron |
 | [Electron Builder](https://github.com/electron-userland/electron-builder) | npm install --save-dev electron-builder |
@@ -165,6 +166,7 @@ List of packages.
 | [serve](https://github.com/vercel/serve) | npm install --global serve |
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
 | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install --save-dev tailwindcss |
+| [Three](https://github.com/mrdoob/three.js) | npm install three |
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
 | [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript<br>npm install --save-dev typescript<br>npm install --global typescript |
 | [uuid](https://github.com/uuidjs/uuid) | npm install uuid |
