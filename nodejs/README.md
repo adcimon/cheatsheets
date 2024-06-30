@@ -40,7 +40,7 @@ https://deb.nodesource.com/setup_10.x
 [Node Package Manager (npm)](https://www.npmjs.com/) is the package manager of Node.
 * `CommonJS` is the original module system (`require`, `module.exports` and `.cjs` files).
 * `ECMAScript` module system became a standard and support was added for it (`import`, `export` and `.mjs` files).
-* JavaScript `.js` files are treated as whatever the module system for the project is, CommonJS by default or `package.json` `"type": "module"`.
+* JavaScript `.js` files are treated as whatever the module system for the project is, defined in `package.json`, CommonJS by default or ECMAScript (`"type": "module"`).
 
 Update npm.
 ```
