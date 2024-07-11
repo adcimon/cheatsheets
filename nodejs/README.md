@@ -71,6 +71,8 @@ npm install <package>@<version>
 npm install git+https://<host>/<user>/<package>.git
 npm install git+ssh://git@<host>/<user>/<package>.git
 ```
+* By default saves the package to `dependencies`.
+* `--save-dev` saves the package to `devDependencies`.
 
 Uninstall a package.
 ```
