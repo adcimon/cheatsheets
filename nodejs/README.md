@@ -153,26 +153,26 @@ List of packages.
 | [Material UI](https://github.com/mui/material-ui) | npm install @mui/material @emotion/react @emotion/styled |
 | [Material UI Icons](https://github.com/mui/material-ui) | npm install @mui/icons-material |
 | [Moment](https://github.com/moment/moment/) | npm install moment |
-| [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install @types/multer |
+| [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install --save-dev @types/multer |
 | [Nest](https://github.com/nestjs/nest) | npm install --global @nestjs/cli |
-| [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install @types/cron |
+| [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install --save-dev @types/cron |
 | [Nest Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
-| [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install @types/nodemailer |
+| [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install --save-dev @types/nodemailer |
 | [node-qrcode](https://github.com/soldair/node-qrcode) | npm install qrcode |
 | [Passport](https://github.com/jaredhanson/passport) | npm install passport<br>npm install @nestjs/passport |
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
 | [Passport JWT](https://github.com/mikenicholson/passport-jwt) | npm install passport-jwt<br>npm install @nestjs/jwt |
-| [React](https://github.com/facebook/react) | npm install react<br>npm install @types/react<br>npm install @types/react-dom |
-| [React Beautiful DnD](https://github.com/atlassian/react-beautiful-dnd) | npm install react-beautiful-dnd<br>npm install @types/react-beautiful-dnd |
+| [React](https://github.com/facebook/react) | npm install react<br>npm install --save-dev @types/react<br>npm install --save-dev @types/react-dom |
+| [React Beautiful DnD](https://github.com/atlassian/react-beautiful-dnd) | npm install react-beautiful-dnd<br>npm install --save-dev @types/react-beautiful-dnd |
 | [React Hot Toast](https://github.com/timolins/react-hot-toast) | npm install react-hot-toast |
-| [React Transition Group](https://github.com/reactjs/react-transition-group) | npm install react-transition-group<br>npm install @types/react-transition-group |
+| [React Transition Group](https://github.com/reactjs/react-transition-group) | npm install react-transition-group<br>npm install --save-dev @types/react-transition-group |
 | [Recoil](https://github.com/facebookexperimental/Recoil) | npm install recoil |
 | [serve](https://github.com/vercel/serve) | npm install --global serve |
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
 | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install --save-dev tailwindcss |
 | [Three](https://github.com/mrdoob/three.js) | npm install three |
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
-| [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript<br>npm install --save-dev typescript<br>npm install --global typescript |
+| [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript<br>npm install --save-dev typescript |
 | [uuid](https://github.com/uuidjs/uuid) | npm install uuid |
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
