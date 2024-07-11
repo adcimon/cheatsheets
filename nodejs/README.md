@@ -146,6 +146,7 @@ List of packages.
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
 | [Electron](https://github.com/electron/electron) | npm install --save-dev electron |
 | [Electron Builder](https://github.com/electron-userland/electron-builder) | npm install --save-dev electron-builder |
+| [esbuild](https://github.com/evanw/esbuild) | npm install --save-exact --save-dev esbuild |
 | [fs-extra](https://github.com/jprichardson/node-fs-extra) | npm install fs-extra |
 | [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) | npm install jsonwebtoken |
 | [ms](https://github.com/vercel/ms) | npm install ms |
