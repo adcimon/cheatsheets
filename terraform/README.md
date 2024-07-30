@@ -28,6 +28,11 @@ Initialize a working directory.
 terraform init
 ```
 
+Download and update modules mentioned in the root module.
+```
+terraform get
+```
+
 Rewrite configuration files to a canonical format and style.
 ```
 terraform fmt
