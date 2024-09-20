@@ -137,17 +137,17 @@ A string that can be empty.
 ^(^$)|(<OTHER_REGEXP>)$
 ```
 
-Alphanumeric word (e.g. nicknames).
+Alphanumeric string (e.g. nicknames).
 ```
 ^[a-zA-Z]+[a-zA-Z0-9]*$
 ```
 
-Alpha words separated by spaces (e.g. names and surnames).
+Alpha strings separated by spaces (e.g. names or surnames).
 ```
 ^[a-zA-Z]+( [a-zA-Z]+)*$
 ```
 
-Alphanumeric words separated by spaces.
+Alphanumeric strings separated by spaces (e.g `Route 66`).
 ```
 ^[a-zA-Z]+[a-zA-Z0-9]*( [a-zA-Z0-9]+)*$
 ```
