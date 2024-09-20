@@ -116,6 +116,11 @@ Discard all local changes.
 hg revert --all
 ```
 
+Delete all untracked files.
+```
+hg purge
+```
+
 Revert last local commit.
 ```
 hg rollback
