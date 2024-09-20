@@ -137,6 +137,21 @@ A string that can be empty.
 ^(^$)|(<OTHER_REGEXP>)$
 ```
 
+Alphanumeric word (e.g. nicknames).
+```
+^[a-zA-Z]+[a-zA-Z0-9]*$
+```
+
+Alpha words separated by spaces (e.g. names and surnames).
+```
+^[a-zA-Z]+( [a-zA-Z]+)*$
+```
+
+Alphanumeric words separated by spaces.
+```
+^[a-zA-Z]+[a-zA-Z0-9]*( [a-zA-Z0-9]+)*$
+```
+
 ## References
 
 * [RE2](https://github.com/google/re2/wiki/Syntax)
