@@ -26,7 +26,7 @@ HTTP headers are a list of strings sent and received by both the client program 
 
 ### Content-Disposition
 
-`Content-Disposition` describes what the recipient should do with the content: should it be displayed inline in the browser, or downloaded as an attachment and saved as a file.
+`Content-Disposition` describes what the recipient should do with the content, should it be displayed inline in the browser, or downloaded as an attachment and saved as a file.
 
 ```
 Content-Disposition: [attachment|inline]; filename="[filename]"
