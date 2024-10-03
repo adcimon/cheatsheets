@@ -7,6 +7,7 @@
 ## Index
 
 * [Methods](#methods)
+* [Headers](#headers)
 * [REST](#rest)
 
 ## Methods
@@ -18,6 +19,30 @@ HTTP methods (`verbs`) indicate the desired action to be performed on the identi
 * `PUT` method requests that the target resource create or update its state with the `total` state defined by the representation enclosed in the request.
 * `PATCH` method requests that the target resource modify its state according to the `partial` update defined in the representation enclosed in the request.
 * `DELETE` method requests that the target resource delete its state.
+
+## Headers
+
+HTTP headers are a list of strings sent and received by both the client program and server on every HTTP request and response.
+
+### Content-Disposition
+
+`Content-Disposition` describes what the recipient should do with the content: should it be displayed inline in the browser, or downloaded as an attachment and saved as a file.
+
+```
+Content-Disposition: [attachment|inline]; filename="[filename]"
+```
+* `attachment` specifies that the file should be downloaded.
+*  `inline` specifies that the file should be displayed in the browser.
+*  `filename` specifies what downloaded file should be named.
+
+This header is commonly used with a HTML anchor element to download a file from a URL.
+```
+const link = document.createElement('a');
+link.target = '_blank';
+link.href = url;
+link.download = filename;
+link.click();
+```
 
 ## REST
 
