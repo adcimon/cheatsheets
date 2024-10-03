@@ -26,13 +26,13 @@ HTTP headers are a list of strings sent and received by both the client program 
 
 ### Content-Disposition
 
-`Content-Disposition` describes what the recipient should do with the content, should it be displayed inline in the browser, or downloaded as an attachment and saved as a file.
+`Content-Disposition` describes what the receiver should do with the content, should it be displayed in the browser or downloaded as a file.
 
 ```
 Content-Disposition: [attachment|inline]; filename="[filename]"
 ```
-* `attachment` specifies that the file should be downloaded.
 *  `inline` specifies that the file should be displayed in the browser.
+* `attachment` specifies that the file should be downloaded.
 *  `filename` specifies what downloaded file should be named.
 
 This header is commonly used with a HTML anchor element to download a file from a URL.
