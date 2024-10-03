@@ -29,7 +29,7 @@ HTTP headers are a list of strings sent and received by both the client program 
 [Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) describes what the receiver should do with the content, should it be displayed in the browser or downloaded as a file.
 
 ```
-Content-Disposition: [attachment|inline]; filename="[filename]"
+Content-Disposition: [inline|attachment]; filename="[filename]"
 ```
 *  `inline` specifies that the file should be displayed in the browser.
 * `attachment` specifies that the file should be downloaded.
