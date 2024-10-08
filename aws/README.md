@@ -66,9 +66,9 @@ Update item.
 ```
 aws dynamodb update-item --table-name "<table>"
 	--key '{\"<key>\": {\"S\": \"<value>\"}}'
-	--update-expression "SET #H = :h"
-	--expression-attribute-names '{\"#H\": \"<attribute_name>\"}'
-	--expression-attribute-values '{\":h\": {\"<attribute_type>\": \"<args.attribute_value>\"}}'
+	--update-expression "SET #Name = :value"
+	--expression-attribute-names '{\"#Name\": \"<attribute_name>\"}'
+	--expression-attribute-values '{\":value\": {\"<attribute_type>\": \"<args.attribute_value>\"}}'
 ```
 
 Delete item.
