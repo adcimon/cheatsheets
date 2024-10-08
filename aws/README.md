@@ -55,10 +55,20 @@ Scan table.
 ```
 aws dynamodb scan --table-name "<table>"
 ```
+* [Scanning tables in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html)
 
 Get item.
 ```
 aws dynamodb get-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<value>\"}}'
+```
+
+Update item.
+```
+aws dynamodb update-item --table-name "<table>"
+	--key '{\"<key>\": {\"S\": \"<value>\"}}'
+	--update-expression "SET #H = :h"
+	--expression-attribute-names '{\"#H\": \"<attribute_name>\"}'
+	--expression-attribute-values '{\":h\": {\"<attribute_type>\": \"<args.attribute_value>\"}}'
 ```
 
 Delete item.
