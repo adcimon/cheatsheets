@@ -1,12 +1,13 @@
-# Cryptography
+# Security
 
-[Cryptography](https://en.wikipedia.org/wiki/Cryptography) is the practice and study of techniques for secure communication protocols that prevent third parties or the public from reading private messages.
+[Computer security](https://en.wikipedia.org/wiki/Computer_security) (also cybersecurity, digital security, or information technology (IT) security) is the protection of computer software, systems and networks from threats that can lead to unauthorized information disclosure, theft or damage to hardware, software, or data, as well as from the disruption or misdirection of the services they provide.
 
 ## Index
 
 * [JWT](#jwt)
 * [TLS](#tls)
   * [OpenSSL](#openssl)
+* [References](#references)
 
 ## JWT
 
