@@ -111,7 +111,7 @@ aws s3 ls
 
 Download bucket.
 ```
-aws s3 sync <uri> .
-aws s3 sync s3://<name> .
-aws s3 sync s3://<path> .
+aws s3 sync <uri> <local_path>
+aws s3 sync s3://<name> <local_path>
+aws s3 sync s3://<path> <local_path>
 ```
