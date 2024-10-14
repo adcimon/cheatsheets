@@ -108,3 +108,10 @@ List buckets.
 ```
 aws s3 ls
 ```
+
+Download bucket.
+```
+aws s3 sync <uri> .
+aws s3 sync s3://<name> .
+aws s3 sync s3://<path> .
+```
