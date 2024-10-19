@@ -8,6 +8,7 @@
 
 * [Install](#install)
 * [Usage](#usage)
+* [Providers Within Modules](#providers-within-modules)
 
 # Install
 
@@ -56,4 +57,66 @@ terraform apply
 Destroy all remote resources of a plan.
 ```
 terraform destroy
+```
+
+# Providers Within Modules
+
+At `root` module.
+``` file=main.tf
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    } 
+  }
+}
+
+provider "aws" {
+  alias = "dev"
+  # ...
+}
+
+provider "aws" {
+  alias = "pro"
+  # ...
+}
+```
+
+``` file=modules.tf
+module "module1" {
+  source = "./module1"
+  providers = {
+    aws.dev = aws.dev
+    aws.pro = aws.pro
+  }
+} 
+```
+
+Inside `module1`.
+``` file=main.tf
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      configuration_aliases = [
+        aws.dev,
+        aws.pro,
+      ]
+    } 
+  }
+}
+
+module "submodule1" {
+  source = "./submodule1"
+  providers = {
+    aws = aws.dev
+  }
+} 
+
+module "submodule2" {
+  source = "./submodule2"
+  providers = {
+    aws = aws.pro
+  }
+}
 ```
