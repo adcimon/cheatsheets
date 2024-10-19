@@ -70,10 +70,10 @@ root
 ├── submodule1
 │   ├── main.tf
 │   ├── modules.tf
-│   ├── submodule1
+│   ├── submodule2
 |   |   ├── main.tf
 |   |   └── ...
-│   ├── submodule2
+│   ├── submodule3
 |   |   ├── main.tf
 |   |   └── ...
 │   └── ...
