@@ -72,12 +72,12 @@ terraform {
 }
 
 provider "aws" {
-  alias = "dev"
+  alias = "prov1"
   # ...
 }
 
 provider "aws" {
-  alias = "pro"
+  alias = "prov2"
   # ...
 }
 ```
@@ -87,8 +87,8 @@ At `root` module, `modules.tf` file.
 module "submodule1" {
   source = "./submodule1"
   providers = {
-    aws.dev = aws.dev
-    aws.pro = aws.pro
+    aws.prov1 = aws.prov1
+    aws.prov2 = aws.prov2
   }
 } 
 ```
@@ -100,8 +100,8 @@ terraform {
     aws = {
       source = "hashicorp/aws"
       configuration_aliases = [
-        aws.dev,
-        aws.pro,
+        aws.prov1,
+        aws.prov2,
       ]
     } 
   }
@@ -110,14 +110,14 @@ terraform {
 module "submodule2" {
   source = "./submodule2"
   providers = {
-    aws = aws.dev
+    aws = aws.prov1
   }
 } 
 
 module "submodule3" {
   source = "./submodule3"
   providers = {
-    aws = aws.pro
+    aws = aws.prov2
   }
 }
 ```
