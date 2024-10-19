@@ -61,7 +61,7 @@ terraform destroy
 
 # Providers Within Modules
 
-At `root` module.
+At `root` module, `main.tf` file.
 ``` file=main.tf
 terraform {
   required_providers {
@@ -82,6 +82,7 @@ provider "aws" {
 }
 ```
 
+At `root` module, `modules.tf` file.
 ``` file=modules.tf
 module "module1" {
   source = "./module1"
@@ -92,7 +93,7 @@ module "module1" {
 } 
 ```
 
-Inside `module1`.
+At `module1` module, `main.tf` file.
 ``` file=main.tf
 terraform {
   required_providers {
