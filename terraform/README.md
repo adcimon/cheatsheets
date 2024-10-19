@@ -8,7 +8,7 @@
 
 * [Install](#install)
 * [Usage](#usage)
-* [Providers Within Modules](#providers-within-modules)
+* [Modules](#modules)
 
 # Install
 
@@ -59,7 +59,9 @@ Destroy all remote resources of a plan.
 terraform destroy
 ```
 
-# Providers Within Modules
+# Modules
+
+A [module](https://developer.hashicorp.com/terraform/language/modules/develop) is a container for multiple resources that are used together.
 
 Configuration with multiple providers and modules.
 
