@@ -123,7 +123,7 @@ module "submodule3" {
 ```
 
 At `submodule2` and `submodule3`, `main.tf` file.
-```
+``` file=main.tf
 terraform {
   required_providers {
     aws = {
