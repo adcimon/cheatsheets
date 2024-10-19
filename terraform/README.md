@@ -83,7 +83,7 @@ root
 ```
 
 At `root` module, `main.tf` file.
-``` file=main.tf
+```
 terraform {
   required_providers {
     aws = {
@@ -104,7 +104,7 @@ provider "aws" {
 ```
 
 At `root` module, `modules.tf` file.
-``` file=modules.tf
+```
 module "submodule1" {
   source = "./submodule1"
   providers = {
@@ -115,7 +115,7 @@ module "submodule1" {
 ```
 
 At `submodule1` module, `main.tf` file.
-``` file=main.tf
+```
 terraform {
   required_providers {
     aws = {
@@ -130,7 +130,7 @@ terraform {
 ```
 
 At `submodule1` module, `modules.tf` file.
-``` file=modules.tf
+```
 module "submodule2" {
   source = "./submodule2"
   providers = {
@@ -146,8 +146,8 @@ module "submodule3" {
 }
 ```
 
-At `submodule2` and `submodule3`, `main.tf` file.
-``` file=main.tf
+At `submodule2` and `submodule3` modules, `main.tf` file.
+```
 terraform {
   required_providers {
     aws = {
