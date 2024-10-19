@@ -84,8 +84,8 @@ provider "aws" {
 
 At `root` module, `modules.tf` file.
 ``` file=modules.tf
-module "module1" {
-  source = "./module1"
+module "submodule1" {
+  source = "./submodule1"
   providers = {
     aws.dev = aws.dev
     aws.pro = aws.pro
@@ -93,7 +93,7 @@ module "module1" {
 } 
 ```
 
-At `module1` module, `main.tf` file.
+At `submodule1` module, `main.tf` file.
 ``` file=main.tf
 terraform {
   required_providers {
@@ -107,17 +107,28 @@ terraform {
   }
 }
 
-module "submodule1" {
-  source = "./submodule1"
+module "submodule2" {
+  source = "./submodule2"
   providers = {
     aws = aws.dev
   }
 } 
 
-module "submodule2" {
-  source = "./submodule2"
+module "submodule3" {
+  source = "./submodule3"
   providers = {
     aws = aws.pro
+  }
+}
+```
+
+At `submodule2` and `submodule3`, `main.tf` file.
+```
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    } 
   }
 }
 ```
