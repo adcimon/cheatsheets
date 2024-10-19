@@ -61,6 +61,25 @@ terraform destroy
 
 # Providers Within Modules
 
+Configuration with multiple providers and modules.
+
+```
+root
+├── main.tf
+├── modules.tf
+├── submodule1
+│   ├── main.tf
+│   ├── modules.tf
+│   ├── submodule1
+|   |   ├── main.tf
+|   |   └── ...
+│   ├── submodule2
+|   |   ├── main.tf
+|   |   └── ...
+│   └── ...
+└── ...
+```
+
 At `root` module, `main.tf` file.
 ``` file=main.tf
 terraform {
@@ -106,7 +125,10 @@ terraform {
     } 
   }
 }
+```
 
+At `submodule1` module, `modules.tf` file.
+``` file=modules.tf
 module "submodule2" {
   source = "./submodule2"
   providers = {
