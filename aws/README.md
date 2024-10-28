@@ -78,7 +78,7 @@ aws dynamodb delete-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<va
 
 ## SES
 
-Send email command.
+Send email command input.
 ```
 {
 	"FromEmailAddress": "from@email.com",
