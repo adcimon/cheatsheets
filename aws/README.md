@@ -101,6 +101,7 @@ Send email command input.
 	}
 }
 ```
+* [Send raw email](https://docs.aws.amazon.com/ses/latest/dg/send-email-raw.html).
 
 ## S3
 
