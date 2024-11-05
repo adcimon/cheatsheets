@@ -110,6 +110,8 @@ Update packages.
 ```
 npm update
 npm update --save
+npm update <package>
+npm update <package> --save
 ```
 
 Recreate `package-lock.json`.
