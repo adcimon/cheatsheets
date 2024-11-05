@@ -146,6 +146,7 @@ List of packages.
 | Package | Install |
 |---|---|
 | [Axios](https://github.com/axios/axios) | npm install axios |
+| [dnd](https://github.com/hello-pangea/dnd) | npm install @hello-pangea/dnd |
 | [dnd-kit](https://github.com/clauderic/dnd-kit) | npm install @dnd-kit/core |
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
 | [Electron](https://github.com/electron/electron) | npm install --save-dev electron |
@@ -167,7 +168,6 @@ List of packages.
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
 | [Passport JWT](https://github.com/mikenicholson/passport-jwt) | npm install passport-jwt<br>npm install @nestjs/jwt |
 | [React](https://github.com/facebook/react) | npm install react<br>npm install --save-dev @types/react<br>npm install --save-dev @types/react-dom |
-| [React Beautiful DnD](https://github.com/atlassian/react-beautiful-dnd) | npm install react-beautiful-dnd<br>npm install --save-dev @types/react-beautiful-dnd |
 | [React Hot Toast](https://github.com/timolins/react-hot-toast) | npm install react-hot-toast |
 | [React Transition Group](https://github.com/reactjs/react-transition-group) | npm install react-transition-group<br>npm install --save-dev @types/react-transition-group |
 | [Recoil](https://github.com/facebookexperimental/Recoil) | npm install recoil |
