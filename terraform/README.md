@@ -37,6 +37,7 @@ terraform get
 Rewrite configuration files to a canonical format and style.
 ```
 terraform fmt
+terraform fmt -recursive
 ```
 
 Validate the configuration files without accessing any remote service.
