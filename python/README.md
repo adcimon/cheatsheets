@@ -133,7 +133,7 @@ Environments are located at:
 * `C:/ProgramData/Anaconda3/envs`
 * `C:/Users/<user>/.conda/envs`
 
-List all the environments.
+List all environments.
 ```
 conda info --envs
 ```
