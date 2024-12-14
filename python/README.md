@@ -117,6 +117,16 @@ List available Python versions.
 conda search python
 ```
 
+Clean all.
+```
+conda clean --all
+```
+
+Clean packages cache.
+```
+conda clean --packages
+```
+
 ### Environments
 
 Environments are located at:
