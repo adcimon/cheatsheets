@@ -14,7 +14,7 @@
 
 ## General
 
-Print the version.
+Print version.
 ```
 python --version
 ```
@@ -177,7 +177,7 @@ conda remove --name <env> --all
 
 ### Packages
 
-List the packages.
+List packages.
 ```
 conda list
 ```
@@ -209,7 +209,7 @@ conda remove <package>
 
 ### Environment variables
 
-List the environment variables.
+List environment variables.
 ```
 conda env config vars list
 ```
