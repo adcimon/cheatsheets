@@ -91,6 +91,12 @@ Uninstall a global package.
 * Delete the package files.
 * Go to `node_modules` and delete the package.
 
+Move a package from `dev` to `prod` or viceversa.
+```
+npm install <package> --save-dev
+npm install <package> --save-prod
+```
+
 List global packages.
 ```
 npm list --global
@@ -179,6 +185,7 @@ List of packages.
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
 | [Typescript](https://github.com/Microsoft/TypeScript) | npm install typescript<br>npm install --save-dev typescript |
 | [uuid](https://github.com/uuidjs/uuid) | npm install uuid |
+| [Vite](https://github.com/vitejs/vite) | npm install vite<br>npm install @vitejs/plugin-react |
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
