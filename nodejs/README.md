@@ -74,6 +74,12 @@ npm install git+ssh://git@<host>/<user>/<package>.git
 * By default saves the package to `dependencies`.
 * `--save-dev` saves the package to `devDependencies`.
 
+Move a package from `dev` to `prod` or viceversa.
+```
+npm install <package> --save-dev
+npm install <package> --save-prod
+```
+
 Uninstall a package.
 ```
 npm uninstall <package>
@@ -90,12 +96,6 @@ Uninstall a global package.
 * Go to `C:\Users\<user>\AppData\Roaming\npm`.
 * Delete the package files.
 * Go to `node_modules` and delete the package.
-
-Move a package from `dev` to `prod` or viceversa.
-```
-npm install <package> --save-dev
-npm install <package> --save-prod
-```
 
 List global packages.
 ```
