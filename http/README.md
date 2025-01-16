@@ -27,9 +27,12 @@ HTTP headers are a list of strings sent and received by both the client program 
 ### Authorization
 
 [Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) is used to provide credentials that authenticate a user agent with a server, allowing access to protected resources.
-* `Authorization: Basic base64(<username>:<password>)`
-* `Authorization: Bearer <token>`
-* `Authorization: ApiKey base64(<api_key>:<secret_key>)`
+
+```
+Authorization: Basic base64(<username>:<password>)
+Authorization: Bearer <token>
+Authorization: ApiKey base64(<api_key>:<secret_key>)
+```
 
 ### Content-Disposition
 
