@@ -1,4 +1,4 @@
-# Security
+# Cybersecurity
 
 [Computer security](https://en.wikipedia.org/wiki/Computer_security) (also known as cybersecurity) is the protection of computer software, systems and networks from threats that can lead to unauthorized information disclosure, theft or damage to hardware, software, or data, as well as from the disruption or misdirection of the services they provide.
 
