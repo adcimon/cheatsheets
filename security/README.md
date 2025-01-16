@@ -53,10 +53,9 @@ Authorization: ApiKey <base64<api_key:secret_key>
 * `Optional`: For higher security use only the API Key in headers and sign requests using the secret key.
 
 2. Server-Side Validation:
-
-* Retrieve the hashed secret key for the provided API key from your database.
-* Hash the provided secret key from the request and compare it with the stored hash.
-* If they match, grant access, otherwise, return a 401 unauthorized response.
+    * Retrieve the hashed secret key for the provided API key from your database.
+    * Hash the provided secret key from the request and compare it with the stored hash.
+    * If they match, grant access, otherwise, return a 401 unauthorized response.
 
 ## JWT
 
