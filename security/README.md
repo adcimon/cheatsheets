@@ -4,10 +4,15 @@
 
 ## Index
 
+* [API Keys](#api_keys)
 * [JWT](#jwt)
 * [TLS](#tls)
   * [OpenSSL](#openssl)
 * [References](#references)
+
+## API Keys
+
+[API keys](https://en.wikipedia.org/wiki/API_key) are secret unique identifiers used to authenticate and authorize a user, developer, or calling program to an API.
 
 ## JWT
 
