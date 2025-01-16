@@ -16,7 +16,7 @@
 
 ### Generation Workflow
 
-1. Ensure the user is registered and authenticated (e.g. via email/password, OAuth).
+1. Ensure the user is registered and authenticated (e.g. via email/password or OAuth).
 2. Only authenticated users can generate API keys.
 3. Creation.
     * The user requests the creation of an API key pair (e.g. via a specific endpoint like POST /api-keys).
