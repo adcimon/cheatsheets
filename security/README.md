@@ -16,13 +16,13 @@
 
 ### Generation Workflow
 
-1. Ensure the user is registered and authenticated (e.g. via email/password or OAuth).
+1. Ensure the user is registered and authenticated (e.g. `email/password` or `OAuth`).
 2. Only authenticated users can generate API keys.
 3. Creation.
-    * The user requests the creation of an API key pair (e.g. via a specific endpoint like POST /api-keys).
+    * The user requests the creation of an API key pair (e.g. `POST /api-keys`).
     * Generate a unique `API Key` (public) and a `Secret Key` (private).
-        * `API Key`: A unique identifier for the user or client (e.g. UUID or hash).
-        * `Secret Key`: A randomly generated, secure string (e.g. 256-bit key).
+        * `API Key`: A unique identifier for the user or client (e.g. `UUID` or `hash`).
+        * `Secret Key`: A randomly generated, secure string (e.g. `UUID` or `256-bit key`).
     * Store the API key and a hashed version of the secret key securely in your database.
         * Use a strong hashing algorithm for the secret key (e.g. `SHA-256` or `bcrypt`).
     * Return the API key and the raw secret key to the user in the response.
@@ -37,18 +37,20 @@
 1. Authenticate API Requests:
     * Require the API key and secret key for authorized requests.
     * Sent them in the HTTP headers.
+
 ```
 GET /resource HTTP/1.1
 Host: api.example.com
 x-api-key: <api_key>
 x-api-secret: <secret_key>
 ```
+
 ```
 GET /resource HTTP/1.1
 Host: api.example.com
 Authorization: ApiKey <base64<api_key:secret_key>
 ```
-* Alternatively, for higher security, use only the API Key in headers and sign requests using the secret key.
+* `Optional`: For higher security use only the API Key in headers and sign requests using the secret key.
 
 2. Server-Side Validation:
 
