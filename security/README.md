@@ -28,9 +28,9 @@
     * Return the API key and the raw secret key to the user in the response.
         * `Important`: The raw secret key should never be stored in plaintext or retrievable again. Inform the user to save it securely.
 4. Management.
-    * List API keys for the user (e.g. GET /api-keys).
-    * Revoke/delete an API key (e.g. DELETE /api-keys/{key_id}).
-    * Regenerate a secret key (e.g. POST /api-keys/{key_id}/regenerate).
+    * List API keys for the user (e.g. `GET /api-keys`).
+    * Revoke/delete an API key (e.g. `DELETE /api-keys/<key_id>`).
+    * Regenerate a secret key (e.g. `POST /api-keys/<key_id>/regenerate`).
 
 ### Usage Workflow
 
