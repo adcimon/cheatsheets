@@ -24,6 +24,13 @@ HTTP methods (`verbs`) indicate the desired action to be performed on the identi
 
 HTTP headers are a list of strings sent and received by both the client program and server on every HTTP request and response.
 
+### Authorization
+
+[Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) is used to provide credentials that authenticate a user agent with a server, allowing access to protected resources.
+* `Authorization: Basic base64(<username>:<password>)`
+* `Authorization: Bearer <token>`
+* `Authorization: ApiKey base64(<api_key>:<secret_key>)`
+
 ### Content-Disposition
 
 [Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) describes what the receiver should do with the content, should it be displayed in the browser or downloaded as a file.
@@ -77,7 +84,6 @@ It has been employed throughout the software industry to create [stateless](http
 ```
 /customers?sort=lastname,age
 ```
-
 * Pagination.
 ```
 /customers?limit=50
