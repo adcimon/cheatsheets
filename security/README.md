@@ -16,9 +16,10 @@
 
 ### Generation Workflow
 
-1. Ensure the user is registered and authenticated (e.g. `email/password` or `OAuth`).
-2. Only authenticated users can generate API keys.
-3. Creation.
+1. Authentication.
+    * Ensure the user is registered and authenticated (e.g. `email/password` or `OAuth`).
+    * Only authenticated users can generate API keys.
+2. Creation.
     * The user requests the creation of an API key pair (e.g. `POST /api-keys`).
     * Generate a unique `API Key` (public) and a `Secret Key` (private).
         * `API Key`: A unique identifier for the user or client (e.g. `UUID` or `hash`).
@@ -27,14 +28,14 @@
         * Use a strong hashing algorithm for the secret key (e.g. `SHA-256` or `bcrypt`).
     * Return the API key and the raw secret key to the user in the response.
         * `Important`: The raw secret key should never be stored in plaintext or retrievable again. Inform the user to save it securely.
-4. Management.
+3. Management.
     * List API keys for the user (e.g. `GET /api-keys`).
     * Revoke/delete an API key (e.g. `DELETE /api-keys/<key_id>`).
     * Regenerate a secret key (e.g. `POST /api-keys/<key_id>/regenerate`).
 
 ### Usage Workflow
 
-1. Authenticate API Requests:
+1. Authenticate API Requests.
     * Require the API key and secret key for authorized requests.
     * Sent them in the HTTP headers.
 
@@ -52,7 +53,7 @@ Authorization: ApiKey <base64<api_key:secret_key>
 ```
 * `Optional`: For higher security use only the API Key in headers and sign requests using the secret key.
 
-2. Server-Side Validation:
+2. Server-Side Validation.
     * Retrieve the hashed secret key for the provided API key from your database.
     * Hash the provided secret key from the request and compare it with the stored hash.
     * If they match, grant access, otherwise, return a 401 unauthorized response.
