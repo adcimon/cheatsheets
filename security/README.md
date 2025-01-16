@@ -4,7 +4,7 @@
 
 ## Index
 
-* [API Keys](#api_keys)
+* [API Keys](#api-keys)
 * [JWT](#jwt)
 * [TLS](#tls)
   * [OpenSSL](#openssl)
@@ -13,6 +13,48 @@
 ## API Keys
 
 [API keys](https://en.wikipedia.org/wiki/API_key) are secret unique identifiers used to authenticate and authorize a user, developer, or calling program to an API.
+
+### Generation Workflow
+
+1. Ensure the user is registered and authenticated (e.g. via email/password, OAuth).
+2. Only authenticated users can generate API keys.
+3. Creation.
+    * The user requests the creation of an API key pair (e.g. via a specific endpoint like POST /api-keys).
+    * Generate a unique `API Key` (public) and a `Secret Key` (private).
+        * `API Key`: A unique identifier for the user or client (e.g. UUID or hash).
+        * `Secret Key`: A randomly generated, secure string (e.g. 256-bit key).
+    * Store the API key and a hashed version of the secret key securely in your database.
+        * Use a strong hashing algorithm for the secret key (e.g. `SHA-256` or `bcrypt`).
+    * Return the API key and the raw secret key to the user in the response.
+        * `Important`: The raw secret key should never be stored in plaintext or retrievable again. Inform the user to save it securely.
+4. Management.
+    * List API keys for the user (e.g. GET /api-keys).
+    * Revoke/delete an API key (e.g. DELETE /api-keys/{key_id}).
+    * Regenerate a secret key (e.g. POST /api-keys/{key_id}/regenerate).
+
+### Usage Workflow
+
+1. Authenticate API Requests:
+    * Require the API key and secret key for authorized requests.
+    * Sent them in the HTTP headers.
+```
+GET /resource HTTP/1.1
+Host: api.example.com
+x-api-key: <api_key>
+x-api-secret: <secret_key>
+```
+```
+GET /resource HTTP/1.1
+Host: api.example.com
+Authorization: ApiKey <base64<api_key:secret_key>
+```
+* Alternatively, for higher security, use only the API Key in headers and sign requests using the secret key.
+
+2. Server-Side Validation:
+
+* Retrieve the hashed secret key for the provided API key from your database.
+* Hash the provided secret key from the request and compare it with the stored hash.
+* If they match, grant access, otherwise, return a 401 unauthorized response.
 
 ## JWT
 
