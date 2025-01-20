@@ -42,8 +42,8 @@
 ```
 GET /resource HTTP/1.1
 Host: api.example.com
-x-api-key: <api_key>
-x-api-secret: <secret_key>
+x-api-key: <base64(api_key)>
+x-api-secret: <base64(secret_key)>
 ```
 
 ```
