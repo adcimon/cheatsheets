@@ -49,7 +49,7 @@ x-api-secret: <secret_key>
 ```
 GET /resource HTTP/1.1
 Host: api.example.com
-Authorization: ApiKey <base64<api_key:secret_key>
+Authorization: ApiKey <base64(api_key:secret_key)>
 ```
 * `Optional`: For higher security use only the API Key in headers and sign requests using the secret key.
 
