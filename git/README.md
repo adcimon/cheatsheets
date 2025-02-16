@@ -93,6 +93,25 @@ Combine the specified branch's history into the current branch.
 git merge <branch>
 ```
 
+Rename a branch.
+```
+# Rename the local branch to the new name.
+git branch -m <old_name> <new_name>
+
+# Delete the old branch on remote.
+git push origin --delete <old_name>
+
+# Prevent Git from using the old name when pushing in the next step.
+# Otherwise, Git will use the old upstream name instead of the new name.
+git branch --unset-upstream <new_name>
+
+# Push the new branch to remote.
+git push origin <new_name>
+
+# Reset the upstream branch for the new local branch name.
+git push origin -u <new_name>
+```
+
 ## Tags
 
 List tags.
