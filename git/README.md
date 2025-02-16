@@ -101,8 +101,8 @@ git branch -m <old_name> <new_name>
 # Delete the old branch on remote.
 git push origin --delete <old_name>
 
-# Prevent Git from using the old name when pushing in the next step.
-# Otherwise, Git will use the old upstream name instead of the new name.
+# Prevent from using the old name when pushing in the next step.
+# Otherwise, it will use the old upstream name instead of the new name.
 git branch --unset-upstream <new_name>
 
 # Push the new branch to remote.
