@@ -152,6 +152,7 @@ List of packages.
 | Package | Install |
 |---|---|
 | [Axios](https://github.com/axios/axios) | npm install axios |
+| [Bowser](https://github.com/bowser-js/bowser) | npm install bowser |
 | [dnd](https://github.com/hello-pangea/dnd) | npm install @hello-pangea/dnd |
 | [dnd-kit](https://github.com/clauderic/dnd-kit) | npm install @dnd-kit/core |
 | [dotenv](https://github.com/motdotla/dotenv) | npm install dotenv |
