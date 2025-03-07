@@ -252,3 +252,19 @@ Usage.
 pyinstaller main.py
 pyinstaller main.py --onefile
 ```
+
+### Nuitka
+
+[Nuitka](https://nuitka.net/) is the optimizing Python compiler written in Python that creates executables that run without a separate installer.
+
+Install.
+```
+pip install nuitka
+```
+
+Usage.
+```
+nuitka --standalone main.py
+nuitka --onefile main.py
+nuitka --onefile main.py --output-file=main.exe
+```
