@@ -265,6 +265,7 @@ pip install nuitka
 
 Usage.
 ```
+nuitka main.py
 nuitka --standalone main.py
 nuitka --onefile main.py
 nuitka --onefile main.py --output-file=main.exe
