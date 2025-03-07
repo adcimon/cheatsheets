@@ -7,10 +7,12 @@
 ## Index
 
 * [General](#general)
-* [Pip](#pip)
-* [Virtualenv](#virtualenv)
-* [Conda](#conda)
-* [PyInstaller](#pyinstaller)
+* [Packages](#packages)
+  * [Pip](#pip)
+  * [Virtualenv](#virtualenv)
+  * [Conda](#conda)
+* [Bundlers](#bundlers)
+  * [PyInstaller](#pyinstaller)
 
 ## General
 
@@ -29,7 +31,9 @@ Run an HTTP server.
 python -m http.server 8080
 ```
 
-## Pip
+## Packages
+
+### Pip
 
 [Pip](https://pip.pypa.io/en/latest/) is the package installer for Python.
 
@@ -64,7 +68,7 @@ Uninstall package.
 pip uninstall <package>
 ```
 
-## Virtualenv
+### Virtualenv
 
 [Virtualenv](https://virtualenv.pypa.io/en/latest/) is a tool to create isolated Python environments.
 
@@ -96,11 +100,11 @@ deactivate
 deactivate.bat
 ```
 
-## Conda
+### Conda
 
 [Conda](https://conda.io/) is an open source package management system and environment management system.
 
-### General
+#### General
 
 Show version.
 ```
@@ -127,7 +131,7 @@ Clean packages cache.
 conda clean --packages
 ```
 
-### Environments
+#### Environments
 
 Environments are located at:
 * `C:/ProgramData/Anaconda3/envs`
@@ -175,7 +179,7 @@ Remove an environment.
 conda remove --name <env> --all
 ```
 
-### Packages
+#### Packages
 
 List packages.
 ```
@@ -207,7 +211,7 @@ Remove a package.
 conda remove <package>
 ```
 
-### Environment variables
+#### Environment variables
 
 List environment variables.
 ```
@@ -224,7 +228,7 @@ Unset an environment variable.
 conda env config vars unset <variable> --name <env>
 ```
 
-### Issues
+#### Issues
 
 Use Conda in PowerShell.
 ```
@@ -232,7 +236,9 @@ conda init powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-## PyInstaller
+## Bundlers
+
+### PyInstaller
 
 [PyInstaller](https://pyinstaller.org/) bundles a Python application and all its dependencies into a single package.
 
