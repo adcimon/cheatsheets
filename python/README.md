@@ -13,6 +13,7 @@
   * [Conda](#conda)
 * [Bundlers](#bundlers)
   * [PyInstaller](#pyinstaller)
+  * [Nuitka](#nuitka)
 
 ## General
 
