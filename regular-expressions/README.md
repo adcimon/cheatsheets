@@ -141,7 +141,7 @@ A string that doesn't contain the characters `<>`.
 
 A string that can be empty.
 ```
-^(^$)|(<OTHER_REGEXP>)$
+^(^$)|(<REGEXP>)$
 ```
 
 Alphanumeric string (e.g. nicknames).
@@ -162,6 +162,11 @@ Alphanumeric strings separated by spaces (e.g. `Route 66`).
 Alphanumeric `unicode` strings separated by spaces (e.g. `号公路 66`).
 ```
 ^\p{L}+[\p{L}\p{N}]*( [\p{L}\p{N}]+)*$
+```
+
+Telephone numbers.
+```
+^\+\d{1,4}\d{6,14}$
 ```
 
 ## References
