@@ -185,13 +185,13 @@ Telephone numbers.
  * `\d{1,4}` → Country code (1 to 4 digits, e.g., +1, +44, +123).
  * `\d{6,14}` → Ensures the rest of the number has only digits (between 6 and 14 digits, which covers most phone numbers).
 
-Files.
+File names.
 ```
 /^[\p{L}\p{N}_\-\s]+\.(jpg|png)$/iu
 ```
  * `[\p{L}\p{N}_\-\s]+` → Matches filenames that contain unicode letters, numbers, underscores, hyphens, and spaces.
  * `\.` → Matches the dot before the extension.
- * `(jpg|png)` → Ensures the filename ends with jpg or png.
+ * `(jpg|png)` → Ensures the file name ends with jpg or png.
 
 ## References
 
