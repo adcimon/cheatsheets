@@ -163,11 +163,27 @@ Alphanumeric `unicode` strings separated by spaces (e.g. `号公路 66`).
 ```
 ^\p{L}+[\p{L}\p{N}]*( [\p{L}\p{N}]+)*$
 ```
+ * `\p{L}` → Matches any unicode letter.
+ * `\p{N}` → Matches any unicode number.
+ * `[ \p{L}\p{N}]` → Allows spaces between words while ensuring each word consists of letters and numbers.
+
+Emails.
+```
+^[^\s@]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+```
+ * `[^\s@]+` → Local part (any unicode character except spaces and @).
+ * `@` → Ensures there is exactly one @ symbol.
+ * `[a-zA-Z0-9.-]+` → Domain part (letters, numbers, dots and hyphens).
+ * `\.` → Requires at least one dot before the TLD.
+ * `[a-zA-Z]{2,}` → Ensures a valid TLD (e.g., .com, .net, .org, .ai) with at least 2 letters.
 
 Telephone numbers.
 ```
 ^\+\d{1,4}\d{6,14}$
 ```
+ * `\+` → Ensures the number starts with a +.
+ * `\d{1,4}` → Country code (1 to 4 digits, e.g., +1, +44, +123).
+ * `\d{6,14}` → Ensures the rest of the number has only digits (between 6 and 14 digits, which covers most phone numbers).
 
 ## References
 
