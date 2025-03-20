@@ -60,6 +60,12 @@
 
 Characters `^.[$()|*+?` can be used with a backslash `\`.
 
+| Unicode | |
+| - | - |
+| `/^$/u` | Required to enable unicode mode. |
+| `\p{L}` | Unicode character. |
+| `\p{N}` | Unicode number. |
+
 ## Examples
 
 Begins with "The".
@@ -147,9 +153,14 @@ Alpha strings separated by spaces (e.g. names or surnames).
 ^[a-zA-Z]+( [a-zA-Z]+)*$
 ```
 
-Alphanumeric strings separated by spaces (e.g `Route 66`).
+Alphanumeric strings separated by spaces (e.g. `Route 66`).
 ```
 ^[a-zA-Z]+[a-zA-Z0-9]*( [a-zA-Z0-9]+)*$
+```
+
+Alphanumeric `unicode` strings separated by spaces (e.g. `号公路 66`).
+```
+^\p{L}+[\p{L}\p{N}]*( [\p{L}\p{N}]+)*$
 ```
 
 ## References
