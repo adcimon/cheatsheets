@@ -167,7 +167,7 @@ Alphanumeric `unicode` strings separated by spaces (e.g. `号公路 66`).
  * `\p{N}` → Matches any unicode number.
  * `[ \p{L}\p{N}]` → Allows spaces between words while ensuring each word consists of letters and numbers.
 
-Emails.
+Email addresses.
 ```
 ^[^\s@]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
 ```
