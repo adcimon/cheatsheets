@@ -48,8 +48,8 @@
 
 | Ranges | |
 | - | - |
-| `a-z` | Character in range `a-z`. |
-| `A-Z` | Character in range `A-Z`. |
+| `a-z` | Letter in range `a-z`. |
+| `A-Z` | Letter in range `A-Z`. |
 | `0-9` | Digit in range `0-9`. |
 
 | Flags | |
@@ -65,6 +65,7 @@ Characters `^.[$()|*+?` can be used with a backslash `\`.
 | `/^$/u` | Required to enable unicode mode. |
 | `\p{L}` | Unicode letter. |
 | `\p{N}` | Unicode number. |
+| `\p{M}` | Unicode mark. |
 
 ## Examples
 
