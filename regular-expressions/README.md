@@ -63,7 +63,7 @@ Characters `^.[$()|*+?` can be used with a backslash `\`.
 | Unicode | |
 | - | - |
 | `/^$/u` | Required to enable unicode mode. |
-| `\p{L}` | Unicode character. |
+| `\p{L}` | Unicode letter. |
 | `\p{N}` | Unicode number. |
 
 ## Examples
