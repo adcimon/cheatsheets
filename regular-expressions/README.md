@@ -187,7 +187,7 @@ Telephone numbers.
 
 Files.
 ```
-/^[\p{L}\p{N}_\-\s]+\.(jpg|jpeg|png)$/iu
+/^[\p{L}\p{N}_\-\s]+\.(jpg|png)$/iu
 ```
  * `[\p{L}\p{N}_\-\s]+` → Matches filenames that contain unicode letters, numbers, underscores, hyphens, and spaces.
  * `\.` → Matches the dot before the extension.
