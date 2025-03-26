@@ -26,6 +26,11 @@ python --version
 Print path.
 ```
 python -c "import sys; print('\n'.join(sys.path))"
+
+import os
+import sys
+path = os.path.dirname(sys.executable)
+print(path)
 ```
 
 Run an HTTP server.
@@ -123,6 +128,10 @@ deactivate.bat
 [Conda](https://conda.io/) is an open source package management system and environment management system.
 
 #### General
+
+Install.
+* https://www.anaconda.com/download/success/
+* https://repo.anaconda.com/miniconda/
 
 Show version.
 ```
