@@ -7,6 +7,7 @@
 ## Index
 
 * [General](#general)
+* [Format](#format)
 * [Packages](#packages)
   * [Pip](#pip)
   * [Virtualenv](#virtualenv)
@@ -30,6 +31,22 @@ python -c "import sys; print('\n'.join(sys.path))"
 Run an HTTP server.
 ```
 python -m http.server 8080
+```
+
+## Format
+
+Imports should be grouped into three groups:
+* Standard library imports.
+* Third-party imports.
+* Application-specific imports.
+
+Imports should be ordered lexicographically within these groups, ignoring case:
+```
+import foo
+from foo import bar
+from foo.bar import baz
+from foo.bar import Quux
+from Foob import ar
 ```
 
 ## Packages
