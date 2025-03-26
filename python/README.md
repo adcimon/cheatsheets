@@ -26,7 +26,8 @@ python --version
 Print path.
 ```
 python -c "import sys; print('\n'.join(sys.path))"
-
+```
+```
 import os
 import sys
 path = os.path.dirname(sys.executable)
