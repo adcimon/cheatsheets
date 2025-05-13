@@ -341,7 +341,7 @@ ffmpeg -re -i <input> -acodec copy -vcodec copy -f <flv|webm|etc> rtmp://<ip>:19
 
 Publish a stream to LiveKit.
 ```
-ffmpeg -re -i <input> -c:a aac -b:a 128k -c:v libx264 -b:v 3M -preset veryfast -profile:v high -f flv <stream_url>/<stream_key>
+ffmpeg -re -i <input> -c:a aac -b:a 128k -c:v libx264 -b:v 3M -profile:v high -preset veryfast -f flv <stream_url>/<stream_key>
 ```
 * https://docs.livekit.io/home/ingress/configure-streaming-software/
 
