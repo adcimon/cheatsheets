@@ -45,7 +45,19 @@ gst-launch audiotestsrc wave=saw freq=880 ! audioconvert ! autoaudiosink
 
 ### RTMP
 
-Publish a stream (Windows).
+Publish a test stream.
+```
+gst-launch-1.0 \
+  flvmux name=mux streamable=true ! rtmp2sink location="rtmps://brainstorm.rtmp.livekit.cloud/x/cby5QkiLg5rt" \
+  audiotestsrc wave=sine-table ! audioconvert ! faac ! queue ! mux. \
+  videotestsrc is-live=true ! video/x-raw,width=1280,height=720 ! videoconvert ! x264enc speed-preset=3 tune=zerolatency ! queue ! mux.
+```
+* `flvmux` collects both audio and video and multiplexes them into a format suitable for RTMP.
+* `streamable=true` ensures the muxed stream can be sent immediately without requiring the whole file.
+* `queue` avoid blocking when muxing parallel streams.
+* `videoconvert` and `audioconvert` ensure compatible formats are fed into encoders.
+
+Publish microphone and camera (Windows).
 ```
 gst-launch-1.0 \
   flvmux name=mux streamable=true ! rtmp2sink location="rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>" \
@@ -54,7 +66,7 @@ gst-launch-1.0 \
 ```
 * `wasapisrc` or `directsoundsrc` for audio.
 
-Publish a stream (Linux).
+Publish microphone and camera (Linux).
 ```
 gst-launch-1.0 \
   flvmux name=mux streamable=true ! rtmp2sink location="rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>" \
@@ -63,9 +75,8 @@ gst-launch-1.0 \
 ```
 * `pulsesrc device=default` captures from the default PulseAudio input (typically microphone).
 * `v4l2src device=/dev/video0` captures from the first webcam device.
-* `queue` separates threads and ensures smooth flow between elements.
 
-Publish a stream (MacOS).
+Publish microphone and camera (MacOS).
 ```
 gst-launch-1.0 \
   flvmux name=mux streamable=true ! rtmp2sink location="rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>" \
