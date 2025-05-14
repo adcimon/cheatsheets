@@ -49,8 +49,8 @@ This section has examples of the supported transport protocols.
 
 Publish a test stream.
 ```
-gst-launch-1.0 \
-  flvmux name=mux streamable=true ! rtmp2sink location="rtmps://brainstorm.rtmp.livekit.cloud/x/cby5QkiLg5rt" \
+gst-launch \
+  flvmux name=mux streamable=true ! rtmp2sink location="rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>" \
   audiotestsrc wave=sine-table ! audioconvert ! faac ! queue ! mux. \
   videotestsrc is-live=true ! video/x-raw,width=1280,height=720 ! videoconvert ! x264enc speed-preset=3 tune=zerolatency ! queue ! mux.
 ```
@@ -61,7 +61,7 @@ gst-launch-1.0 \
 
 Publish microphone and camera (Windows).
 ```
-gst-launch-1.0 \
+gst-launch \
   flvmux name=mux streamable=true ! rtmp2sink location="rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>" \
   wasapisrc ! audioconvert ! audioresample ! faac ! queue ! mux. \
   ksvideosrc ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! x264enc speed-preset=ultrafast tune=zerolatency ! queue ! mux.
@@ -70,7 +70,7 @@ gst-launch-1.0 \
 
 Publish microphone and camera (Linux).
 ```
-gst-launch-1.0 \
+gst-launch \
   flvmux name=mux streamable=true ! rtmp2sink location="rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>" \
   pulsesrc device=default ! audioconvert ! audioresample ! faac ! queue ! mux. \
   v4l2src device=/dev/video0 ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! x264enc speed-preset=ultrafast tune=zerolatency ! queue ! mux.
@@ -80,7 +80,7 @@ gst-launch-1.0 \
 
 Publish microphone and camera (MacOS).
 ```
-gst-launch-1.0 \
+gst-launch \
   flvmux name=mux streamable=true ! rtmp2sink location="rtmp://<ip>:1935/<application>/<stream_name>/<stream_key>" \
   osxaudiosrc ! audioconvert ! audioresample ! faac ! queue ! mux. \
   avfvideosrc ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! x264enc speed-preset=ultrafast tune=zerolatency ! queue ! mux.
