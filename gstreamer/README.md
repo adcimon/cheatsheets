@@ -52,6 +52,7 @@ gst-launch-1.0 \
   wasapisrc ! audioconvert ! audioresample ! faac ! queue ! mux. \
   ksvideosrc ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! x264enc speed-preset=ultrafast tune=zerolatency ! queue ! mux.
 ```
+* `wasapisrc` or `directsoundsrc` for audio.
 
 Publish a stream (Linux).
 ```
