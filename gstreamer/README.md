@@ -41,8 +41,6 @@ Use element properties.
 gst-launch audiotestsrc wave=saw freq=880 ! audioconvert ! autoaudiosink
 ```
 
-## General
-
 ## Streaming
 
 ### RTMP
