@@ -43,6 +43,8 @@ gst-launch audiotestsrc wave=saw freq=880 ! audioconvert ! autoaudiosink
 
 ## Streaming
 
+This section has examples of the supported transport protocols.
+
 ### RTMP
 
 Publish a test stream.
