@@ -161,7 +161,9 @@ List of packages.
 | [esbuild](https://github.com/evanw/esbuild) | npm install --save-exact --save-dev esbuild |
 | [fs-extra](https://github.com/jprichardson/node-fs-extra) | npm install fs-extra |
 | [ics](https://github.com/adamgibbons/ics) | npm install ics |
+| [i18next](https://github.com/i18next/i18next) | npm install i18next react-i18next |
 | [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) | npm install jsonwebtoken |
+| [lexical](https://github.com/facebook/lexical) | npm install lexical @lexical/react |
 | [ms](https://github.com/vercel/ms) | npm install ms |
 | [Material UI](https://github.com/mui/material-ui) | npm install @mui/material @emotion/react @emotion/styled |
 | [Material UI Icons](https://github.com/mui/material-ui) | npm install @mui/icons-material |
