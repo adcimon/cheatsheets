@@ -48,6 +48,8 @@ aws list-services
 
 ## Cognito
 
+[Cognito](https://docs.aws.amazon.com/cognito/) is an identity platform, a user directory, an authentication server and an authorization service for OAuth 2.0 access tokens and AWS credentials.
+
 List user pools.
 ```
 aws cognito-idp list-user-pools --max-results 10
@@ -58,6 +60,8 @@ aws cognito-idp list-user-pools --max-results 10
 [Desktop Cloud Visualization (DCV)](https://docs.aws.amazon.com/dcv/) is a remote visualization technology that delivers remote desktop and application streaming from any cloud or data center to any device over varying network conditions.
 
 ## DynamoDB
+
+[DynamoDB](https://docs.aws.amazon.com/dynamodb/) is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
 
 Scan table.
 ```
