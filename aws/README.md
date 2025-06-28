@@ -7,19 +7,22 @@
 
 ## Index
 
-* [Install](#install)
 * [General](#general)
+* [CLI](#cli)
 * [Cognito](#cognito)
 * [DynamoDB](#dynamodb)
 * [SES](#ses)
 * [S3](#s3)
 
-## Install
-
-Install the `aws` command-line tool.
-* https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-
 ## General
+
+* Documentation: https://docs.aws.amazon.com
+* JavaScript SDK: https://docs.aws.amazon.com/sdk-for-javascript/
+
+## CLI
+
+Install.
+* https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 Check version.
 ```
