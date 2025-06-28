@@ -90,6 +90,8 @@ aws dynamodb delete-item --table-name "<table>" --key '{\"<key>\": {\"S\": \"<va
 
 ## SES
 
+[Simple Email Service](https://docs.aws.amazon.com/ses/) is a reliable, scalable, and cost-effective email service.
+
 Send email command input.
 ```
 {
