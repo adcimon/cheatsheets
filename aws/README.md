@@ -52,6 +52,10 @@ List user pools.
 aws cognito-idp list-user-pools --max-results 10
 ```
 
+## DCV
+
+[Desktop Cloud Visualization (DCV)](https://docs.aws.amazon.com/dcv/) is a remote visualization technology that delivers remote desktop and application streaming from any cloud or data center to any device, over varying network conditions.
+
 ## DynamoDB
 
 Scan table.
