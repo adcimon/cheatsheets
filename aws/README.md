@@ -55,7 +55,7 @@ aws cognito-idp list-user-pools --max-results 10
 
 ## DCV
 
-[Desktop Cloud Visualization (DCV)](https://docs.aws.amazon.com/dcv/) is a remote visualization technology that delivers remote desktop and application streaming from any cloud or data center to any device, over varying network conditions.
+[Desktop Cloud Visualization (DCV)](https://docs.aws.amazon.com/dcv/) is a remote visualization technology that delivers remote desktop and application streaming from any cloud or data center to any device over varying network conditions.
 
 ## DynamoDB
 
@@ -112,6 +112,8 @@ Send email command input.
 * [Send raw email](https://docs.aws.amazon.com/ses/latest/dg/send-email-raw.html)
 
 ## S3
+
+[Simple Storage Service (S3)](https://docs.aws.amazon.com/s3/) is a scalable, high-speed, web-based cloud storage service.
 
 List buckets.
 ```
