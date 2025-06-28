@@ -10,6 +10,7 @@
 * [General](#general)
 * [CLI](#cli)
 * [Cognito](#cognito)
+* [DCV](#dcv)
 * [DynamoDB](#dynamodb)
 * [SES](#ses)
 * [S3](#s3)
