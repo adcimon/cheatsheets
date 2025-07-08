@@ -7,6 +7,7 @@
 ## Index
 
 * [Libraries](#libraries)
+* [Concurrency](#concurrency)
 * [References](#references)
 
 ## Libraries
@@ -25,6 +26,13 @@ When linking is performed while a program is being loaded ([load time](https://e
 Dynamic libraries have 2 types of linking.
 * Implicit. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
 * Explicit. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
+
+## Concurrency
+
+`std::async` over `std::thread`
+
+> State-of-the-art thread schedulers employ system-wide thread pools to avoid oversubscription, and they improve load balancing across hardware cores through workstealing algorithms. The C++ Standard does not require the use of thread pools or work-stealing, and, to be honest, there are some technical aspects of the C++11 concurrency specification that make it more difficult to employ them than we’d like. Nevertheless, some vendors take advantage of this technology in their Standard Library implementations, and it’s reasonable to expect that progress will continue in this area. If you take a task-based approach to your concurrent programming, you automatically reap the benefits of such technology as it becomes more widespread. If, on the other hand, you program directly with std::threads, you assume the burden of dealing with thread exhaustion, oversubscription, and load balancing yourself, not to mention how your solutions to these problems mesh with the solutions implemented in programs running in other processes on the same machine.
+* Item 35, Effective Modern CPP, Scott Meyers.
 
 ## References
 
