@@ -9,6 +9,8 @@
 * [Libraries](#libraries)
 * [Pointers](#pointers)
 * [Concurrency](#concurrency)
+  * [std::thread](#std::thread)
+  * [std::async](#std::async)
 * [References](#references)
 
 ## Libraries
