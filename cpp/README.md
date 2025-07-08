@@ -34,7 +34,9 @@ Dynamic libraries have 2 types of linking.
 
 ### std::thread
 
-[std::thread](https://en.cppreference.com/w/cpp/thread/thread.html) provides a standard way to write multithreaded programs accross all platforms abstracting the code from other threading APIs like POSIX `pthreads` or Windows `threads`.
+[std::thread](https://en.cppreference.com/w/cpp/thread/thread.html) (C++11) provides a standard way to write multithreaded programs accross all platforms abstracting the code from other threading APIs like POSIX `pthreads` or Windows `threads`.
+
+### std::async
 
 `std::async` over `std::thread`
 
