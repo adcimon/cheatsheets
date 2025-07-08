@@ -40,7 +40,7 @@ Dynamic libraries have 2 types of linking.
 
 ### std::async
 
-[std::async](https://en.cppreference.com/w/cpp/thread/async.html) (C++1) provides a way to run a function asynchronously (potentially in a thread) and returns a `std::future` that will eventually hold the result of that function call.
+[std::async](https://en.cppreference.com/w/cpp/thread/async.html) (C++11) provides a way to run a function asynchronously (potentially in a thread) and returns a `std::future` that will eventually hold the result of that function call.
 
 Comparing thread-based programming (`std::thread`) and task-based programming (`std::async`).
 
