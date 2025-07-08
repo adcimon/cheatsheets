@@ -64,7 +64,7 @@ Authorization: ApiKey <base64(api_key:secret_key)>
 
 ## TLS
 
-[Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network. It is used as the security layer in [HTTPS](https://en.wikipedia.org/wiki/HTTPS) and [WSS](https://en.wikipedia.org/wiki/WebSocket).
+[Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) ([former SSL](https://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html)) is a cryptographic protocol designed to provide communications security over a computer network. It is used as the security layer in [HTTPS](https://en.wikipedia.org/wiki/HTTPS) and [WSS](https://en.wikipedia.org/wiki/WebSocket).
 
 ### OpenSSL
 
@@ -98,3 +98,4 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out cer
 ## References
 
 * [The Copenhagen Book](https://thecopenhagenbook.com)
+* [Security Standards and Name Changes in the Browser Wars](https://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html)
