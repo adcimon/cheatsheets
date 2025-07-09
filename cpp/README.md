@@ -82,8 +82,7 @@ int main(int argc, char** argv)
 
 Policies:
 * `std::launch::async` Asynchronous execution on a new thread.
-* `std::launch:deferred` Lazy execution on the current thread deferred until `std::future::get` is called.
-* `std::launch_async | std::launch::deferred` Asynchronous or deferred execution.
+* `std::launch:deferred` Lazy evaluation on the current thread deferred until `std::future::get` is called.
 
 ```cpp
 #include <future>
