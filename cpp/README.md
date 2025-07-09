@@ -87,7 +87,12 @@ int main(int argc, char** argv)
 
 ### std::weak_ptr
 
-[std::weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr.html) (C++11)
+[std::weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr.html) (C++11) is a smart pointer that holds a non-owning (weak) reference to an object that is managed by `std::shared_ptr`. It must be converted to `std::shared_ptr` in order to access the referenced object.
+
+* Operators `->` and `*` are overloaded to access the object.
+* The size is one pointer.
+* Used to observe objects that are not required to remain alive.
+* Required in some cases to break circular references between `shared_ptr` instances.
 
 ## Concurrency
 
