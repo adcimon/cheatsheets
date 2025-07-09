@@ -93,12 +93,12 @@ public:
     void Bar(){}
 };
 
-void Function1(std::shared_ptr<Foo> foo)
+void Process1(std::shared_ptr<Foo> foo)
 {
     // ...
 }
 
-void Function2(std::shared_ptr<Foo> foo)
+void Process2(std::shared_ptr<Foo> foo)
 {
     // ...
 }
@@ -107,8 +107,8 @@ int main(int argc, char** argv)
 {
     std::shared_ptr<Foo> foo = std::make_shared<Foo>();
 
-    Function1(p);
-    Function2(p);
+    Process1(p);
+    Process2(p);
 
     return 0;
 }
