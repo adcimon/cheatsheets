@@ -7,6 +7,9 @@
 ## Index
 
 * [Libraries](#libraries)
+* [Null](#null)
+  * [std::nullptr](#stdnullptr)
+  * [std::nullptr_t](#stdnullptr_t)
 * [Pointers](#pointers)
   * [std::unique_ptr](#stdunique_ptr)
   * [std::shared_ptr](#stdshared_ptr)
@@ -34,6 +37,16 @@ When linking is performed while a program is being loaded ([load time](https://e
 Dynamic libraries have 2 types of linking.
 * Implicit. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
 * Explicit. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
+
+## Null
+
+### std::nullptr
+
+[std::nullptr](https://en.cppreference.com/w/cpp/language/nullptr.html) (C++11)
+
+### std::nullptr_t
+
+[std::nullptr_t](https://en.cppreference.com/w/cpp/language/nullptr_t.html) (C++11)
 
 ## Pointers
 
