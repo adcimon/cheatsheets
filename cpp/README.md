@@ -8,6 +8,9 @@
 
 * [Libraries](#libraries)
 * [Pointers](#pointers)
+  * [std::unique_ptr](#stdunique_ptr)
+  * [std::shared_ptr](#stdshared_ptr)
+  * [std::weak_ptr](#stdweak_ptr)
 * [Concurrency](#concurrency)
   * [std::thread](#stdthread)
   * [std::async](#stdasync)
@@ -33,6 +36,18 @@ Dynamic libraries have 2 types of linking.
 * Explicit. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
 
 ## Pointers
+
+### std::unique_ptr
+
+[std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr.html) (C++11)
+
+### std::shared_ptr
+
+[std::shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html) (C++11)
+
+### std::weak_ptr
+
+[std::weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr.html) (C++11)
 
 ## Concurrency
 
