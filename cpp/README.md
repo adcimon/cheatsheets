@@ -78,7 +78,7 @@ int main(int argc, char** argv)
 
 ### std::async
 
-[std::async](https://en.cppreference.com/w/cpp/thread/async.html) (C++11) provides a way to run a function asynchronously (potentially in a thread) and returns a `std::future` that will eventually hold the result of that function call.
+[std::async](https://en.cppreference.com/w/cpp/thread/async.html) (C++11) provides a way to run a function asynchronously (potentially in a separate thread which might be a part of a thread pool) and returns a `std::future` that will eventually hold the result of that function call.
 
 Comparing thread-based programming (`std::thread`) and task-based programming (`std::async`).
 
