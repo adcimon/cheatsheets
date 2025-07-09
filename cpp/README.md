@@ -87,6 +87,8 @@ int main(int argc, char** argv)
 * Control block access is thread-safe but manipulating the managed object is not thread-safe.
 
 ```cpp
+#include <memory>
+
 class Foo
 {
 public:
