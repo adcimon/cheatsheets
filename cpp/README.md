@@ -38,6 +38,41 @@ Dynamic libraries have 2 types of linking.
 
 [std::thread](https://en.cppreference.com/w/cpp/thread/thread.html) (C++11) provides a standard way to write multithreaded programs accross all platforms abstracting the code from other threading APIs like POSIX `pthreads` or Windows `threads`.
 
+```cpp
+void Task1()
+{
+    for (int i = 0; i < 100; i++)
+    {
+        std::cout << "(Task, 1)";
+        std::cout << " (Thread ID, " << std::this_thread::get_id() << ")";
+        std::cout << " (Loop, " << i << ")";
+        std::cout << std::endl;
+    }
+}
+
+void Task2()
+{
+    for (int i = 0; i < 100; i++)
+    {
+        std::cout << "(Task, 2)";
+        std::cout << " (Thread ID, " << std::this_thread::get_id() << ")";
+        std::cout << " (Loop, " << i << ")";
+        std::cout << std::endl;
+    }
+}
+
+int main(int argc, char** argv)
+{
+    std::thread worker1(Task1);
+    std::thread worker2(Task2);
+    
+    worker1.join();
+    worker2.join();
+    
+    return 0;
+}
+```
+
 ### std::async
 
 [std::async](https://en.cppreference.com/w/cpp/thread/async.html) (C++11) provides a way to run a function asynchronously (potentially in a thread) and returns a `std::future` that will eventually hold the result of that function call.
