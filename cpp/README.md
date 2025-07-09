@@ -39,7 +39,9 @@ Dynamic libraries have 2 types of linking.
 
 ### std::unique_ptr
 
-[std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr.html) (C++11)
+[std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr.html) (C++11) is a smart pointer that owns and manages another object (heap-allocated memory) via a pointer and subsequently disposes of that object when the `unique_ptr` goes out of scope.
+
+* Operators `->` and `*` are overloaded to access the object.
 
 ```cpp
 class Foo
