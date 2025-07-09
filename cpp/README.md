@@ -84,6 +84,7 @@ int main(int argc, char** argv)
 
 * Operators `->` and `*` are overloaded to access the object.
 * The size is two pointers (one for the object and one for the shared control block that contains the reference count).
+* Control block access is thread-safe but manipulating the managed object is not thread-safe.
 
 ### std::weak_ptr
 
