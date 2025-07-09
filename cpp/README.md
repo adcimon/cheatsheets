@@ -136,4 +136,3 @@ Comparing thread-based programming (`std::thread`) and task-based programming (`
 * [cppreference](https://cppreference.com/)
 * [Effective Modern C++](https://archive.org/details/EffectiveModernC)
 * [C++ Cheat Sheets & Infographics](https://hackingcpp.com/cpp/cheat_sheets.html)
-* [Smart Pointers](https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp)
