@@ -123,9 +123,13 @@ Comparing thread-based programming (`std::thread`) and task-based programming (`
 
 [std::future](https://en.cppreference.com/w/cpp/thread/future.html) (C++11) provides a way to access the result of asynchronous operations.
 
+* `std::future` is used by the consumer/reader of the asynchronous operation.
+
 ### std::promise
 
 [std::promise](https://en.cppreference.com/w/cpp/thread/promise.html) (C++11) provides a way to store a value or an exception that is later acquired asynchronously via a `std::future` created by the `std::promise`.
+
+* `std::promise` is used by the producer/writer of the asynchronous operation.
 
 ## References
 
