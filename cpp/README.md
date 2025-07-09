@@ -81,8 +81,8 @@ int main(int argc, char** argv)
 [std::async](https://en.cppreference.com/w/cpp/thread/async.html) (C++11) provides a way to run a function asynchronously (potentially in a separate thread) and returns a `std::future` that will eventually hold the result of that function call.
 
 Policies:
-* `std::launch::async` Asynchronous execution.
-* `std::launch:deferred` Lazy execution deferred until `std::future::get` is called.
+* `std::launch::async` Asynchronous execution on a new thread.
+* `std::launch:deferred` Lazy execution on the current thread deferred until `std::future::get` is called.
 * `std::launch_async | std::launch::deferred` Asynchronous or deferred execution.
 
 ```cpp
@@ -90,22 +90,11 @@ Policies:
 #include <iostream>
 #include <thread>
 
-void Task1()
+void Task(std::string name, int count)
 {
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < count; i++)
     {
-        std::cout << "(Task, 1)";
-        std::cout << " (Thread ID, " << std::this_thread::get_id() << ")";
-        std::cout << " (Loop, " << i << ")";
-        std::cout << std::endl;
-    }
-}
-
-void Task2()
-{
-    for (int i = 0; i < 100; i++)
-    {
-        std::cout << "(Task, 2)";
+        std::cout << "(Task, " << name << ")";
         std::cout << " (Thread ID, " << std::this_thread::get_id() << ")";
         std::cout << " (Loop, " << i << ")";
         std::cout << std::endl;
@@ -114,8 +103,8 @@ void Task2()
 
 int main(int argc, char** argv)
 {
-    std::future<void> future1 = std::async(std::launch::async, Task1);
-    std::future<void> future2 = std::async(std::launch::async, Task2);
+    std::future<void> future1 = std::async(std::launch::async, Task, "Task1", 100);
+    std::future<void> future2 = std::async(std::launch::async, Task, "Task2", 200);
 
     future1.get();
     future2.get();
