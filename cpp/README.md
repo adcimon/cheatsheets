@@ -42,11 +42,16 @@ Dynamic libraries have 2 types of linking.
 
 ### std::nullptr
 
-[std::nullptr](https://en.cppreference.com/w/cpp/language/nullptr.html) (C++11)
+[std::nullptr](https://en.cppreference.com/w/cpp/language/nullptr.html) (C++11) is the null pointer literal.
+
+* Type `std::nullptr_t`.
+* Replaces C `NULL` macro.
+* Can be implicitly converted into pointer types.
+* Not convertible to integral types except `bool`.
 
 ### std::nullptr_t
 
-[std::nullptr_t](https://en.cppreference.com/w/cpp/language/nullptr_t.html) (C++11)
+[std::nullptr_t](https://en.cppreference.com/w/cpp/types/nullptr_t.html) (C++11) is the type of the null pointer literal `nullptr`.
 
 ## Pointers
 
