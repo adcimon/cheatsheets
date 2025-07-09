@@ -42,8 +42,11 @@ Dynamic libraries have 2 types of linking.
 [std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr.html) (C++11) is a smart pointer that owns and manages another object (heap-allocated memory) via a pointer and subsequently disposes of that object when the `unique_ptr` goes out of scope.
 
 * Operators `->` and `*` are overloaded to access the object.
+* The size is one pointer.
 
 ```cpp
+#include <memory>
+
 class Foo
 {
 public:
@@ -77,7 +80,10 @@ int main(int argc, char** argv)
 
 ### std::shared_ptr
 
-[std::shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html) (C++11)
+[std::shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html) (C++11) is a smart pointer that retains shared ownership of an object through a pointer. Several `shared_ptr` objects may own the same object. The object is destroyed and its memory deallocated when the last remaining `shared_ptr` owning the object is destroyed.
+
+* Operators `->` and `*` are overloaded to access the object.
+* The size is two pointers (one for the object and one for the shared control block that contains the reference count).
 
 ### std::weak_ptr
 
