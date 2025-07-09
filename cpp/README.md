@@ -41,6 +41,38 @@ Dynamic libraries have 2 types of linking.
 
 [std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr.html) (C++11)
 
+```cpp
+class Foo
+{
+public:
+    void Bar(){}
+};
+
+void Process(const Foo& foo)
+{
+    // ...
+}
+
+void Demo()
+{
+    std::unique_ptr<Foo> foo = std::make_unique<Foo>();
+
+    // Call a method on the object.
+    foo->Bar();
+
+    // Pass the reference to a function.
+    Process(*foo);
+
+    // Deleted automatically when function block goes out of scope.
+}
+
+int main(int argc, char** argv)
+{
+    Demo();
+    return 0; 
+}
+```
+
 ### std::shared_ptr
 
 [std::shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html) (C++11)
