@@ -58,7 +58,7 @@ void Process(const Foo& foo)
     // ...
 }
 
-void Demo()
+void Run()
 {
     std::unique_ptr<Foo> foo = std::make_unique<Foo>();
 
@@ -73,7 +73,7 @@ void Demo()
 
 int main(int argc, char** argv)
 {
-    Demo();
+    Run();
     return 0; 
 }
 ```
@@ -85,6 +85,34 @@ int main(int argc, char** argv)
 * Operators `->` and `*` are overloaded to access the object.
 * The size is two pointers (one for the object and one for the shared control block that contains the reference count).
 * Control block access is thread-safe but manipulating the managed object is not thread-safe.
+
+```cpp
+class Foo
+{
+public:
+    void Bar(){}
+};
+
+void Function1(std::shared_ptr<Foo> foo)
+{
+    // ...
+}
+
+void Function2(std::shared_ptr<Foo> foo)
+{
+    // ...
+}
+
+int main(int argc, char** argv)
+{
+    std::shared_ptr<Foo> foo = std::make_shared<Foo>();
+
+    Function1(p);
+    Function2(p);
+
+    return 0;
+}
+```
 
 ### std::weak_ptr
 
