@@ -88,9 +88,9 @@ private:
 * Leads to cleaner code in source files.
 
 ❌ Downsides
+* Less fine-grained dependency tracking.
 * Adds complexity to the build system.
 * Can cause confusing build errors if the file gets stale or corrupted.
-* Less fine-grained dependency tracking.
 
 ```cpp
 #ifndef PCH_H
