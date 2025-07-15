@@ -45,7 +45,7 @@ Dynamic libraries have 2 types of linking.
 
 ### IWYU
 
-[IWYU (Include What You Use](https://include-what-you-use.org/) is a strategy (and a [tool](https://github.com/include-what-you-use/include-what-you-use)) for managing `#include` directives where core idea is `every file should include only the headers it directly uses`.
+[IWYU (Include What You Use)](https://include-what-you-use.org/) is a strategy (and a [tool](https://github.com/include-what-you-use/include-what-you-use)) for managing `#include` directives where core idea is `every file should include only the headers it directly uses`.
 
 ✅ Pros
 * Reduces compile times (especially for large projects).
