@@ -53,8 +53,9 @@ Dynamic libraries have 2 types of linking.
 * Helps avoid code that breaks due to transitive includes.
 
 ❌ Cons
-* Can require a lot of micro-management of includes.
-* Sometimes leads to larger include lists in headers or source files.
+* Requires a lot of micro-management of includes.
+* Leads to larger include lists in headers or source files.
+* Tools can be noisy or generate incorrect suggestions without tuning.
 
 ```cpp
 #pragma once
@@ -82,12 +83,13 @@ private:
 [PCH (Precompiled Header)](https://en.wikipedia.org/wiki/Precompiled_header) is a file (typically `pch.h`) that contains the compiled version of commonly included headers. Instead of parsing and compiling the same headers repeatedly for every source file, the compiler does it once and reuses the result.
 
 ✅ Benefits
-* Faster compile times (especially for large projects).
+* Reduces compile times (especially for large projects).
 * Avoids recompiling standard headers.
+* Leads to cleaner code in source files.
 
 ❌ Downsides
 * Adds complexity to the build system.
-* Can cause confusing build errors if the PCH gets stale or corrupted.
+* Can cause confusing build errors if the file gets stale or corrupted.
 * Less fine-grained dependency tracking.
 
 ```cpp
