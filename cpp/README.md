@@ -45,7 +45,7 @@ Dynamic libraries have 2 types of linking.
 
 ### IWYU
 
-[IWYU (Include What You Use)](https://include-what-you-use.org/) is a strategy (and a [tool](https://github.com/include-what-you-use/include-what-you-use)) for managing `#include` directives where core idea is `every file should include only the headers it directly uses`.
+[IWYU (Include What You Use)](https://include-what-you-use.org/) is a strategy (and a [tool](https://github.com/include-what-you-use/include-what-you-use)) for managing `#include` directives where the core idea is `every file should include only the headers it directly uses`.
 
 ✅ Pros
 * Reduces compile times (especially for large projects).
@@ -56,9 +56,39 @@ Dynamic libraries have 2 types of linking.
 * Can require a lot of micro-management of includes.
 * Sometimes leads to larger include lists in headers or source files.
 
+```cpp
+#pragma once
+
+#include <string>
+#include <vector>
+
+class Bar;
+
+class Foo {
+public:
+    void setName(const std::string& name);
+    void setData(const std::vector<int>& data);
+    void setBar(const Bar& bar);
+
+private:
+    std::string name;
+    std::vector<int> data;
+    Bar* bar;
+};
+```
+
 ### PCH
 
 [PCH (Precompiled Header)](https://en.wikipedia.org/wiki/Precompiled_header) is a file (typically `pch.h`) that contains the compiled version of commonly included headers. Instead of parsing and compiling the same headers repeatedly for every source file, the compiler does it once and reuses the result.
+
+✅ Benefits
+* Faster compile times (especially for large projects).
+* Avoids recompiling standard headers.
+
+❌ Downsides
+* Adds complexity to your build system.
+* Can cause confusing build errors if the PCH gets stale or corrupted.
+* Less fine-grained dependency tracking.
 
 ```cpp
 #ifndef PCH_H
@@ -73,15 +103,6 @@ Dynamic libraries have 2 types of linking.
 
 #endif // PCH_H
 ```
-
-✅ Benefits
-* Faster compile times (especially for large projects).
-* Avoids recompiling standard headers.
-
-❌ Downsides
-* Adds complexity to your build system.
-* Can cause confusing build errors if the PCH gets stale or corrupted.
-* Less fine-grained dependency tracking.
 
 ## Null
 
