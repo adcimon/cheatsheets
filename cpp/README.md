@@ -7,6 +7,8 @@
 ## Index
 
 * [Libraries](#libraries)
+* [Dependencies](#dependencies)
+  * [IWYU](#iwyu)
 * [Null](#null)
   * [std::nullptr](#stdnullptr)
   * [std::nullptr_t](#stdnullptr_t)
@@ -37,6 +39,21 @@ When linking is performed while a program is being loaded ([load time](https://e
 Dynamic libraries have 2 types of linking.
 * Implicit. When a `lib` file is provided by the `dll` creator along with appropriate headers. This `lib` is an `import` library, merely a descriptor of the target library, it contains entry point, addresses, etc. It doesn't contain any code and must be passed to the linker.
 * Explicit. When the library is manually loaded with `LoadLibrary` functions. The `lib` file isn't needed, but it requires more effort to find exports, addresses, and call functions through pointers.
+
+## Dependencies
+
+### IWYU
+
+[IWYU (Include What You Use](https://include-what-you-use.org/) is a strategy (and a [tool](https://github.com/include-what-you-use/include-what-you-use)) for managing `#include` directives where core idea is `every file should include only the headers it directly uses`.
+
+✅ Pros
+* Reduces compile times (especially for large projects).
+* Makes dependencies explicit and easier to track.
+* Helps avoid brittle code that breaks due to transitive includes.
+
+❌ Cons
+* Can require a lot of micro-management of includes.
+* Sometimes leads to larger include lists in headers or source files.
 
 ## Null
 
