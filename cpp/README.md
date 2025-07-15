@@ -49,7 +49,7 @@ Dynamic libraries have 2 types of linking.
 ✅ Pros
 * Reduces compile times (especially for large projects).
 * Makes dependencies explicit and easier to track.
-* Helps avoid brittle code that breaks due to transitive includes.
+* Helps avoid code that breaks due to transitive includes.
 
 ❌ Cons
 * Can require a lot of micro-management of includes.
