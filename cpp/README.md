@@ -43,9 +43,11 @@ Dynamic libraries have 2 types of linking.
 
 ## Dependencies
 
+Managing include files dependencies is crucial for maintaining clean, efficient, and scalable code.
+
 ### IWYU
 
-[IWYU (Include What You Use)](https://include-what-you-use.org/) is a strategy (and a [tool](https://github.com/include-what-you-use/include-what-you-use)) for managing `#include` directives where the core idea is `every file should include only the headers it directly uses`.
+[IWYU (Include What You Use)](https://include-what-you-use.org/) is a strategy (and a [tool](https://github.com/include-what-you-use/include-what-you-use)) for managing include directives where the core idea is `every file should include only the headers it directly uses`.
 
 ✅ Pros
 * Reduces compile times (especially for large projects).
