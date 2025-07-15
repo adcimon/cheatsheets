@@ -61,13 +61,17 @@ Dynamic libraries have 2 types of linking.
 [PCH (Precompiled Header)](https://en.wikipedia.org/wiki/Precompiled_header) is a file (typically `pch.h`) that contains the compiled version of commonly included headers. Instead of parsing and compiling the same headers repeatedly for every source file, the compiler does it once and reuses the result.
 
 ```cpp
-// pch.h
+#ifndef PCH_H
+#define PCH_H
+
 #include <iostream>
 #include <map>
 #include <memory>
 #include <string>
 #include <vector>
 // ...
+
+#endif // PCH_H
 ```
 
 ✅ Benefits
