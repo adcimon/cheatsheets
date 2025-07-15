@@ -62,7 +62,7 @@ Dynamic libraries have 2 types of linking.
 #include <string>
 #include <vector>
 
-class Bar;
+class Bar; // Forward declaration.
 
 class Foo {
 public:
