@@ -9,6 +9,7 @@
 * [Libraries](#libraries)
 * [Dependencies](#dependencies)
   * [IWYU](#iwyu)
+  * [PCH](#pch)
 * [Null](#null)
   * [std::nullptr](#stdnullptr)
   * [std::nullptr_t](#stdnullptr_t)
@@ -54,6 +55,10 @@ Dynamic libraries have 2 types of linking.
 ❌ Cons
 * Can require a lot of micro-management of includes.
 * Sometimes leads to larger include lists in headers or source files.
+
+### PCH
+
+[PCH (Precompiled Header)](https://en.wikipedia.org/wiki/Precompiled_header) is a file (typically `pch.h`) that contains the compiled version of commonly included headers. Instead of parsing and compiling the same headers repeatedly for every source file, the compiler does it once and reuses the result.
 
 ## Null
 
