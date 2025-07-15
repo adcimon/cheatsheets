@@ -86,7 +86,7 @@ private:
 * Avoids recompiling standard headers.
 
 ❌ Downsides
-* Adds complexity to your build system.
+* Adds complexity to the build system.
 * Can cause confusing build errors if the PCH gets stale or corrupted.
 * Less fine-grained dependency tracking.
 
