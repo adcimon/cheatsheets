@@ -241,7 +241,7 @@ int i = 42;
 float f = static_cast<float>(i);
 
 Derived* d = new Derived();
-Base* b = static_cast<Base*>(d); // Upcasting.
+Base* b = static_cast<Base*>(d); // Upcast.
 ```
 
 ### dynamic_cast
