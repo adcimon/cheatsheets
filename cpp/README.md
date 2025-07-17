@@ -265,7 +265,7 @@ Derived* d = dynamic_cast<Derived*>(b); // Downcast.
 
 ```cpp
 const char* constStr = "hello";
-char* str = const_cast<char*>(constStr); // Only safe if str was not originally const.
+char* str = const_cast<char*>(constStr); // Only safe if was not originally const.
 ```
 
 ### reinterpret_cast
