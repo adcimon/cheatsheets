@@ -17,6 +17,11 @@
   * [std::unique_ptr](#stdunique_ptr)
   * [std::shared_ptr](#stdshared_ptr)
   * [std::weak_ptr](#stdweak_ptr)
+* [Casting](#casting)
+  * [static_cast](#static_cast)
+  * [reinterpret_cast](#reinterpret_cast)
+  * [const_cast](#const_cast)
+  * [dynamic_cast](#dynamic_cast)
 * [Concurrency](#concurrency)
   * [std::thread](#stdthread)
   * [std::async](#stdasync)
@@ -218,6 +223,26 @@ int main(int argc, char** argv)
 * The size is one pointer.
 * Used to observe objects that are not required to remain alive.
 * Required in some cases to break circular references between `shared_ptr` instances.
+
+## Casting
+
+Casting is the action of explicitly converting a value from one type to another.
+
+### static_cast
+
+```cpp
+int i = 42;
+float f = static_cast<float>(i);
+
+Derived* d = new Derived();
+Base* b = static_cast<Base*>(d);  // Upcasting.
+```
+
+### reinterpret_cast
+
+### const_cast
+
+### dynamic_cast
 
 ## Concurrency
 
