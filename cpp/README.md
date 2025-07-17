@@ -253,7 +253,7 @@ Base* b = static_cast<Base*>(d);  // Upcasting.
 
 ```cpp
 char* c = reinterpret_cast<char*>(someUint8Pointer);
-uint64_t val = reinterpret_cast<uint64_t>(ptr); // pointer → int
+uint64_t value = reinterpret_cast<uint64_t>(ptr); // pointer → int
 ```
 
 ### const_cast
@@ -264,7 +264,7 @@ uint64_t val = reinterpret_cast<uint64_t>(ptr); // pointer → int
 
 ```cpp
 const char* str = "hello";
-char* modifiable = const_cast<char*>(str); // Only safe if str was not originally const.
+char* value = const_cast<char*>(str); // Only safe if str was not originally const.
 ```
 
 ### dynamic_cast
