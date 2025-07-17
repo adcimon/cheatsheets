@@ -19,9 +19,9 @@
   * [std::weak_ptr](#stdweak_ptr)
 * [Casting](#casting)
   * [static_cast](#static_cast)
-  * [reinterpret_cast](#reinterpret_cast)
-  * [const_cast](#const_cast)
   * [dynamic_cast](#dynamic_cast)
+  * [const_cast](#const_cast)
+  * [reinterpret_cast](#reinterpret_cast)
 * [Concurrency](#concurrency)
   * [std::thread](#stdthread)
   * [std::async](#stdasync)
@@ -244,16 +244,17 @@ Derived* d = new Derived();
 Base* b = static_cast<Base*>(d); // Upcasting.
 ```
 
-### reinterpret_cast
+### dynamic_cast
 
-[reinterpret_cast](https://en.cppreference.com/w/cpp/language/reinterpret_cast.html) converts between types by performing bitwise reinterpretation of memory.
+[dynamic_cast](https://en.cppreference.com/w/cpp/language/dynamic_cast.html) converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
 
-* Used for low-level casting between unrelated pointer types, or between integer types and pointers.
-* Dangerous if used without ensuring memory layout compatibility.
+* Requires at least one virtual function in the base class to work.
+* Returns a pointer to the derived type if the cast is valid or `nullptr` if the cast fails (when casting pointers).
+* Throws `std::bad_cast` if casting a reference and it fails.
 
 ```cpp
-char* c = reinterpret_cast<char*>(uint8Pointer);
-uint64_t value = reinterpret_cast<uint64_t>(pointer); // pointer → int
+Base* b = new Derived();
+Derived* d = dynamic_cast<Derived*>(b); // Downcast.
 ```
 
 ### const_cast
@@ -267,17 +268,16 @@ const char* constStr = "hello";
 char* str = const_cast<char*>(constStr); // Only safe if str was not originally const.
 ```
 
-### dynamic_cast
+### reinterpret_cast
 
-[dynamic_cast](https://en.cppreference.com/w/cpp/language/dynamic_cast.html) converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
+[reinterpret_cast](https://en.cppreference.com/w/cpp/language/reinterpret_cast.html) converts between types by performing bitwise reinterpretation of memory.
 
-* Requires at least one virtual function in the base class to work.
-* Returns a pointer to the derived type if the cast is valid or `nullptr` if the cast fails (when casting pointers).
-* Throws `std::bad_cast` if casting a reference and it fails.
+* Used for low-level casting between unrelated pointer types, or between integer types and pointers.
+* Dangerous if used without ensuring memory layout compatibility.
 
 ```cpp
-Base* b = new Derived();
-Derived* d = dynamic_cast<Derived*>(b); // Downcast.
+char* c = reinterpret_cast<char*>(uint8Pointer);
+uint64_t value = reinterpret_cast<uint64_t>(pointer); // pointer → int
 ```
 
 ## Concurrency
