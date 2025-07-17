@@ -45,6 +45,7 @@ List of libraries.
 | Library |
 |---|
 | [args](https://github.com/Taywee/args) |
+| [Dear ImGui](https://github.com/ocornut/imgui) |
 
 ## Dependencies
 
