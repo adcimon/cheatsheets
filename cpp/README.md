@@ -241,7 +241,7 @@ int i = 42;
 float f = static_cast<float>(i);
 
 Derived* d = new Derived();
-Base* b = static_cast<Base*>(d);  // Upcasting.
+Base* b = static_cast<Base*>(d); // Upcasting.
 ```
 
 ### reinterpret_cast
@@ -252,8 +252,8 @@ Base* b = static_cast<Base*>(d);  // Upcasting.
 * Dangerous if used without ensuring memory layout compatibility.
 
 ```cpp
-char* c = reinterpret_cast<char*>(someUint8Pointer);
-uint64_t value = reinterpret_cast<uint64_t>(ptr); // pointer → int
+char* c = reinterpret_cast<char*>(uint8Pointer);
+uint64_t value = reinterpret_cast<uint64_t>(pointer); // pointer → int
 ```
 
 ### const_cast
@@ -263,8 +263,8 @@ uint64_t value = reinterpret_cast<uint64_t>(ptr); // pointer → int
 * Undefined behavior if the modified object was originally declared as `const`.
 
 ```cpp
-const char* str = "hello";
-char* value = const_cast<char*>(str); // Only safe if str was not originally const.
+const char* constStr = "hello";
+char* str = const_cast<char*>(constStr); // Only safe if str was not originally const.
 ```
 
 ### dynamic_cast
@@ -277,7 +277,7 @@ char* value = const_cast<char*>(str); // Only safe if str was not originally con
 
 ```cpp
 Base* b = new Derived();
-Derived* d = dynamic_cast<Derived*>(b);  // Safe downcast.
+Derived* d = dynamic_cast<Derived*>(b); // Downcast.
 ```
 
 ## Concurrency
