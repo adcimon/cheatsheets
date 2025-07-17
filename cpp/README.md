@@ -232,6 +232,10 @@ Casting is the action of explicitly converting a value from one type to another.
 
 [static_cast](https://en.cppreference.com/w/cpp/language/static_cast.html) converts between types that the compiler knows how to convert.
 
+* Used for widening/narrowing numeric types.
+* Used for pointer conversions where pointers are within an inheritance hierarchy.
+* Used for `void*` to typed pointer and vice versa.
+
 ```cpp
 int i = 42;
 float f = static_cast<float>(i);
@@ -244,9 +248,24 @@ Base* b = static_cast<Base*>(d);  // Upcasting.
 
 [reinterpret_cast](https://en.cppreference.com/w/cpp/language/reinterpret_cast.html) converts between types by performing bitwise reinterpretation of memory.
 
+* Used for low-level casting between unrelated pointer types, or between integer types and pointers.
+* Dangerous if used without ensuring memory layout compatibility.
+
+```cpp
+char* c = reinterpret_cast<char*>(someUint8Pointer);
+uint64_t val = reinterpret_cast<uint64_t>(ptr); // pointer → int
+```
+
 ### const_cast
 
 [const_cast](https://en.cppreference.com/w/cpp/language/const_cast.html) converts between types with different `const` and `volatile` qualifications.
+
+* Undefined behavior if the modified object was originally declared as `const`.
+
+```cpp
+const char* str = "hello";
+char* modifiable = const_cast<char*>(str); // Only safe if str was not originally const.
+```
 
 ### dynamic_cast
 
