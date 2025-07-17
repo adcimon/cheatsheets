@@ -230,6 +230,8 @@ Casting is the action of explicitly converting a value from one type to another.
 
 ### static_cast
 
+[static_cast](https://en.cppreference.com/w/cpp/language/static_cast.html) converts between types that the compiler knows how to convert.
+
 ```cpp
 int i = 42;
 float f = static_cast<float>(i);
@@ -240,9 +242,24 @@ Base* b = static_cast<Base*>(d);  // Upcasting.
 
 ### reinterpret_cast
 
+[reinterpret_cast](https://en.cppreference.com/w/cpp/language/reinterpret_cast.html) converts between types by performing bitwise reinterpretation of memory.
+
 ### const_cast
 
+[const_cast](https://en.cppreference.com/w/cpp/language/const_cast.html) converts between types with different `const` and `volatile` qualifications.
+
 ### dynamic_cast
+
+[dynamic_cast](https://en.cppreference.com/w/cpp/language/dynamic_cast.html) converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
+
+* Requires at least one virtual function in the base class to work.
+* Returns a pointer to the derived type if the cast is valid or `nullptr` if the cast fails (when casting pointers).
+* Throws `std::bad_cast` if casting a reference and it fails.
+
+```cpp
+Base* b = new Derived();
+Derived* d = dynamic_cast<Derived*>(b);  // Safe downcast.
+```
 
 ## Concurrency
 
