@@ -253,6 +253,7 @@ For a subscriber with limited bandwidth, it is possible to send only the frames 
 
 ## References
 
+* [Digital Video Introduction](https://github.com/leandromoreira/digital_video_introduction)
 * [IBM Internet connection and recommended encoding settings](https://support.video.ibm.com/hc/en-us/articles/207852117-Internet-connection-and-recommended-encoding-settings)
 * [IBM Keyframes, Interframe and Video Compression](https://blog.video.ibm.com/streaming-video-tips/keyframes-interframe-video-compression/)
 * [Twitch Broadcasting Guidelines](https://help.twitch.tv/s/article/broadcasting-guidelines/)
