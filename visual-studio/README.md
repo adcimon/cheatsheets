@@ -8,6 +8,7 @@
 
 * [General](#general)
 * [Editor](#editor)
+* [Debug](#debug)
 
 ## General
 
@@ -15,20 +16,6 @@
 
 * Right click on `Solution Explorer → <Project> → Add → New Item → Application Manifest File`.
 * The file `app.manifest` will be created.
-
-### Automatically close console when debug stops
-
-* Go to `Tools → Options → Debugging`.
-* Check `Automatically close the console when debugging stops`.
-
-### Run debug as administrator
-
-Go to `app.manifest` → `<requestedPrivileges>` and add the execution level requirement:
-```
-<requestedExecutionLevel level="requireAdministrator" uiAccess="false"/>
-```
-* When trying to debug, the editor will warn about the admin right and restart itself with admin rights.
-* The executable will be marked as requiring admin rights, therefore when deploying is not necessary to configure admin rights in the file properties.
 
 ## Editor
 
@@ -47,3 +34,19 @@ Go to `app.manifest` → `<requestedPrivileges>` and add the execution level req
 
 * Go to `Tools → Options → Text Editor`.
 * Uncheck `Show structure guide lines`.
+
+## Debug
+
+### Automatically close console when debug stops
+
+* Go to `Tools → Options → Debugging`.
+* Check `Automatically close the console when debugging stops`.
+
+### Run debug as administrator
+
+Go to `app.manifest` → `<requestedPrivileges>` and add the execution level requirement:
+```
+<requestedExecutionLevel level="requireAdministrator" uiAccess="false"/>
+```
+* When trying to debug, the editor will warn about the admin right and restart itself with admin rights.
+* The executable will be marked as requiring admin rights, therefore when deploying is not necessary to configure admin rights in the file properties.
