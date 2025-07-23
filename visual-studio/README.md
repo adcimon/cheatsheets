@@ -48,7 +48,7 @@ Run debug as administrator.
 
 ## Build
 
-Change build folder.
+Change build directory.
 * Go to `Project → Properties → General`.
 * Change `Output Directory` to `$(SolutionDir)build\$(Platform)\$(Configuration)\`.
 * Change `Intermediate Directory` to `$(SolutionDir)build\intermediate\$(Platform)\$(Configuration)\`.
