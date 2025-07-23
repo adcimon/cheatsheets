@@ -14,7 +14,7 @@
 ## General
 
 Add manifest file.
-* Right click on `Solution Explorer → <Project> → Add → New Item → Application Manifest File`.
+* Right click on `Solution Explorer → Project → Add → New Item → Application Manifest File`.
 * The file `app.manifest` will be created.
 
 ## Editor
