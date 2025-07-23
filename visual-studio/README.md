@@ -9,6 +9,7 @@
 * [General](#general)
 * [Editor](#editor)
 * [Debug](#debug)
+* [Build](#build)
 
 ## General
 
@@ -44,3 +45,10 @@ Run debug as administrator.
 ```
 * When trying to debug, the editor will warn about the admin right and restart itself with admin rights.
 * The executable will be marked as requiring admin rights, therefore when deploying is not necessary to configure admin rights in the file properties.
+
+## Build
+
+Change build folder.
+* Go to `Project → Properties → General`.
+* Change `Output Directory` to `$(SolutionDir)build\$(Platform)\$(Configuration)\`.
+* Change `Intermediate Directory` to `$(SolutionDir)build\intermediate\$(Platform)\$(Configuration)\`.
