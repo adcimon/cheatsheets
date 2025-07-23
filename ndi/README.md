@@ -79,4 +79,5 @@ NDI is now using the discovery service instead of mDNS.
 
 ## References
 
+* [Developing with NDI](https://docs.ndi.video/all/developing-with-ndi/introduction)
 * [Networking Best Practice](https://ndi.tv/tools/education/networking/best-practices/networking-best-practice/)
