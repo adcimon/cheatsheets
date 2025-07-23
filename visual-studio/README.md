@@ -4,6 +4,13 @@
 
 [Visual Studio](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) is an integrated development environment (IDE) from Microsoft.
 
+## Index
+
+* [General](#general)
+* [Editor](#editor)
+
+## General
+
 ### Add manifest file
 
 * Right click on `Solution Explorer → <Project> → Add → New Item → Application Manifest File`.
@@ -13,6 +20,17 @@
 
 * Go to `Tools → Options → Debugging`.
 * Check `Automatically close the console when debugging stops`.
+
+### Run debug as administrator
+
+Go to `app.manifest` → `<requestedPrivileges>` and add the execution level requirement:
+```
+<requestedExecutionLevel level="requireAdministrator" uiAccess="false"/>
+```
+* When trying to debug, the editor will warn about the admin right and restart itself with admin rights.
+* The executable will be marked as requiring admin rights, therefore when deploying is not necessary to configure admin rights in the file properties.
+
+## Editor
 
 ### Fix inconsistent line endings
 
@@ -29,12 +47,3 @@
 
 * Go to `Tools → Options → Text Editor`.
 * Uncheck `Show structure guide lines`.
-
-### Run debug as administrator
-
-Go to `app.manifest` → `<requestedPrivileges>` and add the execution level requirement:
-```
-<requestedExecutionLevel level="requireAdministrator" uiAccess="false"/>
-```
-* When trying to debug, the editor will warn about the admin right and restart itself with admin rights.
-* The executable will be marked as requiring admin rights, therefore when deploying is not necessary to configure admin rights in the file properties.
