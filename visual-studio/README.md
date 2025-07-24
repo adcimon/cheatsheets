@@ -8,6 +8,7 @@
 
 * [General](#general)
 * [Editor](#editor)
+* [C/C++](#cc)
 * [Build](#build)
 * [Debug](#debug)
 
@@ -44,7 +45,7 @@ Add library directories.
 
 Add library.
 * Go to `Project → Properties → Linker → Input`.
-* Add to `Additional Dependencies` the `.lib`.
+* Add to `Additional Dependencies` the `.lib` file.
 
 ## Build
 
