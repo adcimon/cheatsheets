@@ -32,6 +32,20 @@ Hide vertical dotted indentation.
 * Go to `Tools → Options → Text Editor`.
 * Uncheck `Show structure guide lines`.
 
+## C/C++
+
+Add include directories.
+* Go to `Project → Properties → C/C++ → General`.
+* Add to `Additional Include Directories` the path `$(ProjectDir)path\to\include`.
+
+Add library directories.
+* Go to `Project → Properties → Linker → General`.
+* Add to `Additional Library Directories` the path `$(ProjectDir)path\to\lib`.
+
+Add library.
+* Go to `Project → Properties → Linker → Input`.
+* Add to `Additional Dependencies` the `.lib`.
+
 ## Build
 
 Change build directory.
@@ -41,7 +55,7 @@ Change build directory.
 
 Copy files on post-build.
 * Go to `Project → Properties → Build Events → Post-Build Event`.
-* Add to `Command line` the instruction `copy /Y $(ProjectDir)external\path\to\files\*.dll $(OutDir)`.
+* Add to `Command line` the instruction `copy /Y $(ProjectDir)path\to\files\*.ext $(OutDir)`.
 
 ## Debug
 
