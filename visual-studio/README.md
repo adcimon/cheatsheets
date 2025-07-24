@@ -39,6 +39,10 @@ Change build directory.
 * Change `Output Directory` to `$(SolutionDir)build\$(Platform)\$(Configuration)\`.
 * Change `Intermediate Directory` to `$(SolutionDir)build\intermediate\$(Platform)\$(Configuration)\`.
 
+Copy files on post-build.
+* Go to `Project → Properties → Build Events → Post-Build Event`.
+* Add to `Command line` the instruction `copy /Y $(ProjectDir)external\path\to\files\*.dll $(OutDir)`.
+
 ## Debug
 
 Automatically close console when debug stops.
