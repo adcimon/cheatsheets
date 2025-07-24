@@ -12,6 +12,7 @@
 [<img class="badge" src="https://adcimon.github.io/badges/aws.svg">](https://adcimon.github.io/cheatsheets/aws/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/blender.svg">](https://adcimon.github.io/cheatsheets/blender/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/brainstorm.svg">](https://adcimon.github.io/cheatsheets/brainstorm/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/cmake.svg">](https://adcimon.github.io/cheatsheets/cmake/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/cpp.svg">](https://adcimon.github.io/cheatsheets/cpp/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/css.svg">](https://adcimon.github.io/cheatsheets/css/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/curl.svg">](https://adcimon.github.io/cheatsheets/curl/)<br>
