@@ -301,25 +301,25 @@ Platform.
 * macOS.
 * Linux (Ubuntu 20.04+).
 
-Dependencies
+Dependencies.
 
-* For Linux (Ubuntu/Debian):
-´´´
+* For Linux (Ubuntu/Debian).
+```
 sudo apt-get update
 sudo apt-get install python3 git curl lsb-release build-essential
-´´´
+```
 
-* For macOS (with Homebrew):
+* For macOS (with Homebrew).
 ```
 brew install python git curl
 ```
 
-* For Windows:
-* Install Git for Windows.
-* Install Python 3.
-* Use x64 Native Tools Command Prompt for VS 2022 (install VS with C++ workload).
+* For Windows.
+  * Install Git for Windows.
+  * Install Python 3.
+  * Use x64 Native Tools Command Prompt for VS 2022 (install VS with C++ workload).
 
-📁 3. Clone the depot_tools
+📁 2. Clone depot_tools
 
 Google's `depot_tools` is required for fetching and building Chromium-related projects like `libwebrtc`.
 ```
@@ -331,7 +331,7 @@ Add it to `PATH`.
 export PATH="$PATH:/path/to/depot_tools"
 ```
 
-⬇️ 4. Fetch WebRTC Source
+⬇️ 3. Fetch Source
 
 Create a working directory.
 ```
@@ -351,7 +351,7 @@ git checkout branch-heads/6210  # Optional checkout.
 gclient sync
 ```
 
-⚙️ 5. Build Configuration
+⚙️ 4. Build Configuration
 
 Use `gn` to configure the build.
 
@@ -368,7 +368,7 @@ rtc_use_h264=true                 # Enable H.264 codec.
 target_cpu="x64"                  # x86 or arm64 as needed.
 ```
 
-🔨 6. Build with Ninja
+🔨 5. Build with Ninja
 
 Build all.
 ```
@@ -381,7 +381,7 @@ ninja -C out/Default peerconnection_server
 ninja -C out/Default webrtc
 ```
 
-🧪 Verifying the Build
+🧪 Verifying
 
 Run the sample.
 ```
