@@ -357,11 +357,11 @@ gclient sync
 
 ⚙️ 4. Build configuration
 
-`gn` is used to configure the build.
-* [BUILD.gn](https://webrtc.googlesource.com/src/+/e9c3f0158c826af7a564a37ef0d513476fa89ec6/BUILD.gn) file is used to generate Ninja build files for multiple operating systems, executables, shared libraries, etc.
+`gn` is used to configure the build and generate `Ninja` build files.
+* [BUILD.gn](https://webrtc.googlesource.com/src/+/e9c3f0158c826af7a564a37ef0d513476fa89ec6/BUILD.gn) file is used to generate build files for multiple operating systems, executables, shared libraries, etc.
 * [webrtc.gni](https://webrtc.googlesource.com/src/+/49850c328cd4ba9c0ddeb0e8763bf13718188433/webrtc.gni) file contains boolean flags to control which components of the project are built.
 
-Generate Ninja build files.
+Generate build files.
 ```
 gn gen out/Default
 gn gen out/Default --args='is_debug=true rtc_include_tests=false'
