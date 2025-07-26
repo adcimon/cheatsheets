@@ -315,8 +315,8 @@ brew install python git curl
 ```
 
 * For Windows.
-  * Install Git for Windows.
   * Install Python 3.
+  * Install Git for Windows.
   * Use x64 Native Tools Command Prompt for VS 2022 (install VS with C++ workload).
 
 📁 2. Clone depot_tools
