@@ -326,7 +326,7 @@ brew install python git curl
 
 📁 2. Clone depot_tools
 
-Google's `depot_tools` is required for fetching and building Chromium-related projects like `libwebrtc`.
+Google's `depot_tools` is required for fetching and building Chromium-related projects.
 ```
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ```
@@ -351,7 +351,7 @@ fetch --nohooks webrtc
 
 Pull the latest version (or a specific branch/tag/commit).
 ```
-git checkout branch-heads/6210  # Optional checkout.
+git checkout branch-heads/6210    # Optional checkout.
 gclient sync
 ```
 
