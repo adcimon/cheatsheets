@@ -283,16 +283,115 @@ chrome://webrtc-internals
 
 * [libwebrtc](https://webrtc.googlesource.com/src/)
 * [Pion](https://github.com/pion/webrtc)
-* [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
 * [aiortc](https://github.com/aiortc/aiortc)
+* [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
 * [libdatachannel](https://github.com/paullouisageneau/libdatachannel)
-* [werift](https://github.com/shinyoshiaki/werift-webrtc)
-* [Simple Peer](https://github.com/feross/simple-peer)
 * [WebRTC Builds](https://github.com/shiguredo-webrtc-build/webrtc-build)
 
 ### libwebrtc
 
 [libwebrtc](https://webrtc.googlesource.com/src) is an open source C++ implementation of WebRTC developed by Google.
+
+#### Build
+
+📦 1. Prerequisites
+
+Platform.
+* Windows 10+.
+* macOS.
+* Linux (Ubuntu 20.04+).
+
+Dependencies
+
+* For Linux (Ubuntu/Debian):
+´´´
+sudo apt-get update
+sudo apt-get install python3 git curl lsb-release build-essential
+´´´
+
+* For macOS (with Homebrew):
+```
+brew install python git curl
+```
+
+* For Windows:
+* Install Git for Windows.
+* Install Python 3.
+* Use x64 Native Tools Command Prompt for VS 2022 (install VS with C++ workload).
+
+📁 3. Clone the depot_tools
+
+Google's `depot_tools` is required for fetching and building Chromium-related projects like `libwebrtc`.
+```
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+```
+
+Add it to `PATH`.
+```
+export PATH="$PATH:/path/to/depot_tools"
+```
+
+⬇️ 4. Fetch WebRTC Source
+
+Create a working directory.
+```
+mkdir webrtc-checkout
+cd webrtc-checkout
+```
+
+Use fetch to get the source.
+```
+fetch --nohooks webrtc
+cd src
+```
+
+Pull the latest version (or a specific branch/tag/commit).
+```
+git checkout branch-heads/6210  # Optional checkout.
+gclient sync
+```
+
+⚙️ 5. Build Configuration
+
+Use `gn` to configure the build.
+
+Example debug build.
+```
+gn gen out/Default --args='is_debug=true rtc_include_tests=false'
+```
+
+Optional common arguments.
+```
+is_debug=false                    # Release build.
+rtc_include_tests=false           # Don't build tests.
+rtc_use_h264=true                 # Enable H.264 codec.
+target_cpu="x64"                  # x86 or arm64 as needed.
+```
+
+🔨 6. Build with Ninja
+
+Build all.
+```
+ninja -C out/Default
+```
+
+Build specific targets.
+```
+ninja -C out/Default peerconnection_server
+ninja -C out/Default webrtc
+```
+
+🧪 Verifying the Build
+
+Run the sample.
+```
+out/Default/peerconnection_server
+```
+
+📝 Notes
+
+* `libwebrtc` doesn't generate a shared `so` or `dll`, it's a set of static `lib` to link into an application.
+* It is common to wrap it in a C/C++ interface for easier integration into an application.
 
 ## References
 
