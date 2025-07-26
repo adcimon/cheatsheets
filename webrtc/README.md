@@ -369,10 +369,12 @@ gn gen out/Default --args="is_debug=false treat_warnings_as_errors=false rtc_bui
 
 Optional common arguments.
 ```
-is_debug=false                    # Release build.
-rtc_include_tests=false           # Don't build tests.
-rtc_use_h264=true                 # Enable H.264 codec.
-target_cpu="x64"                  # x86 or arm64 as needed.
+is_debug                          # Release build.
+treat_warnings_as_errors          # Treat warnings as errors.
+rtc_use_h264                      # Enable H.264 codec.
+target_cpu="x64"                  # CPU targets (x86, x64, arm64, etc.).
+rtc_build_examples                # Build examples.
+rtc_include_tests                 # Build tests.
 ```
 
 🔨 5. Build with Ninja
