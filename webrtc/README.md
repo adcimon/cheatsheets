@@ -402,7 +402,8 @@ out/Default/peerconnection_server
 
 📝 Notes
 
-* `libwebrtc` doesn't generate a shared `so` or `dll`, it's a set of static `lib` to link into an application.
+* It doesn't generate a dynamic `so` or `dll`, instead, it generates a static `a` or `lib` to link into an application.
+* It doesn't separate headers from source like most libraries, instead, it is needed to include the entire source tree and carefully manage include paths.
 * It is common to wrap it in a C/C++ interface for easier integration into an application.
 
 ## References
