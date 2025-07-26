@@ -12,6 +12,8 @@
 * [Data](#data)
 * [Security](#security)
 * [Profiling](#profiling)
+* [Libraries](#libraries)
+  * [libwebrtc](#libwebrtc)
 * [References](#references)
 
 ## Signaling
@@ -277,9 +279,23 @@ chrome://webrtc-internals
 <p align="center"><img align="center" src="assets/stats_bwe.png"></p>
 <br>
 
+## Libraries
+
+* [libwebrtc](https://webrtc.googlesource.com/src/)
+* [Pion](https://github.com/pion/webrtc)
+* [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
+* [aiortc](https://github.com/aiortc/aiortc)
+* [libdatachannel](https://github.com/paullouisageneau/libdatachannel)
+* [werift](https://github.com/shinyoshiaki/werift-webrtc)
+* [Simple Peer](https://github.com/feross/simple-peer)
+* [WebRTC Builds](https://github.com/shiguredo-webrtc-build/webrtc-build)
+
+### libwebrtc
+
+[libwebrtc](https://webrtc.googlesource.com/src) is an open source C++ implementation of WebRTC developed by Google.
+
 ## References
 
-Articles
 * [WebRTC for the Curious](https://webrtcforthecurious.com/)
 * [WebRTC Glossary](https://webrtcglossary.com/)
 * [MDN WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
@@ -291,13 +307,3 @@ Articles
 * [An Introduction to WebRTC Simulcast](https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb)
 * [How Discord handles two and half million concurrent voice users using WebRTC](https://discord.com/blog/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc)
 * [Samples](https://webrtc.github.io/samples/)
-
-Libraries
-* [libwebrtc](https://webrtc.googlesource.com/src/)
-* [Pion](https://github.com/pion/webrtc)
-* [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
-* [aiortc](https://github.com/aiortc/aiortc)
-* [libdatachannel](https://github.com/paullouisageneau/libdatachannel)
-* [werift](https://github.com/shinyoshiaki/werift-webrtc)
-* [Simple Peer](https://github.com/feross/simple-peer)
-* [WebRTC Builds](https://github.com/shiguredo-webrtc-build/webrtc-build)
