@@ -300,7 +300,7 @@ chrome://webrtc-internals
 📦 1. Prerequisites
 
 Platform.
-* Windows 10+.
+* Windows (10+).
 * macOS.
 * Linux (Ubuntu 20.04+).
 
@@ -320,7 +320,7 @@ brew install python git curl
 * For Windows.
   * Install Python 3.
   * Install Git for Windows.
-  * Install Visual Studio 2022 `Desktop development with C++` workload.
+  * Install Visual Studio 2022 with `Desktop development with C++` workload.
   * Use `x64 Native Tools Command Prompt for VS 2022`.
 
 📁 2. Clone depot_tools
