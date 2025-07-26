@@ -316,7 +316,7 @@ sudo apt-get install python3 git curl lsb-release build-essential
 ```
 brew install python git curl
 ```
-* Install Xcode 14+.
+  * Install Xcode 14+.
 
 * For Windows.
   * Install Python 3.
