@@ -318,9 +318,9 @@ brew install python git curl
 ```
 
 * For Windows.
-  * Install Python 3.
-  * Install Git for Windows.
-  * Install Visual Studio 2022 with `Desktop development with C++` workload.
+  * Install `Python 3`.
+  * Install `Git for Windows`.
+  * Install `Visual Studio 2022` with `Desktop development with C++` workload.
   * Use `x64 Native Tools Command Prompt for VS 2022`.
 
 📁 2. Clone depot_tools
@@ -343,7 +343,7 @@ mkdir webrtc-checkout
 cd webrtc-checkout
 ```
 
-Use fetch to get the source.
+Use `fetch` to get the source.
 ```
 fetch --nohooks webrtc
 ```
