@@ -294,8 +294,7 @@ chrome://webrtc-internals
 
 #### Build
 
-* [WebRTC Native Code](https://webrtc.github.io/webrtc-org/native-code/).
-* [WebRTC Development](https://webrtc.github.io/webrtc-org/native-code/development/).
+[WebRTC Native Code](https://webrtc.github.io/webrtc-org/native-code/) package is meant for browser developers who want to integrate WebRTC. Application developers are encouraged to use the WebRTC API instead.
 
 📦 1. Install prerequisites
 
