@@ -362,8 +362,9 @@ gclient sync
 
 Generate build files.
 ```
+cd src
 gn gen out/Default
-gn gen out/Default --args='is_debug=false treat_warnings_as_errors=false rtc_build_examples=true rtc_include_tests=false'
+gn gen out/Default --args="is_debug=false treat_warnings_as_errors=false rtc_build_examples=true rtc_include_tests=false"
 ```
 
 Optional common arguments.
