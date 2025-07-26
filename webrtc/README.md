@@ -297,7 +297,7 @@ chrome://webrtc-internals
 * [WebRTC Native Code](https://webrtc.github.io/webrtc-org/native-code/).
 * [WebRTC Development](https://webrtc.github.io/webrtc-org/native-code/development/).
 
-📦 1. Prerequisites
+📦 1. Install prerequisites
 
 Platform.
 * Windows (10+).
@@ -355,7 +355,7 @@ git checkout branch-heads/6210  # Optional checkout.
 gclient sync
 ```
 
-⚙️ 4. Build configuration
+⚙️ 4. Configure build
 
 `gn` is used to configure the build and generate `Ninja` build files.
 * [BUILD.gn](https://webrtc.googlesource.com/src/+/e9c3f0158c826af7a564a37ef0d513476fa89ec6/BUILD.gn) file is used to generate build files for multiple operating systems, executables, shared libraries, etc.
