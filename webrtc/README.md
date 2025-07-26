@@ -301,7 +301,7 @@ chrome://webrtc-internals
 
 Platform.
 * Windows (10+).
-* macOS.
+* macOS (12+).
 * Linux (Ubuntu 20.04+).
 
 Dependencies.
@@ -316,6 +316,7 @@ sudo apt-get install python3 git curl lsb-release build-essential
 ```
 brew install python git curl
 ```
+* Install Xcode 14+.
 
 * For Windows.
   * Install Python 3.
