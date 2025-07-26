@@ -306,13 +306,13 @@ Platform.
 
 Dependencies.
 
-* For Linux (Ubuntu/Debian).
+* For Linux.
 ```
 sudo apt-get update
 sudo apt-get install python3 git curl lsb-release build-essential
 ```
 
-* For macOS (with Homebrew).
+* For macOS.
 ```
 brew install python git curl
 ```
@@ -345,7 +345,6 @@ cd webrtc-checkout
 Use fetch to get the source.
 ```
 fetch --nohooks webrtc
-cd src
 ```
 
 Pull the latest version (or a specific branch/tag/commit).
