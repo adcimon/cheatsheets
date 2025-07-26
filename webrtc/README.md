@@ -331,7 +331,7 @@ Add it to `PATH`.
 export PATH="$PATH:/path/to/depot_tools"
 ```
 
-⬇️ 3. Fetch Source
+⬇️ 3. Fetch source
 
 Create a working directory.
 ```
@@ -351,7 +351,7 @@ git checkout branch-heads/6210  # Optional checkout.
 gclient sync
 ```
 
-⚙️ 4. Build Configuration
+⚙️ 4. Build configuration
 
 Use `gn` to configure the build.
 
@@ -381,7 +381,7 @@ ninja -C out/Default peerconnection_server
 ninja -C out/Default webrtc
 ```
 
-🧪 Verifying
+🧪 Verify
 
 Run the sample.
 ```
