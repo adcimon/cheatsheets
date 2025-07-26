@@ -366,6 +366,7 @@ cd src
 gn gen out/Default
 gn gen out/Default --args="is_debug=false treat_warnings_as_errors=false rtc_build_examples=true rtc_include_tests=false"
 ```
+* List build flags: `gn args <build_directory> --list`.
 
 Optional common arguments.
 ```
@@ -389,6 +390,8 @@ Build specific targets.
 ninja -C out/Default peerconnection_server
 ninja -C out/Default webrtc
 ```
+
+The static library is located at `webrtc-checkout/src/out/Default/obj/libwebrtc.[a|lib]`.
 
 🧪 Verify
 
