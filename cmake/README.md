@@ -6,8 +6,20 @@
 
 ## Index
 
+* []()
 * [Configuration](#configuration)
 * [Build](#build)
+
+## Project Structure
+
+```
+/
+├── build
+├── external
+├── src
+│   └── main.cpp
+└── CMakeLists.txt
+```
 
 ## Configuration
 
