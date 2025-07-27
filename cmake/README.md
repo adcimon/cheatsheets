@@ -32,7 +32,6 @@
 │   └── main.cpp
 └── CMakeLists.txt
 ```
-CMakeLists.txt
 ```
 cmake_minimum_required(VERSION 4.0)
 
@@ -50,7 +49,6 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 │   └── main.cpp
 └── CMakeLists.txt
 ```
-CMakeLists.txt
 ```
 cmake_minimum_required(VERSION 4.0)
 
