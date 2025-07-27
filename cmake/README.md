@@ -77,4 +77,5 @@ Build.
 ```
 cd build
 cmake --build .
+cmake --build . --config Debug
 ```
