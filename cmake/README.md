@@ -56,7 +56,11 @@ cmake_minimum_required(VERSION 4.0)
 
 project(hello-world VERSION 1.0.0)
 
-add_library(print-hello src/hello.hpp src/hello.cpp)
+add_library(print-hello
+    STATIC
+    src/hello.hpp
+    src/hello.cpp
+)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 
