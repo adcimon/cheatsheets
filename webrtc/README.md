@@ -323,17 +323,27 @@ brew install python git curl
   * Install `Visual Studio 2022` with `Desktop development with C++` workload.
   * Use `x64 Native Tools Command Prompt for VS 2022`.
 
-📁 2. Clone depot_tools
+📁 2. Get depot_tools
 
 Google's `depot_tools` is required for fetching and building Chromium-related projects.
+
+Clone.
 ```
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ```
 
-Add it to `PATH`.
+Add it to the path.
+
+For Linux/macOS.
 ```
 export PATH="$PATH:/path/to/depot_tools"
 ```
+
+For Windows.
+```
+set PATH=C:\path\to\depot_tools;%PATH%
+```
+* Or add it permanently to system path at `Advanced system settings → Environment Variables → Path`.
 
 ⬇️ 3. Fetch source
 
