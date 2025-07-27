@@ -77,5 +77,14 @@ Build.
 ```
 cd build
 cmake --build .
+```
+
+Build a specific configuration.
+```
 cmake --build . --config Debug
+```
+
+Build a specific target.
+```
+cmake --build . --target hello-world
 ```
