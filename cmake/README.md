@@ -25,13 +25,42 @@
 
 `CMakeLists.txt` is a build configuration file that contains commands to describe how the project should be built.
 
-Basic file.
+1. Basic configuration.
+```
+/
+├── src
+│   └── main.cpp
+└── CMakeLists.txt
+```
+CMakeLists.txt
 ```
 cmake_minimum_required(VERSION 4.0)
 
 project(hello-world VERSION 1.0.0)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
+```
+
+2. Library configuration.
+```
+/
+├── src
+│   ├── hello.hpp
+│   ├── hello.cpp
+│   └── main.cpp
+└── CMakeLists.txt
+```
+CMakeLists.txt
+```
+cmake_minimum_required(VERSION 4.0)
+
+project(hello-world VERSION 1.0.0)
+
+add_library(print-hello src/hello.hpp src/hello.cpp)
+
+add_executable(${PROJECT_NAME} src/main.cpp)
+
+target_link_library(${PROJECT_NAME} PRIVATE print-hello)
 ```
 
 ## Build
