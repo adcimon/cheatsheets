@@ -334,16 +334,15 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
 Add it to the path.
 
-For Linux/macOS.
+* For Linux/macOS.
 ```
 export PATH="$PATH:/path/to/depot_tools"
 ```
 
-For Windows.
+* For Windows.
 ```
 set PATH=C:\path\to\depot_tools;%PATH%
 ```
-* Or add it permanently to system path at `Advanced system settings → Environment Variables → Path`.
 
 ⬇️ 3. Fetch source
 
