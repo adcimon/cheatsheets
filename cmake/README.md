@@ -29,7 +29,7 @@ Basic file.
 ```
 cmake_minimum_required(VERSION 4.0)
 
-project(my-project VERSION 1.0.0)
+project(hello-world VERSION 1.0.0)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 ```
