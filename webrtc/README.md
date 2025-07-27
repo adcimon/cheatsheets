@@ -402,7 +402,7 @@ ninja -C out/Default peerconnection_server
 ninja -C out/Default webrtc
 ```
 
-The static library is located at `webrtc-checkout/src/out/Default/obj/libwebrtc.[a|lib]`.
+The static library is located at `webrtc-checkout/src/out/Default/obj/[libwebrtc.a|webrtc.lib]`.
 
 🧪 Verify
 
@@ -422,10 +422,7 @@ out/Default/peerconnection_server
 * [WebRTC for the Curious](https://webrtcforthecurious.com/)
 * [WebRTC Glossary](https://webrtcglossary.com/)
 * [MDN WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
-* [MDN Web Media Technologies](https://developer.mozilla.org/en-US/docs/Web/Media)
-* [WebRTC Work](https://webrtcwork.com/)
 * [Any Connect STUN-TURN-ICE](https://anyconnect.com/stun-turn-ice/)
-* [Glare Handling in WebRTC Signalling](https://www.ietf.org/proceedings/82/slides/rtcweb-10.pdf)
 * [Tweaking WebRTC Video Quality](https://bloggeek.me/tweaking-webrtc-video-quality-unpacking-bitrate-resolution-and-frame-rates/)
 * [An Introduction to WebRTC Simulcast](https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb)
 * [How Discord handles two and half million concurrent voice users using WebRTC](https://discord.com/blog/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc)
