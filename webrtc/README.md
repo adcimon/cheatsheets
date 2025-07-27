@@ -332,7 +332,7 @@ Clone.
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ```
 
-Add it to the path.
+Add to path.
 
 * For Linux/macOS.
 ```
