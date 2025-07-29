@@ -6,6 +6,7 @@
 
 ## Index
 
+* [Compilers](#compilers)
 * [Libraries](#libraries)
 * [Dependencies](#dependencies)
   * [IWYU](#iwyu)
@@ -28,6 +29,14 @@
   * [std::future](#stdfuture)
   * [std::promise](#stdpromise)
 * [References](#references)
+
+## Compilers
+
+A [compiler](https://en.wikipedia.org/wiki/Compiler) is a computer program that translates computer code written in one programming language (the source language) into another language (the target language). It is primarily used for programs that translate source code from a high-level programming language to a low-level programming language (e.g. assembly language, object code, or machine code) to create an executable program.
+
+* [GNU Compiler Collection (GCC)](https://gcc.gnu.org/) is a collection of compilers from the [GNU Project](https://www.gnu.org/) that support various programming languages, hardware architectures, and operating systems.
+* [CLANG](https://clang.llvm.org/)
+* [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/)
 
 ## Libraries
 
