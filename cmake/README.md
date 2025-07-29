@@ -80,6 +80,8 @@ target_link_library(${PROJECT_NAME} PRIVATE print-hello)
 │   └── CMakeLists.txt
 └── CMakeLists.txt
 ```
+
+* `/CMakeLists.txt`.
 ```
 cmake_minimum_required(VERSION 4.0)
 
@@ -88,11 +90,15 @@ project(hello-world VERSION 1.0.0)
 add_subdirectory(print-hello)
 add_subdirectory(hello-world)
 ```
+
+* `/hello-world/CMakeLists.txt`.
 ```
 add_executable(${PROJECT_NAME} src/main.cpp)
 
 target_link_library(${PROJECT_NAME} PRIVATE print-hello)
 ```
+
+* `/print-hello/CMakeLists.txt`.
 ```
 add_library(print-hello
     STATIC
