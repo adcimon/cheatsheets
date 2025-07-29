@@ -34,9 +34,9 @@
 
 A [compiler](https://en.wikipedia.org/wiki/Compiler) is a computer program that translates computer code written in one programming language (the source language) into another language (the target language). It is primarily used for programs that translate source code from a high-level programming language to a low-level programming language (e.g. assembly language, object code, or machine code) to create an executable program.
 
-* [GNU Compiler Collection (GCC)](https://gcc.gnu.org/) is a collection of compilers from the [GNU Project](https://www.gnu.org/) that support various programming languages, hardware architectures, and operating systems.
-* [CLANG](https://clang.llvm.org/)
-* [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/)
+* [GCC (GNU Compiler Collection)](https://gcc.gnu.org/) is a collection of compilers from the [GNU Project](https://www.gnu.org/) that support various programming languages, hardware architectures, and operating systems.
+* [Clang](https://clang.llvm.org/) is a compiler front end for the programming languages C, C++, Objective-C and Objective-C++.
+* [MSVC (Microsoft Visual C++)](https://visualstudio.microsoft.com/vs/features/cplusplus/) is a compiler for the C, C++, C++/CLI and C++/CX programming languages by Microsoft.
 
 ## Libraries
 
