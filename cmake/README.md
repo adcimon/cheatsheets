@@ -75,7 +75,7 @@ target_link_library(${PROJECT_NAME} PRIVATE print-hello)
 ```
 /
 ├── build
-├── hello-world
+├── run-hello
 │   ├── main.cpp
 │   └── CMakeLists.txt
 ├── print-hello
@@ -92,14 +92,22 @@ cmake_minimum_required(VERSION 4.0)
 project(hello-world VERSION 1.0.0)
 
 add_subdirectory(print-hello)
-add_subdirectory(hello-world)
+add_subdirectory(run-hello)
 ```
 
-* `/hello-world/CMakeLists.txt`
+* `/run-hello/CMakeLists.txt`
 ```
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(run-hello main.cpp)
 
-target_link_library(${PROJECT_NAME} PRIVATE print-hello)
+target_link_library(run-hello PRIVATE print-hello)
+```
+OR
+```
+get_filename_component(EXE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+
+add_executable(${EXE_NAME} main.cpp)
+
+target_link_library(${EXE_NAME} PRIVATE print-hello)
 ```
 
 * `/print-hello/CMakeLists.txt`
