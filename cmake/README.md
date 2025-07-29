@@ -145,20 +145,24 @@ Generate project files from `CMakeLists.txt` directory.
 cmake -S . -B build
 ```
 
-Build.
+Build from the `build` directory.
 ```
-cd build
 cmake --build .
+```
+
+Build from the `CMakeLists.txt` directory.
+```
+cmake --build build
 ```
 
 Build a specific configuration.
 ```
-cmake --build . --config <configuration>
-cmake --build . --config Debug
-cmake --build . --config Release
+cmake --build <dir> --config <cfg>
+cmake --build <dir> --config Debug
+cmake --build <dir> --config Release
 ```
 
 Build a specific target.
 ```
-cmake --build . --target <target>
+cmake --build <dir> --target <tgt>
 ```
