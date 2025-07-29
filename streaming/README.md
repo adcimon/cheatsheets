@@ -32,7 +32,6 @@ Streaming applications are software programs that allow users to reproduce strea
 
 There are many streaming applications available, including:
 * [Open Broadcaster Software (OBS)](https://obsproject.com/)
-  * [obs-ndi](https://github.com/obs-ndi/obs-ndi)
 * [VideoLan Media Player (VLC)](https://www.videolan.org/vlc/)
 * [mpv](https://mpv.io/)
 
