@@ -135,10 +135,14 @@ target_include_directories(${LIB_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 
 ## Build
 
-Generate project files.
+Generate project files from `build` directory.
 ```
-cd build
 cmake ..
+```
+
+Generate project files from `CMakeLists.txt` directory.
+```
+cmake -S . -B build
 ```
 
 Build.
