@@ -65,6 +65,41 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 target_link_library(${PROJECT_NAME} PRIVATE print-hello)
 ```
 
+3. Subdirectory configuration.
+```
+/
+├── hello-world
+│   ├── main.cpp
+│   └── CMakeLists.txt
+├── print-hello
+│   ├── hello.hpp
+│   ├── hello.cpp
+│   └── CMakeLists.txt
+└── CMakeLists.txt
+```
+```
+cmake_minimum_required(VERSION 4.0)
+
+project(hello-world VERSION 1.0.0)
+
+add_subdirectory(print-hello)
+add_subdirectory(hello-world)
+```
+```
+add_executable(${PROJECT_NAME} src/main.cpp)
+
+target_link_library(${PROJECT_NAME} PRIVATE print-hello)
+```
+```
+add_library(print-hello
+    STATIC
+    hello.hpp
+    hello.cpp
+)
+
+target_include_directories(print-hello PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+```
+
 ## Build
 
 Generate project files.
