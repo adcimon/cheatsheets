@@ -112,6 +112,18 @@ add_library(print-hello
 
 target_include_directories(print-hello PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 ```
+OR
+```
+get_filename_component(LIB_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+
+add_library(${LIB_NAME}
+    STATIC
+    hello.hpp
+    hello.cpp
+)
+
+target_include_directories(${LIB_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+```
 
 ## Build
 
