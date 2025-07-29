@@ -28,6 +28,7 @@
 1. Basic configuration.
 ```
 /
+├── build
 ├── src
 │   └── main.cpp
 └── CMakeLists.txt
@@ -43,6 +44,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 2. Library configuration.
 ```
 /
+├── build
 ├── src
 │   ├── hello.hpp
 │   ├── hello.cpp
@@ -68,6 +70,7 @@ target_link_library(${PROJECT_NAME} PRIVATE print-hello)
 3. Subdirectory configuration.
 ```
 /
+├── build
 ├── hello-world
 │   ├── main.cpp
 │   └── CMakeLists.txt
