@@ -11,9 +11,9 @@
 * [Media](#media)
 * [Data](#data)
 * [Security](#security)
-* [Profiling](#profiling)
 * [Libraries](#libraries)
   * [libwebrtc](#libwebrtc)
+* [Profiling](#profiling)
 * [References](#references)
 
 ## Signaling
@@ -248,37 +248,6 @@ WebRTC lets you send text or binary data over an active connection to a peer, th
 
 Media and data are transmited over [Datagram Transport Layer Security (DTLS)](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security), which is based on [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security). DTLS preserves the semantics of the underlying SRTP, SRTCP and SCTP but provides means of authentication, symmetric cryptography, privacy and integrity.
 
-## Profiling
-
-### Webcam
-
-* [Webcam Test](https://webcamtests.com/)
-* [Camera Resolution Finder](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)
-
-### SDP
-
-* [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
-
-### Connectivity
-
-* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
-
-### Bandwidth/Bitrate
-
-1. Run Google Chrome and go to:
-```
-chrome://webrtc-internals
-```
-<br>
-
-2. Select read stats from `Legacy Non-Standard`.
-<p align="center"><img align="center" src="assets/read_stats.png"></p>
-<br>
-
-3. Look for `Stats graphs for bweforvideo (VideoBwe)`.
-<p align="center"><img align="center" src="assets/stats_bwe.png"></p>
-<br>
-
 ## Libraries
 
 There are many libraries that implement the WebRTC protocol stack, including:
@@ -416,6 +385,37 @@ out/Default/peerconnection_server
 * It doesn't generate a dynamic `so` or `dll`, instead, it generates a static `a` or `lib` to link into an application.
 * It doesn't separate headers from source like most libraries, instead, it is needed to include the entire source tree and carefully manage include paths.
 * It is common to wrap it in a C/C++ interface for easier integration into an application.
+
+## Profiling
+
+### Webcam
+
+* [Webcam Test](https://webcamtests.com/)
+* [Camera Resolution Finder](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)
+
+### SDP
+
+* [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)
+
+### Connectivity
+
+* [Trickle ICE](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/)
+
+### Bandwidth/Bitrate
+
+1. Run Google Chrome and go to:
+```
+chrome://webrtc-internals
+```
+<br>
+
+2. Select read stats from `Legacy Non-Standard`.
+<p align="center"><img align="center" src="assets/read_stats.png"></p>
+<br>
+
+3. Look for `Stats graphs for bweforvideo (VideoBwe)`.
+<p align="center"><img align="center" src="assets/stats_bwe.png"></p>
+<br>
 
 ## References
 
