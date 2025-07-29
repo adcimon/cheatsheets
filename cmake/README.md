@@ -81,10 +81,12 @@ cmake --build .
 
 Build a specific configuration.
 ```
+cmake --build . --config <configuration>
 cmake --build . --config Debug
+cmake --build . --config Release
 ```
 
 Build a specific target.
 ```
-cmake --build . --target hello-world
+cmake --build . --target <target>
 ```
