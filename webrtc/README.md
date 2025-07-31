@@ -382,9 +382,31 @@ out/Default/peerconnection_server
 
 📝 Notes
 
-* It doesn't generate a dynamic `so` or `dll`, instead, it generates a static `a` or `lib` to link into an application.
-* It doesn't separate headers from source like most libraries, instead, it is needed to include the entire source tree and carefully manage include paths.
+* It generates a static `a` or `lib` library to link into an application.
+* It doesn't separate headers from source, instead, it is needed to include the entire source tree and manage include paths.
 * It is common to wrap it in a C/C++ interface for easier integration into an application.
+
+### Usage
+
+1. Link the `à` or `lib` library.
+2. Add include directories.
+* <webrtc_root>
+* <webrtc_root>/third_party/abseil-cpp
+* <webrtc_root>/third_party/libyuv/include  # If using libyuv
+* <webrtc_root>/third_party/...
+3. Use in code.
+```cpp
+#include "rtc_base/logging.h"
+#include "api/peer_connection_interface.h"
+
+int main()
+{
+    rtc::LogMessage::LogToDebug(rtc::LS_INFO);
+    rtc::LogMessage::LogTimestamps();
+    RTC_LOG(LS_INFO) << "Hello WebRTC!";
+    return 0;
+}
+```
 
 ## Profiling
 
