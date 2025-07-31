@@ -40,17 +40,19 @@ A [compiler](https://en.wikipedia.org/wiki/Compiler) is a computer program that 
 ### GCC
 
 [GCC (GNU Compiler Collection)](https://gcc.gnu.org/) is a collection of compilers that support various programming languages, hardware architectures, and operating systems by the GNU project.
-* `gcc`
+* CLI: `gcc`
 
 ### Clang
 
 [Clang](https://clang.llvm.org/) is a compiler front end and tooling infrastructure for languages in the C language family (C, C++, Objective C/C++, OpenCL, and CUDA) by the LLVM project.
-* `clang`
+* CLI: `clang`
 
 ### MSVC
 
 [MSVC (Microsoft Visual C++)](https://visualstudio.microsoft.com/vs/features/cplusplus/) is a compiler for the C, C++, C++/CLI and C++/CX programming languages by Microsoft.
-* `cl.exe`
+* CLI: `cl.exe`
+  * Command prompt: `Developer Command Prompt`
+  * Environment variables: `vcvarsall.bat`
 
 ## Libraries
 
