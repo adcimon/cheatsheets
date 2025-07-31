@@ -394,7 +394,7 @@ out/Default/peerconnection_server
 * `<webrtc_root>/third_party/libyuv/include`
 * `<webrtc_root>/third_party/...`
 
-2. Link the `à` or `lib` library.
+2. Link the `a` or `lib` library.
 
 3. Use in code.
 ```cpp
