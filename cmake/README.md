@@ -45,7 +45,7 @@
 ```
 
 * `/CMakeLists.txt`
-```
+```cmake
 cmake_minimum_required(VERSION 4.0)
 
 project(hello-world VERSION 1.0.0)
@@ -65,7 +65,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 ```
 
 * `/CMakeLists.txt`
-```
+```cmake
 cmake_minimum_required(VERSION 4.0)
 
 project(hello-world VERSION 1.0.0)
@@ -96,7 +96,7 @@ target_link_library(${PROJECT_NAME} PRIVATE print-hello)
 ```
 
 * `/CMakeLists.txt`
-```
+```cmake
 cmake_minimum_required(VERSION 4.0)
 
 project(hello-world VERSION 1.0.0)
@@ -106,13 +106,13 @@ add_subdirectory(run-hello)
 ```
 
 * `/run-hello/CMakeLists.txt`
-```
+```cmake
 add_executable(run-hello main.cpp)
 
 target_link_library(run-hello PRIVATE print-hello)
 ```
 OR
-```
+```cmake
 get_filename_component(EXE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
 add_executable(${EXE_NAME} main.cpp)
@@ -121,7 +121,7 @@ target_link_library(${EXE_NAME} PRIVATE print-hello)
 ```
 
 * `/print-hello/CMakeLists.txt`
-```
+```cmake
 add_library(print-hello
     STATIC
     hello.hpp
@@ -131,7 +131,7 @@ add_library(print-hello
 target_include_directories(print-hello PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 ```
 OR
-```
+```cmake
 get_filename_component(LIB_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
 add_library(${LIB_NAME}
@@ -158,7 +158,7 @@ target_include_directories(${LIB_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 ```
 
 * `/CMakeLists.txt`
-```
+```cmake
 cmake_minimum_required(VERSION 4.0)
 
 project(hello-world VERSION 1.0.0)
@@ -224,7 +224,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 
 ```json
 {
-    "version": 4,
+    "version": 1,
     "cmakeMinimumRequired": {
         "major": 4,
         "minor": 0,
