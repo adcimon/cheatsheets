@@ -15,7 +15,13 @@
 ```
 /
 ├── build
+│   └── <platform:linux,macos,windows,etc.>
+│       └── <architecture:x86,x86_64,amd64,arm64,aarch64,riscv32,riscv64,etc.>
+│           └── <configuration:debug,release,distribution,etc.>
+│               ├── bin
+│               └── lib
 ├── external
+├── tests
 ├── src
 │   └── main.cpp
 └── CMakeLists.txt
