@@ -189,25 +189,30 @@ endif()
 
 # Configuration
 if(CMAKE_CONFIGURATION_TYPES)  # Multi-config (Visual Studio/Xcode)
+    message(WARNING "Using multi-config configuration")
+    if(DEFINED CONFIGURATION)
+        message(WARNING "Ignored configuration ${CONFIGURATION}")
+    endif()
     set(CONFIGURATION $<CONFIG>)
 else()  # Single-config (Makefile/Ninja)
-    if(NOT DEFINED CONFIGURATION)
-        # Use Debug as default
+    message(WARNING "Using single-config configuration")
+    if(NOT DEFINED CONFIGURATION) # Default configuration
         set(CONFIGURATION "Debug" CACHE STRING "Custom build configuration type")
+        message(WARNING "Using default configuration ${CONFIGURATION}")
     endif()
-    # Optional fallback from CMAKE_BUILD_TYPE
-    if(DEFINED CMAKE_BUILD_TYPE AND NOT DEFINED CONFIGURATION)
+    if(DEFINED CMAKE_BUILD_TYPE AND NOT DEFINED CONFIGURATION) # Fallback configuration
         set(CONFIGURATION "${CMAKE_BUILD_TYPE}")
+        message(WARNING "Using fallback configuration ${CONFIGURATION}")
     endif()
 endif()
 
 # Construct the output directory path
-set(OUTPUT_BASE "${CMAKE_SOURCE_DIR}/build/${PLATFORM}/${ARCHITECTURE}/${CONFIGURATION}")
+set(OUTPUT_DIR "${CMAKE_SOURCE_DIR}/build/${PLATFORM}/${ARCHITECTURE}/${CONFIGURATION}")
 
 # Apply to runtime, library, and archive outputs
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_BASE}/bin)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_BASE}/lib)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_BASE}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/lib)
 
 # Multi-config output mapping
 if(CMAKE_CONFIGURATION_TYPES)
