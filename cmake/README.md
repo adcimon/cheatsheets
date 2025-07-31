@@ -174,6 +174,7 @@ if(NOT DEFINED PLATFORM)
         message(FATAL_ERROR "Invalid platform detected")
     endif()
 endif()
+message(STATUS "Platform: ${PLATFORM}")
 
 # Architecture
 if(NOT DEFINED ARCHITECTURE)
@@ -186,6 +187,7 @@ if(NOT DEFINED ARCHITECTURE)
         set(ARCHITECTURE "${CMAKE_SYSTEM_PROCESSOR}")
     endif()
 endif()
+message(STATUS "Architecture: ${ARCHITECTURE}")
 
 # Configuration
 if(CMAKE_CONFIGURATION_TYPES)  # Multi-config (Visual Studio/Xcode)
@@ -205,6 +207,7 @@ else()  # Single-config (Makefile/Ninja)
         message(WARNING "Using fallback configuration ${CONFIGURATION}")
     endif()
 endif()
+message(STATUS "Configuration: ${CONFIGURATION}")
 
 # Construct the output directory path
 set(OUTPUT_DIR "${CMAKE_SOURCE_DIR}/build/${PLATFORM}/${ARCHITECTURE}/${CONFIGURATION}")
