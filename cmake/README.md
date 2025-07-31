@@ -164,22 +164,22 @@ project(hello-world VERSION 1.0.0)
 
 # Detect platform
 if(UNIX)
-    set(PLATFORM_NAME "linux")
+    set(PLATFORM "linux")
 elseif(APPLE)
-    set(PLATFORM_NAME "macos")
+    set(PLATFORM "macos")
 elseif(WIN32)
-    set(PLATFORM_NAME "windows")
+    set(PLATFORM "windows")
 else()
-    set(PLATFORM_NAME "unknown")
+    set(PLATFORM "unknown")
 endif()
 
 # Detect architecture
 if(CMAKE_SYSTEM_PROCESSOR MATCHES "^(x86_64|amd64)$")
-    set(ARCH_NAME "x86_64")
+    set(ARCHITECTURE "x86_64")
 elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "^(arm64|aarch64)$")
-    set(ARCH_NAME "arm64")
+    set(ARCHITECTURE "arm64")
 else()
-    set(ARCH_NAME "${CMAKE_SYSTEM_PROCESSOR}")
+    set(ARCHITECTURE "${CMAKE_SYSTEM_PROCESSOR}")
 endif()
 
 # Use Debug as default if not specified
@@ -188,7 +188,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # Construct the output directory path
-set(OUTPUT_BASE "${CMAKE_SOURCE_DIR}/build/${PLATFORM_NAME}/${ARCH_NAME}/${CMAKE_BUILD_TYPE}")
+set(OUTPUT_BASE "${CMAKE_SOURCE_DIR}/build/${PLATFORM}/${ARCHITECTURE}/${CMAKE_BUILD_TYPE}")
 
 # Apply to runtime, library, and archive outputs
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_BASE}/bin)
@@ -199,9 +199,9 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_BASE}/lib)
 if(CMAKE_CONFIGURATION_TYPES)
     foreach(CONFIG ${CMAKE_CONFIGURATION_TYPES})
         string(TOUPPER "${CONFIG}" CONFIG_UPPER)
-        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_${CONFIG_UPPER} ${CMAKE_SOURCE_DIR}/build/${PLATFORM_NAME}/${ARCH_NAME}/${CONFIG}/bin)
-        set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_${CONFIG_UPPER} ${CMAKE_SOURCE_DIR}/build/${PLATFORM_NAME}/${ARCH_NAME}/${CONFIG}/lib)
-        set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_${CONFIG_UPPER} ${CMAKE_SOURCE_DIR}/build/${PLATFORM_NAME}/${ARCH_NAME}/${CONFIG}/lib)
+        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_${CONFIG_UPPER} ${CMAKE_SOURCE_DIR}/build/${PLATFORM}/${ARCHITECTURE}/${CONFIG}/bin)
+        set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_${CONFIG_UPPER} ${CMAKE_SOURCE_DIR}/build/${PLATFORM}/${ARCHITECTURE}/${CONFIG}/lib)
+        set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_${CONFIG_UPPER} ${CMAKE_SOURCE_DIR}/build/${PLATFORM}/${ARCHITECTURE}/${CONFIG}/lib)
     endforeach()
 endif()
 
