@@ -22,8 +22,10 @@
 │           └── <configuration:debug,release,distribution,etc.>
 │               ├── bin
 │               └── lib
+├── cmake
 ├── external
 ├── tests
+├── scripts
 ├── src
 │   └── main.cpp
 └── CMakeLists.txt
