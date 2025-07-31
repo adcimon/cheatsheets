@@ -224,38 +224,38 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 
 ```json
 {
-  "version": 3,
-  "cmakeMinimumRequired": {
-    "major": 3,
-    "minor": 20,
-    "patch": 0
-  },
-  "configurePresets": [
-    {
-      "name": "linux-x86_64-debug",
-      "hidden": false,
-      "generator": "Ninja",
-      "description": "Linux x86_64 Debug build",
-      "binaryDir": "${sourceDir}/build/linux/x86_64/Debug",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug"
-      }
+    "version": 4,
+    "cmakeMinimumRequired": {
+        "major": 4,
+        "minor": 0,
+        "patch": 0
     },
-    {
-      "name": "windows-x86_64-release",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/windows/x86_64/Release",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
-      }
-    }
-  ],
-  "buildPresets": [
-    {
-      "name": "default",
-      "configurePreset": "linux-x86_64-debug"
-    }
-  ]
+    "configurePresets": [
+        {
+            "name": "linux-x86_64-debug",
+            "hidden": false,
+            "generator": "Ninja",
+            "description": "linux x86_64 debug",
+            "binaryDir": "${sourceDir}/build/linux/x86_64/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "windows-x86_64-release",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/windows/x86_64/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "configurePreset": "linux-x86_64-debug"
+        }
+    ]
 }
 
 ```
