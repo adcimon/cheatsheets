@@ -262,23 +262,15 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 
 ## Build
 
-Generate build files from `build` directory.
+Generate build files and build from `build` directory.
 ```
 cmake ..
-```
-
-Generate build files from `CMakeLists.txt` directory.
-```
-cmake -S . -B build
-```
-
-Build from the `build` directory.
-```
 cmake --build .
 ```
 
-Build from the `CMakeLists.txt` directory.
+Generate build files and build from `CMakeLists.txt` directory.
 ```
+cmake -S . -B build
 cmake --build build
 ```
 
@@ -292,4 +284,13 @@ cmake --build <dir> --config Release
 Build a specific target.
 ```
 cmake --build <dir> --target <tgt>
+```
+
+Generate build files and build from `CMakePresets.json`.
+```
+cmake --preset <preset>
+cmake --preset linux-x86_64-debug
+
+cmake --build --preset <preset>
+cmake --build --preset default
 ```
