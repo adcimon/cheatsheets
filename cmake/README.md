@@ -192,6 +192,7 @@ if(CMAKE_CONFIGURATION_TYPES)  # Multi-config (Visual Studio/Xcode)
 else()  # Single-config (Makefile/Ninja)
     message(WARNING "Using single configuration")
     set(CONFIGURATION "${CMAKE_BUILD_TYPE}")
+    string(TOLOWER "${CONFIGURATION}" CONFIGURATION)
 endif()
 message(STATUS "Configuration: ${CONFIGURATION}")
 
