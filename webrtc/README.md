@@ -388,12 +388,14 @@ out/Default/peerconnection_server
 
 ### Usage
 
-1. Link the `à` or `lib` library.
-2. Add include directories.
-* <webrtc_root>
-* <webrtc_root>/third_party/abseil-cpp
-* <webrtc_root>/third_party/libyuv/include  # If using libyuv
-* <webrtc_root>/third_party/...
+1. Add include directories.
+* `<webrtc_root>`
+* `<webrtc_root>/third_party/abseil-cpp`
+* `<webrtc_root>/third_party/libyuv/include`
+* `<webrtc_root>/third_party/...`
+
+2. Link the `à` or `lib` library.
+
 3. Use in code.
 ```cpp
 #include "rtc_base/logging.h"
