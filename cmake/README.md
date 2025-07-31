@@ -233,7 +233,6 @@ add_executable(${PROJECT_NAME} src/main.cpp)
     "configurePresets": [
         {
             "name": "linux-x86_64-debug",
-            "hidden": false,
             "generator": "Ninja",
             "description": "linux x86_64 debug",
             "binaryDir": "${sourceDir}/build/linux/x86_64/debug",
@@ -244,6 +243,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
         {
             "name": "windows-x86_64-release",
             "generator": "Ninja",
+            "description": "windows x86_64 release",
             "binaryDir": "${sourceDir}/build/windows/x86_64/release",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
