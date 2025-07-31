@@ -162,7 +162,7 @@ cmake_minimum_required(VERSION 4.0)
 
 project(hello-world VERSION 1.0.0)
 
-# Detect platform
+# Platform
 if(UNIX)
     set(PLATFORM "linux")
 elseif(APPLE)
@@ -173,10 +173,11 @@ else()
     set(PLATFORM "unknown")
 endif()
 
-# Detect architecture
-if(CMAKE_SYSTEM_PROCESSOR MATCHES "^(x86_64|amd64)$")
+# Architecture
+string(TOLOWER "${CMAKE_SYSTEM_PROCESSOR}" ARCHITECTURE_LOWER)
+if(ARCHITECTURE_LOWER MATCHES "^(x86_64|amd64)$")
     set(ARCHITECTURE "x86_64")
-elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "^(arm64|aarch64)$")
+elseif(ARCHITECTURE_LOWER MATCHES "^(arm64|aarch64)$")
     set(ARCHITECTURE "arm64")
 else()
     set(ARCHITECTURE "${CMAKE_SYSTEM_PROCESSOR}")
