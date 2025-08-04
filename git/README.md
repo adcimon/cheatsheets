@@ -71,6 +71,7 @@ git submodule add <submodule> <path>
 List branches.
 ```
 git branch
+git branch -v
 git branch -r
 git branch -r -v
 ```
