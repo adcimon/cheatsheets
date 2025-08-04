@@ -293,10 +293,11 @@ brew install python git curl
   * Install `Git for Windows`.
   * Install `Visual Studio 2022` with `Desktop development with C++` workload.
   * Use `x64 Native Tools Command Prompt for VS 2022`.
+  * Use local `Visual Studio` toolchain: `set DEPOT_TOOLS_WIN_TOOLCHAIN=0`.
 
 📁 2. Get depot_tools
 
-Google's `depot_tools` is required for fetching and building Chromium-related projects.
+Google's `depot_tools` is required for fetching and building Chromium-related projects. Chromium build system tries by default to download and use its own toolchain.
 
 Clone.
 ```
@@ -327,13 +328,6 @@ Use `fetch` to get the source.
 ```
 fetch --nohooks webrtc
 ```
-
-`(Optional)` Use local Visual Studio toolchain.
-```
-set DEPOT_TOOLS_WIN_TOOLCHAIN=0
-$env:DEPOT_TOOLS_WIN_TOOLCHAIN=0
-```
-* Google's Chromium build system tries by default to download and use its own toolchain.
 
 Pull the latest version (or a specific branch/tag/commit).
 ```
