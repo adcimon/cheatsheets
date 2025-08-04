@@ -328,6 +328,13 @@ Use `fetch` to get the source.
 fetch --nohooks webrtc
 ```
 
+`(Optional)` Use local Visual Studio toolchain.
+```
+set DEPOT_TOOLS_WIN_TOOLCHAIN=0
+$env:DEPOT_TOOLS_WIN_TOOLCHAIN=0
+```
+* Google's Chromium build system tries by default to download and use its own toolchain.
+
 Pull the latest version (or a specific branch/tag/commit).
 ```
 git checkout branch-heads/7204    # Optional checkout.
