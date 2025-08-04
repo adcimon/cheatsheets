@@ -297,7 +297,7 @@ brew install python git curl
 
 📁 2. Get depot_tools
 
-Google's `depot_tools` is required for fetching and building Chromium-related projects. Chromium build system tries by default to download and use its own toolchain.
+Google's `depot_tools` is required for fetching and building Chromium-related projects.
 
 Clone.
 ```
