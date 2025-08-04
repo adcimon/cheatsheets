@@ -334,7 +334,7 @@ git checkout branch-heads/7204    # Optional checkout.
 gclient sync
 ```
 * [Chromium dashboard](https://chromiumdash.appspot.com/home).
-* Versioning: `milestone.reserved.branch.patch` (e.g. `138.0.7204.168`).
+* Versioning: `milestone.reserved.branch.patch` (e.g. `138.0.7204.184`).
 
 ⚙️ 4. Configure build
 
