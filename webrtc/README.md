@@ -254,6 +254,7 @@ There are many libraries that implement the WebRTC protocol stack, including:
 
 * [libwebrtc](https://webrtc.googlesource.com/src/)
   * [WebRTC Builds](https://github.com/shiguredo-webrtc-build/webrtc-build)
+  * [Release Notes](https://chromium.googlesource.com/external/webrtc/+/master/docs/release-notes.md)
 * [Pion](https://github.com/pion/webrtc)
 * [aiortc](https://github.com/aiortc/aiortc)
 * [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
