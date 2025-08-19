@@ -348,9 +348,7 @@ gclient sync
 Generate build files.
 ```
 cd src
-
 gn clean out/Default
-
 gn gen out/Default
 gn gen out/Default --args="is_clang=true is_component_build=false is_debug=false rtc_build_examples=true rtc_include_tests=false target_cpu=\"x64\" target_os=\"win\" treat_warnings_as_errors=false use_custom_libcxx=false"
 ```
@@ -375,8 +373,6 @@ use_custom_libcxx                 # Use in-tree libc++ instead of the system C++
 Build all.
 ```
 ninja -C out/Default
-
-autoninja -C out/Default
 ```
 
 Build specific targets.
