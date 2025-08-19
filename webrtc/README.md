@@ -348,18 +348,20 @@ Generate build files.
 ```
 cd src
 gn gen out/Default
-gn gen out/Default --args="is_debug=false treat_warnings_as_errors=false rtc_build_examples=true rtc_include_tests=false"
+gn gen out/Default --args="is_clang=true is_component_build=false is_debug=false rtc_build_examples=true rtc_include_tests=false target_cpu=\"x64\" target_os=\"win\" treat_warnings_as_errors=false"
 ```
 * List build flags: `gn args <build_directory> --list`.
 
 Optional common arguments.
 ```
+is_clang                          # Compile with Clang.
+is_component_build                # Make a component build.
 is_debug                          # Release build.
-treat_warnings_as_errors          # Treat warnings as errors.
-rtc_use_h264                      # Enable H.264 codec.
-target_cpu="x64"                  # CPU targets (x86, x64, arm64, etc.).
 rtc_build_examples                # Build examples.
 rtc_include_tests                 # Build tests.
+rtc_use_h264                      # Enable H.264 codec.
+target_cpu                        # CPU targets (x86, x64, arm64, etc.).
+treat_warnings_as_errors          # Treat warnings as errors.
 ```
 
 🔨 5. Build with Ninja
