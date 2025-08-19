@@ -255,6 +255,7 @@ There are many libraries that implement the WebRTC protocol stack, including:
 * [libwebrtc](https://webrtc.googlesource.com/src/)
   * [Builds](https://github.com/shiguredo-webrtc-build/webrtc-build)
   * [Release Notes](https://chromium.googlesource.com/external/webrtc/+/master/docs/release-notes.md)
+  * [Support Group](https://groups.google.com/u/0/g/discuss-webrtc)
 * [Pion](https://github.com/pion/webrtc)
 * [aiortc](https://github.com/aiortc/aiortc)
 * [WebRTC.rs](https://github.com/webrtc-rs/webrtc)
@@ -364,6 +365,7 @@ rtc_build_examples                # Build examples.
 rtc_include_tests                 # Build tests.
 rtc_use_h264                      # Enable H.264 codec.
 target_cpu                        # CPU targets (x86, x64, arm64, etc.).
+target_os                         # OS targets (linux, mac, win, android, ios, etc.).
 treat_warnings_as_errors          # Treat warnings as errors.
 use_custom_libcxx                 # Use in-tree libc++ instead of the system C++ standard library.
 ```
