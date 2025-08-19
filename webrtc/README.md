@@ -402,7 +402,6 @@ out/Default/peerconnection_server
 * `<webrtc_root>`
 * `<webrtc_root>/third_party/abseil-cpp`
 * `<webrtc_root>/third_party/libyuv/include`
-* `<webrtc_root>/third_party/...`
 
 2. Link the `a` or `lib` library.
 
