@@ -355,7 +355,7 @@ gn gen out/Default --args="is_clang=true is_component_build=false is_debug=false
 Optional common arguments.
 ```
 is_clang                          # Compile with Clang.
-is_component_build                # Make a component build.
+is_component_build                # Component build.
 is_debug                          # Release build.
 rtc_build_examples                # Build examples.
 rtc_include_tests                 # Build tests.
