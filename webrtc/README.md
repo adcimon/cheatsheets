@@ -347,8 +347,9 @@ gclient sync
 Generate build files.
 ```
 cd src
+gn clean out/Default
 gn gen out/Default
-gn gen out/Default --args="is_clang=true is_component_build=false is_debug=false rtc_build_examples=true rtc_include_tests=false target_cpu=\"x64\" target_os=\"win\" treat_warnings_as_errors=false"
+gn gen out/Default --args="is_clang=true is_component_build=false is_debug=false rtc_build_examples=true rtc_include_tests=false target_cpu=\"x64\" target_os=\"win\" treat_warnings_as_errors=false use_custom_libcxx=false"
 ```
 * List build flags: `gn args <build_directory> --list`.
 
@@ -362,6 +363,7 @@ rtc_include_tests                 # Build tests.
 rtc_use_h264                      # Enable H.264 codec.
 target_cpu                        # CPU targets (x86, x64, arm64, etc.).
 treat_warnings_as_errors          # Treat warnings as errors.
+use_custom_libcxx                 # Use in-tree libc++ instead of the system C++ standard library.
 ```
 
 🔨 5. Build with Ninja
