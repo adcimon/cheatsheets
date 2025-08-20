@@ -53,6 +53,7 @@ A [compiler](https://en.wikipedia.org/wiki/Compiler) is a computer program that 
 * CLI: `cl.exe`
   * Command prompt: `Developer Command Prompt`
   * Environment variables: `vcvarsall.bat`
+  * `/utf-8` Set source character sets to UTF-8.
 
 ## Libraries
 
