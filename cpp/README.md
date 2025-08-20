@@ -76,6 +76,7 @@ List of libraries.
 |---|
 | [args](https://github.com/Taywee/args) |
 | [Dear ImGui](https://github.com/ocornut/imgui) |
+| [spdlog](https://github.com/gabime/spdlog) |
 
 ## Dependencies
 
