@@ -220,6 +220,16 @@ endif()
 add_executable(${PROJECT_NAME} src/main.cpp)
 ```
 
+5. Add compile options.
+```
+add_compile_options("<option>")
+```
+```
+if (MSVC)
+    add_compile_options("/utf-8")
+endif()
+```
+
 ### CMakePresets.json
 
 `CMakePresets.json` is a build configuration preset file that allow users to specify common configure options and share them with others.
