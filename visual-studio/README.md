@@ -47,6 +47,13 @@ Add library.
 * Go to `Project → Properties → Linker → Input`.
 * Add to `Additional Dependencies` the `.lib` file.
 
+Set UTF-8 source character set.
+* Go to `Project → Properties → C/C++ → Command Line`.
+* Add to `Additional Options` the flag `/utf-8`.
+OR
+* Go to `Project → Properties → C/C++ → Advanced`.
+* Set `Source File Character Set` to `Use Unicode UTF-8`.
+
 ## Build
 
 Change build directory.
