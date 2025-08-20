@@ -50,7 +50,7 @@ Add library.
 Set UTF-8 source character set.
 * Go to `Project → Properties → C/C++ → Command Line`.
 * Add to `Additional Options` the flag `/utf-8`.
-<br/>`----- OR ------`<br/>
+<br/>OR<br/>
 * Go to `Project → Properties → C/C++ → Advanced`.
 * Set `Source File Character Set` to `Use Unicode UTF-8`.
 
