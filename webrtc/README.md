@@ -333,6 +333,7 @@ fetch --nohooks webrtc
 
 (Optional) Pull a specific branch/tag/commit.
 ```
+cd src
 git checkout branch-heads/7204    # Optional checkout.
 ```
 * [Chromium dashboard](https://chromiumdash.appspot.com/home).
