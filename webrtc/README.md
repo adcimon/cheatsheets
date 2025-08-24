@@ -376,7 +376,9 @@ ninja -C out/Default peerconnection_server
 ninja -C out/Default webrtc
 ```
 
-The static library is located at `webrtc-checkout/src/out/Default/obj/[libwebrtc.a|webrtc.lib]`.
+The static library is located at `webrtc-checkout/src/out/Default/obj/`.
+* `libwebrtc.a`
+* `webrtc.lib`
 
 🧪 5. Verify
 
