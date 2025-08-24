@@ -326,7 +326,7 @@ mkdir webrtc-checkout
 cd webrtc-checkout
 ```
 
-Use `fetch` to get the source.
+Get the source.
 ```
 fetch --nohooks webrtc
 ```
