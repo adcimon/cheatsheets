@@ -331,10 +331,10 @@ Get the source.
 fetch --nohooks webrtc
 ```
 
-(Optional) Pull a specific branch/tag/commit.
+(Optional) Checkout a specific branch/tag/commit.
 ```
 cd src
-git checkout branch-heads/7204    # Optional checkout.
+git checkout branch-heads/7204
 ```
 * [Chromium dashboard](https://chromiumdash.appspot.com/home).
 * Versioning: `milestone.reserved.branch.patch` (e.g. `138.0.7204.184`).
