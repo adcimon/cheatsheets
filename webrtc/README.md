@@ -313,11 +313,11 @@ set PATH=C:\path\to\depot_tools;%PATH%
 Create a working directory.
 ```
 mkdir webrtc-checkout
-cd webrtc-checkout
 ```
 
 Get the source.
 ```
+cd webrtc-checkout
 fetch --nohooks webrtc
 ```
 
