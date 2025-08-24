@@ -331,13 +331,17 @@ Use `fetch` to get the source.
 fetch --nohooks webrtc
 ```
 
-Pull the latest version (or a specific branch/tag/commit).
+(Optional) Pull a specific branch/tag/commit.
 ```
 git checkout branch-heads/7204    # Optional checkout.
-gclient sync
 ```
 * [Chromium dashboard](https://chromiumdash.appspot.com/home).
 * Versioning: `milestone.reserved.branch.patch` (e.g. `138.0.7204.184`).
+
+Sync dependencies.
+```
+gclient sync
+```
 
 ⚙️ 4. Configure build
 
