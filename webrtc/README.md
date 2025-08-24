@@ -297,28 +297,18 @@ brew install python git curl
   * Use `x64 Native Tools Command Prompt for VS 2022`.
   * Use local `Visual Studio` toolchain: `set DEPOT_TOOLS_WIN_TOOLCHAIN=0`.
 
-📁 2. Get depot_tools
-
-Google's `depot_tools` is required for fetching and building Chromium-related projects.
-
-Clone.
+Get `depot_tools` (required for fetching and building Chromium-related projects).
 ```
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ```
 
-Add to path.
-
-* For Linux/macOS.
+Add `depot_tools` to path.
 ```
 export PATH="$PATH:/path/to/depot_tools"
-```
-
-* For Windows.
-```
 set PATH=C:\path\to\depot_tools;%PATH%
 ```
 
-⬇️ 3. Fetch source
+⬇️ 2. Fetch source
 
 Create a working directory.
 ```
@@ -344,7 +334,7 @@ Sync dependencies.
 gclient sync
 ```
 
-⚙️ 4. Configure build
+⚙️ 3. Configure build
 
 `gn` is used to configure the build and generate `Ninja` build files.
 * [BUILD.gn](https://webrtc.googlesource.com/src/+/e9c3f0158c826af7a564a37ef0d513476fa89ec6/BUILD.gn) file is used to generate build files for multiple operating systems, executables, shared libraries, etc.
@@ -373,7 +363,7 @@ treat_warnings_as_errors          # Treat warnings as errors.
 use_custom_libcxx                 # Use in-tree libc++ instead of the system C++ standard library.
 ```
 
-🔨 5. Build
+🔨 4. Build
 
 Build all.
 ```
@@ -388,7 +378,7 @@ ninja -C out/Default webrtc
 
 The static library is located at `webrtc-checkout/src/out/Default/obj/[libwebrtc.a|webrtc.lib]`.
 
-🧪 Verify
+🧪 5. Verify
 
 Run the sample.
 ```
