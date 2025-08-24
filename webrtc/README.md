@@ -332,6 +332,7 @@ git checkout branch-heads/7204
 Sync dependencies.
 ```
 gclient sync
+gclient sync -D --force --reset --with_branch_heads --with_tags
 ```
 
 ⚙️ 3. Configure build
