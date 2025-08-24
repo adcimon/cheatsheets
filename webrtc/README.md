@@ -331,6 +331,7 @@ git checkout branch-heads/7204
 
 Sync dependencies.
 ```
+cd src
 gclient sync
 gclient sync -D --force --reset --with_branch_heads --with_tags
 ```
@@ -368,11 +369,13 @@ use_custom_libcxx                 # Use in-tree libc++ instead of the system C++
 
 Build all.
 ```
+cd src
 ninja -C out/Default
 ```
 
 Build specific targets.
 ```
+cd src
 ninja -C out/Default peerconnection_server
 ninja -C out/Default webrtc
 ```
