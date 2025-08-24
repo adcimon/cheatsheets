@@ -372,7 +372,7 @@ treat_warnings_as_errors          # Treat warnings as errors.
 use_custom_libcxx                 # Use in-tree libc++ instead of the system C++ standard library.
 ```
 
-🔨 5. Build with Ninja
+🔨 5. Build
 
 Build all.
 ```
