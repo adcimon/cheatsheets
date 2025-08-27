@@ -308,7 +308,7 @@ export PATH="$PATH:/path/to/depot_tools"
 set PATH=C:\path\to\depot_tools;%PATH%
 ```
 
-⬇️ 2. Fetch source
+📁 2. Fetch source
 
 Create a working directory.
 ```
