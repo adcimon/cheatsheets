@@ -26,7 +26,13 @@ A signaling server should handle:
 * **Media capabilities**. Both peers need to agree on the media formats the session will support.
 * **Connection endpoints**. Each peer needs to know how to send data to the other peer.
 
-It is up to the application to ensure that this out-of-bounds communication is performed securely and accessible for both peers. However, there is a draft proposing a signaling protocol for media ingestion called [WebRTC-HTTP ingestion protocol (WHIP)](https://www.ietf.org/archive/id/draft-ietf-wish-whip-01.html). This protocol aims to to solve the need in the broadcast industry of a standard WebRTC signaling protocol for stream ingestion on media servers.
+It is up to the application to ensure that this out-of-band signaling is performed securely and remains accessible to both peers. While WebRTC itself does not mandate a specific signaling protocol, efforts have been made to standardize signaling for particular use cases. In the broadcast and streaming industry, this need is being addressed by two emerging protocols:
+
+[WHIP (WebRTC-HTTP Ingestion Protocol)](https://www.ietf.org/archive/id/draft-ietf-wish-whip-01.html): WHIP simplifies the process of sending media from a client to a media server by standardizing how WebRTC SDP offers and ICE candidates are exchanged over simple HTTP endpoints. It is designed to work well with existing HTTP-based infrastructure and CDN workflows, and is ideal for live stream ingestion into servers or cloud platforms.
+
+[WHEP (WebRTC-HTTP Egress Protocol)](https://www.ietf.org/archive/id/draft-murillo-whep-03.html): WHEP standardizes the receiving side of a media session. It defines how a client can consume a WebRTC stream from a media server over HTTP-based signaling. This protocol enables consistent and interoperable playback mechanisms for WebRTC-based broadcast delivery.
+
+Both WHIP and WHEP aim to bring interoperability and simplicity to WebRTC deployments by avoiding custom signaling implementations, especially in large-scale or production-grade environments. They are lightweight, HTTP-based protocols that fit well into traditional media and CDN pipelines, enabling efficient real-time media transport over standardized interfaces.
 
 ## Connectivity
 
