@@ -34,6 +34,11 @@ Reconfigure a backend.
 terraform init -reconfigure
 ```
 
+Migrate the state to a backend.
+```
+terraform init -migrate-state
+```
+
 Download and update modules mentioned in the root module.
 ```
 terraform get
