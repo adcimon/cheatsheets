@@ -8,16 +8,17 @@
 
 * [Install](#install)
 * [Usage](#usage)
+* [Files](#files)
 * [Modules](#modules)
 
-# Install
+## Install
 
 HashiCorp distributes Terraform as a binary package.
 * Go to the [Downloads](https://developer.hashicorp.com/terraform/downloads) page.
 * Download the precompiled binary.
 * Add the precompiled binary to the PATH.
 
-# Usage
+## Usage
 
 Check version.
 ```
@@ -70,7 +71,16 @@ Destroy all remote resources of a plan.
 terraform destroy
 ```
 
-# Modules
+## Files
+
+| File | Tracked In | Purpose |
+|---|---|---|
+| `*.tf` | ✅ Git | Infrastructure code |
+| `.terraform.lock.hcl` | ✅ Git | Locks provider versions |
+| `terraform.tfstate` | ✅ Backend | Infrastructure state |
+| `.terraform/` | ❌ Local | Caches provider plugins and modules |
+
+## Modules
 
 A [module](https://developer.hashicorp.com/terraform/language/modules/develop) is a container for multiple resources that are used together.
 
