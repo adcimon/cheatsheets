@@ -29,6 +29,11 @@ Initialize a working directory.
 terraform init
 ```
 
+Reconfigure a backend.
+```
+terraform init -reconfigure
+```
+
 Download and update modules mentioned in the root module.
 ```
 terraform get
