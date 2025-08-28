@@ -28,9 +28,9 @@ A signaling server should handle:
 
 It is up to the application to ensure that this out-of-band signaling is performed securely and remains accessible to both peers. While WebRTC itself does not mandate a specific signaling protocol, efforts have been made to standardize signaling for particular use cases. In the broadcast and streaming industry, this need is being addressed by two emerging protocols:
 
-[WHIP (WebRTC-HTTP Ingestion Protocol)](https://datatracker.ietf.org/doc/rfc9725/): WHIP simplifies the process of sending media from a client to a media server by standardizing how WebRTC SDP offers and ICE candidates are exchanged over simple HTTP endpoints. It is designed to work well with existing HTTP-based infrastructure and CDN workflows, and is ideal for live stream ingestion into servers or cloud platforms.
+[WHIP (WebRTC-HTTP Ingestion Protocol)](https://datatracker.ietf.org/doc/rfc9725/) standardizes the process of sending media from a client to a server by standardizing how SDP offers and ICE candidates are exchanged over HTTP endpoints. It is designed to work well with existing HTTP-based infrastructure and CDN workflows where live streams are ingested into servers or cloud platforms.
 
-[WHEP (WebRTC-HTTP Egress Protocol)](https://datatracker.ietf.org/doc/draft-ietf-wish-whep/): WHEP standardizes the receiving side of a media session. It defines how a client can consume a WebRTC stream from a media server over HTTP-based signaling. This protocol enables consistent and interoperable playback mechanisms for WebRTC-based broadcast delivery.
+[WHEP (WebRTC-HTTP Egress Protocol)](https://datatracker.ietf.org/doc/draft-ietf-wish-whep/) standardizes the process of receiving media from a server to a client by standardizing how SDP offers and ICE candidates are exchanged over HTTP endpoints. It enables consistent and interoperable playback mechanisms for broadcast delivery.
 
 Both WHIP and WHEP aim to bring interoperability and simplicity to WebRTC deployments by avoiding custom signaling implementations, especially in large-scale or production-grade environments. They are lightweight, HTTP-based protocols that fit well into traditional media and CDN pipelines, enabling efficient real-time media transport over standardized interfaces.
 
