@@ -83,7 +83,7 @@ terraform destroy
 
 ## Backends
 
-Backends are a mechanism that determines how and where store state, and how to handle state locking and remote operations.
+A [backend](https://developer.hashicorp.com/terraform/language/backend) is a mechanism that determines how and where store state, and how to handle state locking and remote operations.
 
 1. Create AWS S3 bucket for storage.
 * Enable versioning.
