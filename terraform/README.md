@@ -9,6 +9,7 @@
 * [Install](#install)
 * [Usage](#usage)
 * [Files](#files)
+* [Backends](#backends)
 * [Modules](#modules)
 
 ## Install
@@ -79,6 +80,32 @@ terraform destroy
 | `.terraform.lock.hcl` | ✅ Git | Locks provider versions |
 | `terraform.tfstate` | ✅ Backend | Infrastructure state |
 | `.terraform/` | ❌ Local | Caches provider plugins and modules |
+
+## Backends
+
+Backends are a mechanism that determines how and where store state, and how to handle state locking and remote operations.
+
+1. Create AWS S3 bucket for storage.
+* Enable versioning.
+* Enable server side encryption.
+2. Create AWS DynamoDB table for locking mechanism.
+* Partition key: `LockID`.
+3. Use backend.
+```
+terraform {
+  backend "s3" {
+    bucket         = "terraform-state-bucket"
+    key            = "terraform.tfstate"
+    region         = "eu-west-1"
+    dynamodb_table = "terraform_state_table"
+  }
+}
+```
+4. Migrate the state to the backend.
+```
+terraform init -migrate-state
+```
+5. Delete local state files.
 
 ## Modules
 
