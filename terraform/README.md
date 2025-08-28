@@ -86,6 +86,7 @@ terraform destroy
 A [backend](https://developer.hashicorp.com/terraform/language/backend) is a mechanism that determines how and where store state, and how to handle state locking and remote operations.
 
 1. Create AWS S3 bucket for storage.
+* Block all public access.
 * Enable versioning.
 * Enable server side encryption.
 2. Create AWS DynamoDB table for locking mechanism.
