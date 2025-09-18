@@ -21,6 +21,7 @@
   * [Mesh](#mesh)
   * [MCU](#mcu)
   * [SFU](#sfu)
+* [Synchronization](#synchronization)
 * [Bandwidth Strategies](#bandwidth-strategies)
   * [Simulcast](#simulcast)
   * [Scalable Video Coding](#scalable-video-coding)
@@ -148,12 +149,12 @@ For a session with N nodes the total number of connections is `O(N²)`.
 | Uplinks<sub>node</sub>   | N-1    |
 | Downlinks<sub>node</sub> | N-1    |
 
-Pros:
+✅ Pros:
 * Low latency.
 * Low server loads.
 * End-to-end encryption.
 
-Cons:
+❌ Cons:
 * Poor scaling.
 * High node loads.
 * Connectivity problems with NATs, firewalls, etc.
@@ -173,13 +174,13 @@ For a session with N nodes the total number of connections is `O(N)`.
 | Uplinks<sub>node</sub>   | 1 |
 | Downlinks<sub>node</sub> | 1 |
 
-Pros:
+✅ Pros:
 * Good scaling.
 * Low node loads.
 * No connectivity problems.
 * Works well in low bandwidth environments.
 
-Cons:
+❌ Cons:
 * High latency.
 * High server loads.
 
@@ -198,14 +199,118 @@ For a session with N nodes the total number of connections is `O(N²)`.
 | Uplinks<sub>node</sub>   | 1      |
 | Downlinks<sub>node</sub> | N-1    |
 
-Pros:
+✅ Pros:
 * Good scaling.
 * Medium node loads.
 * Low server loads.
 * No connectivity problems.
 
-Cons:
+❌ Cons:
 * No end-to-end encryption (although there are experimental approaches of header only decryption).
+
+## Synchronization
+
+### 1. Timestamp-based Synchronization
+
+* How: Each audio and video frame includes a presentation timestamp (PTS). The playback system uses a common clock reference to schedule frame rendering.
+* Where: MPEG, MP4 containers, WebRTC, RTSP, HLS, DASH, etc.
+* Requires:
+  * Accurate timestamps from the encoder or capture system.
+  * A shared clock reference (e.g., NTP or wall clock).
+
+* Challenges:
+  * Network jitter can cause drift.
+  * Need for jitter buffers and sync correction logic.
+
+### 2. Audio as Master Clock (Audio leads)
+
+* How: Audio is played back as-is (because it’s more sensitive to glitches), and video is adjusted to follow it. Video frames are delayed, dropped, or repeated to match audio.
+* Why: The human ear is more sensitive to timing discrepancies than the eye — especially for speech.
+* Where:
+  * Media players (VLC, ffplay).
+  * Live streaming (WebRTC, OBS, etc.).
+
+### 3. Video as Master Clock (Video leads)
+
+* How: Audio is adjusted (usually by stretching or resampling) to match video timing.
+* Where:
+  * Less common, but can be used in video-dominant applications.
+  * Video editing/rendering workflows where visual accuracy is more important.
+* Risk: Audio pitch and quality can be affected if resampling isn't handled carefully.
+
+### 4. Global Master Clock Synchronization
+
+* How: Both audio and video streams sync to a shared system clock (e.g., NTP time, RTP clock).
+* Where:
+  * Broadcast systems
+  * WebRTC (via RTCP Sender Reports)
+  * Distributed media systems (e.g., live concerts, multi-device sync)
+* Requires: Clock drift compensation (if hardware clocks aren't perfectly synced).
+
+### 5. Buffer-based Sync
+
+* Frames are placed into a jitter buffer, and playback waits until audio and video are close enough in time.
+* Used to absorb network jitter and maintain sync.
+* May introduce latency but improves stability.
+* Often combined with hysteresis logic.
+
+### 6. Manual or Heuristic Adjustment
+
+* The system monitors sync error (difference in timestamps) and applies:
+* Frame dropping (to catch up)
+* Frame delaying (to wait for the other stream)
+* Dynamic audio resampling
+* Uses thresholds and hysteresis to avoid jittery behavior.
+* Used in custom synchronizers and playback engines.
+
+Hysteresis is a concept from physics and control systems. It refers to situations where the response of a system depends on its past state, not just its current input. In software, hysteresis is often used to avoid constant state changes caused by small fluctuations, essentially to smooth out behavior.
+
+In the context of synchronizing audio and video over the internet, hysteresis is used to prevent jittery or overly sensitive corrections when there's a slight timing mismatch between audio and video frames.
+
+Streaming over a network can introduce issues such as:
+
+* Variable network delay (jitter).
+* Packet loss and retransmissions.
+* Asynchronous decoding or buffering.
+
+As a result, audio and video can drift out of sync. The human ear is more sensitive to synchronization errors than the eye, so in most systems, audio is treated as the timing reference, and video is adjusted to match.
+
+When building a synchronization system, you often define a tolerance window where small differences between audio and video timestamps are considered "close enough" and no correction is made.
+
+Example:
+
+* If video leads audio by less than 40 ms, the system does nothing.
+* If the difference exceeds 60 ms, the system applies a correction (e.g. dropping or delaying frames).
+* Between 40–60 ms, nothing is done — this buffer zone is the hysteresis.
+
+The system will only apply a correction if the sync error goes beyond the allowed tolerance plus the hysteresis buffer.
+```py
+SYNC_TOLERANCE = 0.04 # 40 ms
+SYNC_HYSTERESIS = 0.02 # 20 ms hysteresis buffer
+
+def should_correct_sync(sync_error):
+    if abs(sync_error) > (SYNC_TOLERANCE + SYNC_HYSTERESIS):
+        return True
+    return False
+```
+
+✅ Benefits
+* Avoids constantly correcting minor and temporary sync issues.
+* Prevents visual instability caused by frequent adjustments.
+* Reduces computational overhead from unnecessary resync operations.
+* Provides a smoother user experience during streaming or playback.
+
+### 7. RTCP Sender Reports (in RTP)
+
+* In RTP-based streaming (e.g., WebRTC), RTCP Sender Reports carry timestamps mapping RTP timestamps to NTP time.
+* This allows aligning audio and video tracks that use different clocks.
+* Critical for sync across networked media sources.
+
+### 8. AV Interleaving in Media Containers
+
+* Formats like MP4, MKV, or MPEG-TS interleave audio and video packets.
+* The demuxer ensures the decoder receives both in sync order.
+* This is not real-time, but important in stored media playback.
 
 ## Bandwidth Strategies
 
