@@ -214,39 +214,39 @@ Audio-video synchronization is critical in any multimedia system, especially in 
 
 ### 1. Timestamp-based Synchronization
 
-* How: Each audio and video frame includes a presentation timestamp (PTS). The playback system uses a common clock reference to schedule frame rendering.
-* Where: MPEG, MP4 containers, WebRTC, RTSP, HLS, DASH, etc.
-* Requires:
+* <b>How</b>: Each audio and video frame includes a presentation timestamp (PTS). The playback system uses a common clock reference to schedule frame rendering.
+* <b>Where</b>: MPEG, MP4 containers, WebRTC, RTSP, HLS, DASH, etc.
+* <b>Requires</b>:
   * Accurate timestamps from the encoder or capture system.
-  * A shared clock reference (e.g., NTP or wall clock).
-* Challenges:
+  * A shared clock reference (e.g. NTP or wall clock).
+* <b>Challenges</b>:
   * Network jitter can cause drift.
   * Need for jitter buffers and sync correction logic.
 
 ### 2. Audio as Master Clock (Audio leads)
 
-* How: Audio is played back as-is (because it’s more sensitive to glitches), and video is adjusted to follow it. Video frames are delayed, dropped, or repeated to match audio.
-* Why: The human ear is more sensitive to timing discrepancies than the eye — especially for speech.
-* Where:
-  * Media players (VLC, ffplay).
+* <b>How</b>: Audio is played back as-is (because it’s more sensitive to glitches), and video is adjusted to follow it. Video frames are delayed, dropped, or repeated to match audio.
+* <b>Why</b>: The human ear is more sensitive to timing discrepancies than the eye, especially for speech.
+* <b>Where</b>:
+  * Media players (VLC, ffplay, etc.).
   * Live streaming (WebRTC, OBS, etc.).
 
 ### 3. Video as Master Clock (Video leads)
 
-* How: Audio is adjusted (usually by stretching or resampling) to match video timing.
-* Where:
+* <b>How</b>: Audio is adjusted (usually by stretching or resampling) to match video timing.
+* <b>Where</b>:
   * Less common, but can be used in video-dominant applications.
   * Video editing/rendering workflows where visual accuracy is more important.
-* Risk: Audio pitch and quality can be affected if resampling isn't handled carefully.
+* <b>Risk</b>: Audio pitch and quality can be affected if resampling isn't handled carefully.
 
 ### 4. Global Master Clock Synchronization
 
-* How: Both audio and video streams sync to a shared system clock (e.g., NTP time, RTP clock).
-* Where:
-  * Broadcast systems
-  * WebRTC (via RTCP Sender Reports)
-  * Distributed media systems (e.g., live concerts, multi-device sync)
-* Requires: Clock drift compensation (if hardware clocks aren't perfectly synced).
+* <b>How</b>: Both audio and video streams sync to a shared system clock (e.g. NTP time, RTP clock, etc.).
+* <b>Where</b>:
+  * Broadcast systems.
+  * WebRTC (via RTCP Sender Reports).
+  * Distributed media systems (e.g. live concerts, multi-device sync, etc.).
+* <b>Requires</b>: Clock drift compensation (if hardware clocks aren't perfectly synced).
 
 ### 5. Buffer-based Sync
 
@@ -269,12 +269,9 @@ Hysteresis is a concept from physics and control systems. It refers to situation
 When building a synchronization system, you often define a tolerance window where small differences between audio and video timestamps are considered close enough and no correction is made.
 
 Example:
-
 * If video leads audio by less than 40 ms, the system does nothing.
 * If the difference exceeds 60 ms, the system applies a correction (e.g. dropping or delaying frames).
-* Between 40–60 ms, nothing is done — this buffer zone is the hysteresis.
-
-The system will only apply a correction if the sync error goes beyond the allowed tolerance plus the hysteresis buffer.
+* Between 40–60 ms, nothing is done, this buffer zone is the hysteresis.
 ```py
 SYNC_TOLERANCE = 0.04 # 40 ms
 SYNC_HYSTERESIS = 0.02 # 20 ms hysteresis buffer
@@ -284,6 +281,7 @@ def should_correct_sync(sync_error):
         return True
     return False
 ```
+* The system will only apply a correction if the sync error goes beyond the allowed tolerance plus the hysteresis buffer.
 
 ✅ Benefits
 * Avoids constantly correcting minor and temporary sync issues.
