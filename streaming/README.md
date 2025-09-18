@@ -210,7 +210,7 @@ For a session with N nodes the total number of connections is `O(N²)`.
 
 ## Synchronization
 
-Audio-video synchronization is critical in any multimedia system, especially in real-time applications. Desynchronization (often called "lip-sync error") is one of the most noticeable and annoying issues for users.
+Audio-video synchronization is critical in any multimedia system, especially in real-time streaming applications. Desynchronization (often called lip-sync error) is one of the most noticeable and annoying issues for users as a result of audio and video drifting out of sync and is caused by variable network delay and jitter, packet loss and retransmissions, or asynchronous decoding and buffering.
 
 ### 1. Timestamp-based Synchronization
 
@@ -258,25 +258,15 @@ Audio-video synchronization is critical in any multimedia system, especially in 
 ### 6. Manual or Heuristic Adjustment
 
 * The system monitors sync error (difference in timestamps) and applies:
-* Frame dropping (to catch up)
-* Frame delaying (to wait for the other stream)
-* Dynamic audio resampling
+  * Frame dropping (to catch up).
+  * Frame delaying (to wait for the other stream).
+  * Dynamic audio resampling.
 * Uses thresholds and hysteresis to avoid jittery behavior.
 * Used in custom synchronizers and playback engines.
 
-Hysteresis is a concept from physics and control systems. It refers to situations where the response of a system depends on its past state, not just its current input. In software, hysteresis is often used to avoid constant state changes caused by small fluctuations, essentially to smooth out behavior.
+Hysteresis is a concept from physics and control systems. It refers to situations where the response of a system depends on its past state, not just its current input. In software, hysteresis is often used to avoid constant state changes caused by small fluctuations, essentially to smooth out behavior. In the context of synchronizing audio and video over the internet, hysteresis is used to prevent jittery or overly sensitive corrections when there's a slight timing mismatch between audio and video frames.
 
-In the context of synchronizing audio and video over the internet, hysteresis is used to prevent jittery or overly sensitive corrections when there's a slight timing mismatch between audio and video frames.
-
-Streaming over a network can introduce issues such as:
-
-* Variable network delay (jitter).
-* Packet loss and retransmissions.
-* Asynchronous decoding or buffering.
-
-As a result, audio and video can drift out of sync. The human ear is more sensitive to synchronization errors than the eye, so in most systems, audio is treated as the timing reference, and video is adjusted to match.
-
-When building a synchronization system, you often define a tolerance window where small differences between audio and video timestamps are considered "close enough" and no correction is made.
+When building a synchronization system, you often define a tolerance window where small differences between audio and video timestamps are considered close enough and no correction is made.
 
 Example:
 
