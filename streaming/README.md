@@ -250,7 +250,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
 
 ### 5. Buffer-based
 
-* <br>How</b>: Frames are placed into a jitter buffer to absorb network jitter (often combined with hysteresis logic), and playback waits until audio and video are close enough in time.
+* <b>How</b>: Frames are placed into a jitter buffer to absorb network jitter (often combined with hysteresis logic), and playback waits until audio and video are close enough in time.
 * <b>Challenges</b>: May introduce latency but improves stability.
 
 ### 6. Manual or Heuristic Adjustment
@@ -259,7 +259,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
   * Frame dropping (to catch up).
   * Frame delaying (to wait for the other stream).
   * Dynamic audio resampling.
-* <br>Where</b>: Used in custom synchronizers and playback engines.
+* <b>Where</b>: Used in custom synchronizers and playback engines.
 
 Hysteresis is a concept from physics and control systems. It refers to situations where the response of a system depends on its past state, not just its current input. In software, hysteresis is often used to avoid constant state changes caused by small fluctuations, essentially to smooth out behavior. In the context of synchronizing audio and video over the internet, hysteresis is used to prevent jittery or overly sensitive corrections when there's a slight timing mismatch between audio and video frames.
 
