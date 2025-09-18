@@ -237,7 +237,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
 * <b>Where</b>:
   * Less common, but can be used in video-dominant applications.
   * Video editing/rendering workflows where visual accuracy is more important.
-* <b>Risk</b>: Audio pitch and quality can be affected if resampling isn't handled carefully.
+* <b>Challenges</b>: Audio pitch and quality can be affected if resampling isn't handled carefully.
 
 ### 4. Global Master Clock
 
@@ -250,19 +250,16 @@ Audio-video synchronization is critical in any multimedia system, especially in 
 
 ### 5. Buffer-based
 
-* Frames are placed into a jitter buffer, and playback waits until audio and video are close enough in time.
-* Used to absorb network jitter and maintain sync.
-* May introduce latency but improves stability.
-* Often combined with hysteresis logic.
+* <br>How</b>: Frames are placed into a jitter buffer to absorb network jitter (often combined with hysteresis logic), and playback waits until audio and video are close enough in time.
+* <b>Challenges</b>: May introduce latency but improves stability.
 
 ### 6. Manual or Heuristic Adjustment
 
-* The system monitors sync error (difference in timestamps) and applies:
+* <b>How</b>: The system monitors sync error (difference in timestamps) using thresholds and hysteresis, to avoid jittery behavior applies:
   * Frame dropping (to catch up).
   * Frame delaying (to wait for the other stream).
   * Dynamic audio resampling.
-* Uses thresholds and hysteresis to avoid jittery behavior.
-* Used in custom synchronizers and playback engines.
+* <br>Where</b>: Used in custom synchronizers and playback engines.
 
 Hysteresis is a concept from physics and control systems. It refers to situations where the response of a system depends on its past state, not just its current input. In software, hysteresis is often used to avoid constant state changes caused by small fluctuations, essentially to smooth out behavior. In the context of synchronizing audio and video over the internet, hysteresis is used to prevent jittery or overly sensitive corrections when there's a slight timing mismatch between audio and video frames.
 
@@ -290,15 +287,15 @@ Benefits:
 
 ### 7. RTCP Sender Reports (RTP)
 
-* In RTP-based streaming (e.g. WebRTC), RTCP Sender Reports carry timestamps mapping RTP timestamps to NTP time.
-* This allows aligning audio and video tracks that use different clocks.
-* Critical for sync across networked media sources.
+* <b>How</b>: RTCP Sender Reports carry timestamps mapping RTP timestamps to NTP time. This allows aligning audio and video tracks that use different clocks.
+* <b>Where</b>: In RTP-based streaming (e.g. WebRTC).
 
 ### 8. AV Interleaving in Media Containers
 
-* Formats like MP4, MKV, or MPEG-TS interleave audio and video packets.
-* The demuxer ensures the decoder receives both in sync order.
-* This is not real-time, but important in stored media playback.
+* <b>How</b>: Interleave audio and video packets where the demuxer ensures the decoder receives both in sync order.
+* <b>Where</b>:
+  * Stored media playback (not real-time).
+  * Formats like MP4, MKV or MPEG-TS.
 
 ## Bandwidth Strategies
 
