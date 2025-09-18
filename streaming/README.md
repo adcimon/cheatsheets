@@ -215,7 +215,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
 ### 1. Timestamp-based Synchronization
 
 * <b>How</b>: Each audio and video frame includes a presentation timestamp (PTS). The playback system uses a common clock reference to schedule frame rendering.
-* <b>Where</b>: MPEG, MP4 containers, WebRTC, RTSP, HLS, DASH, etc.
+* <b>Where</b>: MPEG or MP4 containers, WebRTC, RTSP, HLS, DASH, etc.
 * <b>Requires</b>:
   * Accurate timestamps from the encoder or capture system.
   * A shared clock reference (e.g. NTP or wall clock).
@@ -223,7 +223,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
   * Network jitter can cause drift.
   * Need for jitter buffers and sync correction logic.
 
-### 2. Audio as Master Clock (Audio leads)
+### 2. Audio as Master Clock
 
 * <b>How</b>: Audio is played back as-is (because it’s more sensitive to glitches), and video is adjusted to follow it. Video frames are delayed, dropped, or repeated to match audio.
 * <b>Why</b>: The human ear is more sensitive to timing discrepancies than the eye, especially for speech.
@@ -231,7 +231,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
   * Media players (VLC, ffplay, etc.).
   * Live streaming (WebRTC, OBS, etc.).
 
-### 3. Video as Master Clock (Video leads)
+### 3. Video as Master Clock
 
 * <b>How</b>: Audio is adjusted (usually by stretching or resampling) to match video timing.
 * <b>Where</b>:
@@ -266,32 +266,31 @@ Audio-video synchronization is critical in any multimedia system, especially in 
 
 Hysteresis is a concept from physics and control systems. It refers to situations where the response of a system depends on its past state, not just its current input. In software, hysteresis is often used to avoid constant state changes caused by small fluctuations, essentially to smooth out behavior. In the context of synchronizing audio and video over the internet, hysteresis is used to prevent jittery or overly sensitive corrections when there's a slight timing mismatch between audio and video frames.
 
-When building a synchronization system, you often define a tolerance window where small differences between audio and video timestamps are considered close enough and no correction is made.
+When building a synchronization system, you often define a tolerance window where small differences between audio and video timestamps are considered close enough and no correction is made. The system will only apply a correction if the sync error goes beyond the allowed tolerance plus the hysteresis buffer.
 
 Example:
-* If video leads audio by less than 40 ms, the system does nothing.
-* If the difference exceeds 60 ms, the system applies a correction (e.g. dropping or delaying frames).
-* Between 40–60 ms, nothing is done, this buffer zone is the hysteresis.
+* If the difference is less than 40 ms, the system does nothing.
+* If the difference is greater than 60 ms, the system applies a correction (e.g. dropping or delaying frames).
+* If the difference is between 40–60 ms, the system does nothing (this buffer zone is the hysteresis).
 ```py
-SYNC_TOLERANCE = 0.04 # 40 ms
-SYNC_HYSTERESIS = 0.02 # 20 ms hysteresis buffer
+SYNC_TOLERANCE = 0.04 # 40ms
+SYNC_HYSTERESIS = 0.02 # 20ms
 
 def should_correct_sync(sync_error):
     if abs(sync_error) > (SYNC_TOLERANCE + SYNC_HYSTERESIS):
         return True
     return False
 ```
-* The system will only apply a correction if the sync error goes beyond the allowed tolerance plus the hysteresis buffer.
 
-✅ Benefits
+Benefits:
 * Avoids constantly correcting minor and temporary sync issues.
 * Prevents visual instability caused by frequent adjustments.
 * Reduces computational overhead from unnecessary resync operations.
 * Provides a smoother user experience during streaming or playback.
 
-### 7. RTCP Sender Reports (in RTP)
+### 7. RTCP Sender Reports (RTP)
 
-* In RTP-based streaming (e.g., WebRTC), RTCP Sender Reports carry timestamps mapping RTP timestamps to NTP time.
+* In RTP-based streaming (e.g. WebRTC), RTCP Sender Reports carry timestamps mapping RTP timestamps to NTP time.
 * This allows aligning audio and video tracks that use different clocks.
 * Critical for sync across networked media sources.
 
