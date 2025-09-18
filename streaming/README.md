@@ -210,6 +210,8 @@ For a session with N nodes the total number of connections is `O(N²)`.
 
 ## Synchronization
 
+Audio-video synchronization is critical in any multimedia system, especially in real-time applications. Desynchronization (often called "lip-sync error") is one of the most noticeable and annoying issues for users.
+
 ### 1. Timestamp-based Synchronization
 
 * How: Each audio and video frame includes a presentation timestamp (PTS). The playback system uses a common clock reference to schedule frame rendering.
@@ -217,7 +219,6 @@ For a session with N nodes the total number of connections is `O(N²)`.
 * Requires:
   * Accurate timestamps from the encoder or capture system.
   * A shared clock reference (e.g., NTP or wall clock).
-
 * Challenges:
   * Network jitter can cause drift.
   * Need for jitter buffers and sync correction logic.
