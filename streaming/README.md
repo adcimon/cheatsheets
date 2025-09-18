@@ -212,7 +212,7 @@ For a session with N nodes the total number of connections is `O(N²)`.
 
 Audio-video synchronization is critical in any multimedia system, especially in real-time streaming applications. Desynchronization (often called lip-sync error) is one of the most noticeable and annoying issues for users as a result of audio and video drifting out of sync and is caused by variable network delay and jitter, packet loss and retransmissions, or asynchronous decoding and buffering.
 
-### 1. Timestamp-based Synchronization
+### 1. Timestamp-based
 
 * <b>How</b>: Each audio and video frame includes a presentation timestamp (PTS). The playback system uses a common clock reference to schedule frame rendering.
 * <b>Where</b>: MPEG or MP4 containers, WebRTC, RTSP, HLS, DASH, etc.
@@ -239,7 +239,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
   * Video editing/rendering workflows where visual accuracy is more important.
 * <b>Risk</b>: Audio pitch and quality can be affected if resampling isn't handled carefully.
 
-### 4. Global Master Clock Synchronization
+### 4. Global Master Clock
 
 * <b>How</b>: Both audio and video streams sync to a shared system clock (e.g. NTP time, RTP clock, etc.).
 * <b>Where</b>:
@@ -248,7 +248,7 @@ Audio-video synchronization is critical in any multimedia system, especially in 
   * Distributed media systems (e.g. live concerts, multi-device sync, etc.).
 * <b>Requires</b>: Clock drift compensation (if hardware clocks aren't perfectly synced).
 
-### 5. Buffer-based Sync
+### 5. Buffer-based
 
 * Frames are placed into a jitter buffer, and playback waits until audio and video are close enough in time.
 * Used to absorb network jitter and maintain sync.
