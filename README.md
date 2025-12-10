@@ -5,7 +5,7 @@
 [<img class="badge" src="https://adcimon.github.io/badges/regular_expressions.svg">](https://adcimon.github.io/cheatsheets/regular-expressions/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/cybersecurity.svg">](https://adcimon.github.io/cheatsheets/cybersecurity/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/streaming.svg">](https://adcimon.github.io/cheatsheets/streaming/)<br>
-[<img class="badge" src="https://adcimon.github.io/badges/3d_printing">](https://adcimon.github.io/cheatsheets/3d-printing/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/3d_printing.svg">](https://adcimon.github.io/cheatsheets/3d-printing/)<br>
 
 <h2>Technologies</h2>
 
