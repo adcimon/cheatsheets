@@ -36,6 +36,7 @@
 [<img class="badge" src="https://adcimon.github.io/badges/trinity_core.svg">](https://adcimon.github.io/cheatsheets/trinity-core/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/turn.svg">](https://adcimon.github.io/cheatsheets/turn/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/unity.svg">](https://adcimon.github.io/cheatsheets/unity/)<br>
+[<img class="badge" src="https://adcimon.github.io/badges/vcpkg.svg">](https://adcimon.github.io/cheatsheets/vcpkg/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/visual_studio_code.svg">](https://adcimon.github.io/cheatsheets/visual-studio-code/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/visual_studio.svg">](https://adcimon.github.io/cheatsheets/visual-studio/)<br>
 [<img class="badge" src="https://adcimon.github.io/badges/webrtc.svg">](https://adcimon.github.io/cheatsheets/webrtc/)<br>
