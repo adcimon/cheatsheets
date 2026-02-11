@@ -161,7 +161,7 @@ Record changes to the repository.
 git commit -m "Message"
 ```
 
-Modify the last commit.
+Modify the most recent commit.
 ```
 git commit --amend
 git commit --amend -m "Updated message"
