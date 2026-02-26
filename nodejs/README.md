@@ -10,7 +10,7 @@
 * [Packages](#packages)
   * [npm](#npm)
   * [Electron](#electron)
-  * [Nest.js](#nestjs)
+  * [NestJS](#nestjs)
   * [Tailwind CSS](#tailwind-css)
   * [TypeScript](#typescript)
 
@@ -173,9 +173,9 @@ List of packages.
 | [Material UI Icons](https://github.com/mui/material-ui) | npm install @mui/icons-material |
 | [Moment](https://github.com/moment/moment/) | npm install moment |
 | [Multer](https://github.com/expressjs/multer) | npm install multer<br>npm install --save-dev @types/multer |
-| [Nest](https://github.com/nestjs/nest) | npm install --global @nestjs/cli |
-| [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install --save-dev @types/cron |
-| [Nest Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
+| [NestJS](https://github.com/nestjs/nest) | npm install --global @nestjs/cli |
+| [NestJS Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install --save-dev @types/cron |
+| [NestJS Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
 | [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install --save-dev @types/nodemailer |
 | [OpenID Connect Provider](https://github.com/panva/node-oidc-provider) | npm install oidc-provider<br>npm install --save-dev @types/oidc-provider |
 | [Passport](https://github.com/jaredhanson/passport) | npm install passport<br>npm install @nestjs/passport |
@@ -220,11 +220,11 @@ Startup project.
 https://github.com/electron-react-boilerplate/electron-react-boilerplate
 ```
 
-### Nest.js
+### NestJS
 
-[Nest.js](https://nestjs.com/) is a framework for building efficient, scalable web applications.
+[NestJS](https://nestjs.com/) is a framework for building efficient, scalable web applications.
 
-Nest is built around the design pattern [Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) and has a built-in container that resolves relationships between providers using a constructor based dependency injection.
+NestJS is built around the design pattern [Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) and has a built-in container that resolves relationships between providers using a constructor based dependency injection.
 * Providers (classes with `@Injectable()`) are added to the `exports` array of the producer module.
 * Modules (classes with `@Module()`) are added to the `imports` array of a consumer module.
 * Dynamic modules (classes that use `register` or `forRoot`) should always export the module instead of its services (the module has a configuration necessary for the services to work).
