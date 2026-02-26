@@ -8,6 +8,7 @@
 
 * [Install](#install)
 * [Packages](#packages)
+  * [npm](#npm)
   * [Electron](#electron)
   * [Nest.js](#nestjs)
   * [Tailwind CSS](#tailwind-css)
@@ -36,6 +37,8 @@ https://deb.nodesource.com/setup_10.x
 ```
 
 ## Packages
+
+### npm
 
 [Node Package Manager (npm)](https://www.npmjs.com/) is the package manager of Node.
 * `CommonJS` is the original module system (`require`, `module.exports` and `.cjs` files).
