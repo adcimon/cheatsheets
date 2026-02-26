@@ -164,6 +164,7 @@ List of packages.
 | [i18next](https://github.com/i18next/i18next) | npm install i18next react-i18next |
 | [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) | npm install jsonwebtoken |
 | [lexical](https://github.com/facebook/lexical) | npm install lexical @lexical/react |
+| [libphonenumber-js](https://gitlab.com/catamphetamine/libphonenumber-js) | npm install libphonenumber-js |
 | [ms](https://github.com/vercel/ms) | npm install ms |
 | [Material UI](https://github.com/mui/material-ui) | npm install @mui/material @emotion/react @emotion/styled |
 | [Material UI Icons](https://github.com/mui/material-ui) | npm install @mui/icons-material |
@@ -173,11 +174,11 @@ List of packages.
 | [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install --save-dev @types/cron |
 | [Nest Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
 | [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install --save-dev @types/nodemailer |
-| [Node OpenID Connect Provider](https://github.com/panva/node-oidc-provider) | npm install oidc-provider<br>npm install --save-dev @types/oidc-provider |
-| [node-qrcode](https://github.com/soldair/node-qrcode) | npm install qrcode<br>npm install --save-dev @types/qrcode |
+| [OpenID Connect Provider](https://github.com/panva/node-oidc-provider) | npm install oidc-provider<br>npm install --save-dev @types/oidc-provider |
 | [Passport](https://github.com/jaredhanson/passport) | npm install passport<br>npm install @nestjs/passport |
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
 | [Passport JWT](https://github.com/mikenicholson/passport-jwt) | npm install passport-jwt<br>npm install @nestjs/jwt |
+| [qrcode](https://github.com/soldair/node-qrcode) | npm install qrcode<br>npm install --save-dev @types/qrcode |
 | [React](https://github.com/facebook/react) | npm install react<br>npm install --save-dev @types/react<br>npm install --save-dev @types/react-dom |
 | [React Hot Toast](https://github.com/timolins/react-hot-toast) | npm install react-hot-toast |
 | [React Transition Group](https://github.com/reactjs/react-transition-group) | npm install react-transition-group<br>npm install --save-dev @types/react-transition-group |
