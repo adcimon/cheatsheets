@@ -57,6 +57,12 @@ from Foob import ar
 
 ## Packages
 
+List of packages.
+| Package | Install |
+|---|---|
+| [numpy](https://github.com/numpy/numpy) | pip install numpy |
+| [pyinstaller](https://github.com/pyinstaller/pyinstaller) | pip install pyinstaller |
+
 ### Pip
 
 [Pip](https://pip.pypa.io/en/latest/) is the package installer for Python.
