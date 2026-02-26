@@ -173,7 +173,7 @@ List of packages.
 | [Nest Schedule](https://github.com/nestjs/schedule) | npm install @nestjs/schedule<br>npm install --save-dev @types/cron |
 | [Nest Serve Static](https://github.com/nestjs/serve-static) | npm install @nestjs/serve-static |
 | [Nodemailer](https://github.com/nodemailer/nodemailer) | npm install nodemailer<br>npm install --save-dev @types/nodemailer |
-| [node-oidc-provider](https://github.com/panva/node-oidc-provider) | npm install oidc-provider<br>npm install --save-dev @types/oidc-provider |
+| [Node OpenID Connect Provider](https://github.com/panva/node-oidc-provider) | npm install oidc-provider<br>npm install --save-dev @types/oidc-provider |
 | [node-qrcode](https://github.com/soldair/node-qrcode) | npm install qrcode<br>npm install --save-dev @types/qrcode |
 | [Passport](https://github.com/jaredhanson/passport) | npm install passport<br>npm install @nestjs/passport |
 | [Passport Local](https://github.com/jaredhanson/passport-local) | npm install passport-local |
