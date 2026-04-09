@@ -187,6 +187,7 @@ List of packages.
 | [React Transition Group](https://github.com/reactjs/react-transition-group) | npm install react-transition-group<br>npm install --save-dev @types/react-transition-group |
 | [Recoil](https://github.com/facebookexperimental/Recoil) | npm install recoil |
 | [serve](https://github.com/vercel/serve) | npm install --global serve |
+| [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
 | [swiper](https://github.com/nolimits4web/swiper) | npm install swiper |
 | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install --save-dev tailwindcss |
@@ -196,7 +197,6 @@ List of packages.
 | [uuid](https://github.com/uuidjs/uuid) | npm install uuid |
 | [Vite](https://github.com/vitejs/vite) | npm install vite<br>npm install @vitejs/plugin-react |
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
-| [Socket.io](https://github.com/socketio/socket.io) | npm install socket.io<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-socket.io |
 | [yup](https://github.com/jquense/yup) | npm install yup |
 
 ### Electron
