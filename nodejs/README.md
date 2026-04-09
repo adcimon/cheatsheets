@@ -188,6 +188,7 @@ List of packages.
 | [Recoil](https://github.com/facebookexperimental/Recoil) | npm install recoil |
 | [serve](https://github.com/vercel/serve) | npm install --global serve |
 | [SQLite](https://github.com/mapbox/node-sqlite3) | npm install sqlite3 |
+| [swiper](https://github.com/nolimits4web/swiper) | npm install swiper |
 | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | npm install --save-dev tailwindcss |
 | [Three](https://github.com/mrdoob/three.js) | npm install three<br>npm install --save-dev @types/three |
 | [TypeORM](https://github.com/typeorm/typeorm) | npm install typeorm<br>npm install @nestjs/typeorm |
