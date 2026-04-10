@@ -165,6 +165,7 @@ List of packages.
 | [fs-extra](https://github.com/jprichardson/node-fs-extra) | npm install fs-extra |
 | [ics](https://github.com/adamgibbons/ics) | npm install ics |
 | [i18next](https://github.com/i18next/i18next) | npm install i18next react-i18next |
+| [jotai](https://github.com/pmndrs/jotai) | npm install jotai |
 | [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) | npm install jsonwebtoken |
 | [lexical](https://github.com/facebook/lexical) | npm install lexical @lexical/react |
 | [libphonenumber-js](https://gitlab.com/catamphetamine/libphonenumber-js) | npm install libphonenumber-js |
@@ -197,7 +198,6 @@ List of packages.
 | [Vite](https://github.com/vitejs/vite) | npm install vite<br>npm install @vitejs/plugin-react |
 | [ws](https://github.com/websockets/ws) | npm install ws<br>npm install @nestjs/websockets<br>npm install @nestjs/platform-ws |
 | [yup](https://github.com/jquense/yup) | npm install yup |
-| [zustand](https://github.com/pmndrs/zustand) | npm install zustand |
 
 ### Electron
 
