@@ -62,3 +62,8 @@ Hosts file maps human-friendly hostnames to numerical Internet Protocol (IP) add
 ```
 C:\Windows\System32\Drivers\etc\hosts
 ```
+
+Delete directory ending with dot.
+```cmd
+rd /s "\\?\C:\...\Annoying Folder."
+```
