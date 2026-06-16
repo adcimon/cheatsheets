@@ -62,6 +62,22 @@ npm run <script>
 npm run --prefix <path/to/package.json> <script>
 ```
 
+List packages.
+```
+npm list
+npm list --depth=0
+```
+
+List global packages.
+```
+npm list --global
+```
+
+List outdated packages.
+```
+npm outdated
+```
+
 Install all packages.
 ```
 npm install
@@ -99,21 +115,6 @@ Uninstall a global package.
 * Go to `C:\Users\<user>\AppData\Roaming\npm`.
 * Delete the package files.
 * Go to `node_modules` and delete the package.
-
-List global packages.
-```
-npm list --global
-```
-
-List packages.
-```
-npm list --depth=0
-```
-
-Check outdated packages.
-```
-npm outdated
-```
 
 Update packages.
 ```
