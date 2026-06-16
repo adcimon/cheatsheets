@@ -71,6 +71,16 @@ Update.
 python -m pip install --upgrade pip
 ```
 
+List packages.
+```
+pip list
+```
+
+List outdated packages.
+```
+pip list --outdated
+```
+
 Install packages.
 ```
 pip install <package>
@@ -82,14 +92,14 @@ Update package.
 pip install --upgrade <package>
 ```
 
-Export packages and versions.
-```
-pip freeze > <requirements.txt>
-```
-
 Uninstall package.
 ```
 pip uninstall <package>
+```
+
+Export packages and versions.
+```
+pip freeze > <requirements.txt>
 ```
 
 List of packages.
