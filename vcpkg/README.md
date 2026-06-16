@@ -9,3 +9,8 @@ Get baseline hash.
 cd path/to/vcpkg
 git rev-parse HEAD
 ```
+
+Path to global binary cache.
+```
+%LOCALAPPDATA%\vcpkg\archives
+```
