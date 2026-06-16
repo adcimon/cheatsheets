@@ -75,8 +75,15 @@ Dynamic libraries have 2 types of linking.
 List of libraries.
 | Library |
 |---|
-| [args](https://github.com/Taywee/args) |
+| [Boost](https://github.com/boostorg) |
+| [CLI11](https://github.com/cliutils/cli11) |
 | [Dear ImGui](https://github.com/ocornut/imgui) |
+| [EASTL](https://github.com/electronicarts/EASTL) |
+| [EnTT](https://github.com/skypjack/entt) |
+| [GLM](https://github.com/g-truc/glm) |
+| [gtest](https://github.com/google/googletest) |
+| [jwt-cpp](https://github.com/Thalhammer/jwt-cpp) |
+| [nlohmann-json](https://github.com/nlohmann/json) |
 | [spdlog](https://github.com/gabime/spdlog) |
 
 ## Dependencies
